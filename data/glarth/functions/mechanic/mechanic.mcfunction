@@ -31,8 +31,3 @@ execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 0 3
 execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock -1 46 -334 stone 6
 execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 5
 execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock -1 46 -334 stone 6
-
-#Ender
-kill @e[type=ender_pearl]
-give @a[score_ethrow_min=1] ender_pearl
-scoreboard players set @a[score_ethrow_min=1] ethrow 0
