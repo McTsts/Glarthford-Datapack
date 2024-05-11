@@ -14,3 +14,5 @@ execute @r[score_edge_min=1,score_edge=1] ~ ~ ~ function mctsts:mechanic/join
 execute @r ~ ~ ~ function mctsts:util/area_main
 
 execute @e[tag=area_main] ~ ~ ~ detect 118 18 -132 air * function mctsts:mechanic/lobby/setup
+
+scoreboard players enable MirageMaps sign
