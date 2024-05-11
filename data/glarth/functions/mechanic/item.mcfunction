@@ -104,7 +104,7 @@ execute as @a store result score @s iSugar run clear @s minecraft:sugar 0
 execute as @a store result score @s iRose run clear @s minecraft:poppy 0
 execute as @a store result score @s iTorch run clear @s minecraft:torch 0
 execute as @a store result score @s iInk run clear @s minecraft:ink_sac 0
-execute as @a store result score @s iFlour run clear @s minecraft:scute 0
+execute as @a store result score @s iFlour run clear @s minecraft:turtle_scute 0
 execute as @a store result score @s iBook run clear @s minecraft:book 0
 execute as @a store result score @s iSand run clear @s minecraft:sand 0
 execute as @a store result score @s iStick run clear @s minecraft:stick 0

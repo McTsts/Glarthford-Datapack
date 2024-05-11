@@ -8,7 +8,7 @@ execute as @e[tag=tbcFang,tag=func,type=armor_stand] at @s run function glarth:c
 execute as @e[tag=tbcFang,tag=func,type=armor_stand] at @s run function glarth:combat/action_enemy/util/next_stage
 execute as @e[tag=tbcFang,tag=func,type=armor_stand] at @s run kill @s
 
-execute as @e[tag=tbcFang,type=armor_stand] at @s run particle block dirt ~ ~ ~ 0.3 0 0.3 0.1 10
+execute as @e[tag=tbcFang,type=armor_stand] at @s run particle minecraft:block{block_state:{Name:"dirt"}} ~ ~ ~ 0.3 0 0.3 0.1 10
 execute as @e[tag=tbcFang,type=armor_stand] at @s run summon minecraft:evoker_fangs ~ ~-0.5 ~
 
 execute as @e[tag=tbcFang,type=armor_stand] run scoreboard players add @s tbcFangs 1

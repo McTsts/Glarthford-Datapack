@@ -219,7 +219,7 @@
 	# !Q7 Grandma
 		clone -6 18 -255 -8 18 -255 -7 26 -255
 	# !Q7 Extra Torches
-		execute if block 8 27 -262 torch run setblock 8 27 -262 grass
+		execute if block 8 27 -262 torch run setblock 8 27 -262 short_grass
 		setblock -75 42 -240 air
 		setblock 5 27 -197 structure_void
 		setblock 10 27 -203 minecraft:birch_pressure_plate[powered=true]

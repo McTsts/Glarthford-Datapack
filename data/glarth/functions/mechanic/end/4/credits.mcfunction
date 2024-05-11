@@ -19,12 +19,12 @@ execute if score timer end matches 6660 run summon area_effect_cloud 7 27.5 -205
 # Construct
 execute if score timer end matches 6690 run setblock 7 26 -202 minecraft:twisting_vines[age=6]
 execute if score timer end matches 6690 as @s at @s run playsound minecraft:block.stone.place block @s 7 26 -202 1 1
-execute if score timer end matches 6700..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
-execute if score timer end matches 6710..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
-execute if score timer end matches 6719..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
-execute if score timer end matches 6727..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
-execute if score timer end matches 6733..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
-execute if score timer end matches 6738..6740 positioned 7 26 -202 run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6700..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6710..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6719..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6727..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6733..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
+execute if score timer end matches 6738..6740 positioned 7 26 -202 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 0.5 0.5 0.5 1 1
 execute if score timer end matches 6740 run setblock 7 26 -202 brown_wool destroy
 execute if score timer end matches 6740 positioned 7 26 -202 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.2 10
 execute if score timer end matches 6740 positioned 7 26 -202 run particle cloud ~ ~ ~ 0.5 0.5 0.5 0.2 10

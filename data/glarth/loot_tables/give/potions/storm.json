@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": { 
+                    "custom_color": 10936063,
+                    "custom_effects": [
+                        { "id": "minecraft:unluck", "amplifier": 0, "duration": 1200, "show_particles": false, "show_icon": false, "ambient": false }
+                    ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.pot3\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

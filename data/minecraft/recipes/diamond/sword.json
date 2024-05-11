@@ -4,7 +4,9 @@
   "ingredient": {
     "item": "minecraft:diamond_sword"
   },
-  "result": "minecraft:diamond",
+  "result": {
+    "id": "minecraft:diamond"
+  },
   "experience": 0.35,
   "cookingtime": 400
 }

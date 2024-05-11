@@ -22,7 +22,7 @@ execute if score @s tbcAttackStage matches 5 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 1..10 at @s unless entity @e[tag=tbcTargetAS,type=armor_stand,distance=..0.5] facing entity @e[tag=tbcTargetAS,type=armor_stand] feet run tp @s ^ ^ ^0.1
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 1 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 10 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
-execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
+execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block{block_state:{Name:"stone"}} ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 run scoreboard players operation damage tbcStats = @s tbcStrength
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage

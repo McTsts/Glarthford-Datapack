@@ -22,12 +22,12 @@ execute if score timer end matches 60 at @e[tag=uncle] run playsound minecraft:e
 execute if score timer end matches 64 at @e[tag=uncle] run playsound minecraft:entity.generic.drink neutral @a ~ ~ ~ 1 1.1
 execute if score timer end matches 67 at @e[tag=uncle] run playsound minecraft:entity.generic.drink neutral @a ~ ~ ~ 1 1.2
 
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
-execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect ~ ~ ~ 0.969 0.549 1.000 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
+execute if score timer end matches 70..120 at @e[tag=uncle] run particle entity_effect{color:[0.969,0.549,1.0,1.0]} ~ ~ ~ 0.5 0.5 0.5 1 0 normal
 
 execute if score timer end matches 130 run function glarth:dialogue/uncle/lines/end_8
 

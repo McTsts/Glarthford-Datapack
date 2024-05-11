@@ -82,7 +82,7 @@ execute as @a store result score @s tbcThrowable3 run clear @s flint 0
 execute as @a store result score @s tbcThrowable4 run clear @s egg 0
 execute as @a store result score @s tbcThrowable5 run clear @s snowball 0
 execute as @a store result score @s tbcThrowable6 run clear @s ink_sac 0
-execute as @a store result score @s tbcThrowable7 run clear @s scute 0
+execute as @a store result score @s tbcThrowable7 run clear @s turtle_scute 0
 execute as @a store result score @s tbcThrowable8 run clear @s gold_nugget[custom_data={custom:"bee_hive"}] 0
 execute as @a store result score @s tbcThrowable9 run clear @s diamond_hoe[custom_data={custom:"tophat"}] 0
 execute as @a store result score @s tbcThrowable10 run clear @s magma_cream 0

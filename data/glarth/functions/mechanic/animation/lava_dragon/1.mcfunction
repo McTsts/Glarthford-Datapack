@@ -37,8 +37,6 @@ execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDrago
 execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDragonAnim matches 1 run summon minecraft:falling_block 14 32 -211 {Time:0,Motion:[0.4d,0.8d,0.7d],BlockState:{Name:"minecraft:oak_planks"},Tags:["falling_block_kill"]}
 execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDragonAnim matches 1 run summon minecraft:falling_block 15 32 -211 {Time:0,Motion:[0.4d,0.7d,0.35d],BlockState:{Name:"minecraft:oak_planks"},Tags:["falling_block_kill"]}
 execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDragonAnim matches 1 run summon minecraft:falling_block 16 32 -211 {Time:0,Motion:[0.4d,0.8d,0.6d],BlockState:{Name:"minecraft:oak_planks"},Tags:["falling_block_kill"]}
-execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDragonAnim matches 1 run 
-execute positioned 15 32 -211 if entity @s[distance=..0.2] if score @s lavaDragonAnim matches 1 run 
 
 # Next
 execute positioned 15 32 -211 if entity @s[distance=..0.2] run scoreboard players set @s lavaDragonAnim 2

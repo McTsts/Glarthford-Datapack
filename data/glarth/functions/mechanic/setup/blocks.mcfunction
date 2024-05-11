@@ -93,8 +93,8 @@
 		execute if score season winter matches 1 run function glarth:mechanic/animation/apples/winter
 	# Ruins of Ascension
 		clone 67 7 -243 63 1 -249 76 27 -240
-		setblock 77 30 -236 grass
-		setblock 78 28 -238 grass
+		setblock 77 30 -236 short_grass
+		setblock 78 28 -238 short_grass
 		clone 94 5 -229 90 1 -230 86 27 -222
 		setblock 86 28 -222 minecraft:tripwire_hook
 	#Church

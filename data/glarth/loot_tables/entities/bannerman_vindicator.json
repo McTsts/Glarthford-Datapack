@@ -9,8 +9,20 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{HideFlags:63,CustomModelData:1,custom:\"vindicator_skull\",display:{Name:'{\"italic\":\"false\",\"translate\":\"item.vindicator_skull\"}'}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.vindicator_skull\"}",
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_model_data": 1,
+                "minecraft:custom_data": {"custom":"vindicator_skull"}
+              }
             }
           ]
         }

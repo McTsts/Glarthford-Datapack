@@ -3,7 +3,9 @@
   "ingredient": {
     "item": "minecraft:gray_dye"
   },
-  "result": "minecraft:popped_chorus_fruit",
+  "result": {
+    "id": "minecraft:popped_chorus_fruit"
+  },
   "experience": 0.35,
   "cookingtime": 100
 }

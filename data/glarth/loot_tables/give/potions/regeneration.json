@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": { 
+                    "custom_color": 16755700,
+                    "custom_effects": [
+                        { "id": "minecraft:regeneration", "amplifier": 0, "duration": 3600, "show_particles": true, "show_icon": true, "ambient": true }
+                    ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.minecraft.potion.effect.regeneration\"}",
+                "minecraft:lore": [
+                    "[{\"translate\":\"effect.minecraft.regeneration\",\"color\":\"blue\",\"italic\":false},\" (3:00)\"]"
+                ],
+                "minecraft:custom_data": {
+                    "custom": "regeneration"
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

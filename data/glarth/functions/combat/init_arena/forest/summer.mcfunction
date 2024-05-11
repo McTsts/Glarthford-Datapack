@@ -4,7 +4,7 @@ forceload add 366 -127 394 -99
 # undo winter
 fill 394 56 -127 366 25 -99 minecraft:spruce_leaves replace minecraft:dark_oak_leaves
 fill 394 56 -127 366 25 -99 minecraft:grass_block replace podzol
-fill 394 56 -127 366 25 -99 grass replace snow
+fill 394 56 -127 366 25 -99 short_grass replace snow
 fill 394 56 -127 366 25 -99 minecraft:fern replace pink_carpet
 fill 394 56 -127 366 25 -99 minecraft:command_block{auto:1b,Command:"function glarth:mechanic/seasons/place/large_fern"} replace minecraft:purple_carpet
 

@@ -53,11 +53,11 @@ execute as @a[scores={playerid=1..}] run function glarth:mechanic/give/beehive
 give @a[scores={playerid=1..}] minecraft:diamond_hoe[custom_model_data=38,custom_name='{"translate":"item.tophat","italic":false}',hide_additional_tooltip={},custom_data={custom:"tophat"}]
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:speed"}] 1
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:leaping"}] 1
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/swiftness
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/leaping
 give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}] 3
 give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:strong_healing"}] 1
-give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}] 1
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/fire_resistance
 give @a[scores={playerid=1..}] minecraft:gold_nugget[custom_model_data=40,custom_data={custom:"milk_bottle"}] 1
 give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:water"}] 1
 

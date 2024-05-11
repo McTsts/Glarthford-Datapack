@@ -1,5 +1,5 @@
 # Passive | Cancel
-execute if block ~ 0 ~ diorite run 
+#execute if block ~ 0 ~ diorite run 
 execute if block ~ 0 ~ granite run scoreboard players set @s MusicNum 0
 
 # Town [Dawn & Dusk, Busy M, Quiet M, Jungle Festival, Scary Night]

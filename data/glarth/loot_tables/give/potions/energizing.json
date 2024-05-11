@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": { 
+                    "custom_color": 4718532,
+                    "custom_effects": [
+                        { "id": "minecraft:speed", "amplifier": 1, "duration": 2400, "show_particles": true, "show_icon": true, "ambient": true },
+                        { "id": "minecraft:jump_boost", "amplifier": 1, "duration": 2400, "show_particles": true, "show_icon": true, "ambient": true }
+                    ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.energizing_potion\"}",
+                "minecraft:lore": [
+                    "[{\"translate\":\"effect.minecraft.speed\",\"color\":\"blue\",\"italic\":false},\" II (2:00)\"]",
+                    "[{\"translate\":\"effect.minecraft.jump_boost\",\"color\":\"blue\",\"italic\":false},\" II (2:00)\"]",
+                    "\"\"",
+                    "{\"translate\":\"potion.whenDrank\",\"color\":\"dark_purple\",\"italic\":false}",
+                    "[{\"text\":\"+40% \",\"color\":\"blue\",\"italic\":false},{\"translate\":\"attribute.name.generic.movementSpeed\"}]"
+                ],
+                "minecraft:custom_data": {
+                    "custom": "energizing_potion"
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

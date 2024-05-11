@@ -1,4 +1,4 @@
-execute unless score lowGraphics Stats matches 1 run particle dust 0 0 0 100 13 37 -234 1 3 3 0.5 1000
+execute unless score lowGraphics Stats matches 1 run particle dust{color:[0.0,0.0,0.0],scale:4.0} 13 37 -234 1 3 3 0.5 1000
 execute unless score lowGraphics Stats matches 1 run summon minecraft:lightning_bolt 13 37 -234
 execute unless score lowGraphics Stats matches 1 run summon minecraft:lightning_bolt 13 37 -234
 execute unless score lowGraphics Stats matches 1 run summon minecraft:lightning_bolt 13 37 -234

@@ -68,10 +68,10 @@ fill 14 26 -251 15 26 -250 wheat[age=5] replace wheat
 fill 20 26 -253 21 26 -253 wheat[age=2]
 setblock 22 26 -253 wheat[age=4]
 setblock 20 26 -252 wheat[age=3]
-setblock 11 26 -247 grass
-setblock 12 26 -253 grass
-setblock 21 26 -249 grass
-setblock 15 26 -245 grass
+setblock 11 26 -247 short_grass
+setblock 12 26 -253 short_grass
+setblock 21 26 -249 short_grass
+setblock 15 26 -245 short_grass
 
 
  # Drowned

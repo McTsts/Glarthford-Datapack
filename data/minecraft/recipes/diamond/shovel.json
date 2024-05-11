@@ -4,7 +4,9 @@
   "ingredient": {
     "item": "minecraft:diamond_shovel"
   },
-  "result": "minecraft:diamond",
+  "result": {
+    "id": "minecraft:diamond"
+  },
   "experience": 0.35,
   "cookingtime": 400
 }

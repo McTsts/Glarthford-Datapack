@@ -1,6 +1,6 @@
 scoreboard players add @s Animation 2
 
-execute as @e[tag=tower_lower,scores={Animation=2}] run particle dust 0 0 0 100 -6 39 -185 1.5 4 1.5 0.5 1000
+execute as @e[tag=tower_lower,scores={Animation=2}] run particle dust{color:[0.0,0.0,0.0],scale:4.0} -6 39 -185 1.5 4 1.5 0.5 1000
 execute as @e[tag=tower_lower,scores={Animation=4}] unless entity @e[tag=tower_upper] run summon minecraft:armor_stand -5.5 40.55 -182.5 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":142}}],NoGravity:1,Marker:1,Rotation:[180.0f,0.0f],Tags:["tower_upperS"]}
 execute as @e[tag=tower_lower,scores={Animation=4}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":143}}]}
 execute as @e[tag=tower_lower,scores={Animation=16}] run clone 25 3 -179 19 1 -183 -9 34 -187
@@ -238,8 +238,8 @@ execute as @e[tag=tower_lower,scores={Animation=1000..1050}] at @s run particle 
 execute as @e[tag=tower_lower,scores={Animation=1000..1050}] at @e[tag=tower_upper] run particle minecraft:explosion ~ ~ ~ 1.5 1.5 1.5 1 1
 execute as @e[tag=tower_lower,scores={Animation=1000..1080}] at @s run particle minecraft:explosion ~ ~ ~ 1.5 1.5 1.5 1 1
 execute as @e[tag=tower_lower,scores={Animation=1000..1080}] at @e[tag=tower_upper] run particle minecraft:explosion ~ ~ ~ 1.5 1.5 1.5 1 1
-execute as @e[tag=tower_lower,scores={Animation=1000..1100}] at @s run particle block spruce_planks ~ ~ ~ 1.5 1.5 1.5 1 10
-execute as @e[tag=tower_lower,scores={Animation=1000..1140}] at @e[tag=tower_upper] run particle block spruce_planks ~ ~ ~ 1.5 1.5 1.5 1 10
+execute as @e[tag=tower_lower,scores={Animation=1000..1100}] at @s run particle block{block_state:{Name:"spruce_planks"}} ~ ~ ~ 1.5 1.5 1.5 1 10
+execute as @e[tag=tower_lower,scores={Animation=1000..1140}] at @e[tag=tower_upper] run particle block{block_state:{Name:"spruce_planks"}} ~ ~ ~ 1.5 1.5 1.5 1 10
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run particle minecraft:cloud 1.00 26.43 -193.00 1 0 1 0.2 100
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run clone 6 19 -191 3 18 -193 -2 26 -192
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run fill 2 26 -192 1 29 -196 minecraft:barrier

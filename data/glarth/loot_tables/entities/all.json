@@ -89,8 +89,12 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:healing\"}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:healing"
+                }
+              }
             }
           ]
         },
@@ -100,8 +104,12 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:strong_healing\"}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_healing"
+                }
+              }
             }
           ]
         },
@@ -151,8 +159,12 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:healing\"}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:healing"
+                }
+              }
             }
           ]
         },
@@ -162,8 +174,12 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:strong_healing\"}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_healing"
+                }
+              }
             }
           ]
         },

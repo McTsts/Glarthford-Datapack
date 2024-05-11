@@ -43,6 +43,6 @@ execute if score @s tbcAttackStage matches 10 if entity @e[tag=tbcMarkerMiddle,t
 execute if score @s tbcAttackStage matches 11 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.6 ~ ~
 execute if score @s tbcAttackStage matches 11 if entity @e[tag=tbcSelMarker,distance=..0.3] run function glarth:combat/action_enemy/util/done
 
-execute unless entity @s[tag=tbcEnderPriest] run particle item slime_ball ~ ~ ~ 0.3 0.3 0.3 0.1 3
+execute unless entity @s[tag=tbcEnderPriest] run particle item{item:"slime_ball"} ~ ~ ~ 0.3 0.3 0.3 0.1 3
 execute if entity @s[tag=tbcEnderPriest] run particle portal ~ ~ ~ 0.3 0.3 0.3 0.1 3
 execute if entity @s[tag=tbcEnderPriest] run particle dragon_breath ~ ~ ~ 0.3 0.3 0.3 0.1 1

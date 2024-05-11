@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": { 
+                    "custom_color": 1106019,
+                    "custom_effects": [
+                        { "id": "minecraft:jump_boost", "amplifier": 1, "duration": 1800, "show_particles": true, "show_icon": true, "ambient": true }
+                    ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.minecraft.potion.effect.swiftness\"}",
+                "minecraft:lore": [
+                    "[{\"translate\":\"effect.minecraft.jump_boost\",\"color\":\"blue\",\"italic\":false},\" II (1:30)\"]"
+                ],
+                "minecraft:custom_data": {
+                    "custom": "leaping"
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -207,29 +207,29 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 525 33 8 minecraft:gray_wool
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 523 33 9 minecraft:gray_wool
 # grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 520 32 16 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 516 32 21 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 513 32 15 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 521 32 11 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 520 32 9 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 515 32 9 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 514 32 7 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 514 32 9 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 512 32 8 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 511 32 16 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 515 32 20 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 522 32 20 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 521 32 21 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 523 32 13 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 525 32 16 minecraft:grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 520 32 16 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 516 32 21 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 098 run setblock 513 32 15 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 521 32 11 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 520 32 9 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run setblock 515 32 9 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 514 32 7 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 514 32 9 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 102 run setblock 512 32 8 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 511 32 16 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 515 32 20 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 104 run setblock 522 32 20 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 521 32 21 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 523 32 13 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 106 run setblock 525 32 16 minecraft:short_grass
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 527 32 15 minecraft:fern
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 527 32 13 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 513 32 12 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 526 32 12 minecraft:grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 positioned 522 32 6 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 110 positioned 526 32 13 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 110 positioned 513 32 8 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 112 positioned 526 32 17 run function glarth:mechanicseasonsplacetall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 527 32 13 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 513 32 12 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 run setblock 526 32 12 minecraft:short_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 108 positioned 522 32 6 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 110 positioned 526 32 13 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 110 positioned 513 32 8 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 112 positioned 526 32 17 run function glarth:mechanic/seasons/place/tall_grass
 # wall
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 076 run setblock 510 32 16 minecraft:stone_bricks
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 076 run setblock 510 32 15 minecraft:stone_brick_slab[type=bottom,waterlogged=false]

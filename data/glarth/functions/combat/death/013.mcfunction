@@ -1,5 +1,5 @@
 # Break Animation
-execute at @s run particle block snow_block ~ ~0.5 ~ 0.5 0.5 0.5 0 30
+execute at @s run particle block{block_state:{Name:"snow_block"}} ~ ~0.5 ~ 0.5 0.5 0.5 0 30
 execute at @s run playsound minecraft:block.snow.break block @a ~ ~ ~ 1 0.5
 
 # Reenable Attacks

@@ -12,14 +12,14 @@ execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 37 run playsound minecraft:block.grass.break hostile @a ~ ~ ~ 1 1.3
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 39 run playsound minecraft:block.grass.break hostile @a ~ ~ ~ 1 1.3
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 55 run playsound minecraft:block.grass.break hostile @a ~ ~ ~ 1 1.0
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 52..60 positioned ~ ~2.80 ~ run particle dust 1 1 1 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 53..60 positioned ~ ~2.95 ~ run particle dust 1 1 1 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 54..60 positioned ~ ~3.10 ~ run particle dust 1 1 1 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 55..60 positioned ~ ~3.25 ~ run particle dust 1 1 1 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..53 positioned ~ ~2.80 ~ run particle dust 0 1 0 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..36 positioned ~ ~2.95 ~ run particle dust 0 1 0 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..21 positioned ~ ~3.10 ~ run particle dust 0 1 0 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..04 positioned ~ ~3.25 ~ run particle dust 0 1 0 1 ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 52..60 positioned ~ ~2.80 ~ run particle dust{color:[1.0,1.0,1.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 53..60 positioned ~ ~2.95 ~ run particle dust{color:[1.0,1.0,1.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 54..60 positioned ~ ~3.10 ~ run particle dust{color:[1.0,1.0,1.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 55..60 positioned ~ ~3.25 ~ run particle dust{color:[1.0,1.0,1.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..53 positioned ~ ~2.80 ~ run particle dust{color:[0.0,1.0,0.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..36 positioned ~ ~2.95 ~ run particle dust{color:[0.0,1.0,0.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..21 positioned ~ ~3.10 ~ run particle dust{color:[0.0,1.0,0.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..04 positioned ~ ~3.25 ~ run particle dust{color:[0.0,1.0,0.0],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 0.01 1
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 58 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 64 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 01..30 at @s run particle minecraft:happy_villager ~ ~0.3 ~ 0.6 0.6 0.6 0.1 5

@@ -1,5 +1,5 @@
 # Break Animation
-execute at @s run particle block soul_sand ~ ~0.5 ~ 0.5 0.5 0.5 0 30
+execute at @s run particle block{block_state:{Name:"soul_sand"}} ~ ~0.5 ~ 0.5 0.5 0.5 0 30
 execute at @s run playsound minecraft:block.sand.break block @a ~ ~ ~ 1 0.5
 
 # Revert Attacks

@@ -9,13 +9,13 @@ execute if score wind Stats matches 0 run particle large_smoke -53 41 -201 0 1 0
 execute if score wind Stats matches 1 run particle large_smoke -53 41 -201 .6 1 .6 .05 0
 execute if score wind Stats matches 2 run particle large_smoke -53 41 -201 1.2 1.2 1.2 .05 0
 execute if score wind Stats matches 3 run particle large_smoke -53 41 -201 1.8 1 1.8 .05 0
-particle splash -56.5 27.1 -207.0 0 0 -5 0.05
-particle splash -56.3 27.1 -207.0 1 0 -5 0.05
-particle splash -56.1 27.1 -207.0 2 0 -5 0.05
-particle splash -56.7 27.1 -207.0 -1 0 -5 0.05
-particle splash -56.9 27.1 -207.0 -2 0 -5 0.05
+particle splash -56.5 27.1 -207.0 0 0 -5 0.05 1
+particle splash -56.3 27.1 -207.0 1 0 -5 0.05 1
+particle splash -56.1 27.1 -207.0 2 0 -5 0.05 1
+particle splash -56.7 27.1 -207.0 -1 0 -5 0.05 1
+particle splash -56.9 27.1 -207.0 -2 0 -5 0.05 1
 particle splash -57 27.0 -208 2 0.1 2 0 1
-particle block lime_concrete -57 27.0 -208 2 0.1 2 0 1 normal @a
+particle block{block_state:{Name:"lime_concrete"}} -57 27.0 -208 2 0.1 2 0 1 normal @a
 execute unless score season winter matches 1 run particle splash 7 29 -196 0.1 0.5 0.1 0 10
 particle large_smoke 88 38 -185 0 1 0 .03 0
 

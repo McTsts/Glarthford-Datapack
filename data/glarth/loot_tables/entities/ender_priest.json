@@ -9,8 +9,12 @@
           "name": "minecraft:elytra",
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{HideFlags:63,Unbreakable:1}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

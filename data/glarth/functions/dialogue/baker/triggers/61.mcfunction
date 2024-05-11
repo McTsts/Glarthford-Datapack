@@ -1,6 +1,6 @@
 #61 Baker | Give Flour
 function glarth:dialogue/baker/lines/trade2
-clear @s scute 1
+clear @s turtle_scute 1
 tag @e[tag=baker,type=armor_stand] add bread
 tag @e[tag=baker,type=armor_stand] add a
 

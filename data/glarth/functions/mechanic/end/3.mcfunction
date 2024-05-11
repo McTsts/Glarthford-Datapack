@@ -57,14 +57,14 @@ execute if score timer end matches 87 run data merge entity @e[tag=bucket,limit=
 execute if score timer end matches 88 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-14.0f,0.0f,66.0f]}}
 execute if score timer end matches 89 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-15.0f,0.0f,65.0f]}}
 
-execute if score timer end matches 87 as @e[tag=bucket] at @s run particle block water ^0.5 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 88 as @e[tag=bucket] at @s run particle block water ^0.7 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 89 as @e[tag=bucket] at @s run particle block water ^0.9 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 90 as @e[tag=bucket] at @s run particle block water ^1.1 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 91 as @e[tag=bucket] at @s run particle block water ^1.3 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 92 as @e[tag=bucket] at @s run particle block water ^1.5 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 93 as @e[tag=bucket] at @s run particle block water ^1.7 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
-execute if score timer end matches 94 as @e[tag=bucket] at @s run particle block water ^1.9 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 87 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^0.5 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 88 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^0.7 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 89 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^0.9 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 90 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^1.1 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 91 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^1.3 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 92 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^1.5 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 93 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^1.7 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
+execute if score timer end matches 94 as @e[tag=bucket] at @s run particle block{block_state:{Name:"water"}} ^1.9 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
 
 execute if score timer end matches 92 run setblock 9 26 -211 air 
 execute if score timer end matches 92 run particle minecraft:cloud 9 26 -211 0.3 0.3 0.3 0.1 10

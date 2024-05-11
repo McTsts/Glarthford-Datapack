@@ -6,7 +6,7 @@ fill 274 31 27 305 54 -4 minecraft:oak_leaves replace birch_leaves
 
 #undo winter
 fill 274 31 27 305 54 -4 minecraft:oak_leaves replace acacia_leaves
-fill 274 31 27 305 54 -4 grass replace snow
+fill 274 31 27 305 54 -4 short_grass replace snow
 fill 274 31 27 305 54 -4 minecraft:command_block{auto:1b,Command:"function glarth:mechanic/seasons/place/tall_grass"} replace minecraft:pink_carpet
 
 # Player Pos x3

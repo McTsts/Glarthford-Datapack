@@ -70,10 +70,10 @@ execute as @a[scores={tbcInfection=1..,playerid=1}] at @e[tag=tbcPlayerAS1,type=
 execute as @a[scores={tbcInfection=1..,playerid=2}] at @e[tag=tbcPlayerAS2,type=armor_stand] run particle minecraft:spit ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
 execute as @a[scores={tbcInfection=1..,playerid=3}] at @e[tag=tbcPlayerAS3,type=armor_stand] run particle minecraft:spit ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
 # Frozen
-execute as @e[scores={tbcFreeze=0..},type=armor_stand] at @s run particle minecraft:block ice ~ ~0.5 ~ 0.3 0.3 0.3 0.1 3
-execute as @a[scores={tbcFreeze=0..,playerid=1}] at @e[tag=tbcPlayerAS1,type=armor_stand] run particle minecraft:block ice ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
-execute as @a[scores={tbcFreeze=0..,playerid=2}] at @e[tag=tbcPlayerAS2,type=armor_stand] run particle minecraft:block ice ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
-execute as @a[scores={tbcFreeze=0..,playerid=3}] at @e[tag=tbcPlayerAS3,type=armor_stand] run particle minecraft:block ice ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
+execute as @e[scores={tbcFreeze=0..},type=armor_stand] at @s run particle minecraft:block{block_state:{Name:"ice"}} ~ ~0.5 ~ 0.3 0.3 0.3 0.1 3
+execute as @a[scores={tbcFreeze=0..,playerid=1}] at @e[tag=tbcPlayerAS1,type=armor_stand] run particle minecraft:block{block_state:{Name:"ice"}} ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
+execute as @a[scores={tbcFreeze=0..,playerid=2}] at @e[tag=tbcPlayerAS2,type=armor_stand] run particle minecraft:block{block_state:{Name:"ice"}} ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
+execute as @a[scores={tbcFreeze=0..,playerid=3}] at @e[tag=tbcPlayerAS3,type=armor_stand] run particle minecraft:block{block_state:{Name:"ice"}} ~ ~0.5 ~ 0.3 0.3 0.3 0.1 1
 # Blindness
 effect give @a[scores={tbcBlindness=1..}] blindness 2 0 true
 execute as @e[scores={tbcBlindness=1..},type=armor_stand] at @s run particle minecraft:campfire_cosy_smoke ~ ~0.5 ~ 0.4 0.4 0.4 0.01 1

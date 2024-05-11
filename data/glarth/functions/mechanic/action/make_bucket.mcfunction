@@ -16,7 +16,7 @@ execute if score @s action matches 500..1170 unless entity @e[tag=mbPlank5] run 
 execute if score @s action matches 501..700 as @e[tag=mbPlank] at @s run tp @s ~ ~ ~ ~1 ~
 execute if score @s action matches 701..900 as @e[tag=mbPlank] at @s run tp @s ~ ~ ~ ~5 ~
 execute if score @s action matches 901..1100 as @e[tag=mbPlank] at @s run tp @s ~ ~ ~ ~10 ~
-execute if score @s action matches 1101..1150 as @e[tag=mbPlank] at @s run particle minecraft:block spruce_planks ~ ~1 ~ 0.2 0.2 0.2 0 5
+execute if score @s action matches 1101..1150 as @e[tag=mbPlank] at @s run particle minecraft:block{block_state:{Name:"spruce_planks"}} ~ ~1 ~ 0.2 0.2 0.2 0 5
 
 execute if score @s action matches 1171.. run kill @e[tag=mbPlank] 
 execute if score @s action matches ..1170 if entity @e[tag=mbBucket] run kill @e[tag=mbBucket]

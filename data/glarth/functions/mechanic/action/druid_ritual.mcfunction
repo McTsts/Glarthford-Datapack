@@ -15,28 +15,28 @@ execute if entity @s[scores={rit_time=1},nbt={OnGround:1b}] at @e[tag=druid] at 
 execute if entity @s[scores={rit_time=1},nbt={OnGround:1b}] at @e[tag=druid] run function glarth:dialogue/druid/lines/ritual
 
 execute if entity @s[scores={rit_time=1},nbt={OnGround:1b}] run data merge entity @s {Motion:[-0.45d,0.28d,0.0d],Rotation:[90.0f,0.0f]}
-execute if entity @s[scores={rit_time=1}] run particle dust 0 0.2 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=1}] run particle dust{color:[0.0,0.2,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=4},nbt={OnGround:1b}] run data merge entity @s {Motion:[0.0d,0.28d,-0.45d],Rotation:[180.0f,0.0f]}
-execute if entity @s[scores={rit_time=4}] run particle dust 0 0.5 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=4}] run particle dust{color:[0.0,0.5,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=7},nbt={OnGround:1b}] run data merge entity @s {Motion:[0.2225d,0.28d,-0.45d],Rotation:[-150.0f,0.0f]}
-execute if entity @s[scores={rit_time=7}] run particle dust 0 0.2 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=7}] run particle dust{color:[0.0,0.2,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=10},nbt={OnGround:1b}] run data merge entity @s {Motion:[-0.45d,0.28d,0.0d],Rotation:[90.0f,0.0f]}
-execute if entity @s[scores={rit_time=10}] run particle dust 0 0.5 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=10}] run particle dust{color:[0.0,0.5,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=13},nbt={OnGround:1b}] run data merge entity @s {Motion:[0.2225d,0.28d,0.45d],Rotation:[-30.0f,0.0f]}
-execute if entity @s[scores={rit_time=13}] run particle dust 0 0.2 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=13}] run particle dust{color:[0.0,0.2,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=16},nbt={OnGround:1b}] run data merge entity @s {Motion:[0.0d,0.28d,0.45d],Rotation:[0.0f,0.0f]}
-execute if entity @s[scores={rit_time=16}] run particle dust 0 0.5 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=16}] run particle dust{color:[0.0,0.5,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=19},nbt={OnGround:1b}] run data merge entity @s {Motion:[0.45d,0.28d,0.0d],Rotation:[-90.0f,0.0f]}
-execute if entity @s[scores={rit_time=19}] run particle dust 0 0.2 1 1 ~ ~2 ~ 0.2 0.2 0.2 0 3
+execute if entity @s[scores={rit_time=19}] run particle dust{color:[0.0,0.2,1.0],scale:1} ~ ~2 ~ 0.2 0.2 0.2 0 3
 
 execute if entity @s[scores={rit_time=22},nbt={OnGround:1b}] run data merge entity @s {Rotation:[160.0f,0.0f]}
-execute if entity @s[scores={rit_time=22},nbt={OnGround:1b}] run particle minecraft:dust 1 0.1 0 1 ~ ~2 ~ 0.7 0.5 0.7 0.3 25
+execute if entity @s[scores={rit_time=22},nbt={OnGround:1b}] run particle minecraft:dust{color:[1.0,0.5,0.0],scale:1} ~ ~2 ~ 0.7 0.5 0.7 0.3 25
 execute if entity @s[scores={rit_time=22},nbt={OnGround:1b}] run particle minecraft:crit 52.47 40.09 -126.83 2 2 2 0.2 50
 
 execute if entity @s[scores={rit_time=22},nbt={OnGround:1b}] run playsound minecraft:block.fire.extinguish master @a ~ ~ ~ 10 0.5

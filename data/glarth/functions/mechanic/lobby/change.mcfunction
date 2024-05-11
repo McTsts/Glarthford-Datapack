@@ -5,7 +5,7 @@ kill @e[type=end_crystal]
 fill 186 15 -106 198 30 -118 air replace torch
 fill 186 15 -106 198 30 -118 air replace #minecraft:carpets
 fill 186 15 -106 198 30 -118 air replace #minecraft:flowers
-fill 186 15 -106 198 30 -118 air replace grass
+fill 186 15 -106 198 30 -118 air replace short_grass
 fill 186 15 -106 198 30 -118 air replace large_fern
 stopsound @a block
 fill 186 15 -106 198 30 -118 air replace tall_grass

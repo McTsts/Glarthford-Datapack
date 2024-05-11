@@ -1,6 +1,6 @@
 # drop item
 playsound minecraft:entity.item.pickup block @a ~ ~-0.3 ~ 1 0.7
-particle item apple ~ ~-0.3 ~ 0.1 0.1 0.1 0.1 10
+particle item{item:"apple"} ~ ~-0.3 ~ 0.1 0.1 0.1 0.1 10
 summon item ~ ~-0.3 ~ {Item:{id:"apple",count:1},Motion:[0.0d,0.05d,0.0d]}
 # kill
 scoreboard players operation #apl appleid = @s appleid 

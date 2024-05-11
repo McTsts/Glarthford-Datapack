@@ -12,7 +12,7 @@ execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_e
 # Summon Baby Zombies
 execute if score @s tbcAttackStage matches 1 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcAttackDummy] at @s run tp @s ~ ~0.05 ~ facing entity @e[tag=tbcTargetAS,limit=1]
-execute if score @s tbcAttackStage matches 1 as @e[tag=tbcAttackDummy] at @s run particle block dirt ~ ~ ~ 0.3 0.1 0.3 0.1 10
+execute if score @s tbcAttackStage matches 1 as @e[tag=tbcAttackDummy] at @s run particle block{block_state:{Name:"dirt"}} ~ ~ ~ 0.3 0.1 0.3 0.1 10
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 10 run playsound minecraft:entity.spider.hurt hostile @a ~ ~ ~ 1 2
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 20 run playsound minecraft:entity.spider.ambient hostile @a ~ ~ ~ 1 2
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 30 run tag @e[tag=tbcAttackDummy,limit=1,sort=nearest] add tbcAD_Sel
@@ -27,7 +27,7 @@ execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 1 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 10 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 0..10 as @e[tag=tbcAD_Sel] at @s rotated ~ 0 run tp @s ^ ^ ^0.075
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 11 as @e[tag=tbcAD_Sel] at @s if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 11 as @e[tag=tbcAD_Sel] at @s if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block{block_state:{Name:"stone"}} ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 11 run scoreboard players operation damage tbcStats = @e[tag=tbcTurn] tbcStrength
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 11 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 25 as @e[tag=tbcAD_Sel] at @s run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.1 100
@@ -46,7 +46,7 @@ execute if score @s tbcAttackStage matches 5 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 1 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 10 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 0..10 as @e[tag=tbcAD_Sel] at @s rotated ~ 0 run tp @s ^ ^ ^0.075
-execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 as @e[tag=tbcAD_Sel] at @s if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
+execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 as @e[tag=tbcAD_Sel] at @s if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block{block_state:{Name:"stone"}} ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 run scoreboard players operation damage tbcStats = @e[tag=tbcTurn] tbcStrength
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 11 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 25 as @e[tag=tbcAD_Sel] at @s run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.1 100
@@ -65,7 +65,7 @@ execute if score @s tbcAttackStage matches 7 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 5 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 13 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 0..13 rotated ~ 0 run tp @s ^ ^ ^0.07
-execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 14 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
+execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 14 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block{block_state:{Name:"stone"}} ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 14 run scoreboard players operation damage tbcStats = @s tbcStrength
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 14 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 7 if score @s tbcAttackTimer matches 17 run kill @e[tag=tbcTempMarker,type=area_effect_cloud]

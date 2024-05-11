@@ -34,7 +34,7 @@ execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 14 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 25 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 0..25 rotated ~ 0 run tp @s[tag=!tbcReady] ^ ^ ^0.06
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block{block_state:{Name:"stone"}} ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 run scoreboard players operation damage tbcStats = @s tbcStrength
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 32 run function glarth:combat/action_enemy/util/ready

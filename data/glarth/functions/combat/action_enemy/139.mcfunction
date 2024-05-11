@@ -15,7 +15,7 @@ execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:turtle_egg[eggs=2]
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle minecraft:block{block_state:{Name:"turtle_egg"}} ~ ~ ~ 0.3 0.3 0.3 0.1 10
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init
@@ -29,7 +29,7 @@ execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:turtle_egg[eggs=1]
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle minecraft:block{block_state:{Name:"turtle_egg"}} ~ ~ ~ 0.3 0.3 0.3 0.1 10
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 7 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init
@@ -43,7 +43,7 @@ execute if score @s tbcAttackStage matches 9 run scoreboard players add @s tbcAt
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:air
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
-execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10
+execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle minecraft:block{block_state:{Name:"turtle_egg"}} ~ ~ ~ 0.3 0.3 0.3 0.1 10
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 10 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init

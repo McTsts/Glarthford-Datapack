@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"book.gary.title\"}",
+                "minecraft:lore": [
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.byAuthor\",\"with\":[{\"translate\":\"book.gary.author\"}]}",
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.generation.0\"}"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": { 
+                    "custom": "book" 
+                },
+                "minecraft:written_book_content": {
+                    "author": "Gary",
+                    "title": "",
+                    "resolved": true,
+                    "pages": [
+                        "{\"translate\":\"book.gary.1\"}",
+                        "{\"translate\":\"book.gary.2\"}",
+                        "{\"translate\":\"book.gary.3\"}",
+                        "{\"translate\":\"book.gary.4\"}"
+                    ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

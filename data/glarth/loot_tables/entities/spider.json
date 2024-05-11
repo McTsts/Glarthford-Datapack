@@ -47,8 +47,24 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:386,Unbreakable:1,display:{Name:'{\"translate\":\"tbc.attack.staff.poison_staff\",\"italic\":false}',Lore:['\"\"','{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}','[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.low\"}]}]','[\" \",{\"translate\":\"tbc.attack.msg.name.poison2\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.short\"}]}]']},HideFlags:63}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"tbc.attack.staff.poison_staff\"}",
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.low\"}]}]",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.poison2\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.short\"}]}]"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": []
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_model_data": 386
+              }
             }
           ]
         }

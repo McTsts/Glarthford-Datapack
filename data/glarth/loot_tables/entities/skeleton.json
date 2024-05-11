@@ -78,8 +78,22 @@
               "damage": 0.8443305573350416
             },
             {
-              "function": "set_nbt",
-              "tag": "{Unbreakable:1,display:{Name:'{\"translate\":\"tbc.attack.staff.damage_staff\",\"italic\":false}',Lore:['\"\"','{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}','[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.average\"}]}]']},HideFlags:63}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"tbc.attack.staff.damage_staff\"}",
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.average\"}]}]"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": []
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

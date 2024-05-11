@@ -9,8 +9,19 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{custom:\"hoglin_meat\",CustomModelData:43,HideFlags:63,display:{Name:'{\"translate\":\"item.hoglin_meat\",\"italic\":false}'}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.hoglin_meat\"}",
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": []
+                },
+                "minecraft:custom_data": { "custom": "hoglin_meat" },
+                "minecraft:custom_model_data": 43,
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
             },
             {
               "function": "minecraft:looting_enchant",

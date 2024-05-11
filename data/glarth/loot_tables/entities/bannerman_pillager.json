@@ -9,8 +9,11 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{bow:\"crossbow\"}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": {"bow":"crossbow"}
+              }
             }
           ]
         }

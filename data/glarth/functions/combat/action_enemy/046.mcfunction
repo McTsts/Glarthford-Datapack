@@ -40,7 +40,7 @@ execute if score @s tbcAttackStage matches 5 run scoreboard players set rotation
 execute if score @s tbcAttackStage matches 5 run scoreboard players operation rotation tbcWhip += @s tbcAttackTimer
 execute if score @s tbcAttackStage matches 5 run scoreboard players set length tbcWhip 50
 execute if score @s tbcAttackStage matches 5 run scoreboard players set dir tbcWhip 1
-execute if score @s tbcAttackStage matches 5 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
+#execute if score @s tbcAttackStage matches 5 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
 execute if score @s tbcAttackStage matches 5 run function glarth:combat/action_enemy/helper/whip_fire
 execute if score @s tbcAttackStage matches 5 store result score check tbcWhip run data get entity @s Rotation[0] 1
 execute if score @s tbcAttackStage matches 5 if score check tbcWhip >= rightEnd tbcWhip if score @s tbcAttackTimer matches ..0 run function glarth:combat/action_enemy/util/next_stage
@@ -58,7 +58,7 @@ execute if score @s tbcAttackStage matches 7 run scoreboard players set rotation
 execute if score @s tbcAttackStage matches 7 run scoreboard players operation rotation tbcWhip += @s tbcAttackTimer
 execute if score @s tbcAttackStage matches 7 run scoreboard players set length tbcWhip 50
 execute if score @s tbcAttackStage matches 7 run scoreboard players set dir tbcWhip -1
-execute if score @s tbcAttackStage matches 7 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
+#execute if score @s tbcAttackStage matches 7 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
 execute if score @s tbcAttackStage matches 7 run function glarth:combat/action_enemy/helper/whip_fire
 execute if score @s tbcAttackStage matches 7 store result score check tbcWhip run data get entity @s Rotation[0] 1
 execute if score @s tbcAttackStage matches 7 if score check tbcWhip <= leftEnd tbcWhip if score @s tbcAttackTimer matches ..0 run function glarth:combat/action_enemy/util/next_stage
@@ -76,7 +76,7 @@ execute if score @s tbcAttackStage matches 9 run scoreboard players set rotation
 execute if score @s tbcAttackStage matches 9 run scoreboard players operation rotation tbcWhip += @s tbcAttackTimer
 execute if score @s tbcAttackStage matches 9 run scoreboard players set length tbcWhip 50
 execute if score @s tbcAttackStage matches 9 run scoreboard players set dir tbcWhip 1
-execute if score @s tbcAttackStage matches 9 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
+#execute if score @s tbcAttackStage matches 9 run scoreboard players operation dir tbcWhip *= @a[tag=inTBC]
 execute if score @s tbcAttackStage matches 9 run function glarth:combat/action_enemy/helper/whip_fire
 execute if score @s tbcAttackStage matches 9 store result score check tbcWhip run data get entity @s Rotation[0] 1
 execute if score @s tbcAttackStage matches 9 if score check tbcWhip >= rightEnd tbcWhip if score @s tbcAttackTimer matches ..0 run function glarth:combat/action_enemy/util/next_stage

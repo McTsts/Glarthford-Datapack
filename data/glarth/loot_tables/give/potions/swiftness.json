@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": { 
+                    "custom_color": 8239305,
+                    "custom_effects": [
+                        { "id": "minecraft:speed", "amplifier": 0, "duration": 3600, "show_particles": true, "show_icon": true, "ambient": true }
+                    ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.minecraft.potion.effect.swiftness\"}",
+                "minecraft:lore": [
+                    "[{\"translate\":\"effect.minecraft.speed\",\"color\":\"blue\",\"italic\":false},\" (3:00)\"]",
+                    "\"\"",
+                    "{\"translate\":\"potion.whenDrank\",\"color\":\"dark_purple\",\"italic\":false}",
+                    "[{\"text\":\"+20% \",\"color\":\"blue\",\"italic\":false},{\"translate\":\"attribute.name.generic.movementSpeed\"}]"
+                ],
+                "minecraft:custom_data": {
+                    "custom": "swiftness"
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

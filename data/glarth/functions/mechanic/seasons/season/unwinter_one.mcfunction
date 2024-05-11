@@ -1,5 +1,5 @@
 fill ~ 1 ~ ~ 80 ~ grass_block replace podzol
-fill ~ 1 ~ ~ 80 ~ grass replace cyan_carpet
+fill ~ 1 ~ ~ 80 ~ short_grass replace cyan_carpet
 fill ~ 1 ~ ~ 80 ~ fern replace purple_carpet
 fill ~ 1 ~ ~ 75 ~ spruce_leaves replace dark_oak_leaves 
 fill ~ 1 ~ ~ 80 ~ oak_leaves replace acacia_leaves 

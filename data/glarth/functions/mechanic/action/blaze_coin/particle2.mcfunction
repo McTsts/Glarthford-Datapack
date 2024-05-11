@@ -26,13 +26,13 @@ execute as @s[scores={action=1050}] at @s run particle lava 22 27.9 -204 0.1 0.1
 execute as @s[scores={action=1050}] at @s run playsound minecraft:entity.firework.twinkle neutral @a ~ ~ ~ 1 0
 execute as @s[scores={action=1070}] at @s run particle lava 22 27.9 -204 0.1 0.1 0.1 0.1 350
 execute as @s[scores={action=1070}] at @s run playsound minecraft:entity.firework.twinkle neutral @a ~ ~ ~ 1 0
-execute as @s[scores={action=1080}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 4 normal @a 
+execute as @s[scores={action=1080}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 4 normal @a 
 execute as @s[scores={action=1070}] at @s run playsound minecraft:entity.blaze.death neutral @a ~ ~ ~ 1 2
-execute as @s[scores={action=1090}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 8 normal @a
+execute as @s[scores={action=1090}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 8 normal @a
 execute as @s[scores={action=1090}] at @s run playsound minecraft:entity.elder_guardian.curse neutral @a ~ ~ ~ 1 2
-execute as @s[scores={action=1100}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 16 normal @a 
-execute as @s[scores={action=1110}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 32 normal @a 
-execute as @s[scores={action=1120}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 64 normal @a 
-execute as @s[scores={action=1130}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 128 normal @a 
-execute as @s[scores={action=1140}] at @s run particle item blaze_powder 22 27.9 -204 0.1 0.1 0.1 0.1 256 normal @a 
+execute as @s[scores={action=1100}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 16 normal @a 
+execute as @s[scores={action=1110}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 32 normal @a 
+execute as @s[scores={action=1120}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 64 normal @a 
+execute as @s[scores={action=1130}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 128 normal @a 
+execute as @s[scores={action=1140}] at @s run particle item{item:"blaze_powder"} 22 27.9 -204 0.1 0.1 0.1 0.1 256 normal @a 
 execute as @s[scores={action=1140}] at @s run playsound minecraft:block.anvil.use neutral @a ~ ~ ~ 1 1
