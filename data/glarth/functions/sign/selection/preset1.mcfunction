@@ -1,6 +1,6 @@
 function glarth:sign/ray_init
-execute if score @s signRay matches 1..2 run data merge block ~ ~ ~ {Text1:'{"color":"dark_gray","translate":"lobby.selection.preset.save","with":["1"]}'}
-execute if score @s signRay matches 3..4 run data merge block ~ ~ ~ {Text4:'{"color":"dark_gray","translate":"lobby.selection.preset.load","with":["1"]}'}
+execute if score @s signRay matches 1..2 run data merge block ~ ~ ~ {front_text:{messages:['{"color":"dark_gray","translate":"lobby.selection.preset.save","with":["1"]}']}}
+execute if score @s signRay matches 3..4 run data merge block ~ ~ ~ {front_text:{messages:['""','""','""','{"color":"dark_gray","translate":"lobby.selection.preset.load","with":["1"]}']}}
 execute if score @s signRay matches 1..2 run scoreboard players operation @s charTypeP1 = @s charType
 execute if score @s signRay matches 1..2 run scoreboard players operation @s charBaseP1 = @s charBase
 execute if score @s signRay matches 1..2 run scoreboard players operation @s charSpouseP1 = @s charSpouse

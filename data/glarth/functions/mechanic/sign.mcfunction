@@ -13,11 +13,11 @@ tellraw @a[scores={sign=6..6}] ["",{"translate":"particles","color":"green","wit
 scoreboard players set @a[scores={sign=7..7}] particles 6
 tellraw @a[scores={sign=7..7}] ["",{"translate":"particles","color":"green","with":[{"translate":"particles.6","color":"green","italic":true}]}]
 
-execute as @a[scores={sign=8..8}] run data merge block 111 20 -145 {Text1:'[{"text":""}]',Text2:'[{"translate":"sign.infmode","color":"dark_gray","bold":"true"}]',Text3:'[{"clickEvent":{"action":"run_command","value":"/trigger sign set 9"},"translate":"sign.on","color":"dark_green","bold":"true"}]',Text4:'[{"text":""}]'}
+execute as @a[scores={sign=8..8}] run data merge block 111 20 -145 {front_text:{messages:['[{"text":""}]','[{"translate":"sign.infmode","color":"dark_gray","bold":"true"}]','[{"clickEvent":{"action":"run_command","value":"/trigger sign set 9"},"translate":"sign.on","color":"dark_green","bold":"true"}]','[{"text":""}]']}}
 execute as @a[scores={sign=8..8}] run tellraw @s ["",{"translate":"infmode.on","color":"dark_green"}]
 execute as @a[scores={sign=8..8}] run tag @e[tag=area_main] add infmode
 
-execute as @a[scores={sign=9..9}] run data merge block 111 20 -145 {Text1:'[{"text":""}]',Text2:'[{"translate":"sign.infmode","color":"dark_gray","bold":"true"}]',Text3:'[{"clickEvent":{"action":"run_command","value":"/trigger sign set 8"},"translate":"sign.off","color":"dark_red","bold":"true"}]',Text4:'[{"text":""}]'}
+execute as @a[scores={sign=9..9}] run data merge block 111 20 -145 {front_text:{messages:['[{"text":""}]','[{"translate":"sign.infmode","color":"dark_gray","bold":"true"}]','[{"clickEvent":{"action":"run_command","value":"/trigger sign set 8"},"translate":"sign.off","color":"dark_red","bold":"true"}]','[{"text":""}]']}}
 execute as @a[scores={sign=9..9}] run tellraw @s ["",{"translate":"infmode.off","color":"dark_red"}]
 execute as @a[scores={sign=9..9}] run tag @e[tag=area_main] remove infmode
 

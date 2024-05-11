@@ -65,9 +65,9 @@ execute if score lPlayers Temp matches 1..3 if score quest Stats matches 11 if s
 execute if score lPlayers Temp matches 1..3 run fill 190 22 -114 194 22 -110 minecraft:air replace minecraft:red_concrete
 execute unless score lPlayers Temp matches 1..3 run fill 190 22 -114 194 22 -110 minecraft:red_concrete replace minecraft:air
 execute unless score lPlayers Temp matches 1..3 run fill 190 22 -114 194 22 -110 minecraft:red_concrete replace minecraft:water
-execute if score lPlayers Temp matches 100 run setblock 192 23 -112 oak_sign[rotation=4]{Text1:'{"translate":"lobby.cs3.1","bold":true}',Text2:'{"translate":"lobby.cs3.2"}',Text3:'{"translate":"lobby.cs3.3"}',Text4:'{"translate":"lobby.cs3.4"}'}
-execute if score lPlayers Temp matches 4..99 run setblock 192 23 -112 oak_sign[rotation=4]{Text1:'{"translate":"lobby.cs1.1","bold":true}',Text2:'{"translate":"lobby.cs1.2"}',Text3:'{"translate":"lobby.cs1.3"}',Text4:'{"translate":"lobby.cs1.4"}'}
-execute if score lPlayers Temp matches 0 run setblock 192 23 -112 oak_sign[rotation=4]{Text1:'{"translate":"lobby.cs2.1","bold":true}',Text2:'{"translate":"lobby.cs2.2"}',Text3:'{"translate":"lobby.cs2.3"}',Text4:'{"translate":"lobby.cs2.4"}'}
+execute if score lPlayers Temp matches 100 run setblock 192 23 -112 oak_sign[rotation=4]{front_text:{messages:['{"translate":"lobby.cs3.1","bold":true}','{"translate":"lobby.cs3.2"}','{"translate":"lobby.cs3.3"}','{"translate":"lobby.cs3.4"}']}}
+execute if score lPlayers Temp matches 4..99 run setblock 192 23 -112 oak_sign[rotation=4]{front_text:{messages:['{"translate":"lobby.cs1.1","bold":true}','{"translate":"lobby.cs1.2"}','{"translate":"lobby.cs1.3"}','{"translate":"lobby.cs1.4"}']}}
+execute if score lPlayers Temp matches 0 run setblock 192 23 -112 oak_sign[rotation=4]{front_text:{messages:['{"translate":"lobby.cs2.1","bold":true}','{"translate":"lobby.cs2.2"}','{"translate":"lobby.cs2.3"}','{"translate":"lobby.cs2.4"}']}}
 execute unless score lPlayers Temp matches 1..3 run fill 193 23 -111 191 23 -113 minecraft:structure_void replace air
 execute unless score lPlayers Temp matches 1..3 run fill 190 23 -114 194 23 -110 minecraft:light[level=15] replace air
 
