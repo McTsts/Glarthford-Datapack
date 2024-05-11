@@ -54,13 +54,13 @@ summon area_effect_cloud 127 19.7 -129 {Radius:0.5f,Duration:2147483647,Particle
 
 summon area_effect_cloud 108.0 21 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","im"],CustomName:"§7§8§kT§r §7§n§lInformation:§r §8§kS",CustomNameVisible:1}
 summon area_effect_cloud 108.0 20.75 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i1"],CustomName:"§7This map has custom music, made by our",CustomNameVisible:1}
-summon area_effect_cloud 108.0 20.5 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i2"],CustomName:"§7Team Members, that means you can use",CustomNameVisible:1}
+summon area_effect_cloud 108.0 20.5 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i2"],CustomName:"§7team members, meaning  that you can use",CustomNameVisible:1}
 summon area_effect_cloud 108.0 20.25 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i3"],CustomName:"§7it in e.g. videos! It's controlled by the ",CustomNameVisible:1}
 summon area_effect_cloud 108.0 20.0 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i4"],CustomName:"§7Jukebox/Noteblock slider! ",CustomNameVisible:1}
 summon area_effect_cloud 108.0 19.75 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i5"],CustomName:"§7There is also lots of Voice Acting in this ",CustomNameVisible:1}
 summon area_effect_cloud 108.0 19.5 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i6"],CustomName:"§7map. It is controlled with the Voices slider! ",CustomNameVisible:1}
-summon area_effect_cloud 108.0 19.25 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7This map is also available in a couple of",CustomNameVisible:1}
-summon area_effect_cloud 108.0 19.0 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7languages, just change your Minecraft",CustomNameVisible:1}
+summon area_effect_cloud 108.0 19.25 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7This map is also available in German & Russian",CustomNameVisible:1}
+summon area_effect_cloud 108.0 19.0 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7Just change your Minecraft",CustomNameVisible:1}
 summon area_effect_cloud 108.0 18.75 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7language to also change the map",CustomNameVisible:1}
 summon area_effect_cloud 108.0 18.5 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i7"],CustomName:"§7language!",CustomNameVisible:1}
 

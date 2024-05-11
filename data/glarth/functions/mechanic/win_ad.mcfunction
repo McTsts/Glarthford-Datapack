@@ -12,5 +12,8 @@
 		execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 6 6
 			execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ advancement grant @a only custom:places/b6
 			
-			scoreboard players add @s[m=2] adVictory 1
+			scoreboard players add @a[m=2] adVictory 1
+			advancement grant @a[score_adVictory_min=1] only custom:victory/1
+			advancement grant @a[score_adVictory_min=3] only custom:victory/3
+			advancement grant @a[score_adVictory_min=5] only custom:victory/5
 			function mctsts:mechanic/end

@@ -1,1 +1,2 @@
 tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"viktor","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"viktor.d","color":"gray"}]
+playsound viktor1 voice @a[r=5] ~ ~ ~ 100 1
