@@ -6,9 +6,9 @@ execute if score start tbcStats matches 3 run function glarth:combat/next
 
 function glarth:combat/count
 
-execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run replaceitem entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head diamond_hoe{CustomModelData:30}
+execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run item replace entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head with diamond_hoe{CustomModelData:30}
 execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run tag @s add tbcHasBee
-execute as @e[tag=tbcEnemy,scores={tbcBee=..0},type=armor_stand,tag=tbcHasBee] at @s run replaceitem entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head air
+execute as @e[tag=tbcEnemy,scores={tbcBee=..0},type=armor_stand,tag=tbcHasBee] at @s run item replace entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head with air
 execute as @e[tag=tbcEnemy,scores={tbcBee=..0},type=armor_stand,tag=tbcHasBee] at @s run tag @s remove tbcHasBee
 
 tag @a[gamemode=!adventure] remove tbcTurn
@@ -50,3 +50,6 @@ execute as @a[gamemode=adventure,scores={tbcRFire=1..}] run effect give @s fire_
 # spec void
 execute as @a[gamemode=spectator] at @s positioned ~ -15 ~ if entity @s[distance=..10] run tp @s ~ ~15 ~
 execute as @a[gamemode=spectator] at @s positioned ~ -100 ~ if entity @s[distance=..90] run tp @s ~ ~100 ~
+
+# kill invalid enemies
+execute as @e[tag=tbcEnemy,tag=!tbcEnemy1,tag=!tbcEnemy2,tag=!tbcEnemy3,tag=!tbcEnemy4,tag=!tbcEnemy5,tag=!tbcEnemy6,tag=!tbcEnemy7,tag=!tbcEnemy8,tag=!tbcEnemy9] run function glarth:combat/die_enemy

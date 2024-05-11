@@ -7,9 +7,11 @@ scoreboard players set infection tbcStats 0
 scoreboard players set slowness tbcStats 0
 scoreboard players set pumpkin tbcStats 0
 scoreboard players set wither tbcStats 0
+scoreboard players set blindness tbcStats 0
+scoreboard players set queuex tbcStats 0
 tag @e remove tbcMarkerMiddleY
 tag @e remove tbcMarkerMiddleX
 execute as @e[scores={tbcID=1..}] run function glarth:combat/set_loc
 execute as @e[tag=charQB] run function glarth:combat/set_loc
-execute as @e[scores={tbcID=1..}] at @s as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head air
+execute as @e[scores={tbcID=1..}] at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with air
 execute as @e[scores={tbcID=1}] run function glarth:combat/done

@@ -1,0 +1,1 @@
+tag @e[scores={tbcSel=1}] add tbcTempTarget

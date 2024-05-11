@@ -43,6 +43,7 @@ give @a[scores={playerid=1..}] minecraft:bow{bow:"default"}
 give @a[scores={playerid=1..}] diamond_hoe{CustomModelData:38,HideFlags:63,custom:"tophat",display:{Name:'{"translate":"item.tophat","italic":false}'}}
 give @a[scores={playerid=1..}] ink_sac 10
 give @a[scores={playerid=1..}] magma_cream 10
+give @a[scores={playerid=1..}] minecraft:snowball 2
 
 # Potion
 give @a[scores={playerid=1..}] minecraft:potion{custom:"swiftness"}
@@ -63,7 +64,7 @@ give @a[scores={playerid=1..}] minecraft:cooked_beef 5
 execute unless score bossRe Stats matches 9 run give @a[scores={playerid=1..}] minecraft:rotten_flesh 5
 
 # Armor
-replaceitem entity @a[scores={playerid=1..}] armor.head minecraft:diamond_helmet
-replaceitem entity @a[scores={playerid=1..}] armor.chest minecraft:iron_chestplate
-replaceitem entity @a[scores={playerid=1..}] armor.legs minecraft:iron_leggings
-replaceitem entity @a[scores={playerid=1..}] armor.feet minecraft:diamond_boots
+item replace entity @a[scores={playerid=1..}] armor.head with minecraft:diamond_helmet
+item replace entity @a[scores={playerid=1..}] armor.chest with minecraft:iron_chestplate
+item replace entity @a[scores={playerid=1..}] armor.legs with minecraft:iron_leggings
+item replace entity @a[scores={playerid=1..}] armor.feet with minecraft:diamond_boots

@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"checkminer","color":"#00A975"},{"text":"] ","color":"dark_gray"},{"translate":"checkminer.d","color":"gray"}]
-playsound lucas1 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"checkminer","color":"#00A975"},{"text":"] ","color":"dark_gray"},{"translate":"checkminer.d","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound lucas1 voice @a[distance=..5] ~ ~ ~ 1 1 1

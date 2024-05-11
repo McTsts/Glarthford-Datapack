@@ -105,4 +105,12 @@ function glarth:mechanic/loader
 
 
 # E Chest
-execute if entity @a[distance=..5] run setblock 76 21 -258 minecraft:iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]
+execute positioned 76 21 -258 if entity @a[distance=..5] run setblock 76 21 -258 minecraft:iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]
+
+
+# diamond shovel uncraft (1.17)
+execute as @a[scores={iDShovel=1..}] run function glarth:mechanic/diamond_recipes
+
+# gary hideout marker (1.17)
+execute positioned 23 18 -213 run tag @a[distance=..5,gamemode=adventure] add seenGaryHideout
+

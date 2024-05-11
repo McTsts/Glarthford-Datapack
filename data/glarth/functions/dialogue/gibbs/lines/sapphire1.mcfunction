@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["\n",{"text":"[","color":"dark_gray"},{"translate":"gibbs","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"gibbs.quickfast.sapphire.1","color":"gray"}]
+playsound gibbs14 voice @a[distance=..5] ~ ~ ~ 1 1 1

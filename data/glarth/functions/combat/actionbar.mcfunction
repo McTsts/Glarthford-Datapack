@@ -1,6 +1,6 @@
 # Setup
 data remove block 84 26 -121 Items
-replaceitem block 84 26 -121 container.0 paper
+item replace block 84 26 -121 container.0 with paper
 
 # Health
 execute store result storage ntca:io in int 1 run scoreboard players get @s tbcHealth

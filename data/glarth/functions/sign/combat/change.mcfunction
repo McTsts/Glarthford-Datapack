@@ -1,6 +1,10 @@
 function glarth:sign/change
 kill @e[tag=lobbyCombat]
 
+# calc players 
+scoreboard players set lPlayers Temp 0
+execute as @a[gamemode=adventure,tag=!lSpec] run scoreboard players add lPlayers Temp 1
+
 # Players (No Enemies)
 execute if score combat Stats matches 0 if score difficulty Stats matches 0 if score lPlayers Temp matches 1.. run summon minecraft:armor_stand 163.0 25.0 -92.0 {Invisible:1,Marker:1,Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:281}}],Tags:["lobbyCombat"],Rotation:[180f,0f],NoGravity:1}
 execute if score combat Stats matches 0 if score difficulty Stats matches 0 if score lPlayers Temp matches 2.. run summon minecraft:armor_stand 164.7 25.0 -91.8 {Invisible:1,Marker:1,Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:381}}],Tags:["lobbyCombat"],Rotation:[180f,0f],NoGravity:1}

@@ -40,6 +40,26 @@ scoreboard players operation weight tbcAttack -= @s attack_019
 execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/019_init
 scoreboard players operation weight tbcAttack -= @s attack_020
 execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/020_init
+scoreboard players operation weight tbcAttack -= @s attack_021
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/021_init
+scoreboard players operation weight tbcAttack -= @s attack_022
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/022_init
+scoreboard players operation weight tbcAttack -= @s attack_023
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/023_init
+scoreboard players operation weight tbcAttack -= @s attack_024
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/024_init
+scoreboard players operation weight tbcAttack -= @s attack_025
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/025_init
+scoreboard players operation weight tbcAttack -= @s attack_026
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/026_init
+scoreboard players operation weight tbcAttack -= @s attack_027
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/027_init
+scoreboard players operation weight tbcAttack -= @s attack_028
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/028_init
+scoreboard players operation weight tbcAttack -= @s attack_029
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/029_init
+scoreboard players operation weight tbcAttack -= @s attack_030
+execute if score weight tbcAttack matches ..0 run function glarth:combat/action_ally/030_init
 
 execute if score @s tbcAttack matches -1 run tellraw @a [{"text":"ERROR: Attack system has failed. Attempting to proceed. (weight: ","color":"red"},{"score":{"name":"weight","objective":"tbcAttack"}},{"text":")"}]
 execute if score @s tbcAttack matches -1 run function glarth:combat/action_enemy/006_init

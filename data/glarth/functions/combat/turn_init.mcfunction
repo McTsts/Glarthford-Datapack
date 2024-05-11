@@ -26,8 +26,8 @@ execute if entity @s[tag=tbcImFreeze] run scoreboard players set @s tbcFreeze 0
 execute if entity @s[tag=tbcImStun] run scoreboard players set @s tbcStun 0
 
 # Negative Normal Effects
-execute if score @s[tag=tbcTurn] tbcFire matches 1.. run function glarth:combat/effect/fire
 execute if score @s[tag=tbcTurn] tbcPoison matches 1.. run function glarth:combat/effect/poison
+execute if score @s[tag=tbcTurn] tbcFire matches 1.. run function glarth:combat/effect/fire
 execute if score @s[tag=tbcTurn] tbcInfection matches 1.. run function glarth:combat/effect/infection
 execute if score @s[tag=tbcTurn] tbcBee matches 1.. run function glarth:combat/effect/bee
 execute if score @s[tag=tbcTurn] tbcBlindness matches 1.. run function glarth:combat/effect/blindness

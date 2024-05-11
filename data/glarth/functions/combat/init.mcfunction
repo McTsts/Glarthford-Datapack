@@ -4,6 +4,7 @@ tag @a[gamemode=adventure] add inTBC
 tag @a[gamemode=adventure] add tbcAttackable
 scoreboard players set @a[tag=inTBC] tbcSpeed 8
 execute as @a[tag=inTBC] run scoreboard players operation @s tbcQueue = @s playerid
+execute if score lobbyTBC Stats matches 2 run scoreboard players add @a[tag=inTBC] tbcQueue 10
 scoreboard players set TBC Stats 1
 scoreboard players set @a[tag=inTBC] tbcMenu -1
 scoreboard players set @a[tag=inTBC] tbcMenuX -1
@@ -71,6 +72,8 @@ execute as @a store result score @s tbcFood26 run clear @s enchanted_golden_appl
 execute as @a store result score @s tbcFood27 run clear @s gray_dye 0
 execute as @a store result score @s tbcFood28 run clear @s torch 0
 execute as @a store result score @s tbcFood29 run clear @s sweet_berries 0
+execute as @a store result score @s tbcFood30 run clear @s salmon 0
+execute as @a store result score @s tbcFood31 run clear @s cooked_salmon 0
 
 execute as @a store result score @s tbcThrowable1 run clear @s apple 0
 execute as @a store result score @s tbcThrowable2 run clear @s beetroot 0
@@ -85,6 +88,7 @@ execute as @a store result score @s tbcThrowable10 run clear @s magma_cream 0
 execute as @a store result score @s tbcThrowable11 run clear @s diamond_hoe{custom:"witchhat"} 0
 execute as @a store result score @s tbcThrowable12 run clear @s spider_eye 0
 execute as @a store result score @s tbcThrowable13 run clear @s slime_ball 0
+execute as @a store result score @s tbcThrowable16 run clear @s glow_ink_sac 0
 
 execute as @a store result score @s tbcPotion1 run clear @s potion{custom:"leaping"} 0
 execute as @a store result score @s tbcPotion2 run clear @s potion{custom:"swiftness"} 0
@@ -94,6 +98,7 @@ execute as @a store result score @s tbcPotion5 run clear @s potion{Potion:"minec
 execute as @a store result score @s tbcPotion6 run clear @s potion{Potion:"minecraft:strong_healing"} 0
 execute as @a store result score @s tbcPotion7 run clear @s potion{Potion:"minecraft:water"} 0
 execute as @a store result score @s tbcPotion8 run clear @s gold_nugget{CustomModelData:40} 0
+execute as @a store result score @s tbcPotion9 run clear @s potion{custom:"wind_potion"} 0
 
 execute as @a store result score @s tbcAmFire run clear @s golden_horse_armor 0
 execute as @a store result score @s tbcAmPoison run clear @s iron_horse_armor 0

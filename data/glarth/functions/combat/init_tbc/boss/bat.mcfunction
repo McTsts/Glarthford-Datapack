@@ -3,8 +3,8 @@ function glarth:combat/init
 function glarth:combat/init_tbc/enemy1
 execute as @e[tag=tbcEnemy1] run function glarth:combat/entity/bat_empress
 
-function glarth:combat/init_tbc/ally
-execute as @e[tag=tbcAlly] run function glarth:combat/entity/miner_chief
+function glarth:combat/init_tbc/ally1
+execute as @e[tag=tbcAlly1] run function glarth:combat/entity/miner_chief
 
 function glarth:combat/start
 

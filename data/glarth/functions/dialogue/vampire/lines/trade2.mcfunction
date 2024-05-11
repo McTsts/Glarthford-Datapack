@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"vampire","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"vampire.2","color":"gray"}]
-playsound vampire3 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"vampire","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"vampire.2","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound vampire3 voice @a[distance=..5] ~ ~ ~ 1 1 1

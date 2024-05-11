@@ -1,1 +1,1 @@
-playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1.2
+playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.2

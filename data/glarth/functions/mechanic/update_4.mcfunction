@@ -70,3 +70,16 @@ execute as @a[gamemode=adventure] run function glarth:mechanic/crossbowfix
 
 # tulip drop
 function glarth:mechanic/tulip_drop
+
+# squid no drown (1.17)
+execute as @e[type=squid] run data modify entity @s Air set value 100f
+execute as @e[type=glow_squid] run data modify entity @s Air set value 100f
+
+# signs
+function glarth:mechanic/update_signs
+
+# remove horse armor from horse
+execute as @r at @s as @e[type=horse,limit=1,distance=..10] at @s run function glarth:mechanic/unhorsearmor
+
+# Diamond Recipe
+recipe give @a[scores={iDiamond=2..}] minecraft:diamond_sword

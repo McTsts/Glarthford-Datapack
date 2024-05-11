@@ -1,1 +1,1 @@
-function glarth:mechanic/unlock_all
+function glarth:mechanic/lobby/unlock/10

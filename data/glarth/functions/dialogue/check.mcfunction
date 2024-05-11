@@ -96,14 +96,20 @@ execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=b
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=cedric] at @s run function glarth:dialogue/cedric/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=bowm] at @s run function glarth:dialogue/bowm/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=baby_zombie] at @s run function glarth:dialogue/baby_zombie/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=baby_zombie2] at @s run function glarth:dialogue/baby_zombie2/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=szombie] at @s run function glarth:dialogue/szombie/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie2] at @s run function glarth:dialogue/zombie2/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie3] at @s run function glarth:dialogue/zombie3/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie4] at @s run function glarth:dialogue/zombie4/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie5] at @s run function glarth:dialogue/zombie5/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie6] at @s run function glarth:dialogue/zombie6/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=skeleton2] at @s run function glarth:dialogue/skeleton2/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=magma_cube] at @s run function glarth:dialogue/magma_cube/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=husband] at @s run function glarth:dialogue/husband/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=hzombie] at @s run function glarth:dialogue/hzombie/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=gzombie] at @s run function glarth:dialogue/gzombie/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=kzombie] at @s run function glarth:dialogue/kzombie/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=kzombie2] at @s run function glarth:dialogue/kzombie2/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=pzombie] at @s run function glarth:dialogue/pzombie/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=pufferfish_red] at @s run function glarth:dialogue/pufferfish_red/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=snowman] at @s run function glarth:dialogue/snowman/main
@@ -169,6 +175,18 @@ execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=p
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=piglin8] at @s run function glarth:dialogue/piglin8/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=carrot] at @s run function glarth:dialogue/carrot/main
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=gzombie2] at @s run function glarth:dialogue/gzombie2/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=jerozgen] at @s run function glarth:dialogue/jerozgen/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=suso] at @s run function glarth:dialogue/suso/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=evil_ts] at @s run function glarth:dialogue/evil_ts/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=husk] at @s run function glarth:dialogue/husk/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=husk2] at @s run function glarth:dialogue/husk2/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=fake_zombie] at @s run function glarth:dialogue/fake_zombie/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie_villager] at @s run function glarth:dialogue/zombie_villager/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie_villager2] at @s run function glarth:dialogue/zombie_villager2/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie_s1] at @s run function glarth:dialogue/zombie_s1/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=zombie_s2] at @s run function glarth:dialogue/zombie_s2/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=ender_zombie] at @s run function glarth:dialogue/ender_zombie/main
+execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=ender_zombie2] at @s run function glarth:dialogue/ender_zombie2/main
 
 # No Dialogue / Special Handeling / Legacy Support
 execute as @e[tag=char,type=armor_stand,limit=1,sort=nearest] if entity @s[tag=explorer2] at @s run function glarth:dialogue/explorer/main

@@ -4,3 +4,7 @@ summon armor_stand 82 20 -197 {Invulnerable:1b,Invisible:1b,DisabledSlots:203649
 fill 65 33 -193 65 31 -195 minecraft:air
 
 fill 79 32 -184 80 33 -182 emerald_ore replace minecraft:diamond_ore
+
+
+# add bookshelf
+setblock 175 28 -154 minecraft:bookshelf

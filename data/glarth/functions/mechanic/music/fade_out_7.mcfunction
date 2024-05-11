@@ -78,3 +78,7 @@ execute if score @s MusicLast matches 58 run scoreboard players set @s MusicFade
 execute if score @s MusicLast matches 59 run scoreboard players set @s MusicFade 0
 
 execute if score @s MusicLast matches 60 run scoreboard players set @s MusicFade -1
+
+execute if score @s MusicLast matches 61 run scoreboard players set @s MusicFade -1
+
+execute if score @s MusicLast matches 62 run scoreboard players set @s MusicFade -1

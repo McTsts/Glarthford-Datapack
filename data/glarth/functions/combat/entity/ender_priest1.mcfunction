@@ -25,6 +25,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcStrength 50
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcStrength 60
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcStrength 70
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcStrength 80
 
 # Escape
 scoreboard players add @s tbcEscape 3
@@ -41,6 +42,9 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 1500
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 1800
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 2200
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 3000
+
+execute if score lobbyTBC Stats matches 2 run tag @s add death_035
 #Spawn
 tag @s add tbcEnderPriest1
 tag @s add tbcEnderPriest

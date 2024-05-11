@@ -46,3 +46,5 @@ execute if score arena tbcStats matches 102 run function glarth:combat/init_aren
 execute if score arena tbcStats matches 103 run function glarth:combat/init_arena/end_ep2
 execute if score arena tbcStats matches 104 run function glarth:combat/init_arena/end_mansion
 execute if score arena tbcStats matches 105 run function glarth:combat/init_arena/end_crystal
+
+execute if score arena tbcStats matches 111 run function glarth:combat/init_arena/broken

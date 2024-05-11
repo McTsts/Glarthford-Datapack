@@ -1,2 +1,2 @@
-tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"gzombie","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"gzombie.n","color":"gray"}]
-execute as @a at @s run playsound minecraft:ghostly_zombie2 voice @s ~ ~ ~ 1 1
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"ghost_mayor","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"ghost_mayor.n","color":"gray"}]
+execute as @a at @s run playsound minecraft:ghostly_mayor2 voice @s ~ ~ ~ 1 1

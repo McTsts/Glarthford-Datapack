@@ -10,9 +10,9 @@ execute as @a[x=71,y=27,z=-249,distance=..10,tag=!nearLumber] if score n Random 
 execute as @a[x=71,y=27,z=-249,distance=..10,tag=!nearLumber] run tag @s add nearLumber 
 execute as @a[x=71,y=27,z=-249,distance=11..,tag=nearLumber] run tag @s remove nearLumber 
 
-# Mourner
-execute unless score quest Stats matches 8 as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",tag:{isDogSkull:1}}]},gamemode=adventure] at @s run function glarth:mechanic/char/skull_dog
-execute unless score quest Stats matches 8 unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",tag:{isDogSkull:1}}]},gamemode=adventure] run function glarth:mechanic/char/skull_undog
+# Dog Skull
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",tag:{isDogSkull:1}}]},gamemode=adventure] at @s run function glarth:mechanic/char/skull_dog
+execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",tag:{isDogSkull:1}}]},gamemode=adventure] run function glarth:mechanic/char/skull_undog
 
 # Die
 execute as @e[tag=die] at @s run function glarth:mechanic/action/die
@@ -25,8 +25,8 @@ execute if entity @e[tag=ttextt,tag=a,type=armor_stand,tag=char] run function gl
 execute if score quest Stats matches 9 run data merge entity @e[tag=apple,limit=1,tag=char] {Motion:[0.0,0.3,0.0]}
 
 # Glowing
-execute as @a[gamemode=adventure] at @s as @e[tag=char_glow,distance=20..,type=armor_stand] run data merge entity @s {Glowing:0b}
-execute as @a[gamemode=adventure] at @s as @e[tag=char_glow,distance=..19,type=armor_stand] run data merge entity @s {Glowing:1b}
+execute if score lowGraphics Stats matches 0 as @a[gamemode=adventure] at @s as @e[tag=char_glow,distance=20..,type=armor_stand] run data merge entity @s {Glowing:0b}
+execute if score lowGraphics Stats matches 0 as @a[gamemode=adventure] at @s as @e[tag=char_glow,distance=..19,type=armor_stand] run data merge entity @s {Glowing:1b}
 
 
 # ZP Fix

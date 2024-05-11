@@ -73,9 +73,9 @@ execute if score page pcData matches 5 if score Ys pcRec matches -12..-9 if scor
 execute if score page pcData matches 6 if score Ys pcRec matches 29..33 if score Z pcRec matches 53..86 run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.5
 execute if score page pcData matches 6 if score Ys pcRec matches 29..33 if score Z pcRec matches 53..86 run tellraw @s ["\n",{"translate":"lobby.click_here","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=otKH3awnkhc"}}]
 execute if score page pcData matches 6 if score Ys pcRec matches 23..27 if score Z pcRec matches 53..86 run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.5
-execute if score page pcData matches 6 if score Ys pcRec matches 23..27 if score Z pcRec matches 53..86 run tellraw @s ["\n",{"translate":"lobby.click_here","clickEvent":{"action":"open_url","value":"https://www.crowdford.com/maps/heart_rush?m=111&r=pc"}}]
+execute if score page pcData matches 6 if score Ys pcRec matches 23..27 if score Z pcRec matches 53..86 run tellraw @s ["\n",{"translate":"lobby.click_here","clickEvent":{"action":"open_url","value":"https://www.crowdford.com/maps/heart_rush_2?m=111&r=pc"}}]
 execute if score page pcData matches 6 if score Ys pcRec matches -12..-9 if score Z pcRec matches 73..81 run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.5
-execute if score page pcData matches 6 if score Ys pcRec matches -12..-9 if score Z pcRec matches 73..81 run tellraw @s ["\n",{"translate":"lobby.click_here","clickEvent":{"action":"open_url","value":"https://www.crowdford.com/maps/heart_rush?m=111&r=pc"}}]
+execute if score page pcData matches 6 if score Ys pcRec matches -12..-9 if score Z pcRec matches 73..81 run tellraw @s ["\n",{"translate":"lobby.click_here","clickEvent":{"action":"open_url","value":"https://www.crowdford.com/maps/heart_rush_2?m=111&r=pc"}}]
 
 # Bitdepth
 execute if score page pcData matches 7 if score Ys pcRec matches 23..27 if score Z pcRec matches 53..86 run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.5

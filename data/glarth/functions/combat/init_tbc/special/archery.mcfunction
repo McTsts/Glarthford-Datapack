@@ -7,8 +7,8 @@ execute as @e[tag=tbcEnemy1] run function glarth:combat/entity/target
 execute as @e[tag=tbcEnemy2] run function glarth:combat/entity/target
 execute as @e[tag=tbcEnemy3] run function glarth:combat/entity/target
 
-function glarth:combat/init_tbc/ally
-execute as @e[tag=tbcAlly] run function glarth:combat/entity/bow_merchant
+function glarth:combat/init_tbc/ally1
+execute as @e[tag=tbcAlly1] run function glarth:combat/entity/bow_merchant
 
 scoreboard players set tbcUnlocked Stats 4
 

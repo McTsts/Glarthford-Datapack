@@ -1,0 +1,2 @@
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"merchant2","color":"dark_blue"},{"text":"] ","color":"dark_gray"},{"translate":"merchant2.n.3","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound merchantm8 voice @a[distance=..5] ~ ~ ~ 1 1 1

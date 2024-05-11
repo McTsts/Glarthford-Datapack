@@ -10,8 +10,10 @@ scoreboard players set @s attack_214 3
 scoreboard players operation @s tbcDodge /= 2 Const
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcHealth 80
 execute if score difficulty tbcStats matches 4..5 run scoreboard players add @s tbcHealth 100
+execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcHealth 140
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcStrength 10
 execute if score difficulty tbcStats matches 4..5 run scoreboard players add @s tbcStrength 20
+execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcStrength 30
 #Spawn
 tag @s add tbcPiglin
 tag @s add tbcPiglinBrute

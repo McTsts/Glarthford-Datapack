@@ -5,9 +5,7 @@ execute as @e[tag=dockmaster,type=armor_stand] at @s run tp @a[gamemode=adventur
 tp @e[tag=dockmaster,type=minecraft:armor_stand] 22 64 -86 45 0
 
 # Add Upper Balloon
-forceload add 8 24
 clone 15 85 31 0 62 17 21 68 -99 masked normal
-forceload remove 8 24
 
 # Remove Lower Balloon
 fill -70 38 -183 -74 43 -179 air

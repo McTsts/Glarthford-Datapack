@@ -20,6 +20,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 26000
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 32000
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 42000
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 50000
 scoreboard players set @s tbcSpeed 14
 scoreboard players set @s tbcArmor 0
 execute if entity @e[tag=evGrimsbaneMoves] run tag @s add stage_014

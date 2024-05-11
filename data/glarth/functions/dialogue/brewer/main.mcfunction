@@ -11,9 +11,10 @@ execute if score cycle Temp matches 1 if score quest Stats matches 9 run functio
 execute unless score quest Stats matches 9 run function glarth:dialogue/brewer/trades/all
 execute if score quest Stats matches 1..2 run function glarth:dialogue/brewer/trades/1_2
 execute if score quest Stats matches 3 run function glarth:dialogue/brewer/trades/3_8
-execute if score quest Stats matches 4..6 run function glarth:dialogue/brewer/trades/4_5_6
+execute if score quest Stats matches 4..6 run function glarth:dialogue/brewer/trades/default
 execute if score quest Stats matches 7 run function glarth:dialogue/brewer/trades/7
 execute if score quest Stats matches 8 run function glarth:dialogue/brewer/trades/3_8
 execute if score quest Stats matches 8 run function glarth:dialogue/brewer/trades/8
+execute if score quest Stats matches 10..11 run function glarth:dialogue/brewer/trades/default
 # Extra
 tag @s add d2

@@ -19,3 +19,7 @@ execute as @e[tag=ship5,tag=!2ship,type=armor_stand] at @s run tp @e[tag=ship5,t
 execute as @e[tag=ship6,tag=!2ship,type=armor_stand] at @s run tp @e[tag=ship6,tag=2ship,type=armor_stand] ~ ~4.1125 ~
 execute as @e[tag=ship7,tag=!2ship,type=armor_stand] at @s run tp @e[tag=ship7,tag=2ship,type=armor_stand] ~ ~4.1125 ~
 execute as @e[tag=ship8,tag=!2ship,type=armor_stand] at @s run tp @e[tag=ship8,tag=2ship,type=armor_stand] ~ ~4.1125 ~
+
+# horse
+execute if score shipStatus Animation matches 0 positioned -5 28 -132 as @e[type=horse,limit=1,distance=..10] at @s if block ~ ~-1 ~ barrier unless entity @e[tag=evShipDestroyed] run function glarth:mechanic/animation/ship/to_block
+execute if score shipStatus Animation matches 0 positioned -5 28 -132 as @a[distance=..10] at @s if block ~ ~-1 ~ barrier unless entity @e[tag=evShipDestroyed] run function glarth:mechanic/animation/ship/to_block

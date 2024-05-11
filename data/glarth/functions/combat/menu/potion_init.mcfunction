@@ -1,5 +1,5 @@
 ## Back
-replaceitem entity @s hotbar.8 minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
+item replace entity @s hotbar.8 with minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
 
 ## Attack Options
 # A: Potion Type
@@ -7,6 +7,14 @@ replaceitem entity @s hotbar.8 minecraft:diamond_hoe{display:{Name:"{\"translate
 # C: 
 # D: 
 function glarth:combat/menu/param/reset
+# Water
+execute if data storage glarth:main combat.turn.all[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}}] run scoreboard players set S tbcAttackParamX 1
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 7
+execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
+# Milk
+execute if data storage glarth:main combat.turn.all[{id:"minecraft:gold_nugget",tag:{custom:"milk_bottle"}}] run scoreboard players set S tbcAttackParamX 1
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 8
+execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
 # Leaping Potion
 execute if data storage glarth:main combat.turn.all[{id:"minecraft:potion",tag:{custom:"leaping"}}] run scoreboard players set S tbcAttackParamX 1
 execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 1
@@ -31,13 +39,9 @@ execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/par
 execute if data storage glarth:main combat.turn.all[{id:"minecraft:potion",tag:{Potion:"minecraft:strong_healing"}}] run scoreboard players set S tbcAttackParamX 1
 execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 6
 execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
-# Water
-execute if data storage glarth:main combat.turn.all[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}}] run scoreboard players set S tbcAttackParamX 1
-execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 7
-execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
-# Milk
-execute if data storage glarth:main combat.turn.all[{id:"minecraft:gold_nugget",tag:{custom:"milk_bottle"}}] run scoreboard players set S tbcAttackParamX 1
-execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 8
+# Wind Potion
+execute if data storage glarth:main combat.turn.all[{id:"minecraft:potion",tag:{custom:"wind_potion"}}] run scoreboard players set S tbcAttackParamX 1
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 9
 execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
 # Unshift
 function glarth:combat/menu/param/unshift

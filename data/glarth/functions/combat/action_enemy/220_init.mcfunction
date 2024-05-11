@@ -1,0 +1,8 @@
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] run scoreboard players set @s tbcAttack 220
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] run tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.use","with":[{"translate":"tbc.attack.enemy.220","bold":true}]}]
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] if entity @e[tag=tbcEvilTs,tag=!3a] run function glarth:dialogue/evil_ts/lines/tbc3a
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] run tag @e[tag=tbcEvilTs] add 3a
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] if score @s attack_220 matches 1000.. run scoreboard players remove @s attack_220 1000
+execute if score enemiesAll tbcStats matches ..4 if entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] run function glarth:combat/attack_init
+execute if score enemiesAll tbcStats matches ..4 unless entity @p[gamemode=adventure,scores={playerid=1..3},tag=!evilPlayerSpawned] run function glarth:combat/attack
+execute if score enemiesAll tbcStats matches 5.. run function glarth:combat/attack

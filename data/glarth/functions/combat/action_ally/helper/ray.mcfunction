@@ -1,0 +1,2 @@
+particle minecraft:enchanted_hit ~ 34.5 ~ 0 0 0 0 1 normal @a
+execute facing entity @e[scores={tbcSel=1},type=armor_stand,limit=1] feet positioned ^ ^ ^0.25 unless entity @e[scores={tbcSel=1},type=armor_stand,distance=..0.25,limit=1] run function glarth:combat/action_ally/helper/ray

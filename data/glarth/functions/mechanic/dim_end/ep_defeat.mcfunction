@@ -5,5 +5,7 @@ execute at @e[tag=ender_priest] run particle minecraft:portal ~ ~ ~ 0.4 0.4 0.4 
 schedule function glarth:mechanic/dim_end/ep_defeat2 41t
 function glarth:dialogue/ender_priest/lines/lose1
 forceload add -50 -644 -47 -644
+forceload add -84 -600
+forceload add -20 -609
 execute if entity @a[scores={playerid=3},gamemode=adventure] at @e[tag=ender_priest] run summon item ~ ~ ~ {Item:{id:"elytra",Count:1,tag:{Unbreakable:1,HideFlags:63}}}
 execute if entity @a[scores={playerid=2},gamemode=adventure] at @e[tag=ender_priest] run summon item ~ ~ ~ {Item:{id:"elytra",Count:1,tag:{Unbreakable:1,HideFlags:63}}}

@@ -1,2 +1,2 @@
-execute positioned -192 28 -191 run tellraw @a[distance=..20] ["",{"text":"\n[","color":"dark_gray"},{"translate":"piglin2","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"piglin2.1","color":"gray"}]
-execute positioned -192 28 -191 as @a[distance=..20] at @s run playsound piglin2_1 voice @s ~ ~ ~ 1 1 1
+execute positioned -192 28 -191 run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..20] ["",{"text":"\n[","color":"dark_gray"},{"translate":"piglin2","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"piglin2.1","color":"gray"}]
+execute positioned -192 28 -191 as @a[distance=..20] at @s run execute unless score @s trigger = @s triggerPrev run playsound piglin2_1 voice @s ~ ~ ~ 1 1 1

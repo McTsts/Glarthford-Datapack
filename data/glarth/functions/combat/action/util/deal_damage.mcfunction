@@ -78,3 +78,6 @@ scoreboard players set @s[tag=tbcNoHealth] tbcHealth 0
 #tellraw @a [{"selector":"@s"}," -> fD: ",{"score":{"name":"freezeDmg","objective":"Temp"}}]
 #tellraw @a [{"selector":"@s"}," -> ED: ",{"score":{"name":"@e[scores={tbcSel=1}] ","objective":"tbcExtraDmg"}}]
 scoreboard players operation damage Temp = dealDamage Temp
+
+# hard coded evil ts line
+execute if entity @e[scores={tbcSel=1,tbcBar=..25},tag=tbcEvilTs] if entity @p[tag=tbcTurn] unless score didTsDialogue tbcStats matches 1 if score tbcVa tbcStats matches 0 run function glarth:dialogue/evil_ts/lines/tbc2

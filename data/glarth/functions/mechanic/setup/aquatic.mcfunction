@@ -13,10 +13,12 @@ summon minecraft:cod 10 25 -150 {PersistenceRequired:1}
 summon minecraft:cod 9 26 -129 {PersistenceRequired:1}
 summon minecraft:cod 9 26 -129 {PersistenceRequired:1}
 summon minecraft:cod 9 26 -129 {PersistenceRequired:1}
-summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1}
-summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1}
-summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1}
+summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1,Variant:202047489}
+summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1,Variant:459008}
+summon minecraft:tropical_fish 53.24 36.75 -127.75 {PersistenceRequired:1,Variant:117441793}
 summon minecraft:squid -2 24 -139 {PersistenceRequired:1b}
 summon minecraft:squid -2 24 -139 {PersistenceRequired:1b}
 summon minecraft:squid -2 24 -139 {PersistenceRequired:1b}
 summon minecraft:squid -2 24 -139 {PersistenceRequired:1b}
+summon minecraft:glow_squid -74 28 -270 {PersistenceRequired:1b}
+summon minecraft:salmon 22 25 -214 {PersistenceRequired:1b}

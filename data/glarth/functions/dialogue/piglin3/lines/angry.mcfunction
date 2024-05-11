@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"piglin3","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"piglin3.a","color":"gray"}]
-playsound piglin3_4 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"piglin3","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"piglin3.a","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound piglin3_4 voice @a[distance=..5] ~ ~ ~ 1 1 1

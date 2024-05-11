@@ -35,8 +35,8 @@
 	summon minecraft:chicken -42 32 -256 {Team:"mouse"}
 	summon minecraft:pig -48 26 -140 {Tags:["newAnimal"]}
 	summon minecraft:horse -53.61 28.13 -246.00 {Leashed:1b,Leash:{X:-52,Y:29,Z:-244},Attributes:[{Name:generic.movement_speed,Base:0.2},{Name:horse.jump_strength,Base:0.9}],Tags:["newAnimal"]}
-	summon minecraft:fox 82 27 -254 {HandItems:[{id:"rabbit_foot",Count:1}]}
-	summon minecraft:fox 82 27 -254 {HandItems:[{id:"emerald",Count:1}]}
+	summon minecraft:fox 65 27 -249 {HandItems:[{id:"rabbit_foot",Count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox1"],Rotation:[-20f,0f]}
+	summon minecraft:fox 81 27 -254 {HandItems:[{id:"emerald",Count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox2"],Rotation:[-140f,0f]}
 # Register Wolf/Horse
 	scoreboard players operation @e[tag=newAnimal] netherID = id edgeI
 	tag @e[tag=newAnimal] remove newAnimal

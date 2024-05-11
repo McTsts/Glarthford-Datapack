@@ -1,4 +1,4 @@
-forceload add 184 -68 215 12
+#forceload add 184 -68 215 12
 
 kill @e[type=end_crystal]
 
@@ -31,9 +31,11 @@ execute if score quest Stats matches 6 run function glarth:mechanic/lobby/8
 execute if score quest Stats matches 7 run function glarth:mechanic/lobby/6
 execute if score quest Stats matches 8 run function glarth:mechanic/lobby/7
 execute if score quest Stats matches 9 run function glarth:mechanic/lobby/4
+execute if score quest Stats matches 10 run function glarth:mechanic/lobby/10
+execute if score quest Stats matches 11 run function glarth:mechanic/lobby/11
 
 scoreboard objectives setdisplay sidebar 
 
 stopsound @a block
 
-forceload remove 184 -68 215 12
+#forceload remove 184 -68 215 12

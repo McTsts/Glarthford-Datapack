@@ -82,6 +82,8 @@
 		clone 74 41 -285 74 41 -285 68 30 -284
 		clone -11 58 -87 -11 58 -87 -11 60 -88
 		clone 21 18 -211 21 18 -211 21 32 -211
+		clone -37 1 -161 -38 1 -161 -30 3 -157
+		clone -59 18 -202 -59 18 -202 -59 27 -203
 	#Empty
 		setblock -3 30 -214 minecraft:furnace[facing=south]
 		clone 23 19 -207 21 18 -207 21 27 -207
@@ -97,8 +99,6 @@
 		setblock -38 29 -273 minecraft:furnace[facing=south]
 		setblock -36 28 -263 minecraft:furnace[facing=north]
 		setblock -30 3 -155 minecraft:furnace[facing=north]
-		setblock -30 3 -157 chest[type=right,facing=south]
-		setblock -29 3 -157 chest[type=left,facing=south]
 		setblock -5 28 -217 minecraft:smoker[facing=south,lit=true]{CookTime:0s,BurnTime:0s,Items:[{Slot:1b,id:"minecraft:coal",Count:5b}],CookTimeTotal:100s,RecipesUsed:{}}
 		setblock -54 27 -194 minecraft:furnace[facing=west,lit=false]{CookTime:0s,BurnTime:0s,Items:[{Slot:1b,id:"minecraft:coal",Count:8b}],CookTimeTotal:200s,RecipesUsed:{}}
 		setblock -58 28 -202 minecraft:furnace[facing=south,lit=false]{CookTime:0s,BurnTime:0s,Items:[{Slot:1b,id:"minecraft:coal",Count:7b}],CookTimeTotal:200s,RecipesUsed:{}}
@@ -106,21 +106,24 @@
 		setblock -10 26 -204 minecraft:furnace[facing=south,lit=false]{CookTime:0s,BurnTime:0s,Items:[{Slot:1b,id:"minecraft:coal",Count:5b}],CookTimeTotal:200s,RecipesUsed:{}}
 	#Other
 		setblock 16 27 -214 minecraft:cake
-		setblock -4 26 -210 minecraft:cauldron[level=2]
-		setblock -49 31 -201 minecraft:cauldron[level=2]
+		setblock -4 26 -210 minecraft:water_cauldron[level=2]
+		setblock -49 31 -201 minecraft:water_cauldron[level=2]
 		setblock 22 27 -204 minecraft:anvil[facing=west]
 		setblock -14 30 -202 minecraft:jukebox
 		setblock -41 27 -242 minecraft:jukebox
-		setblock -17 25 -213 minecraft:cauldron[level=3]
+		setblock -17 25 -213 minecraft:water_cauldron[level=3]
 		setblock -68 27 -212 lever[facing=east,powered=false,face=wall]
-		setblock -52 31 -196 minecraft:cauldron[level=1]
-		setblock -48 31 -191 minecraft:cauldron[level=2]
+		setblock -52 31 -196 minecraft:water_cauldron[level=1]
+		setblock -48 31 -191 minecraft:water_cauldron[level=2]
 		setblock 80 26 -220 minecraft:jukebox
 		setblock -25 27 -161 minecraft:cauldron
 		fill -36 32 -174 -31 33 -167 minecraft:anvil[facing=north] replace #anvil[facing=north]
 		fill -36 32 -174 -31 33 -167 minecraft:anvil[facing=south] replace #anvil[facing=south]
 		fill -36 32 -174 -31 33 -167 minecraft:anvil[facing=west] replace #anvil[facing=west]
 		fill -36 32 -174 -31 33 -167 minecraft:anvil[facing=east] replace #anvil[facing=east]
+		setblock -53 40 -201 minecraft:cauldron
+		setblock -55 31 -199 minecraft:cauldron
+		setblock -56 31 -200 minecraft:cauldron
 #Flower Pots
 	setblock 11 27 -181 minecraft:potted_azure_bluet destroy
 	setblock 4 32 -181 flower_pot destroy

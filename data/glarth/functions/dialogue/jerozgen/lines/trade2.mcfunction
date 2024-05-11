@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"jerozgen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"jerozgen.2","color":"gray"}] 
+playsound jerozgen5 voice @a[distance=..5] ~ ~ ~ 1 1 1

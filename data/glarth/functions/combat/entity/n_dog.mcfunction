@@ -7,7 +7,12 @@ data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"transla
 scoreboard players set @s attack_082 1
 scoreboard players set @s attack_083 1
 
-scoreboard players set @s tbcHealth 15
+execute if score difficulty tbcStats matches 1 run scoreboard players set @s tbcHealth 10
+execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbcHealth 20
+execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 30
+execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 40
+execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 50
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 60
 tag @s add death_003
 tag @s add death_004
 # Spawn

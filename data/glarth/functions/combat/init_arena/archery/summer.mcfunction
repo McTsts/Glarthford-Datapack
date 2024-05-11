@@ -22,7 +22,7 @@ summon minecraft:area_effect_cloud 286 29 -108 {Radius:0.0f,Duration:2147483647,
 
 
 # Ally
-summon minecraft:area_effect_cloud 290 29 -106 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly"],Rotation:[180f,0f]}
+summon minecraft:area_effect_cloud 290 29 -106 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly","tbcMarkerAlly1"],Rotation:[180f,0f]}
 
 # Summer
 fill 273 28 -127 301 42 -100 minecraft:oak_leaves replace minecraft:birch_leaves 

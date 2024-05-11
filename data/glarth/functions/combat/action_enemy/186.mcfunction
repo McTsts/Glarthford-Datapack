@@ -136,7 +136,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 068 run setblock 524 32 10 minecraft:birch_fence[east=false,north=false,south=false,waterlogged=false,west=false]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 070 run fill 510 32 13 509 32 13 minecraft:green_carpet
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 070 run setblock 524 32 7 minecraft:pink_glazed_terracotta[facing=east]
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 070 run setblock 525 32 13 minecraft:cauldron[level=0]
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 070 run setblock 525 32 13 minecraft:cauldron
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 070 run setblock 511 32 14 minecraft:scaffolding
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 072 run setblock 511 33 14 minecraft:green_carpet
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 072 run setblock 523 32 6 minecraft:pink_glazed_terracotta[facing=east]
@@ -178,7 +178,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 090 run setblock 512 34 9 minecraft:orange_carpet
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 at @e[tag=tbcBoss] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.5 0.5 0.5 0.01 100
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 at @e[tag=tbcBoss] run particle explosion ~ ~0.5 ~ 0.5 0.5 0.5 0.01 10
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:463}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run item replace entity @s armor.head with diamond_hoe{CustomModelData:463}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 run scoreboard players set @s tbcAttack 104
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 run scoreboard players set @a MusicSet 27
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 run scoreboard players set @s tbcAttackTimer 0

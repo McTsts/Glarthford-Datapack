@@ -1,4 +1,5 @@
 execute store success score success Temp run effect clear @s minecraft:mining_fatigue
+execute if score success Temp matches 1 run function board:end_game
 execute if score success Temp matches 1 run scoreboard players add @s PoT 100
 execute if score success Temp matches 0 if score @s PoTd matches 1.. run scoreboard players add @s PoT 100
 execute if score success Temp matches 0 if score @s PoTd matches 1.. run scoreboard players remove @s PoTd 1

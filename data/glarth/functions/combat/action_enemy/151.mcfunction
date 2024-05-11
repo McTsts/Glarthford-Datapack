@@ -16,4 +16,5 @@ execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 20 as @e[tag=tbcStrIronGolem,limit=1] run function glarth:combat/kill_enemy
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 20 run function glarth:combat/init_tbc/enemy4
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 20 as @e[tag=tbcEnemy4] run function glarth:combat/entity/iron_golem
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 20 run function glarth:dialogue/iron_golem/lines/attack1
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 50 run function glarth:combat/action_enemy/util/done

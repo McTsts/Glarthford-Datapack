@@ -62,8 +62,8 @@ execute if score Grave_Gate Animation matches 57 run tp @s -68.5 29.85 -208.5
 execute if score Grave_Gate Animation matches 58 run tp @s -68.5 29.9 -208.5
 execute if score Grave_Gate Animation matches 59 run tp @s -68.5 29.95 -208.5
 execute if score Grave_Gate Animation matches 60 run tp @s -68.5 30 -208.5
-execute if score Grave_Gate Animation matches 41 run replaceitem entity @s armor.head diamond_hoe{Damage:184}
-execute if score Grave_Gate Animation matches 40 run replaceitem entity @s armor.head diamond_hoe{Damage:183}
+execute if score Grave_Gate Animation matches 41 run item replace entity @s armor.head with diamond_hoe{Damage:184}
+execute if score Grave_Gate Animation matches 40 run item replace entity @s armor.head with diamond_hoe{Damage:183}
 
 execute at @s if score Grave_Gate Animation matches ..60 run fill ~ ~ ~1 ~ ~6 ~-1 minecraft:jungle_fence[south=true,north=true] replace air
 execute at @s if score Grave_Gate Animation matches ..60 run fill -69 33 -210 -69 36 -208 air replace minecraft:jungle_fence

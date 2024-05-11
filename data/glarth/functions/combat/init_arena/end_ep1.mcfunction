@@ -29,7 +29,7 @@ summon minecraft:area_effect_cloud 381 37 -90 {Radius:0.0f,Duration:2147483647,T
 summon minecraft:area_effect_cloud 383 37 -90 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerCompB","tbcMarkerCompB3"]}
 
 # Ally
-summon minecraft:area_effect_cloud 391 41 -77 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly"]}
+summon minecraft:area_effect_cloud 391 41 -77 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly","tbcMarkerAlly1"]}
 
 # Arena
 execute positioned 382 35.2 -79.25 run function glarth:mechanic/dim_end/spawn_arena

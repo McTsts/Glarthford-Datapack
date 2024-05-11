@@ -7,7 +7,7 @@ schedule function glarth:mechanic/setup/doors 100t
 function glarth:mechanic/setup/containers
 function glarth:mechanic/setup/decoration
 function glarth:mechanic/setup/entities
-execute unless score quest Stats matches 9 run function glarth:mechanic/setup/ship
+execute unless score season winter matches 1 run function glarth:mechanic/setup/ship
 function glarth:mechanic/setup/ascension
 
 # Extra

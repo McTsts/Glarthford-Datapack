@@ -18,3 +18,13 @@ execute as @s[scores={tbcAttack=17}] at @s run function glarth:combat/action_all
 execute as @s[scores={tbcAttack=18}] at @s run function glarth:combat/action_ally/018
 execute as @s[scores={tbcAttack=19}] at @s run function glarth:combat/action_ally/019
 execute as @s[scores={tbcAttack=20}] at @s run function glarth:combat/action_ally/020
+execute as @s[scores={tbcAttack=21}] at @s run function glarth:combat/action_ally/021
+execute as @s[scores={tbcAttack=22}] at @s run function glarth:combat/action_ally/022
+execute as @s[scores={tbcAttack=23}] at @s run function glarth:combat/action_ally/023
+execute as @s[scores={tbcAttack=24}] at @s run function glarth:combat/action_ally/024
+execute as @s[scores={tbcAttack=25}] at @s run function glarth:combat/action_ally/025
+execute as @s[scores={tbcAttack=26}] at @s run function glarth:combat/action_ally/026
+execute as @s[scores={tbcAttack=27}] at @s run function glarth:combat/action_ally/027
+execute as @s[scores={tbcAttack=28}] at @s run function glarth:combat/action_ally/028
+execute as @s[scores={tbcAttack=29}] at @s run function glarth:combat/action_ally/029
+execute as @s[scores={tbcAttack=30}] at @s run function glarth:combat/action_ally/030

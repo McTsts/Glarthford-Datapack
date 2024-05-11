@@ -1,1 +1,1 @@
-playsound error master @a[distance=..5] ~ ~ ~ 1 1.2
+playsound error player @a[distance=..5] ~ ~ ~ 1 1.2

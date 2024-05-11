@@ -172,13 +172,14 @@ execute if score @s charBodyReal matches 109 run summon minecraft:area_effect_cl
 execute if score @s charBodyReal matches 110 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection.body.5.10"}'}
 execute if score @s charBodyReal matches 111 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection.body.5.11"}'}
 execute if score @s charBodyReal matches 112 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection.body.5.12"}'}
+execute if score @s charBodyReal matches 113 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection.body.5.13"}'}
 
 # Combine Head & Body
 execute if score @s charHeadReal matches 4..6 run tag @s add selNameA
 execute if score @s charHeadReal matches 10..12 run tag @s add selNameA
 execute if score @s charHeadReal matches 16..27 run tag @s add selNameA
 execute if score @s charBodyReal matches 4..9 run tag @s add selNameB
-execute if score @s charBodyReal matches 101..109 run tag @s add selNameB
+execute if score @s charBodyReal matches 101..113 run tag @s add selNameB
 execute if entity @s[tag=selNameA,tag=selNameB] run kill @e[tag=selNameHead]
 execute if entity @s[tag=selNameA,tag=selNameB] if score @s charHeadReal matches 4 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameHead"],CustomName:'{"translate":"lobby.selection.head.1.1b"}'}
 execute if entity @s[tag=selNameA,tag=selNameB] if score @s charHeadReal matches 5 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameHead"],CustomName:'{"translate":"lobby.selection.head.1.2b"}'}
@@ -206,7 +207,7 @@ execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity
 execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameBody,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
 execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameHead,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
 execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.0","with":[{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
-data modify entity @e[type=area_effect_cloud,limit=1,sort=nearest] CustomName set from block 84 26 -123 Text1
+data modify entity @e[type=armor_stand,tag=selNameAll,limit=1,sort=nearest] CustomName set from block 84 26 -123 Text1
 
 # Kill
 kill @e[tag=lobby,tag=selNameBody,type=area_effect_cloud]

@@ -1,1 +1,1 @@
-tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"helene.a1"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 102"}}]
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"helene.a1"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 102"}}]

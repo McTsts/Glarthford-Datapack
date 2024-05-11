@@ -1,3 +1,4 @@
+# food (smoking)
 recipe give @a[gamemode=adventure] minecraft:baked_potato
 recipe give @a[gamemode=adventure] minecraft:baked_potato_from_smoking
 recipe give @a[gamemode=adventure] minecraft:cooked_beef
@@ -14,3 +15,24 @@ recipe give @a[gamemode=adventure] minecraft:cooked_mutton
 recipe give @a[gamemode=adventure] minecraft:cooked_mutton_from_smoking
 recipe give @a[gamemode=adventure] minecraft:popped_chorus_fruit
 recipe give @a[gamemode=adventure] minecraft:popped_chorus_fruit_from_smoking
+# materials (blasting)
+recipe give @a[gamemode=adventure] minecraft:gold/boots
+recipe give @a[gamemode=adventure] minecraft:gold/boots_from_blasting
+recipe give @a[gamemode=adventure] minecraft:gold/leggings
+recipe give @a[gamemode=adventure] minecraft:gold/leggings_from_blasting
+recipe give @a[gamemode=adventure] minecraft:gold/chestplate
+recipe give @a[gamemode=adventure] minecraft:gold/chestplate_from_blasting
+recipe give @a[gamemode=adventure] minecraft:gold/helmet
+recipe give @a[gamemode=adventure] minecraft:gold/helmet_from_blasting
+recipe give @a[gamemode=adventure] minecraft:gold/sword
+recipe give @a[gamemode=adventure] minecraft:gold/sword_from_blasting
+recipe give @a[gamemode=adventure] minecraft:iron/boots
+recipe give @a[gamemode=adventure] minecraft:iron/boots_from_blasting
+recipe give @a[gamemode=adventure] minecraft:iron/leggings
+recipe give @a[gamemode=adventure] minecraft:iron/leggings_from_blasting
+recipe give @a[gamemode=adventure] minecraft:iron/chestplate
+recipe give @a[gamemode=adventure] minecraft:iron/chestplate_from_blasting
+recipe give @a[gamemode=adventure] minecraft:iron/helmet
+recipe give @a[gamemode=adventure] minecraft:iron/helmet_from_blasting
+recipe give @a[gamemode=adventure] minecraft:iron/sword
+recipe give @a[gamemode=adventure] minecraft:iron/sword_from_blasting

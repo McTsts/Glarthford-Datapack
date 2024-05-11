@@ -8,6 +8,11 @@
 		setblock 53 38 -129 minecraft:lily_pad
 		setblock 52 38 -127 minecraft:lily_pad
 		setblock 52 38 -125 minecraft:lily_pad
+	# close fence gates in walls (1.17)
+		fill 35 33 -222 33 33 -170 minecraft:spruce_fence_gate[facing=west,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate
+		fill 33 33 -168 -19 33 -170 minecraft:spruce_fence_gate[facing=north,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate
+		fill -21 33 -170 -21 34 -222 minecraft:spruce_fence_gate[facing=east,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate
+		fill -19 33 -224 33 33 -222 minecraft:spruce_fence_gate[facing=south,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate
 	# Adventurer Hut Colission trapdoor
 		setblock 18 27 -267 minecraft:iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]
 	# Gate Fix
@@ -79,7 +84,8 @@
 		setblock 92 32 -174 air
 		setblock -67 29 -170 minecraft:air
 	#Apples
-		function glarth:mechanic/animation/apples/setup
+		execute unless score season winter matches 1 run function glarth:mechanic/animation/apples/setup
+		execute if score season winter matches 1 run function glarth:mechanic/animation/apples/winter
 	# Ruins of Ascension
 		clone 67 7 -243 63 1 -249 76 27 -240
 		setblock 77 30 -236 grass
@@ -108,6 +114,10 @@
 		setblock 152 48 -186 minecraft:lapis_block
 		setblock 155 50 -184 minecraft:lapis_block
 		setblock 153 48 -182 minecraft:lapis_block
+	# frog lilypads (1.17)
+		execute unless score season winter matches 1 run setblock -38 26 -145 minecraft:lily_pad
+		execute unless score season winter matches 1 run setblock -3 27 -151 minecraft:lily_pad
+		execute unless score season winter matches 1 run setblock -18 27 -144 minecraft:lily_pad
 	#Field
 		fill 10 26 -253 23 26 -243 air replace wheat
 		fill 10 26 -253 23 26 -243 air replace carrots

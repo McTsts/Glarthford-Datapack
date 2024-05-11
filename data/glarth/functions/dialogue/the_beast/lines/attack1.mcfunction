@@ -1,0 +1,1 @@
+execute as @a at @s run playsound the_beast1 voice @s ~ ~ ~ 1 1 1

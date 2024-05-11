@@ -16,6 +16,7 @@ scoreboard players set @s attack_104 0
 scoreboard players set @s attack_102 6
 scoreboard players set @s attack_103 1
 
+
 #Spawn
 tag @s add tbcIllusionerBannerman
 function glarth:combat/spawn

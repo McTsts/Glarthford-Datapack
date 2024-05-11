@@ -31,3 +31,6 @@ tag @e[tag=pickupItem] add asLoader
 
 # Loader Enchant Book 
 tag @e[tag=et] add asLoader
+
+# fix missing hoirzontal fence in guard tower
+setblock 22 28 -188 minecraft:acacia_button[face=floor,facing=east,powered=true]

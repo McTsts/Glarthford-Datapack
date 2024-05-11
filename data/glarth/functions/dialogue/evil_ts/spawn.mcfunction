@@ -1,0 +1,2 @@
+setblock 175 28 -154 light[level=10]
+summon armor_stand 175.31 28.00 -154.35 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:524,Unbreakable:1}}],Tags:["char","evil_ts"],Rotation:[115f,0f],CustomName:'{"translate":"evil_ts","color":"dark_red"}',CustomNameVisible:1}

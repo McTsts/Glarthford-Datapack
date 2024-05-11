@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"vindicator_s","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"vindicator_s.d2","color":"gray"}]
-playsound vindicator_s_2 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"vindicator_s","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"vindicator_s.d2","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound vindicator_s_2 voice @a[distance=..5] ~ ~ ~ 1 1 1

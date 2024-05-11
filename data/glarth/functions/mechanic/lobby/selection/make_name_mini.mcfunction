@@ -172,6 +172,7 @@ execute if score @s charBodyReal matches 109 run summon minecraft:area_effect_cl
 execute if score @s charBodyReal matches 110 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection_mini.body.5.10"}'}
 execute if score @s charBodyReal matches 111 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection_mini.body.5.11"}'}
 execute if score @s charBodyReal matches 112 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection_mini.body.5.12"}'}
+execute if score @s charBodyReal matches 113 run summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameBody"],CustomName:'{"translate":"lobby.selection_mini.body.5.13"}'}
 
 # Print Name
 data merge block 84 26 -123 {Text1:'""',Text2:'""'}

@@ -1,3 +1,5 @@
+# lobby table
+data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[0]
 #
 tp @e[tag=board_rc,type=villager] ~ -100 ~
 tp @e[tag=board,type=villager] ~ -100 ~

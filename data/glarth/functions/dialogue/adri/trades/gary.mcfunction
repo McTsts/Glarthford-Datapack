@@ -1,0 +1,3 @@
+execute if entity @s[tag=!c] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"adri.gary.a1"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 207"}}]
+execute if entity @s[tag=c,tag=!d] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"adri.gary.a2"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 208"}}]
+execute if entity @s[tag=c,tag=d,tag=!e] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"adri.gary.a3"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 209"}}]

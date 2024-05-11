@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"suso","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"suso.2","color":"gray"}]
+playsound suso5 voice @a[distance=..5] ~ ~ ~ 1 1 1

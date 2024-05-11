@@ -58,7 +58,7 @@ execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 6 run function glarth:combat/action_enemy/util/get_target
 execute if score @s tbcAttackStage matches 6 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init
 execute if score @s tbcAttackStage matches 6 run function glarth:combat/action_enemy/helper/summon_fireball_ender
-execute if score @s tbcAttackStage matches 6 run replaceitem entity @e[tag=tbcGhastDisModel,limit=1] armor.head diamond_hoe{CustomModelData:361}
+execute if score @s tbcAttackStage matches 6 run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with diamond_hoe{CustomModelData:361}
 execute if score @s tbcAttackStage matches 6 run tp @e[tag=tbcArrowPN,type=armor_stand] ^ ^0.8 ^-1 facing entity @e[tag=tbcTargetAS,limit=1,type=armor_stand,sort=nearest]
 execute if score @s tbcAttackStage matches 6 run tag @e[tag=tbcArrowPN,type=armor_stand] remove tbcArrowPN
 execute if score @s tbcAttackStage matches 6 run function glarth:combat/action_enemy/util/next_stage

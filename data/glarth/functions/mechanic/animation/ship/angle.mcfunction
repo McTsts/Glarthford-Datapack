@@ -37,14 +37,4 @@ execute if score shipAngle Animation matches 800..899 run function glarth:mechan
 execute if score shipAngle Animation matches 900..999 run function glarth:mechanic/animation/ship/angle/l3/10
 execute if score shipAngle Animation matches 1000..1099 run function glarth:mechanic/animation/ship/angle/l3/11
 
-execute if score shipAngle Animation matches 0..99 run function glarth:mechanic/animation/ship/angle/sailor/1
-execute if score shipAngle Animation matches 100..199 run function glarth:mechanic/animation/ship/angle/sailor/2
-execute if score shipAngle Animation matches 200..299 run function glarth:mechanic/animation/ship/angle/sailor/3
-execute if score shipAngle Animation matches 300..399 run function glarth:mechanic/animation/ship/angle/sailor/4
-execute if score shipAngle Animation matches 400..499 run function glarth:mechanic/animation/ship/angle/sailor/5
-execute if score shipAngle Animation matches 500..599 run function glarth:mechanic/animation/ship/angle/sailor/6
-execute if score shipAngle Animation matches 600..699 run function glarth:mechanic/animation/ship/angle/sailor/7
-execute if score shipAngle Animation matches 700..799 run function glarth:mechanic/animation/ship/angle/sailor/8
-execute if score shipAngle Animation matches 800..899 run function glarth:mechanic/animation/ship/angle/sailor/9
-execute if score shipAngle Animation matches 900..999 run function glarth:mechanic/animation/ship/angle/sailor/10
-execute if score shipAngle Animation matches 1000..1099 run function glarth:mechanic/animation/ship/angle/sailor/11
+function glarth:mechanic/animation/ship/angle/sailor

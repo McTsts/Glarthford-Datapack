@@ -14,7 +14,7 @@ execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 3 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.3 ~ ~
-execute if score @s tbcAttackStage matches 3 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:237}
+execute if score @s tbcAttackStage matches 3 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run item replace entity @s armor.head with diamond_hoe{CustomModelData:237}
 execute if score @s tbcAttackStage matches 3 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.3 ~ ~

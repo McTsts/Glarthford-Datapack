@@ -18,11 +18,11 @@ execute as @e[tag=coal] run give @a[x=71,y=24,z=-275,distance=..1,gamemode=adven
 execute as @a[x=71,y=24,z=-275,distance=..1,gamemode=adventure] at @s run kill @e[tag=coal]
 execute as @a[x=71,y=24,z=-275,distance=..1,gamemode=adventure] at @s run kill @e[tag=pickup_name,limit=1,sort=nearest,distance=..3.5]
 
-execute as @e[tag=brick1] run give @a[x=-50,y=29,z=-263,distance=..1,gamemode=adventure] brick{CanDestroy:["green_stained_glass_pane"]}
+execute as @e[tag=brick1] run give @a[x=-50,y=29,z=-263,distance=..1,gamemode=adventure] brick{CanDestroy:["minecraft:green_stained_glass_pane"]}
 execute as @a[x=-50,y=29,z=-263,distance=..1,gamemode=adventure] at @s run kill @e[tag=brick1]
 execute as @a[x=-50,y=29,z=-263,distance=..1,gamemode=adventure] at @s run kill @e[tag=pickup_name,limit=1,sort=nearest,distance=..2.5]
 
-execute as @e[tag=brick2] run give @a[x=-54,y=29.5,z=-266,distance=..1,gamemode=adventure] brick{CanDestroy:["green_stained_glass_pane"]}
+execute as @e[tag=brick2] run give @a[x=-54,y=29.5,z=-266,distance=..1,gamemode=adventure] brick{CanDestroy:["minecraft:green_stained_glass_pane"]}
 execute as @a[x=-54,y=29.5,z=-266,distance=..1,gamemode=adventure] at @s run kill @e[tag=brick2]
 execute as @a[x=-54,y=29.5,z=-266,distance=..1,gamemode=adventure] at @s run kill @e[tag=pickup_name,limit=1,sort=nearest,distance=..2.5]
 

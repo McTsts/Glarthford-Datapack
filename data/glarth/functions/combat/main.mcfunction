@@ -17,7 +17,8 @@ execute as @a[scores={playerid=2},gamemode=adventure,tag=inTBC] at @s unless ent
 execute as @a[scores={playerid=3},gamemode=adventure,tag=inTBC] at @s unless entity @e[tag=tbcMarkerPov3,distance=..0.01] at @e[tag=tbcMarkerPov3,limit=1] run tp @s ~ ~ ~ facing entity @e[tag=tbcMarkerMiddle,limit=1,type=area_effect_cloud]
 
 execute as @e[tag=charQB,type=armor_stand] at @s run data modify entity @e[tag=charQ,distance=..2,sort=random,limit=1,type=armor_stand] Rotation set from entity @s Rotation
-execute as @e[tag=charQEB,type=armor_stand] at @s run data modify entity @e[tag=charQE,distance=..2,sort=random,limit=1,type=armor_stand] Rotation set from entity @s Rotation
+execute as @e[tag=charQEB,type=armor_stand] at @s run data modify entity @e[tag=charQEall,distance=..2,sort=random,limit=1,type=armor_stand] Rotation set from entity @s Rotation
+execute as @e[tag=charQAB,type=armor_stand] at @s run data modify entity @e[tag=charQAall,distance=..2,sort=random,limit=1,type=armor_stand] Rotation set from entity @s Rotation
 
 
 # Animate Characters
@@ -82,7 +83,7 @@ execute as @a[scores={tbcBlindness=1..,playerid=3}] at @e[tag=tbcPlayerAS3,type=
 # Bee
 execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand] at @s run function glarth:combat/bee
 # Pumpkin
-replaceitem entity @a[scores={tbcPumpkin=1..}] armor.head carved_pumpkin{display:{Name:'""'},Enchantments:[{id:"binding_curse",lvl:1}],CustomModelData:1,HideFlags:63}
+item replace entity @a[scores={tbcPumpkin=1..}] armor.head with carved_pumpkin{display:{Name:'""'},Enchantments:[{id:"binding_curse",lvl:1}],CustomModelData:1,HideFlags:63}
 
 # Health Bar
 execute as @e[tag=tbcEnemy,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall,type=armor_stand] at @s positioned ~ ~1.7 ~ if entity @e[tag=tbcHealthBar,distance=..0.1] run function glarth:combat/health_bar
@@ -95,3 +96,6 @@ execute as @e[tag=tbcHealthBar,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.9 ~
 execute as @e[tag=tbcHealthBar2,tag=!tbcTallHealth,tag=!tbcVeryTallHealth] at @s positioned ~ ~-1.4 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall] run data merge entity @s {CustomName:"\"\"",CustomNameVisible:0}
 execute as @e[tag=tbcHealthBar2,tag=tbcTallHealth] at @s positioned ~ ~-2.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyTall] run data merge entity @s {CustomName:"\"\"",CustomNameVisible:0}
 execute as @e[tag=tbcHealthBar2,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyVeryTall] run data merge entity @s {CustomName:"\"\"",CustomNameVisible:0}
+
+# TBC VA (1.17)
+execute if score tbcVa tbcStats matches 1.. run scoreboard players remove tbcVa tbcStats 1

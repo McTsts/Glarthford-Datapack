@@ -5,4 +5,4 @@ tag @s add tbcAnotherTurn
 
 scoreboard players set r Random 2
 function glarth:util/random
-execute if score n Random matches 1 run function glarth:dialogue/summoner/lines/attack3
+execute if score n Random matches 1 if entity @s[tag=tbcSummoner] run function glarth:dialogue/summoner/lines/attack3

@@ -11,6 +11,8 @@ scoreboard players set @s attack_091 1
 scoreboard players add @s tbcStrength 25
 
 scoreboard players add @s tbcQueue 1000
+
+tag @s add stage_075
 # Spawn
 tag @s add tbcNecroBeast
 function glarth:combat/spawn

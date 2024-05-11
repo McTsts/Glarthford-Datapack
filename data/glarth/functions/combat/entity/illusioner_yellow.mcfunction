@@ -9,6 +9,7 @@ scoreboard players set @s attack_019 1
 scoreboard players set @s attack_105 6
 scoreboard players set @s attack_099 3
 scoreboard players set @s tbcQueue 100
+scoreboard players operation @s tbcHealth *= 2 Const
 
 #Spawn
 tag @s add tbcIllusionerYellow

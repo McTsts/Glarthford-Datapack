@@ -8,6 +8,8 @@
 		setblock 110 26 -255 oak_planks
 		setblock -53 20 -194 diorite
 		setblock -1 46 -334 stone
+	# !Q2&7 remove a lantern
+		setblock 11 27 -201 air
 	# !Q3 close tower
 		fill 22 45 -181 30 45 -181 minecraft:barrier
 		fill 30 45 -181 30 45 -189 minecraft:barrier
@@ -28,6 +30,8 @@
 		setblock 2 30 -200 minecraft:blue_carpet
 		setblock 2 29 -200 minecraft:blue_wool
 		setblock 1 29 -202 minecraft:blue_carpet
+	# !Q4 Block Ice Spike Field 
+		fill 3 29 -272 8 26 -283 minecraft:barrier replace air
 	# !Q6 Cart Destroyed 
 		setblock -30 29 -238 air
 		setblock -30 28 -241 air
@@ -202,8 +206,8 @@
 		setblock -56 35 -134 minecraft:air
 		fill 1 31 -213 1 31 -212 air
 		fill -82 42 -246 -82 43 -246 air
-		setblock -36 27 -136 redstone_torch
-		setblock -47 28 -135 redstone_torch
+		setblock -36 27 -136 minecraft:green_candle[candles=3,lit=true,waterlogged=false]
+		setblock -47 28 -135 minecraft:green_candle[candles=3,lit=true,waterlogged=false]
 		setblock -42 27 -154 air
 		setblock -54 27 -144 air
 		setblock -78 40 -243 air
@@ -235,7 +239,6 @@
 		setblock -11 27 -194 air
 		setblock -17 27 -194 air
 		setblock 3 27 -218 air
-		setblock 2 28 -217 air
 		setblock 3 28 -214 air
 		setblock 3 27 -211 air
 		setblock 3 27 -208 air
@@ -292,6 +295,8 @@
 	execute if score quest Stats matches 7 run function glarth:mechanic/setup/quest/7
 	execute if score quest Stats matches 8 run function glarth:mechanic/setup/quest/8
 	execute if score quest Stats matches 9 run function glarth:mechanic/setup/quest/9
+	execute if score quest Stats matches 10 run function glarth:mechanic/setup/quest/10
+	execute if score quest Stats matches 11 run function glarth:mechanic/setup/quest/11
 # For Each
 	#Open Beacon
 		execute if score quest Stats matches 1 run setblock 94 46 -183 air	
@@ -308,12 +313,14 @@
 		execute if score quest Stats matches 1 if entity @a[scores={playerid=1,charSpouse=2}] run tellraw @a ["",{"translate":"task.1.b","color":"green"}]
 		execute if score quest Stats matches 2 run tellraw @a ["",{"translate":"task.2","color":"green"}]
 		execute if score quest Stats matches 3 run tellraw @a ["",{"translate":"task.3","color":"green"}]
-		execute if score quest Stats matches 4 run tellraw @a ["",{"translate":"task.4","color":"green"}]
+		execute if score quest Stats matches 4 if score forceGary Stats matches 0 run tellraw @a ["",{"translate":"task.4","color":"green"}]
 		execute if score quest Stats matches 5 run tellraw @a ["",{"translate":"task.5","color":"green"}]
 		execute if score quest Stats matches 6 run tellraw @a ["",{"translate":"task.6","color":"green"}]
 		execute if score quest Stats matches 7 run tellraw @a ["",{"translate":"task.7","color":"green"}]
 		execute if score quest Stats matches 8 run tellraw @a ["",{"translate":"task.8","color":"green"}]
 		execute if score quest Stats matches 9 run tellraw @a ["",{"translate":"task.9","color":"green"}]
+		execute if score quest Stats matches 4 if score forceGary Stats matches 1 run tellraw @a ["",{"translate":"task.10","color":"green"}]
+		execute if score quest Stats matches 11 run tellraw @a ["",{"translate":"task.11","color":"green"}]
 	#Newspaper
 		execute if score quest Stats matches 1 run clone -11 18 -202 -11 18 -202 -12 30 -202
 		execute if score quest Stats matches 2 run clone -11 18 -204 -11 18 -204 -12 30 -202

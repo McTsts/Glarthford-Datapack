@@ -12,7 +12,7 @@ execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] run functi
 
 execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] run function glarth:combat/init_tbc/enemy1
 execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] as @e[tag=tbcEnemy1,type=armor_stand] run function glarth:combat/entity/ender_priest2
-execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] as @e[tag=tbcEnemy1,type=armor_stand] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:468}
+execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] as @e[tag=tbcEnemy1,type=armor_stand] run item replace entity @s armor.head with diamond_hoe{CustomModelData:468}
 execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] as @e[tag=tbcEnemy1,type=armor_stand] run function glarth:combat/set_loc
 execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] run scoreboard players operation @e[tag=tbcEnderPriest2] tbcHealth = epHealth Temp
 execute at @s unless entity @e[tag=tbcEnderPriestTiny,distance=0.1..] run scoreboard players set @e[tag=tbcEnemy] tbcSel 0

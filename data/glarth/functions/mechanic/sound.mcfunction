@@ -1,6 +1,6 @@
 scoreboard players add @a[gamemode=adventure] sound 1
 #Lake
-execute unless score quest Stats matches 9 as @a[x=5,y=23,z=-140,distance=..20,scores={sound=100..}] at @s run function glarth:mechanic/sound/lake
+execute unless score season winter matches 1 as @a[x=5,y=23,z=-140,distance=..20,scores={sound=100..}] at @s run function glarth:mechanic/sound/lake
 scoreboard players set @a[x=5,y=23,z=-140,distance=..20,scores={sound=100..}] sound 0
 #Mine, Throne, Sewers
 execute as @a[x=127,y=25,z=-161,distance=..40,scores={sound=200..}] at @s run function glarth:mechanic/sound/eerie
@@ -15,13 +15,13 @@ scoreboard players set @a[x=-19,y=31,z=-121,distance=..10,scores={sound=200..}] 
 execute as @a[x=-83,y=27,z=-210,distance=..10,scores={sound=200..}] at @s run function glarth:mechanic/sound/eerie
 scoreboard players set @a[x=-83,y=27,z=-210,distance=..10,scores={sound=200..}] sound 0
 #Waterfall
-execute unless score quest Stats matches 9 as @a[x=44,y=28,z=-134,distance=..7,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
+execute unless score season winter matches 1 as @a[x=44,y=28,z=-134,distance=..7,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
 scoreboard players set @a[x=44,y=28,z=-134,distance=..7,scores={sound=10..}] sound -260
 #Cave Waterfall
-execute unless score quest Stats matches 9 as @a[x=-77,y=30,z=-269,distance=..13,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
+execute unless score season winter matches 1 as @a[x=-77,y=30,z=-269,distance=..13,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
 scoreboard players set @a[x=-77,y=30,z=-269,distance=..13,scores={sound=10..}] sound -260
 #Spring
-execute unless score quest Stats matches 9 as @a[x=54,y=37,z=-127,distance=..12,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
+execute unless score season winter matches 1 as @a[x=54,y=37,z=-127,distance=..12,scores={sound=10..}] at @s run function glarth:mechanic/sound/waterfall
 scoreboard players set @a[x=54,y=37,z=-127,distance=..12,scores={sound=10..}] sound -260
 #Forest
 execute as @a[x=58,y=26,z=-243,distance=..25,scores={sound=60..}] at @s run function glarth:mechanic/sound/forest

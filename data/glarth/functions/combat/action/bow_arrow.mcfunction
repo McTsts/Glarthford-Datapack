@@ -1,3 +1,7 @@
+#count
+scoreboard players add @s lastAttackCount 1
+
+# main
 execute at @e[tag=tbcSelPlayerAS] run playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 1 1
 scoreboard players add attackSuccess tbcStats 1
 tag @s add tbcArrowPlace

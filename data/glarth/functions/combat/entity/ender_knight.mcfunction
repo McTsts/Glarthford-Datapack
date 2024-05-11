@@ -16,6 +16,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 600
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 650
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 700
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 800
 #Spawn
 tag @s add tbcEnderDodge
 tag @s add tbcEnderKnight

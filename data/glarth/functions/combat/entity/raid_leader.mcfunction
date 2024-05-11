@@ -29,6 +29,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 600
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 900
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 1200
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 1500
 scoreboard players set @s tbcTOU 2
 tag @s add death_008
 tag @s add stage_015

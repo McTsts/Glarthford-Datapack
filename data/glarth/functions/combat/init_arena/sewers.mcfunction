@@ -23,7 +23,7 @@ summon minecraft:area_effect_cloud 259 29 -114.0 {Radius:0.0f,Duration:214748364
 summon minecraft:area_effect_cloud 259 29 -111.0 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy5"],Rotation:[180f,0f]}
 
 # Ally
-summon minecraft:area_effect_cloud 264 38 -113 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly"]}
+summon minecraft:area_effect_cloud 264 38 -113 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly","tbcMarkerAlly1"]}
 
 
 

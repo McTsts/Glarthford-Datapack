@@ -1,8 +1,12 @@
 {
     "parent": "glarth:empty/invisible1",
     "display": {
-        "title": { "text": "" },
-        "description": { "text": "" },
+        "title": {
+            "text": ""
+        },
+        "description": {
+            "text": ""
+        },
         "icon": {
             "item": "minecraft:black_carpet"
         },
@@ -11,7 +15,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-   "criteria": {
+    "criteria": {
         "start": {
             "trigger": "minecraft:impossible"
         }

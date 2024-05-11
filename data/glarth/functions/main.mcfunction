@@ -1,6 +1,9 @@
 #Scores
 execute unless entity @e[tag=area_main,type=area_effect_cloud] run summon minecraft:area_effect_cloud 7 999 -196 {Radius:0.0f,Duration:2147483647,Tags:["area_main"],CustomName:"\"Main\"",CustomNameVisible:0}
+
 #Functions
+execute store result score aecs Stats if entity @e[tag=area_main]
+execute if score aecs Stats matches 2.. run kill @e[tag=area_main,type=area_effect_cloud,sort=random,limit=1]
 
 
 execute unless entity @a run scoreboard players reset * registered
@@ -23,10 +26,6 @@ function glarth:title/main
 function glarth:sign/main
 
 function glarth:mechanic/music/main
-
-# Leave MSG
-function glarth:mechanic/leave0/calc
-
 
 # Actual Time
 execute if score game Stats matches 1 run scoreboard players add actual Dis 1
@@ -95,3 +94,5 @@ gamemode adventure @a[gamemode=survival]
 
 
 
+# Boss Rush
+execute if score lobbyTBC Stats matches 2 run scoreboard players add bossRushTime Stats 1

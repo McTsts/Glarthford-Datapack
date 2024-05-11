@@ -8,6 +8,7 @@ execute if score bossRe Stats matches 6 unless entity @a[tag=encB8,gamemode=adve
 execute if score bossRe Stats matches 7 unless entity @a[tag=encB6,gamemode=adventure,tag=!lSpec] run scoreboard players operation bossDir Stats *= 2 Const
 execute if score bossRe Stats matches 8 unless entity @a[tag=encB7,gamemode=adventure,tag=!lSpec] run scoreboard players operation bossDir Stats *= 2 Const
 execute if score bossRe Stats matches 9 unless entity @a[tag=encB4,gamemode=adventure,tag=!lSpec] run scoreboard players operation bossDir Stats *= 2 Const
+execute if score bossRe Stats matches 10 unless entity @a[tag=encB10,gamemode=adventure,tag=!lSpec] run scoreboard players operation bossDir Stats *= 2 Const
 
 
 scoreboard players remove bossMax Stats 1

@@ -50,7 +50,7 @@ execute as @a[gamemode=adventure,x=-47,y=80,z=-741,distance=..14] at @s run fill
 execute as @a[gamemode=adventure,x=-47,y=80,z=-741,distance=..14] at @s run fill ~-3 ~-3 ~-3 ~3 ~3 ~3 minecraft:cave_air replace minecraft:purple_stained_glass
 
 # updrafts
-replaceitem entity @a[tag=upElytraReturn] armor.chest elytra
+item replace entity @a[tag=upElytraReturn] armor.chest with elytra
 tag @a remove upElytraReturn
 tag @a remove inUpdraft
 execute positioned -111 83 -523 run function glarth:mechanic/dim_end/updraft

@@ -5,7 +5,9 @@ execute if score quest Stats matches 0 run function glarth:mechanic/progress/0
 execute if score quest Stats matches 1 run function glarth:mechanic/progress/1
 execute if score quest Stats matches 2 run function glarth:mechanic/progress/2
 execute if score quest Stats matches 3 run function glarth:mechanic/progress/3
-execute if score quest Stats matches 4 run function glarth:mechanic/progress/4
+execute if score quest Stats matches 4 if score garyMode Stats matches ..1 run function glarth:mechanic/progress/4
+execute if score quest Stats matches 4 if score garyMode Stats matches 2.. if score endStarted Stats matches ..0 run function glarth:mechanic/progress/10
+execute if score quest Stats matches 4 if score garyMode Stats matches 2.. if score endStarted Stats matches 1.. run function glarth:mechanic/progress/4
 execute if score quest Stats matches 5 run function glarth:mechanic/progress/5
 execute if score quest Stats matches 6 run function glarth:mechanic/progress/6
 execute if score quest Stats matches 7 run function glarth:mechanic/progress/7
@@ -14,10 +16,6 @@ execute if score quest Stats matches 9 run function glarth:mechanic/progress/9
 
 execute unless score quest Stats matches 7 unless score endStarted Stats matches 1 run function glarth:mechanic/time_update
 function glarth:mechanic/item
-execute as @a if score @s iSapling matches 9.. run clear @s spruce_sapling 1
-execute as @a if score @s iBottle matches 9.. run clear @s glass_bottle 1
-execute as @a if score @s iTorch matches 9.. run clear @s torch 1
-execute as @a if score @s iLeather matches 10.. run clear @s leather 1
 function glarth:mechanic/time/update
 function glarth:mechanic/advancements
 execute unless score quests Stats matches 0 run function glarth:mechanic/hint
@@ -36,6 +34,8 @@ execute if score quest Stats matches 6 run function glarth:mechanic/quest/6u
 execute if score quest Stats matches 7 run function glarth:mechanic/quest/7u
 execute if score quest Stats matches 8 run function glarth:mechanic/quest/8u
 execute if score quest Stats matches 9 run function glarth:mechanic/quest/9u
+execute if score quest Stats matches 10 run function glarth:mechanic/quest/10u
+execute if score quest Stats matches 11 run function glarth:mechanic/quest/11u
 
 
 # Fix Gates

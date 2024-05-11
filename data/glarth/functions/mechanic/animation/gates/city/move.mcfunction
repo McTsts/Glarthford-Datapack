@@ -293,8 +293,9 @@ execute if score Gates Animation matches -1 if entity @e[tag=gate_east] run fill
 execute if score Gates Animation matches -1 if entity @e[tag=gate_west] run fill -20 29 -194 -20 26 -198 minecraft:spruce_fence[north=true,south=true]
 execute if score Gates Animation matches -1 if entity @e[tag=gate_north] run fill 5 29 -223 9 26 -223 minecraft:spruce_fence[east=true,west=true]
 
-execute if score Gates Animation matches 40 run replaceitem entity @e[tag=gate] armor.head minecraft:diamond_hoe{Damage:172s}
-execute if score Gates Animation matches 39 run replaceitem entity @e[tag=gate] armor.head minecraft:diamond_hoe{Damage:144s}
+
+execute if score Gates Animation matches 40 run item replace entity @e[tag=gate] armor.head with minecraft:diamond_hoe{Damage:172s}
+execute if score Gates Animation matches 39 run item replace entity @e[tag=gate] armor.head with minecraft:diamond_hoe{Damage:144s}
 
 execute if score Gates Animation matches 81 run kill @e[tag=gate]
 execute if score Gates Animation matches -1 run kill @e[tag=gate]

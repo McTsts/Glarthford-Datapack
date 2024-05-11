@@ -21,16 +21,17 @@ scoreboard players set tbc Random 1
 execute as @p[scores={tbcSeed=1..}] unless score @s tbcSeed matches 3374 run scoreboard players operation tbc Random = @s tbcSeed
 scoreboard players reset * tbcSeed
 
-execute if score difficulty Stats matches 1 run function glarth:mechanic/lobby/boss/eq_easy
-execute if score difficulty Stats matches 2 run function glarth:mechanic/lobby/boss/eq_medium
-execute if score difficulty Stats matches 3 run function glarth:mechanic/lobby/boss/eq_hard
+execute if score difficulty Stats matches 1 if score lobbyTBC Stats matches 1 run function glarth:mechanic/lobby/boss/eq_easy
+execute if score difficulty Stats matches 2 if score lobbyTBC Stats matches 1 run function glarth:mechanic/lobby/boss/eq_medium
+execute if score difficulty Stats matches 3 if score lobbyTBC Stats matches 1 run function glarth:mechanic/lobby/boss/eq_hard
 
 execute if score bossRe Stats matches 7 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run give @a golden_hoe
+execute if score bossRe Stats matches 8 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run give @a shears
 
 execute if score bossRe Stats matches -1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 074
 execute if score bossRe Stats matches -1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/special/dummy
 execute if score bossRe Stats matches 0 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 072
-execute if score bossRe Stats matches 0 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/bat
+execute if score bossRe Stats matches 0 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/bat_alt
 execute if score bossRe Stats matches 1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 074
 execute if score bossRe Stats matches 1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/roberto
 execute if score bossRe Stats matches 2 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 012
@@ -49,5 +50,7 @@ execute if score bossRe Stats matches 8 as @e[tag=tbcLobby,limit=1,sort=nearest]
 execute if score bossRe Stats matches 8 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/necromancer
 execute if score bossRe Stats matches 9 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 103
 execute if score bossRe Stats matches 9 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/ender_priest
+execute if score bossRe Stats matches 10 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 111
+execute if score bossRe Stats matches 10 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/boss/evil_ts
 
 scoreboard players set type Stats 2

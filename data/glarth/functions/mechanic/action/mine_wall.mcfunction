@@ -1,8 +1,13 @@
 data merge entity @s[scores={action=1}] {NoGravity:1}
-execute as @s[scores={action=120}] run function glarth:mechanic/animation/gates/city/open_east
+execute as @s[scores={action=110},tag=openedEast] if block 34 26 -198 air run function glarth:mechanic/animation/gates/city/close_east
+execute as @s[scores={action=110},tag=openedEast] if block 34 26 -198 air run tag @s remove openedEast
+execute as @s[scores={action=120},tag=!openedEast] unless block 34 26 -198 air run function glarth:mechanic/animation/gates/city/open_east
+execute as @s[scores={action=120},tag=!openedEast] unless block 34 26 -198 air run tag @s add openedEast
 execute as @s[scores={action=540}] run fill 66 29 -194 64 26 -193 air destroy
 execute as @s[scores={action=540}] run setblock 66 26 -193 stone
 
+execute if entity @s[scores={action=-99..0}] run tag @s remove c
+execute if entity @s[scores={action=1..99}] run tag @s add c
 execute if entity @s[scores={action=0..99}] run function glarth:mechanic/action/mine_wall/1
 execute if entity @s[scores={action=100..199}] run function glarth:mechanic/action/mine_wall/2
 execute if entity @s[scores={action=200..299}] run function glarth:mechanic/action/mine_wall/3

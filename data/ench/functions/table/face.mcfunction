@@ -1,5 +1,6 @@
 execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["etFace"],Particle:"item apple"}
-execute as @e[tag=etFace,limit=1,sort=nearest,distance=..0.1,type=area_effect_cloud] run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
+execute if entity @s[tag=!faceJerozgen] as @e[tag=etFace,limit=1,sort=nearest,distance=..0.1,type=area_effect_cloud] run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
+execute if entity @s[tag=faceJerozgen] as @e[tag=etFace,limit=1,sort=nearest,distance=..0.1,type=area_effect_cloud] run tp @s ~ ~ ~ facing entity @e[tag=tbcAllyJerozgen,limit=1]
 execute store result score $fp enchAnim run data get entity @e[tag=etFace,limit=1,sort=nearest,distance=..0.1,type=area_effect_cloud] Rotation[0]
 execute store result score $fet enchAnim run data get entity @s Rotation[0]
 scoreboard players operation $fet enchAnim -= $fp enchAnim

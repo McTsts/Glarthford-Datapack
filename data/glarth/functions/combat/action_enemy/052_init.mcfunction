@@ -3,6 +3,7 @@ tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":t
 execute as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init
 function glarth:combat/attack_init
 
-scoreboard players operation @s attack_053 *= 2 Const
+scoreboard players set @s attack_052 1
+scoreboard players set @s attack_053 2
 
 function glarth:dialogue/netheran/lines/attack3

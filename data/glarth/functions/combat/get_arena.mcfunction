@@ -46,3 +46,5 @@ execute if entity @s[tag=tbcLoc102] run scoreboard players set arena tbcStats 10
 execute if entity @s[tag=tbcLoc103] run scoreboard players set arena tbcStats 103
 execute if entity @s[tag=tbcLoc104] run scoreboard players set arena tbcStats 104
 execute if entity @s[tag=tbcLoc105] run scoreboard players set arena tbcStats 105
+
+execute if entity @s[tag=tbcLoc111] run scoreboard players set arena tbcStats 111

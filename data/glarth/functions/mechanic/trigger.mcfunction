@@ -11,8 +11,10 @@ execute as @s[scores={trigger=-1},gamemode=!adventure] run tellraw @s ["",{"tran
 execute as @s[scores={trigger=1..},gamemode=spectator] run tellraw @s ["",{"translate":"spectator","color":"red"}]
 scoreboard players set @s[scores={trigger=1..},gamemode=spectator] trigger 0
 # Stop voices & Get items
-execute as @s[scores={trigger=1..}] run stopsound @a[distance=..5] voice
+execute as @s[scores={trigger=1..}] unless score @s triggerPrev = @s trigger run stopsound @a[distance=..5] voice
 execute as @s[scores={trigger=1..}] run function glarth:mechanic/item 
+
+
 
 ##
 ## Trades
@@ -1673,6 +1675,159 @@ execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=cha
 execute if entity @s[scores={trigger=193}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
 execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
 execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#194 Scribbling Enderman | Paper & Glow Ink to Book [A]
+execute if entity @s[scores={trigger=194}] run tag @e[type=armor_stand,tag=charA,tag=enderpig] add charT
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=a] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iGlowInk=1..,iFeather=1..}] run function glarth:dialogue/enderpig/triggers/194
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] unless entity @s[scores={iGlowInk=1..,iFeather=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=194}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=194}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#195 Jerozgen | Translate Short Stories [A]
+execute if entity @s[scores={trigger=195}] run tag @e[type=armor_stand,tag=charA,tag=jerozgen] add charT
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=a] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iShortStories=1..,iWBook=1..}] run function glarth:dialogue/jerozgen/triggers/195
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iShortStories=..0,iWBook=1..}] run function glarth:dialogue/jerozgen/triggers/195x
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] unless entity @s[scores={iWBook=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=195}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=195}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#196 Suso | Cod [A]
+execute if entity @s[scores={trigger=196}] run tag @e[type=armor_stand,tag=charA,tag=suso] add charT
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=a] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iFish=1..}] run function glarth:dialogue/suso/triggers/196
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] unless entity @s[scores={iFish=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=196}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=196}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#197 Suso | Cooked Cod [B]
+execute if entity @s[scores={trigger=197}] run tag @e[type=armor_stand,tag=charA,tag=suso] add charT
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=b] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!b] if entity @s[scores={iFishCooked=1..}] run function glarth:dialogue/suso/triggers/197
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!b] unless entity @s[scores={iFishCooked=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=197}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=197}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#198 Suso | Salmon [C]
+execute if entity @s[scores={trigger=198}] run tag @e[type=armor_stand,tag=charA,tag=suso] add charT
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=c] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] if entity @s[scores={iSalmon=1..}] run function glarth:dialogue/suso/triggers/198
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] unless entity @s[scores={iSalmon=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=198}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=198}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#199 Suso | Cooked Salmon => Cat [D]
+execute if entity @s[scores={trigger=199}] run tag @e[type=armor_stand,tag=charA,tag=suso] add charT
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=d] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!d] if entity @s[scores={iSalmonCooked=1..}] run function glarth:dialogue/suso/triggers/199
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!d] unless entity @s[scores={iSalmonCooked=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=199}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=199}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#200 Gary | Quick Fast / No [C]
+execute if entity @s[scores={trigger=200}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=200}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=c] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=200}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] run function glarth:dialogue/gibbs/triggers/200
+execute if entity @s[scores={trigger=200}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=200}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=200}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=200}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#201 Gary | Quick Fast / Yes [C]
+execute if entity @s[scores={trigger=201}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=201}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=c] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=201}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] run function glarth:dialogue/gibbs/triggers/201
+execute if entity @s[scores={trigger=201}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=201}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=201}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=201}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#202 Gary | Sapphire => Dialogue [D]
+execute if entity @s[scores={trigger=202}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=d] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!d] if entity @s[scores={iSapphire=1..}] run function glarth:dialogue/gibbs/triggers/202
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!d] unless entity @s[scores={iSapphire=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=202}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=202}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#203 Gary | Dialogue [E]
+execute if entity @s[scores={trigger=203}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=203}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=e] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=203}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!e] run function glarth:dialogue/gibbs/triggers/203
+execute if entity @s[scores={trigger=203}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=203}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=203}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=203}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#204 McTsts | Dialogue [B]
+execute if entity @s[scores={trigger=204}] run tag @e[type=armor_stand,tag=charA,tag=mctsts] add charT
+execute if entity @s[scores={trigger=204}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=b] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=204}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!b] run function glarth:dialogue/mctsts/triggers/204
+execute if entity @s[scores={trigger=204}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=204}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=204}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=204}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#205 McTsts | Redstone => Help [C]
+execute if entity @s[scores={trigger=205}] run tag @e[type=armor_stand,tag=charA,tag=mctsts] add charT
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=c] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] if entity @s[scores={iRedstone=1..}] run function glarth:dialogue/mctsts/triggers/205
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] unless entity @s[scores={iRedstone=1..}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=205}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=205}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#206 Jerozgen | Dialogue [B]
+execute if entity @s[scores={trigger=206}] run tag @e[type=armor_stand,tag=charA,tag=jerozgen] add charT
+execute if entity @s[scores={trigger=206}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=b] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=206}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!b] run function glarth:dialogue/jerozgen/triggers/206
+execute if entity @s[scores={trigger=206}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=206}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=206}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=206}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#207 Adri | Dialogue [C]
+execute if entity @s[scores={trigger=207}] run tag @e[type=armor_stand,tag=charA,tag=adri] add charT
+execute if entity @s[scores={trigger=207}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=c] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=207}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!c] run function glarth:dialogue/adri/triggers/207
+execute if entity @s[scores={trigger=207}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=207}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=207}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=207}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#208 Adri | Dialogue [D]
+execute if entity @s[scores={trigger=208}] run tag @e[type=armor_stand,tag=charA,tag=adri] add charT
+execute if entity @s[scores={trigger=208}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=d] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=208}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!d] run function glarth:dialogue/adri/triggers/208
+execute if entity @s[scores={trigger=208}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=208}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=208}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=208}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#209 Adri | Dog => Help [E]
+execute if entity @s[scores={trigger=209}] run tag @e[type=armor_stand,tag=charA,tag=adri] add charT
+execute if entity @s[scores={trigger=209}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=e] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=209}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!e] run function glarth:dialogue/adri/triggers/209
+execute if entity @s[scores={trigger=209}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=209}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=209}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=209}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#210 Gary | Yeah [H]
+execute if entity @s[scores={trigger=210}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=210}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=h] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=210}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!h] run function glarth:dialogue/gibbs/triggers/210
+execute if entity @s[scores={trigger=210}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=210}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=210}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=210}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
+#211 Gary | Yes [H]
+execute if entity @s[scores={trigger=211}] run tag @e[type=armor_stand,tag=charA,tag=gibbs] add charT
+execute if entity @s[scores={trigger=211}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=h] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=211}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!h] run function glarth:dialogue/gibbs/triggers/211
+execute if entity @s[scores={trigger=211}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=211}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=211}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=211}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
 
 ##
 ## END
@@ -1680,4 +1835,5 @@ execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=cha
 tag @e[tag=char,type=armor_stand] remove charT
 execute if score game Stats matches 1 run scoreboard players enable @s trigger
 execute as @s[scores={trigger=1..}] run scoreboard players add traded PlayStats 1
+scoreboard players operation @s triggerPrev = @s trigger
 scoreboard players set @s trigger 0

@@ -15,6 +15,10 @@ execute if entity @s[tag=tbcCompanionN,type=horse] if entity @a[scores={playerid
 execute if entity @s[tag=tbcCompanionN,type=horse] if entity @a[scores={playerid=2},tag=func] run data modify storage glarth:main combat.comp[1][-1] merge value {id:"horse"}
 execute if entity @s[tag=tbcCompanionN,type=horse] if entity @a[scores={playerid=3},tag=func] run data modify storage glarth:main combat.comp[2][-1] merge value {id:"horse"}
 
+execute if entity @s[tag=tbcCompanionN,type=cat] if entity @a[scores={playerid=1},tag=func] run data modify storage glarth:main combat.comp[0][-1] merge value {id:"cat"}
+execute if entity @s[tag=tbcCompanionN,type=cat] if entity @a[scores={playerid=2},tag=func] run data modify storage glarth:main combat.comp[1][-1] merge value {id:"cat"}
+execute if entity @s[tag=tbcCompanionN,type=cat] if entity @a[scores={playerid=3},tag=func] run data modify storage glarth:main combat.comp[2][-1] merge value {id:"cat"}
+
 gamerule showDeathMessages false
 tp @s[tag=tbcCompanionN] ~ 0 ~
 kill @s[tag=tbcCompanionN]

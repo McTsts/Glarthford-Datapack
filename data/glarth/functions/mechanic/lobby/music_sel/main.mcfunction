@@ -109,7 +109,7 @@ execute if score music lobMusic matches 14 run data merge block 175 24 -110 {Tex
 # Aurora Loop
 execute if score music lobMusic matches 15 run scoreboard players set @s MusicSet 15
 execute if score music lobMusic matches 15 run function glarth:mechanic/lobby/music_sel/tempo/slow
-execute if score music lobMusic matches 15 run function glarth:mechanic/lobby/music_sel/creator/frankum
+execute if score music lobMusic matches 15 run function glarth:mechanic/lobby/music_sel/creator/enshano
 execute if score music lobMusic matches 15 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.15","bold":true}]'}
 
 # Quiet Merchant
@@ -235,7 +235,7 @@ execute if score music lobMusic matches 35 run data merge block 175 24 -110 {Tex
 # Aurora
 execute if score music lobMusic matches 36 run scoreboard players set @s MusicSet 36
 execute if score music lobMusic matches 36 run function glarth:mechanic/lobby/music_sel/tempo/slow
-execute if score music lobMusic matches 36 run function glarth:mechanic/lobby/music_sel/creator/frankum
+execute if score music lobMusic matches 36 run function glarth:mechanic/lobby/music_sel/creator/enshano
 execute if score music lobMusic matches 36 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.36","bold":true}]'}
 
 # The Source (Fast)
@@ -253,7 +253,7 @@ execute if score music lobMusic matches 38 run data merge block 175 24 -110 {Tex
 # Haunting Sequence
 execute if score music lobMusic matches 39 run scoreboard players set @s MusicSet 39
 execute if score music lobMusic matches 39 run function glarth:mechanic/lobby/music_sel/tempo/fast
-execute if score music lobMusic matches 39 run function glarth:mechanic/lobby/music_sel/creator/afleetingspeck
+execute if score music lobMusic matches 39 run function glarth:mechanic/lobby/music_sel/creator/meta70
 execute if score music lobMusic matches 39 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.39","bold":true}]'}
 
 # Howling Night
@@ -262,10 +262,10 @@ execute if score music lobMusic matches 40 run function glarth:mechanic/lobby/mu
 execute if score music lobMusic matches 40 run function glarth:mechanic/lobby/music_sel/creator/mistersherlock
 execute if score music lobMusic matches 40 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.40","bold":true}]'}
 
-# Scary Night
+# Piano Fantome
 execute if score music lobMusic matches 41 run scoreboard players set @s MusicSet 41
 execute if score music lobMusic matches 41 run function glarth:mechanic/lobby/music_sel/tempo/medium
-execute if score music lobMusic matches 41 run function glarth:mechanic/lobby/music_sel/creator/csnmedia
+execute if score music lobMusic matches 41 run function glarth:mechanic/lobby/music_sel/creator/enshano
 execute if score music lobMusic matches 41 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.41","bold":true}]'}
 
 # Spooky Wind
@@ -353,10 +353,10 @@ execute if score music lobMusic matches 55 run function glarth:mechanic/lobby/mu
 execute if score music lobMusic matches 55 run function glarth:mechanic/lobby/music_sel/creator/lenaraine
 execute if score music lobMusic matches 55 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.56","bold":true}]'}
 
-# Battle Theme
+# Birthright
 execute if score music lobMusic matches 56 run scoreboard players set @s MusicSet 57
 execute if score music lobMusic matches 56 run function glarth:mechanic/lobby/music_sel/tempo/fast
-execute if score music lobMusic matches 56 run function glarth:mechanic/lobby/music_sel/creator/andy_ray
+execute if score music lobMusic matches 56 run function glarth:mechanic/lobby/music_sel/creator/enshano
 execute if score music lobMusic matches 56 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.57","bold":true}]'}
 
 # Below the Above (Sewers)
@@ -376,4 +376,16 @@ execute if score music lobMusic matches 59 run scoreboard players set @s MusicSe
 execute if score music lobMusic matches 59 run function glarth:mechanic/lobby/music_sel/tempo/slow
 execute if score music lobMusic matches 59 run function glarth:mechanic/lobby/music_sel/creator/lenaraine
 execute if score music lobMusic matches 59 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.60","bold":true}]'}
+
+# Rubedo
+execute if score music lobMusic matches 60 run scoreboard players set @s MusicSet 61
+execute if score music lobMusic matches 60 run function glarth:mechanic/lobby/music_sel/tempo/average
+execute if score music lobMusic matches 60 run function glarth:mechanic/lobby/music_sel/creator/lenaraine
+execute if score music lobMusic matches 60 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.61","bold":true}]'}
+
+# Birthright
+execute if score music lobMusic matches 61 run scoreboard players set @s MusicSet 62
+execute if score music lobMusic matches 61 run function glarth:mechanic/lobby/music_sel/tempo/fast
+execute if score music lobMusic matches 61 run function glarth:mechanic/lobby/music_sel/creator/enshano
+execute if score music lobMusic matches 61 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.62","bold":true}]'}
 

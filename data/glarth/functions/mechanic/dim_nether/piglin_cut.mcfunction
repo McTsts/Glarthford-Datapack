@@ -36,7 +36,7 @@ execute if entity @s[tag=doC] if score @s action matches 520 run data merge enti
 execute if entity @s[tag=doC] if score @s action matches 540..570 run tp @s ~0.125 ~ ~-0.125 -135 0
 execute if entity @s[tag=doC] if score @s action matches 575 run particle smoke ~ ~ ~ 1 1 1 0.1 100
 execute if entity @s[tag=doC] if score @s action matches 575 run tp @s -172.5 57.0 -203.5 -20.0 0.0
-execute if entity @s[tag=doC] if score @s action matches 575 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:475}
+execute if entity @s[tag=doC] if score @s action matches 575 run item replace entity @s armor.head with diamond_hoe{CustomModelData:475}
 execute if entity @s[tag=doC] if score @s action matches 575 run tag @e[tag=piglin2cut] remove cnoc
 execute if entity @s[tag=doC] if score @s action matches 575 run tag @e[tag=piglin2cut] add piglin2
 execute if entity @s[tag=doC] if score @s action matches 580 run tag @s remove doC

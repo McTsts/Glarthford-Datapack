@@ -1,4 +1,4 @@
-replaceitem entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet",tag:{CustomModelData:1}}]}] armor.head diamond_hoe{CustomModelData:275,HideFlags:63,custom:"vindicator_skull",display:{Name:'{"italic":"false","translate":"item.vindicator_skull"}'}}
+item replace entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet",tag:{CustomModelData:1}}]}] armor.head with diamond_hoe{CustomModelData:275,HideFlags:63,custom:"vindicator_skull",display:{Name:'{"italic":"false","translate":"item.vindicator_skull"}'}}
 scoreboard players set slot Temp -1
 execute store success score success Temp run data get entity @s Inventory[{id:"minecraft:diamond_hoe",tag:{CustomModelData:275}}].Slot
 execute if score success Temp matches 1 store result score slot Temp run data get entity @s Inventory[{id:"minecraft:diamond_hoe",tag:{CustomModelData:275}}].Slot

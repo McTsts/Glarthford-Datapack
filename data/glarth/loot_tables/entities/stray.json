@@ -12,7 +12,7 @@
           "type": "item",
           "name": "minecraft:brown_dye",
           "weight": 1,
-		  "functions": [
+          "functions": [
             {
               "function": "set_damage",
               "damage": {
@@ -24,19 +24,19 @@
         }
       ]
     },
-	{
+    {
       "rolls": 1,
       "entries": [
         {
           "type": "item",
           "name": "minecraft:arrow",
           "weight": 1,
-		  "functions": [
-			{
-			  "function": "set_count",
-			  "count": 2
-			}
-		  ]
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
         }
       ]
     },
@@ -65,7 +65,7 @@
         }
       ]
     },
-	{
+    {
       "rolls": 1,
       "entries": [
         {
@@ -79,12 +79,12 @@
                 "min": 1,
                 "max": 4
               }
-			}  
+            }
           ]
         }
       ]
     },
-	{
+    {
       "rolls": 1,
       "entries": [
         {
@@ -94,7 +94,7 @@
           "functions": [
             {
               "function": "set_damage",
-              "damage": 0.8424087123638693145419602818706
+              "damage": 0.8424087123638693
             },
             {
               "function": "set_nbt",

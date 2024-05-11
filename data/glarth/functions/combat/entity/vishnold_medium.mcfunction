@@ -11,6 +11,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 120
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 150
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 200
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 300
 scoreboard players remove @s tbcSpeed 2
 
 #Spawn

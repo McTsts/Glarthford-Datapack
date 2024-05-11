@@ -13,7 +13,7 @@ execute if score n Random matches 1 run scoreboard players operation damage tbcS
 execute if score n Random matches 2 run scoreboard players operation damage tbcStats *= 2 Const
 execute if score n Random matches 2 run scoreboard players operation damage tbcStats -= @e[scores={tbcSel=1}] tbcArmor
 execute if score n Random matches 2 run scoreboard players operation damage tbcStats /= 2 Const
-execute if entity @e[tag=tbcEnderDodge,scores={tbcSel=1}] run scoreboard players set dodged tbcStats 3
+execute if entity @e[tag=tbcEnderDodge,scores={tbcSel=1}] unless score @e[scores={tbcSel=1},limit=1] tbcStun matches 1.. unless score @e[scores={tbcSel=1},limit=1] tbcFreeze matches 0.. run scoreboard players set dodged tbcStats 3
 execute as @e[tag=tbcTurn] run function glarth:combat/action/util/damage
 execute as @e[tag=tbcTurn] at @s run playsound minecraft:entity.arrow.hit player @s ~ ~ ~ 1 1
 kill @s

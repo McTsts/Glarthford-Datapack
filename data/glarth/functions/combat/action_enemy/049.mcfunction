@@ -16,7 +16,7 @@ execute if score @s tbcAttackStage matches 1 if score n Random matches 5..8 run 
 execute if score @s tbcAttackStage matches 1 if score n Random matches 6..8 run summon minecraft:armor_stand ^ ^1.100 ^2.7 {ArmorItems:[{},{},{},{id:"slime_block",Count:1}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"green"}
 execute if score @s tbcAttackStage matches 1 if score n Random matches 7..8 run summon minecraft:armor_stand ^ ^1.720 ^2.7 {ArmorItems:[{},{},{},{id:"slime_block",Count:1}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"green"}
 execute if score @s tbcAttackStage matches 1 if score n Random matches 8..8 run summon minecraft:armor_stand ^ ^2.34 ^2.7 {ArmorItems:[{},{},{},{id:"slime_block",Count:1}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"green"}
-execute if score @s tbcAttackStage matches 1 as @s[tag=tbcEnderPriest] run replaceitem entity @e[tag=tbcTNT] armor.head slime_block{CustomModelData:1}
+execute if score @s tbcAttackStage matches 1 as @s[tag=tbcEnderPriest] run item replace entity @e[tag=tbcTNT] armor.head with slime_block{CustomModelData:1}
 execute if score @s tbcAttackStage matches 1 as @s[tag=tbcEnderPriest] run team join dark_purple @e[tag=tbcTNT] 
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcTNT,type=armor_stand] at @s positioned ~ ~1 ~ facing entity @e[tag=tbcTargetAS,limit=1,type=armor_stand] feet run tp @s ~ ~ ~ ~ ~
 execute if score @s tbcAttackStage matches 1 if score n Random matches 4 run scoreboard players set @s tbcAttackStage 11

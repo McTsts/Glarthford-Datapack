@@ -1,5 +1,3 @@
-forceload add -84 -600
-forceload add -20 -609
 setblock -48 90 -645 minecraft:iron_trapdoor
 data merge entity @e[tag=ender_priest,limit=1] {ArmorItems:[]}
 fill -50 93 -642 -47 90 -642 minecraft:barrier

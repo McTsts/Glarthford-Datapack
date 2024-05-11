@@ -1,5 +1,5 @@
 ## Back
-replaceitem entity @s hotbar.8 minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
+item replace entity @s hotbar.8 with minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
 
 ## Attack Options
 # A: Type
@@ -63,6 +63,12 @@ execute if data storage glarth:main combat.turn.all[{id:"minecraft:slime_ball"}]
 execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 13
 execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamB 2
 execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamC 5
+execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
+# Glow Ink Sac
+execute if data storage glarth:main combat.turn.all[{id:"minecraft:glow_ink_sac"}] run scoreboard players set S tbcAttackParamX 1
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamA 16
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamB 3
+execute if score S tbcAttackParamX matches 1 run scoreboard players set 0 tbcAttackParamC 2
 execute if score S tbcAttackParamX matches 1 run function glarth:combat/menu/param/shift
 # Mayor Tophat
 execute if data storage glarth:main combat.turn.all[{id:"minecraft:diamond_hoe",tag:{custom:"tophat"}}] run scoreboard players set S tbcAttackParamX 1

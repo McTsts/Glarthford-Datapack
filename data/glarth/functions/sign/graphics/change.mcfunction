@@ -9,3 +9,5 @@ execute if score lowGraphics Stats matches 0 run data merge entity @e[tag=lobby_
 execute if score lowGraphics Stats matches 0 run data merge entity @e[tag=lobby_brick2,limit=1] {ArmorItems:[{},{},{},{}]}
 execute if score lowGraphics Stats matches 1 run data merge entity @e[tag=lobby_brick1,limit=1] {ArmorItems:[{},{},{},{}]}
 execute if score lowGraphics Stats matches 1 run data merge entity @e[tag=lobby_brick2,limit=1] {ArmorItems:[{},{},{},{id:"brick",Count:1}]}
+
+function glarth:sign/change

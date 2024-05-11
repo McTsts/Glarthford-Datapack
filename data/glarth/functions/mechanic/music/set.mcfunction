@@ -23,7 +23,7 @@ scoreboard players set @s[scores={MusicSet=11}] MusicTime 3340
 scoreboard players set @s[scores={MusicSet=12}] MusicTime 2040
 scoreboard players set @s[scores={MusicSet=13}] MusicTime 1000
 scoreboard players set @s[scores={MusicSet=14}] MusicTime 1400
-scoreboard players set @s[scores={MusicSet=15}] MusicTime 770
+scoreboard players set @s[scores={MusicSet=15}] MusicTime 500
 scoreboard players set @s[scores={MusicSet=16}] MusicTime 3840
 scoreboard players set @s[scores={MusicSet=17}] MusicTime 1180
 scoreboard players set @s[scores={MusicSet=18}] MusicTime 2350
@@ -44,12 +44,12 @@ scoreboard players set @s[scores={MusicSet=32}] MusicTime 1840
 scoreboard players set @s[scores={MusicSet=33}] MusicTime 3220
 scoreboard players set @s[scores={MusicSet=34}] MusicTime 1084
 scoreboard players set @s[scores={MusicSet=35}] MusicTime 1670
-scoreboard players set @s[scores={MusicSet=36}] MusicTime 2740
+scoreboard players set @s[scores={MusicSet=36}] MusicTime 2580
 scoreboard players set @s[scores={MusicSet=37}] MusicTime 1610
 scoreboard players set @s[scores={MusicSet=38}] MusicTime 520
-scoreboard players set @s[scores={MusicSet=39}] MusicTime 750
+scoreboard players set @s[scores={MusicSet=39}] MusicTime 780
 scoreboard players set @s[scores={MusicSet=40}] MusicTime 910
-scoreboard players set @s[scores={MusicSet=41}] MusicTime 1130
+scoreboard players set @s[scores={MusicSet=41}] MusicTime 3000
 scoreboard players set @s[scores={MusicSet=42}] MusicTime 550
 scoreboard players set @s[scores={MusicSet=43}] MusicTime 743
 scoreboard players set @s[scores={MusicSet=44}] MusicTime 455
@@ -65,13 +65,15 @@ scoreboard players set @s[scores={MusicSet=53}] MusicTime 2000
 scoreboard players set @s[scores={MusicSet=54}] MusicTime 2600
 scoreboard players set @s[scores={MusicSet=55}] MusicTime 1800
 scoreboard players set @s[scores={MusicSet=56}] MusicTime 3180
-scoreboard players set @s[scores={MusicSet=57}] MusicTime 1880
+scoreboard players set @s[scores={MusicSet=57}] MusicTime 2760
 scoreboard players set @s[scores={MusicSet=58}] MusicTime 960
 scoreboard players set @s[scores={MusicSet=59}] MusicTime 1400
 scoreboard players set @s[scores={MusicSet=60}] MusicTime 4230
+scoreboard players set @s[scores={MusicSet=61}] MusicTime 3120
+scoreboard players set @s[scores={MusicSet=62}] MusicTime 2540
 #End
-scoreboard players set @s[scores={MusicSet=100}] MusicTime 160
-scoreboard players set @s[scores={MusicSet=101}] MusicTime 160
+scoreboard players set @s[scores={MusicSet=100}] MusicTime 170
+scoreboard players set @s[scores={MusicSet=101}] MusicTime 170
 scoreboard players set @s[scores={MusicSet=104}] MusicTime 250
 
 #Default
@@ -135,6 +137,8 @@ playsound battle_theme record @s[scores={MusicSet=57}] ~ ~ ~ 0.8 1 0.8
 playsound below_the_above_sewers record @s[scores={MusicSet=58}] ~ ~ ~ 1 2 1
 playsound lost_in_time_battle record @s[scores={MusicSet=59}] ~ ~ ~ 1 1.5 1
 playsound pigstep record @s[scores={MusicSet=60}] ~ ~10000 ~ 500 0.7 1
+playsound rubedo record @s[scores={MusicSet=61}] ~ ~10000 ~ 0.3 2 0.3
+playsound rumbling_beneath record @s[scores={MusicSet=62}] ~ ~ ~ 1 1 1
 #End
 playsound end0 record @s[scores={MusicSet=100}] ~ ~ ~ 1 1 1
 playsound end1 record @s[scores={MusicSet=101}] ~ ~ ~ 1 1 1

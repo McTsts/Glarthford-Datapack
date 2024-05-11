@@ -8,7 +8,7 @@ summon minecraft:armor_stand 165.25 25.0 -131.0 {DisabledSlots:4144959,Passenger
 summon minecraft:armor_stand 160 25.0 -130 {DisabledSlots:4144959,Tags:["lobby","charQS"],Rotation:[0f,0f]}
 summon minecraft:armor_stand 160 25.425 -130 {DisabledSlots:4144959,Tags:["lobby","charQSname"],Rotation:[0f,0f],CustomNameVisible:1,Marker:1,CustomName:'{"text":"Spouse","font":"custom:small"}'}
 
-summon minecraft:area_effect_cloud 163.0 26.8 -131.0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameAll"],CustomName:'""',CustomNameVisible:1}
+summon minecraft:armor_stand 163.0 27.3 -131.0 {Radius:0.0f,Duration:2147483647,Tags:["lobby","selNameAll"],CustomName:'""',CustomNameVisible:1,Marker:1}
 
 loot replace entity @e[type=armor_stand,tag=charQ4,tag=lobby] armor.head loot glarth:custom/skull
 execute as @e[tag=charQ4,tag=lobby,type=armor_stand] run data modify entity @s HandItems[0] merge from entity @s ArmorItems[3]

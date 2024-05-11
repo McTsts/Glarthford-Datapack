@@ -21,10 +21,14 @@ execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:8}] if score 8_option
 tag @e[tag=tbcSelGlow] remove tbcSelGlow
 execute as @s[nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 run scoreboard players set selRec tbcStats 0
 execute as @s[nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 at @s positioned ~ ~1.7 ~ rotated as @s run function glarth:combat/menu/util/select_ray
-execute if entity @e[tag=tbcEnemy,nbt={Glowing:1b}] as @e[tag=tbcEnemy,tag=!tbcPermaGlow] run data merge entity @s {Glowing:0}
+execute if score lowGraphics Stats matches 0 if entity @e[tag=tbcEnemy,nbt={Glowing:1b}] as @e[tag=charQEall] run data merge entity @s {Glowing:0}
+execute if score lowGraphics Stats matches 0 if entity @e[tag=tbcEnemy,nbt={Glowing:1b}] as @e[tag=tbcEnemy,tag=!tbcPermaGlow] run data merge entity @s {Glowing:0}
+execute if score lowGraphics Stats matches 1 if entity @e[tag=tbcEnemy,nbt={Glowing:1b}] as @e[tag=charQEall] run data merge entity @s {Glowing:0}
+execute if score lowGraphics Stats matches 1 if entity @e[tag=tbcEnemy,nbt={Glowing:1b}] as @e[tag=tbcEnemy] run data merge entity @s {Glowing:0}
 execute as @s[nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 as @e[tag=tbcSelGlow] run data merge entity @s {Glowing:1}
+execute as @s[nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 as @e[tag=tbcSelGlow] at @s positioned ~ ~1 ~ as @e[tag=charQEall,distance=..1] run data merge entity @s {Glowing:1}
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 if entity @e[tag=tbcSelGlow] run scoreboard players set @e[tag=tbcEnemy] tbcSel 0
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 if entity @e[tag=tbcSelGlow] run scoreboard players set @e[tag=tbcSelGlow] tbcSel 1
-execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 if entity @e[tag=tbcSelGlow] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1.5
+execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 if entity @e[tag=tbcSelGlow] at @s run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.5
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 0..2 unless entity @e[tag=tbcSelGlow] at @s run function glarth:combat/menu/util/invalid
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:7}] if score 7_select tbcUnlocked matches 3 run function glarth:combat/selection

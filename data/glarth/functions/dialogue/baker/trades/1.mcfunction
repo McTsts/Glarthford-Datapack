@@ -1,3 +1,3 @@
 # Make Freshly Baked Bread
-execute if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"baker.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 61"}}]
-execute if entity @s[tag=b,tag=!c] run tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"baker.a2.1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 62"}},{"text":"] ","color":"green"}]
+execute if entity @s[tag=!a] run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"baker.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 61"}}]
+execute if entity @s[tag=b,tag=!c] run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"baker.a2.1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 62"}},{"text":"] ","color":"green"}]

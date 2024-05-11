@@ -6,6 +6,7 @@ data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"transla
 scoreboard players set @s attack_025 1
 scoreboard players set @s attack_146 2
 scoreboard players set @s attack_201 2
+scoreboard players set @s tbcQueue 1000
 tag @s add death_013
 #Spawn
 tag @s add tbcSnowGolem

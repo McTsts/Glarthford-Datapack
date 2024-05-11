@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"enderpig","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"enderpig.g2","color":"gray","font":"custom:ender"}]
-playsound opal4 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"enderpig","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"enderpig.g2","color":"gray","font":"custom:ender"}]
+execute unless score @s trigger = @s triggerPrev run playsound opal4 voice @a[distance=..5] ~ ~ ~ 1 1 1

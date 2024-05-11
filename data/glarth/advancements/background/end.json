@@ -1,15 +1,19 @@
 {
     "display": {
-         "icon": {
+        "icon": {
             "item": "minecraft:paper",
             "nbt": "{CustomModelData:2}"
         },
-        "title": {  "text": "" },
-        "description": { "text": "" },
+        "title": {
+            "text": ""
+        },
+        "description": {
+            "text": ""
+        },
         "background": "minecraft:textures/block/white_concrete.png",
-		"announce_to_chat": false,
-		"show_toast": false,
-		"frame": "goal"
+        "announce_to_chat": false,
+        "show_toast": false,
+        "frame": "goal"
     },
     "criteria": {
         "start": {

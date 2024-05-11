@@ -8,6 +8,19 @@ execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. run
 execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score C tbcAttackParamX matches 1 run scoreboard players set attackFire tbcStats 3
 execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score C tbcAttackParamX matches 2 run scoreboard players set attackFreeze tbcStats 2
 execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score C tbcAttackParamX matches 3 run scoreboard players set attackPoison tbcStats 2
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. run scoreboard players set @s lastAttack 1
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 1..3 run scoreboard players set @s lastAttackData 1
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 4 run scoreboard players set @s lastAttackData 2
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 5 run scoreboard players set @s lastAttackData 1
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 6 run scoreboard players set @s lastAttackData 3
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 7 run scoreboard players set @s lastAttackData 4
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 8 run scoreboard players set @s lastAttackData 5
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 9 run scoreboard players set @s lastAttackData 6
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 10..13 run scoreboard players set @s lastAttackData 1
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 14 run scoreboard players set @s lastAttackData 7
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 15 run scoreboard players set @s lastAttackData 1
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 16 run scoreboard players set @s lastAttackData 8
+execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 17..19 run scoreboard players set @s lastAttackData 1
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:8}] run scoreboard players set T tbcAttackParamX 0
 execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches -1 run function glarth:combat/menu/util/invalid
 execute as @s[scores={tbcCarrot=1..}] if score T tbcAttackParamX matches 1.. if score attackType tbcStats matches 1 run tellraw @a ["",[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s[type=player]","interpret":true},{"selector":"@s[type=!player]"}],{"text":" >> ","color":"gray"},{"translate":"tbc.msg.use","with":[{"translate":"tbc.attack.melee.wooden_hoe","bold":true}]}]

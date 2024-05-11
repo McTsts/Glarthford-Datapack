@@ -64,4 +64,6 @@ execute if score music lobMusic matches 56 run function glarth:mechanic/lobby/mu
 execute if score music lobMusic matches 57 run function glarth:mechanic/lobby/music_sel/color/aqua
 execute if score music lobMusic matches 58 run function glarth:mechanic/lobby/music_sel/color/gray
 execute if score music lobMusic matches 59 run function glarth:mechanic/lobby/music_sel/color/red
+execute if score music lobMusic matches 60 run function glarth:mechanic/lobby/music_sel/color/gray
+execute if score music lobMusic matches 61 run function glarth:mechanic/lobby/music_sel/color/gray
 

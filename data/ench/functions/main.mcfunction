@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=etMain] at @s if entity @p[distance=..15] run function ench:table/main

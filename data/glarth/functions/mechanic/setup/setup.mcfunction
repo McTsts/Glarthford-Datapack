@@ -48,4 +48,7 @@ function glarth:mechanic/setup/iron_trapdoor_fix
 execute if score quest Stats matches 0 run function glarth:mechanic/setup/setup_tutorial
 execute unless score quest Stats matches 0 run function glarth:mechanic/setup/setup_quest
 function glarth:mechanic/setup/realms
-execute as @a run function glarth:team/call
+execute as @a run function glarth:team/join/player
+
+# load arenas - this is new in 1.17 because Minecraft is a game engine that reasonably operates which means that in an attempt to increase performance, performance will be decreased. Thanks. Very useful. Great update.
+forceload add 241 -159 534 28

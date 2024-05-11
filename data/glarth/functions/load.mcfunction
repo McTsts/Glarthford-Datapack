@@ -27,3 +27,6 @@ gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 gamerule spawnRadius 0
 gamerule reducedDebugInfo true
+
+execute if entity @a[gamemode=creative] run gamerule reducedDebugInfo false
+execute if entity @a[gamemode=creative] run gamerule sendCommandFeedback true

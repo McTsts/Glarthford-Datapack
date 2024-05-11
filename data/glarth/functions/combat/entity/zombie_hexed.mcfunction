@@ -9,6 +9,7 @@ scoreboard players set @s tbcDodge 0
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcStrength 20
 execute if score difficulty tbcStats matches 4 run scoreboard players add @s tbcStrength 25
 execute if score difficulty tbcStats matches 5 run scoreboard players add @s tbcStrength 30
+execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcStrength 35
 scoreboard players set @s attack_041 2
 scoreboard players set @s attack_031 2
 scoreboard players set @s attack_030 2

@@ -51,3 +51,24 @@ setblock -46 25 -156 minecraft:oak_trapdoor[facing=north,half=bottom,open=true,p
 # Temple
 fill 114 97 -88 96 80 -102 minecraft:dark_oak_leaves replace minecraft:spruce_leaves
 fill 100 99 -126 86 79 -116 minecraft:dark_oak_leaves replace minecraft:spruce_leaves
+
+# lake twigs
+setblock -8 27 -149 minecraft:air
+setblock -5 27 -152 minecraft:air
+setblock -13 27 -147 minecraft:air
+
+# swamp twigs 
+setblock -21 26 -151 minecraft:air
+setblock -28 26 -146 minecraft:air
+setblock -26 26 -152 minecraft:air
+setblock -35 26 -151 minecraft:air
+setblock -37 26 -153 minecraft:air
+setblock -36 26 -147 minecraft:air
+setblock -44 26 -146 minecraft:air
+setblock -47 26 -151 minecraft:air
+setblock -48 26 -149 minecraft:air
+setblock -48 26 -143 minecraft:air
+setblock -31 26 -153 minecraft:air
+
+#lilypads
+function glarth:mechanic/seasons/season/extra/lilypad_unbob

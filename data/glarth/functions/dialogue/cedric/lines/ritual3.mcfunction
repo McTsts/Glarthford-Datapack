@@ -1,2 +1,2 @@
-tellraw @a[distance=..15] ["",{"text":"\n[","color":"dark_gray"},{"translate":"cedric","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"cedric.r.3","color":"gray"}]
-execute at @e[tag=cedric] run playsound cedric5 voice @a[distance=..15] ~ ~ ~ 1 1 0.05
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..15] ["",{"text":"\n[","color":"dark_gray"},{"translate":"cedric","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"cedric.r.3","color":"gray"}]
+execute at @e[tag=cedric] run execute unless score @s trigger = @s triggerPrev run playsound cedric5 voice @a[distance=..15] ~ ~ ~ 1 1 0.05

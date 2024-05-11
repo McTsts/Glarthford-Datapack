@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"pillager_guard1","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"pillager_guard1.n","color":"gray"}]
-playsound pillager_guard1_2 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"pillager_guard1","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"pillager_guard1.n","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound pillager_guard1_2 voice @a[distance=..5] ~ ~ ~ 1 1 1

@@ -34,7 +34,7 @@ execute as @e[tag=scarecrow,scores={Animation=1..20},type=armor_stand] run funct
 #Miller / Make Flour
 scoreboard players remove @e[tag=miller,scores={action=-10000..},type=armor_stand] action 1
 tag @e[tag=miller,scores={action=1},type=armor_stand] add b
-execute if entity @e[tag=miller,scores={action=1},type=armor_stand] run replaceitem entity @e[tag=wheat,type=armor_stand] armor.head air
+execute if entity @e[tag=miller,scores={action=1},type=armor_stand] run item replace entity @e[tag=wheat,type=armor_stand] armor.head with air
 # Blacksmith | Blaze Coin
 scoreboard players add @e[tag=blaze_coin,type=armor_stand] action 1
 execute as @e[tag=blaze_coin,type=armor_stand] at @s run function glarth:mechanic/action/blaze_coin

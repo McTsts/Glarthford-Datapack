@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"citizen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"citizen.d.7","color":"gray"}]
-playsound citizen10 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"citizen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"citizen.d.7","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound citizen10 voice @a[distance=..5] ~ ~ ~ 1 1 1

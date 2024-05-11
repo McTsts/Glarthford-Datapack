@@ -12,6 +12,7 @@ execute if score attackType tbcStats matches 10 run data modify storage glarth:m
 execute if score attackType tbcStats matches 11 run data remove storage glarth:main invget.in
 execute if score attackType tbcStats matches 12 run data modify storage glarth:main invget.in set value {id:"minecraft:spider_eye"}
 execute if score attackType tbcStats matches 13 run data modify storage glarth:main invget.in set value {id:"minecraft:slime_ball"}
+execute if score attackType tbcStats matches 16 run data modify storage glarth:main invget.in set value {id:"minecraft:glow_ink_sac"}
 execute if data storage glarth:main invget.in unless score attackType tbcStats matches 8 run function glarth:inventory/get
 execute if data storage glarth:main invget.in if score attackType tbcStats matches 8 run function glarth:inventory/get3
 execute if data storage glarth:main invget.in run data modify storage glarth:main temp set from storage glarth:main invget.out
@@ -28,3 +29,4 @@ execute if score attackType tbcStats matches 8 run scoreboard players remove @s 
 execute if score attackType tbcStats matches 10 run scoreboard players remove @s tbcThrowable10 1
 execute if score attackType tbcStats matches 12 run scoreboard players remove @s tbcThrowable12 1
 execute if score attackType tbcStats matches 13 run scoreboard players remove @s tbcThrowable13 1
+execute if score attackType tbcStats matches 16 run scoreboard players remove @s tbcThrowable16 1

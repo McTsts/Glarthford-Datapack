@@ -25,6 +25,7 @@
 	tag @a remove workerB
 	tag @a remove gotMilk
 	tag @a remove enteredMines
+	tag @a remove savedSuso
 #Pot Reset
 	scoreboard players reset * PoT
 	scoreboard players reset * PoT2
@@ -37,6 +38,8 @@
 	tag @e[tag=area_main] remove ruby_c
 # Resets
 	scoreboard players reset * kill
+	scoreboard players reset * triggerPrev
+	scoreboard players set @a triggerPrev -1
 	scoreboard players enable @a kill
 	scoreboard players reset * Time
 	scoreboard players reset * TimeDim

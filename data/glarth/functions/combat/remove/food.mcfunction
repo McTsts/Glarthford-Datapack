@@ -27,6 +27,8 @@ execute if score attackType tbcStats matches 25 run data modify storage glarth:m
 execute if score attackType tbcStats matches 26 run data modify storage glarth:main invget.in set value {id:"minecraft:enchanted_golden_apple"}
 execute if score attackType tbcStats matches 27 run data modify storage glarth:main invget.in set value {id:"minecraft:gray_dye"}
 execute if score attackType tbcStats matches 29 run data modify storage glarth:main invget.in set value {id:"minecraft:sweet_berries"}
+execute if score attackType tbcStats matches 30 run data modify storage glarth:main invget.in set value {id:"minecraft:salmon"}
+execute if score attackType tbcStats matches 31 run data modify storage glarth:main invget.in set value {id:"minecraft:cooked_salmon"}
 execute if data storage glarth:main invget.in run function glarth:inventory/get
 execute if data storage glarth:main invget.in run data modify storage glarth:main temp set from storage glarth:main invget.out
 function glarth:inventory/remove
@@ -59,3 +61,5 @@ execute if score attackType tbcStats matches 25 run scoreboard players remove @s
 execute if score attackType tbcStats matches 26 run scoreboard players remove @s tbcFood26 1
 execute if score attackType tbcStats matches 27 run scoreboard players remove @s tbcFood27 1
 execute if score attackType tbcStats matches 29 run scoreboard players remove @s tbcFood29 1
+execute if score attackType tbcStats matches 30 run scoreboard players remove @s tbcFood30 1
+execute if score attackType tbcStats matches 31 run scoreboard players remove @s tbcFood31 1

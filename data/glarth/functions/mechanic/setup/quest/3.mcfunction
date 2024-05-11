@@ -26,3 +26,7 @@ fill 22 45 -189 22 45 -181 minecraft:air
 
 # Empty Mines
 function glarth:mechanic/setup/extra/empty_mines
+
+# gary #4 
+clone 53 21 -232 50 17 -240 22 19 -217
+summon armor_stand -82 55 -218 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs","asLoaderOverwrite"],Rotation:[-70f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}

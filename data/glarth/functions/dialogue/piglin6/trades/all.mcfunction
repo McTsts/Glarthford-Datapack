@@ -1,1 +1,1 @@
-execute if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"piglin6.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 168"}}]
+execute if entity @s[tag=!a] run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"piglin6.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 168"}}]

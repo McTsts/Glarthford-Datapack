@@ -1,0 +1,2 @@
+execute at @e[tag=adri] run tellraw @a[distance=..15] ["",{"text":"[","color":"dark_gray"},{"translate":"adri","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"adri.gary.5","color":"gray"}]
+execute at @e[tag=adri] run playsound adri14 voice @a[distance=..15] ~ ~ ~ 1 1 1

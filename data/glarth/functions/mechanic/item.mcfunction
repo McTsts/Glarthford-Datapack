@@ -1,3 +1,4 @@
+execute as @a store result score @s iShortStories run clear @s minecraft:written_book{book:"short_stories_inverted"} 0
 execute as @a store result score @s iHPotionS2 run clear @s minecraft:potion{Potion:"minecraft:strong_healing"} 0
 execute as @a store result score @s iSHelmet run clear @s minecraft:chainmail_helmet{custom:"slime_helmet"} 0
 execute as @a store result score @s iSapphire run clear @s minecraft:diamond_hoe{CustomModelData:503} 0
@@ -29,6 +30,7 @@ execute as @a store result score @s iGrail run clear @s minecraft:diamond_hoe{Da
 execute as @a store result score @s iCoin run clear @s minecraft:diamond_hoe{Damage:44} 0
 execute as @a store result score @s iRing run clear @s minecraft:diamond_hoe{Damage:42} 0
 execute as @a store result score @s iEAir run clear @s minecraft:diamond_hoe{Damage:47} 0
+execute as @a store result score @s iSalmonCooked run clear @s minecraft:cooked_salmon 0
 execute as @a store result score @s iKey run clear @s minecraft:diamond_hoe{Damage:40} 0
 execute as @a store result score @s iLetter run clear @s minecraft:paper{custom:"letter"} 0
 execute as @a store result score @s iPCFruit run clear @s minecraft:popped_chorus_fruit 0
@@ -41,9 +43,11 @@ execute as @a store result score @s iDisc2 run clear @s minecraft:music_disc_pig
 execute as @a store result score @s iDShovel run clear @s minecraft:diamond_shovel 0
 execute as @a store result score @s iTotem run clear @s minecraft:totem_of_undying 0
 execute as @a store result score @s iDSword run clear @s minecraft:diamond_sword 0
+execute as @a store result score @s iFishCooked run clear @s minecraft:cooked_cod 0
 execute as @a store result score @s iGunpowder run clear @s minecraft:gunpowder 0
 execute as @a store result score @s iBPowder run clear @s minecraft:blaze_powder 0
 execute as @a store result score @s iSapling run clear @s minecraft:spruce_sapling 0
+execute as @a store result score @s iGlowInk run clear @s minecraft:glow_ink_sac 0
 execute as @a store result score @s iGCarrot run clear @s minecraft:golden_carrot 0
 execute as @a store result score @s iPickaxe run clear @s minecraft:stone_pickaxe 0
 execute as @a store result score @s iDisc run clear @s minecraft:music_disc_strad 0
@@ -83,6 +87,7 @@ execute as @a store result score @s iEEye run clear @s minecraft:ender_eye 0
 execute as @a store result score @s iGold run clear @s minecraft:gold_ingot 0
 execute as @a store result score @s iFeather run clear @s minecraft:feather 0
 execute as @a store result score @s iLeather run clear @s minecraft:leather 0
+execute as @a store result score @s iSalmon run clear @s minecraft:salmon 0
 execute as @a store result score @s iIron run clear @s minecraft:iron_ingot 0
 execute as @a store result score @s iSponge run clear @s minecraft:sponge 0
 execute as @a store result score @s iBucket run clear @s minecraft:bucket 0

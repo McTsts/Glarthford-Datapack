@@ -1,3 +1,3 @@
 # Gold -> Assasinate Blaze
-execute if entity @s[tag=!a] if entity @e[tag=blaze2] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"assassin.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 142"}}]
-execute if entity @s[tag=!a] unless entity @e[tag=blaze2] if entity @e[tag=blaze1] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"assassin.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 142"}}]
+execute if entity @s[tag=!a] if entity @e[tag=blaze2] run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"assassin.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 142"}}]
+execute if entity @s[tag=!a] unless entity @e[tag=blaze2] if entity @e[tag=blaze1] run execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"assassin.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 142"}}]

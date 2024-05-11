@@ -9,17 +9,20 @@ fill -71 35 -263 -72 35 -263 cobblestone
 setblock -72 34 -263 cobblestone_slab[type=top]
 fill -72 32 -265 -72 33 -265 air
 
-setblock -90 50 -242 torch
-setblock -82 50 -237 torch
-setblock -86 51 -235 torch
+setblock -90 50 -242 candle[candles=3,lit=true]
+setblock -82 50 -237 candle[candles=3,lit=true]
+setblock -86 51 -235 candle[candles=1,lit=true]
 setblock -85 44 -242 torch
 
-setblock -81 42 -244 lantern
-setblock -88 42 -247 lantern
-setblock -82 42 -236 lantern
-setblock -92 42 -237 lantern
-setblock -93 44 -242 lantern
+setblock -88 42 -247 light[level=15]
+setblock -82 42 -236 light[level=15]
+setblock -92 42 -237 light[level=15]
+setblock -93 44 -242 light[level=15]
 
 
 # Eastergg
 setblock -76 38 -253 air
+
+# chair 
+clone -84 37 -242 -84 37 -244 -83 41 -245
+setblock -82 41 -246 minecraft:lectern[facing=south,has_book=true,powered=false]{Book:{Count:1b,id:"minecraft:written_book",tag:{HideFlags:32,author:"",book:"jerozgen",custom:"book",display:{Lore:['{"italic":false,"color":"gray","translate":"book.byAuthor","with":[{"translate":"book.jerozgen.author"}]}','{"italic":false,"color":"gray","translate":"book.generation.0"}'],Name:'{"translate":"book.jerozgen.title","italic":false}'},pages:['{"extra":[{"color":"reset","translate":"book.jerozgen.content"}],"text":""}'],resolved:1b,title:""}},Page:0}

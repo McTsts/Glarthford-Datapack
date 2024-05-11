@@ -12,6 +12,8 @@ execute as @e[tag=graveyard,scores={action=-10000..}] run function glarth:mechan
 # Blacksmith | Mine Wall
 execute if score quest Stats matches 1..2 run scoreboard players add @e[tag=mine_wall,scores={action=-10000..}] action 1
 execute if score quest Stats matches 1..2 as @e[tag=mine_wall,scores={action=-10000..}] run function glarth:mechanic/action/mine_wall
+execute if score quest Stats matches 4 run scoreboard players add @e[tag=mine_wall,scores={action=-10000..}] action 1
+execute if score quest Stats matches 4 as @e[tag=mine_wall,scores={action=-10000..}] run function glarth:mechanic/action/mine_wall
 
 # Bucket Merchant
 execute if score quest Stats matches 5 run scoreboard players add @e[tag=make_bucket,scores={action=-10000..}] action 1
@@ -28,15 +30,15 @@ execute if score quest Stats matches 3 as @e[tag=blaze_coin,scores={action=-1000
 #Miller
 scoreboard players remove @e[tag=miller,scores={action=1..}] action 1
 tag @e[tag=miller,scores={action=1}] add b
-execute if entity @e[tag=miller,scores={action=1}] run replaceitem entity @e[tag=wheat] armor.head air
+execute if entity @e[tag=miller,scores={action=1}] run item replace entity @e[tag=wheat] armor.head with air
 
 # Brewer
 scoreboard players remove @e[tag=brewer,scores={action=-10000..}] action 1
 tag @e[tag=brewer,scores={action=1}] add b
 
 # Wife/Husband
-execute unless score quest Stats matches 4..8 unless score quest Stats matches 0..2 as @e[tag=wife2,type=armor_stand] at @s run function glarth:mechanic/action/wife
-execute unless score quest Stats matches 4..8 unless score quest Stats matches 0..2 as @e[tag=husband2,type=armor_stand] at @s run function glarth:mechanic/action/husband
+execute unless score quest Stats matches 4..8 unless score quest Stats matches 0..2 unless score quest Stats matches 10..11 as @e[tag=wife2,type=armor_stand] at @s run function glarth:mechanic/action/wife
+execute unless score quest Stats matches 4..8 unless score quest Stats matches 0..2 unless score quest Stats matches 10..11 as @e[tag=husband2,type=armor_stand] at @s run function glarth:mechanic/action/husband
 
 # Character Blinking
 execute if score travel Dis matches 15.. as @a[gamemode=adventure] at @s as @e[tag=char,type=armor_stand,tag=!charNoAnim,distance=..10] run function glarth:mechanic/char/animated

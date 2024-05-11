@@ -27,3 +27,11 @@ execute unless score lowGraphics Stats matches 1 as @e[tag=snowflake,type=armor_
 
 # arrow
 function glarth:mechanic/dim_end/chorus/main
+
+
+## Progress Trackers from Q1 for Gary+
+#Progress Trackers
+tag @a[x=98,y=33,z=-167,distance=..1.5] add inSewer
+
+# Progress Tracker New
+execute positioned 81 32 -186 run tag @a[distance=..7] add enteredMines

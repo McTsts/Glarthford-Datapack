@@ -57,3 +57,5 @@ tag @s[scores={MusicSet=57}] add music_57
 tag @s[scores={MusicSet=58}] add music_58
 tag @s[scores={MusicSet=59}] add music_59
 tag @s[scores={MusicSet=60}] add music_60
+tag @s[scores={MusicSet=61}] add music_61
+tag @s[scores={MusicSet=62}] add music_62

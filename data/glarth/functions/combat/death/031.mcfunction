@@ -1,6 +1,7 @@
 # Speed
 execute if score difficulty tbcStats matches 1..3 run scoreboard players set @s tbcSpeed 1
 execute if score difficulty tbcStats matches 4..5 run scoreboard players set @s tbcSpeed 2
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcSpeed 3
 scoreboard players set @s tbcQueue 0
 
 # Inulnerable

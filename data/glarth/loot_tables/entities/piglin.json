@@ -7,15 +7,15 @@
           "type": "item",
           "name": "minecraft:arrow",
           "weight": 1,
-		  "functions": [
-			{
-			  "function": "set_count",
-			  "count": {
-				"min": 2,
-				"max": 5
-				}
-			}
-		  ]
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
         }
       ]
     },
@@ -28,7 +28,7 @@
           "weight": 1
         }
       ]
-	},
+    },
     {
       "rolls": 1,
       "entries": [
@@ -38,7 +38,7 @@
           "weight": 1
         }
       ]
-	},
+    },
     {
       "rolls": 1,
       "entries": [
@@ -48,8 +48,8 @@
           "weight": 1
         }
       ]
-	},
-	{
+    },
+    {
       "rolls": 1,
       "entries": [
         {
@@ -59,7 +59,7 @@
           "functions": [
             {
               "function": "set_damage",
-              "damage": 0.00541605120630231413096996553422
+              "damage": 0.0054160512063023145
             }
           ]
         }

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"gibbs.quickfast.a1"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 200"}}]
+tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"gibbs.quickfast.a2"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 201"}}]

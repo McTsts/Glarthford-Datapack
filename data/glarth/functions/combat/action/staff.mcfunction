@@ -1,5 +1,6 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 0 as @e[tag=tbcSelPlayerAS] at @s rotated ~ 0 run tp @s ^ ^ ^0.1
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10.. run scoreboard players set cheatCount tbcStats 0
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10.. run scoreboard players set @s tbcMenuX 101
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10.. run function glarth:combat/action/util/next_stage
 
@@ -48,11 +49,8 @@ execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackElement tbcStats matches 7 if score attackStrength tbcStats matches 2 run scoreboard players operation bee tbcStats *= 2 Const
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackElement tbcStats matches 7 run scoreboard players operation bee tbcStats /= 10 Const
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats as @e[scores={tbcSel=1}] run function glarth:combat/action_enemy/dodge
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackStrength tbcStats matches 1 if score attackElement tbcStats matches 0 if score damage tbcStats matches 90.. run tag @s add tbcDS
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackStrength tbcStats matches 2 if score attackElement tbcStats matches 0 if score damage tbcStats matches 190.. run tag @s add tbcDS
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackStrength tbcStats matches 1 if score attackElement tbcStats matches 1..4 if score damage tbcStats matches 70.. run tag @s add tbcDS
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackStrength tbcStats matches 2 if score attackElement tbcStats matches 1..4 if score damage tbcStats matches 170.. run tag @s add tbcDS
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if entity @s[tag=tbcDS] run scoreboard players operation damage tbcStats /= 2 Const
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score cheatCount tbcStats matches 10.. run tag @s add tbcDS
+#execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats run tellraw @a {"score":{"name":"cheatCount","objective":"tbcStats"}}
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if entity @s[tag=tbcDS] run scoreboard players operation damage tbcStats *= -1 Const
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if entity @s[tag=tbcDS] run function glarth:combat/action/util/damage_self
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if entity @s[tag=tbcDS] run scoreboard players set damage tbcStats 0
@@ -91,6 +89,8 @@ execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats if score attackElement tbcStats matches 7 as @e[scores={tbcSel=1}] at @s run particle minecraft:falling_honey ~ ~ ~ 2 2 2 0.1 100
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41.. if score @s tbcAttackTimer = staffDuration tbcStats run function glarth:combat/action/util/next_stage
 
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1..40 if score clicked tbcStats matches 1.. if score clickCount tbcStats matches 2.. run scoreboard players operation cheatCount tbcStats += clickCount tbcStats
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1..40 if score clicked tbcStats matches 1.. if score clickCount tbcStats matches 2.. run scoreboard players remove cheatCount tbcStats 1
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1..40 if score clicked tbcStats matches 1.. if score attackElement tbcStats matches 0 at @e[tag=tbcSelPlayerAS] run particle minecraft:witch ~ ~0.6 ~ 1 1 1 0.5 3
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1..40 if score clicked tbcStats matches 1.. if score attackElement tbcStats matches 1 at @e[tag=tbcSelPlayerAS] run particle minecraft:splash ~ ~0.6 ~ 1 1 1 0.5 3
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1..40 if score clicked tbcStats matches 1.. if score attackElement tbcStats matches 2 at @e[tag=tbcSelPlayerAS] run particle minecraft:flame ~ ~0.6 ~ 0 0 0 0.1 3

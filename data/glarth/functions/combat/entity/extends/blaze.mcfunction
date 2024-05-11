@@ -13,5 +13,6 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 160
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 180
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 200
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 230
 
 tag @s add tbcBlaze

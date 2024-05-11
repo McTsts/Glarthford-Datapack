@@ -1,0 +1,2 @@
+tellraw @a ["\n",{"text":"[","color":"dark_gray"},{"translate":"iron_golem","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"iron_golem.1","color":"gray"}]
+execute as @a at @s run playsound iron_golem1 voice @s ~ ~ ~ 1 1 1

@@ -11,11 +11,12 @@ scoreboard players set @s attack_061 1
 scoreboard players set @s attack_062 1
 tag @s add stage_006
 tag @s add stage_007
-execute if score difficulty tbcStats matches 1 run scoreboard players set @s tbcHealth 700
-execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbcHealth 900
-execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 1900
-execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 1400
-execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 1800
+execute if score difficulty tbcStats matches 1 run scoreboard players set @s tbcHealth 600
+execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbcHealth 800
+execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 1000
+execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 1200
+execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 1400
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 1800
 
 #Spawn
 tag @s add tbcSkeletonKing

@@ -13,8 +13,13 @@ summon armor_stand -77 28 -206 {Team:"aqua",Invulnerable:1b,Invisible:1b,Disable
 summon armor_stand -37 28 -259 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:228,Unbreakable:1}}],Tags:["char","trader"],Rotation:[140f,0f],CustomName:"{\"translate\":\"trader\",\"color\":\"blue\"}",CustomNameVisible:1}
 summon armor_stand 30 27 -137 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs"],Rotation:[-45f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}
 
+
 function glarth:mechanic/setup/extra/observatory
+function glarth:mechanic/setup/extra/jerozgen
 
 
 # Empty Mines
 function glarth:mechanic/setup/extra/empty_mines
+
+# gary no
+clone 63 21 -232 60 17 -240 22 19 -217

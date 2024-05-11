@@ -135,4 +135,16 @@ execute if score timer end matches 5300 run scoreboard players set timer end 700
 execute if score timer end matches 7000 run kill @e[tag=cutscenePov]
 execute if score timer end matches 7000 run summon area_effect_cloud 23.0 28.0 -175.5 {Rotation:[-70f,15f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 #End
-execute if score timer end matches 7150 run function glarth:mechanic/win
+execute if score timer end matches 7150 run scoreboard players set timer end 8000
+
+
+## Timofey & Suso
+execute if score timer end matches 8000 run kill @e[tag=cutscenePov]
+execute if score timer end matches 8000 run summon area_effect_cloud -87.44 42.00 -244.93 {Rotation:[-70f,8f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+# TImed
+execute if score timer end matches 8070 at @e[tag=suso] run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.1 10
+execute if score timer end matches 8070 at @e[tag=suso] run summon cat ~ ~ ~ {CatType:3,Sitting:0,Invulnerable:1,NoAI:1,Sitting:1,Rotation:[120f,0f],CustomName:'{"translate":"suso","color":"blue"}',CustomNameVisible:1,Tags:["suso"]}
+execute if score timer end matches 8070 run tp @e[tag=suso,type=cat] @e[tag=suso,type=armor_stand,limit=1,sort=nearest]
+execute if score timer end matches 8070 run kill @e[tag=suso,type=armor_stand]
+#End
+execute if score timer end matches 8150 run function glarth:mechanic/win

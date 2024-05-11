@@ -10,9 +10,10 @@ scoreboard players set @s attack_078 1
 scoreboard players set @s attack_079 0
 execute if score difficulty tbcStats matches 1 run scoreboard players set @s tbcHealth 1000
 execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbcHealth 1200
-execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 1400
-execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 1600
-execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 1800
+execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 1500
+execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 1800
+execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 2100
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 2600
 tag @s add stage_012
 tag @s add stage_013
 

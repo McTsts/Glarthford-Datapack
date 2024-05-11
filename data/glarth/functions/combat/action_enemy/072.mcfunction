@@ -4,6 +4,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 31..40 run particle minecraft:spit ~ ~0.25 ~ 1 1 1 0.1 16
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 41..50 run particle minecraft:spit ~ ~0.25 ~ 1 1 1 0.1 64
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run function glarth:dialogue/necromancer/lines/attack1
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run schedule function glarth:dialogue/castle_guard/lines/attack1 60t
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 50 at @s run playsound minecraft:entity.illusioner.prepare_mirror hostile @a ~ ~ ~ 2 1.5
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 50 run function glarth:combat/action_enemy/util/next_stage
 

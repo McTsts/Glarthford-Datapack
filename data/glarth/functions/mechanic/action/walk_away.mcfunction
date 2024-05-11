@@ -1,6 +1,6 @@
 tp @s[scores={action=0}] -66.5 27.0 -210.5 -90 0
-replaceitem entity @e[tag=graveyard,scores={action=0}] armor.head diamond_hoe{Damage:16}
-replaceitem entity @e[tag=graveyard,scores={action=1}] armor.head diamond_hoe{Damage:121}
+item replace entity @e[tag=graveyard,scores={action=0}] armor.head with diamond_hoe{Damage:16}
+item replace entity @e[tag=graveyard,scores={action=1}] armor.head with diamond_hoe{Damage:121}
 execute if entity @s[scores={action=1..100}] run function glarth:mechanic/action/walk_away/1
 execute if entity @s[scores={action=101..200}] run function glarth:mechanic/action/walk_away/2
 execute if entity @s[scores={action=201..300}] run function glarth:mechanic/action/walk_away/3
@@ -43,7 +43,10 @@ execute if entity @e[tag=graveyard,scores={action=0}] if block -69 27 -210 air r
 execute if entity @e[tag=graveyard,scores={action=0}] if block -69 27 -210 air run function glarth:mechanic/animation/gates/grave/close_gate
 
 
-execute as @s[scores={action=1740}] run function glarth:mechanic/animation/gates/city/open_west
+execute as @s[scores={action=1730},tag=openedWest] if block -20 26 -198 air run function glarth:mechanic/animation/gates/city/close_west
+execute as @s[scores={action=1730},tag=openedWest] if block -20 26 -198 air run tag @s remove openedWest
+execute as @s[scores={action=1740},tag=!openedWest] unless block -20 26 -198 air run function glarth:mechanic/animation/gates/city/open_west
+execute as @s[scores={action=1740},tag=!openedWest] unless block -20 26 -198 air run tag @s add openedWest
 
 execute as @s[scores={action=2100},tag=ggRL] run setblock 7 24 -184 minecraft:air
 execute as @s[scores={action=2300},tag=ggRL] run setblock 7 24 -184 minecraft:redstone_torch

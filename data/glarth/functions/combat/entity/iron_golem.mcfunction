@@ -10,6 +10,7 @@ scoreboard players set @s attack_113 1
 scoreboard players set @s attack_110 1
 scoreboard players operation @s tbcStrength *= 2 Const
 scoreboard players operation @s tbcHealth *= 5 Const
+scoreboard players set @s tbcQueue 1000
 tag @s add death_018
 #Spawn
 tag @s add tbcIronGolem

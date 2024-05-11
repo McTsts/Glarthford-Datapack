@@ -1,2 +1,2 @@
 tag @s add tbcPermaGlow
-data merge entity @s {Glowing:1}
+execute if score lowGraphics Stats matches 0 run data merge entity @s {Glowing:1}

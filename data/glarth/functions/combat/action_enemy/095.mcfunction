@@ -1,5 +1,5 @@
-execute if score @s tbcAttackStage matches 0 unless entity @s[tag=tbcPiglinBrute] as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:272}
-execute if score @s tbcAttackStage matches 0 if entity @s[tag=tbcPiglinBrute] as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:509}
+execute if score @s tbcAttackStage matches 0 unless entity @s[tag=tbcPiglinBrute] as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:272}
+execute if score @s tbcAttackStage matches 0 if entity @s[tag=tbcPiglinBrute] as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:509}
 execute if score @s tbcAttackStage matches 0 as @e[tag=charQE,limit=1,sort=nearest] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.3 ~ ~

@@ -11,9 +11,11 @@ execute if score difficulty tbcStats matches 1..4 run scoreboard players add @s 
 execute if score difficulty tbcStats matches 5 run scoreboard players add @s tbcArmor 20
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcHealth 20
 execute if score difficulty tbcStats matches 4..5 run scoreboard players add @s tbcHealth 40
+execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcHealth 60
 scoreboard players add @s tbcStrength 10
 execute if score difficulty tbcStats matches 1..3 run scoreboard players remove @s tbcDodge 5
 execute if score difficulty tbcStats matches 4 run scoreboard players remove @s tbcDodge 3
+execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcDodge 2
 #Spawn
 tag @s add tbcZombieKnight
 function glarth:combat/spawn

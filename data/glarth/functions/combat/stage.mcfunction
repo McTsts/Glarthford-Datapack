@@ -35,6 +35,12 @@ execute if entity @s[tag=stage_034] run function glarth:combat/stages/034
 execute if entity @s[tag=stage_060,tag=!tbcSkipThis] run function glarth:combat/stages/060
 execute if entity @s[tag=stage_061] if score @s tbcBar matches ..10 run function glarth:combat/stages/061
 execute if entity @s[tag=stage_065] run function glarth:combat/stages/065
+execute if entity @s[tag=stage_075] run function glarth:combat/stages/075
+execute if entity @s[tag=stage_076] run function glarth:combat/stages/076
+execute if entity @s[tag=stage_077] run function glarth:combat/stages/077
+execute if entity @s[tag=stage_078] run function glarth:combat/stages/078
+execute if entity @s[tag=stage_079] if score @s tbcBar matches ..25 run function glarth:combat/stages/079
+execute if entity @s[tag=stage_080] if score @s tbcBar matches ..10 run function glarth:combat/stages/080
 
 # Low Health Auto Nerf
 execute if entity @s[tag=stage_066] if entity @a[gamemode=adventure,scores={tbcHealth=..12}] run function glarth:combat/stages/066

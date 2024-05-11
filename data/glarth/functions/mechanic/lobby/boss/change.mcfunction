@@ -4,7 +4,7 @@ setblock 173 25 -114 air
 
 clone 180 27 -68 174 23 -71 172 23 -118
 
-execute if score bossRe Stats matches 0.. run setblock 175 24 -114 minecraft:oak_wall_sign[facing=south]{Text2:'{"translate":"lobby.boss.redo","bold":true,"clickEvent":{"action":"run_command","value":"execute if entity @s[tag=!lSpec] if score difficulty Stats matches 1.. run function glarth:mechanic/lobby/boss/redo"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"execute if entity @s[tag=lSpec] run playsound minecraft:error master @s ~ ~ ~ 1 1"}}',Text1: '{"clickEvent":{"action":"run_command","value":"execute if entity @s[tag=!lSpec] if score difficulty Stats matches 0 run playsound minecraft:error master @s ~ ~ ~ 1 1"},"text":""}'}
+execute if score bossRe Stats matches 0.. run setblock 175 24 -114 minecraft:oak_wall_sign[facing=south]{Text2:'{"translate":"lobby.boss.redo","bold":true,"clickEvent":{"action":"run_command","value":"execute if entity @s[tag=!lSpec] if score difficulty Stats matches 1.. run function glarth:mechanic/lobby/boss/redo"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"execute if entity @s[tag=lSpec] run playsound minecraft:error player @s ~ ~ ~ 1 1"}}',Text1: '{"clickEvent":{"action":"run_command","value":"execute if entity @s[tag=!lSpec] if score difficulty Stats matches 0 run playsound minecraft:error player @s ~ ~ ~ 1 1"},"text":""}'}
 execute if score bossRe Stats matches 0.. run setblock 173 25 -114 minecraft:oak_wall_sign[facing=south]{Text2:'{"translate":"lobby.boss.previous","bold":true,"clickEvent":{"action":"run_command","value":"function glarth:mechanic/lobby/boss/previous"}}'}
 execute if score bossRe Stats matches 0.. run setblock 177 25 -114 minecraft:oak_wall_sign[facing=south]{Text2:'{"translate":"lobby.boss.next","bold":true,"clickEvent":{"action":"run_command","value":"function glarth:mechanic/lobby/boss/next"}}'}
 
@@ -19,8 +19,7 @@ execute if score bossRe Stats matches 6 run function glarth:mechanic/lobby/boss/
 execute if score bossRe Stats matches 7 run function glarth:mechanic/lobby/boss/6
 execute if score bossRe Stats matches 8 run function glarth:mechanic/lobby/boss/7
 execute if score bossRe Stats matches 9 run function glarth:mechanic/lobby/boss/4
+execute if score bossRe Stats matches 10 run function glarth:mechanic/lobby/boss/10
 
-execute if score bossRe Stats matches 0.. at @s run stopsound @s master minecraft:ui.button.click
-execute if score bossRe Stats matches 0.. at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
 
 scoreboard players set bossMax Stats 15

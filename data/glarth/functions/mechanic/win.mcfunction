@@ -9,14 +9,12 @@ scoreboard players set @a MusicTime 150
 
 function board:lobby_table
 
-forceload remove 67 99 39 126
-
 clear @a[gamemode=adventure]
 effect clear @a[gamemode=adventure] minecraft:invisibility
 effect give @a[gamemode=adventure] minecraft:blindness 1 0 true
 
 function glarth:mechanic/q_game_to_lobby
-execute unless score quest Stats matches 9.. run scoreboard players add quest Stats 1
+execute unless score quest Stats matches 11.. run scoreboard players add quest Stats 1
 
 
 

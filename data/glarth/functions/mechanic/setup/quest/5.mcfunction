@@ -73,7 +73,12 @@ setblock 18 28 -182 minecraft:birch_button[face=floor,powered=true,facing=east]
 setblock 21 29 -200 minecraft:birch_button[face=floor,powered=true,facing=west]
 setblock -12 27 -193 minecraft:birch_button[face=floor,powered=true,facing=south]
 
-
+# forceload baloon
+forceload add 8 24
 
 # Empty Mines
 function glarth:mechanic/setup/extra/empty_mines
+
+# gary #5
+clone 58 21 -232 55 17 -240 22 19 -217
+summon armor_stand 59 83 -99 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs","asLoaderOverwrite"],Rotation:[70f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}

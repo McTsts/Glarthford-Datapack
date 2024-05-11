@@ -1,6 +1,8 @@
+execute if score difficulty tbcStats matches 0 run scoreboard players set @s tbcSpeed 10
 execute if score difficulty tbcStats matches 1..3 run scoreboard players set @s tbcSpeed 8
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcSpeed 6
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcSpeed 4
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcSpeed 2
 tag @s add tbc
 tag @s add inTBC
 tag @s add tbcCompanion

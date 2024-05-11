@@ -1,0 +1,15 @@
+execute at @e[tag=gibbs] run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.2 30 force @a
+execute at @e[tag=gibbs] run particle cloud ~ ~ ~ 0.5 0.5 0.5 0.2 30 force @a
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run summon bee ~ ~ ~ {Tags:["gibbs_bee"],PersistenceRequired:1}
+execute at @e[tag=gibbs] run playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1 1.5
+execute at @e[tag=gibbs] run playsound minecraft:entity.bee.loop_aggressive neutral @a ~ ~ ~ 1 1
+execute unless score quest Stats matches 2 run kill @e[tag=gibbs]
+execute if score quest Stats matches 2 positioned 26 43.5 -183 run effect give @a[distance=..7] blindness 1 0 true
+execute if score quest Stats matches 2 run tp @e[tag=gibbs] 26 43.5 -183 180 0
+execute if score quest Stats matches 2 run tag @e[tag=gibbs] remove charNoAnim
+execute if score quest Stats matches 2 as @e[tag=gibbs] run function glarth:mechanic/char/blink/end

@@ -1,0 +1,2 @@
+execute at @e[tag=mctsts] run tellraw @a[distance=..15] ["",{"text":"[","color":"dark_gray"},{"translate":"mctsts","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"mctsts.5","color":"gray"}]
+execute at @e[tag=mctsts] run playsound thomas7 voice @a[distance=..15] ~ ~ ~ 1 1 1

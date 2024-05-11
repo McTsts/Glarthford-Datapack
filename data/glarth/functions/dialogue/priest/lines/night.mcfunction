@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"priest","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"priest.n","color":"gray"}]
-playsound priest2 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"priest","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"priest.n","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound priest2 voice @a[distance=..5] ~ ~ ~ 1 1 1

@@ -10,7 +10,7 @@
         }
       ]
     },
-	{
+    {
       "rolls": 1,
       "entries": [
         {
@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "set_damage",
-              "damage": 0.8398462524023062139654067905189
+              "damage": 0.8398462524023063
             },
             {
               "function": "set_nbt",

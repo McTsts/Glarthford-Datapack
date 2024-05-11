@@ -7,9 +7,10 @@ execute if score attackType tbcStats matches 5 run data modify storage glarth:ma
 execute if score attackType tbcStats matches 6 run data modify storage glarth:main invget.in set value {id:"minecraft:potion",tag:{Potion:"minecraft:strong_healing"}}
 execute if score attackType tbcStats matches 7 run data modify storage glarth:main invget.in set value {id:"minecraft:potion",tag:{Potion:"minecraft:water"}}
 execute if score attackType tbcStats matches 8 run data modify storage glarth:main invget.in set value {id:"minecraft:gold_nugget",tag:{custom:"milk_bottle"}}
+execute if score attackType tbcStats matches 9 run data modify storage glarth:main invget.in set value {id:"minecraft:potion",tag:{custom:"wind_potion"}}
 execute if data storage glarth:main invget.in if score attackType tbcStats matches 1..4 run function glarth:inventory/get3
 execute if data storage glarth:main invget.in if score attackType tbcStats matches 5..7 run function glarth:inventory/get4
-execute if data storage glarth:main invget.in if score attackType tbcStats matches 8 run function glarth:inventory/get3
+execute if data storage glarth:main invget.in if score attackType tbcStats matches 8..9 run function glarth:inventory/get3
 execute if data storage glarth:main invget.in run data modify storage glarth:main temp set from storage glarth:main invget.out
 function glarth:inventory/remove
 function glarth:combat/remove/get
@@ -21,3 +22,4 @@ execute if score attackType tbcStats matches 5 run scoreboard players remove @s 
 execute if score attackType tbcStats matches 6 run scoreboard players remove @s tbcPotion6 1
 execute if score attackType tbcStats matches 7 run scoreboard players remove @s tbcPotion7 1
 execute if score attackType tbcStats matches 8 run scoreboard players remove @s tbcPotion8 1
+execute if score attackType tbcStats matches 9 run scoreboard players remove @s tbcPotion9 1

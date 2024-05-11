@@ -16,6 +16,8 @@ execute if score timer cedric matches 1460 run function glarth:dialogue/necroman
 execute if score timer cedric matches 1600 run function glarth:dialogue/cedric/lines/cutscene7
 execute if score timer cedric matches 1700 run function glarth:dialogue/necromancer/lines/cutscene3
 
+execute as @e[tag=cedric,type=armor_stand] run function glarth:mechanic/char/animated
+
 #Spawn
 execute if score timer cedric matches 1 run summon armor_stand 175.0 6.50 -339.00 {NoGravity:1,Invisible:1,Tags:["cedricScenePov","cedricScene"]}
 execute if score timer cedric matches 1 run summon armor_stand 172 6 -359 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:120,Unbreakable:1}}],Tags:["cedricSceneCedric","cedricScene"],Rotation:[160f,0f],CustomName:"{\"translate\":\"cedric\",\"color\":\"blue\"}",CustomNameVisible:1}

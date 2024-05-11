@@ -4,6 +4,8 @@ execute if score winReady tbcStats matches 1 run tag @a[tag=inTBC,gamemode=adven
 
 
 execute if score winDelay tbcStats matches 5 as @a at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1.8
+execute if score winDelay tbcStats matches 3.. if score quest Stats matches 2 if score doFireworks tbcStats matches 0 if score lobbyTBC Stats matches 1.. run schedule function glarth:combat/celebrate 1t append
+execute if score winDelay tbcStats matches 3.. if score quest Stats matches 2 if score doFireworks tbcStats matches 0 if score lobbyTBC Stats matches 1.. run schedule function glarth:combat/celebrate 11t append
 execute if score winDelay tbcStats matches 3.. if score quest Stats matches 2 if score doFireworks tbcStats matches 1 run schedule function glarth:combat/celebrate 1t append
 execute if score winDelay tbcStats matches 3.. if score quest Stats matches 2 if score doFireworks tbcStats matches 1 run schedule function glarth:combat/celebrate 11t append
 execute if score winDelay tbcStats matches 3.. unless score quest Stats matches 2 run schedule function glarth:combat/celebrate 1t append

@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"digger","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"digger.d","color":"gray"}]
-playsound digger1 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"digger","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"digger.d","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound digger1 voice @a[distance=..5] ~ ~ ~ 1 1 1

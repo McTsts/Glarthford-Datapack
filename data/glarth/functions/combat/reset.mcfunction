@@ -42,6 +42,7 @@ scoreboard players set fire tbcStats 0
 scoreboard players set stun tbcStats 0
 scoreboard players set poison tbcStats 0
 
+scoreboard players set spawnCounter tbcStats 0
 scoreboard players set curAngle tbcAdjLoc 0
 scoreboard players set forceRot tbcStats 0
 scoreboard players set doPhanterra tbcStats 0

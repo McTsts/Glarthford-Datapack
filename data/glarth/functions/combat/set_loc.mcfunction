@@ -16,7 +16,12 @@ tp @s[tag=tbcCompanion1,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerCompB1,limit=1,ty
 tp @s[tag=tbcCompanion2,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerCompB2,limit=1,type=area_effect_cloud]
 tp @s[tag=tbcCompanion3,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerCompB3,limit=1,type=area_effect_cloud]
 
-tp @s[tag=tbcAlly,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly1,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly1,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly2,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly2,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly3,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly3,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly4,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly4,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly5,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly5,limit=1,type=area_effect_cloud]
+tp @s[tag=tbcAlly6,tag=!tbcDontUpdateLoc] @e[tag=tbcMarkerAlly6,limit=1,type=area_effect_cloud]
 
 execute if score forceRot tbcStats matches 0 at @s[type=!player] run tp @s ~ ~ ~ facing entity @e[tag=tbcMarkerMiddle,limit=1,type=area_effect_cloud]
 

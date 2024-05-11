@@ -24,12 +24,25 @@ execute if score timer end matches 1..150 as @a[gamemode=spectator] run spectate
 
 execute if score timer end matches 1 run tag @e[tag=hzombie] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=kzombie] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=kzombie2] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=gzombie] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=gzombie2] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=szombie] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=pzombie] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=zombie] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=zombie2] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie3] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie4] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie5] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie6] add zombie_all
 execute if score timer end matches 1 run tag @e[tag=baby_zombie] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=baby_zombie2] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=husk] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=husk2] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie_villager] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=zombie_villager2] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=ender_zombie] add zombie_all
+execute if score timer end matches 1 run tag @e[tag=ender_zombie2] add zombie_all
 
 
 execute if score timer end matches 70.. at @e[tag=zombie_all] run particle flame ~ ~0.5 ~ 0.5 0.5 0.5 0 1

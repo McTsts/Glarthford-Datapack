@@ -11,8 +11,8 @@ execute as @e[tag=tbcEnemy3] run function glarth:combat/entity/roberto
 execute as @e[tag=tbcEnemy4] run function glarth:combat/entity/roberto
 execute as @e[tag=tbcEnemy5] run function glarth:combat/entity/roberto
 
-function glarth:combat/init_tbc/ally
-execute as @e[tag=tbcAlly] run function glarth:combat/entity/spouse
+function glarth:combat/init_tbc/ally1
+execute as @e[tag=tbcAlly1] run function glarth:combat/entity/spouse
 
 function glarth:combat/start
 

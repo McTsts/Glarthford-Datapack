@@ -4,6 +4,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcSpeed 8
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcSpeed 8
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcSpeed 10
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcSpeed 12
 
 # Vulnerable
 scoreboard players remove @s tbcArmor 1000

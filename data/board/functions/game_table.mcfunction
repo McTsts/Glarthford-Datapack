@@ -1,3 +1,16 @@
+# store lobby table and load game table
+data modify storage minecraft:board_ai boards[0] set from storage minecraft:board_ai boardM
+execute if score quest Stats matches 1 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[1]
+execute if score quest Stats matches 9 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[2]
+execute if score quest Stats matches 2 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[3]
+execute if score quest Stats matches 3 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[4]
+execute if score quest Stats matches 5 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[5]
+execute if score quest Stats matches 8 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[6]
+execute if score quest Stats matches 6 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[7]
+execute if score quest Stats matches 7 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[8]
+execute if score quest Stats matches 4 run data modify storage minecraft:board_ai boardM set from storage minecraft:board_ai boards[9]
+
+
 #
 tp @e[tag=board_rc,type=villager] ~ -100 ~
 tp @e[tag=board,type=villager] ~ -100 ~

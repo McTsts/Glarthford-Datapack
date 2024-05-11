@@ -17,22 +17,8 @@ execute as @s[scores={phanterraAnim=15,phanterraSkull=..5}] run data merge entit
 execute as @s[scores={phanterraAnim=15,phanterraSkull=5..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:337}}]}
 execute as @s[scores={phanterraAnim=18,phanterraSkull=..5}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:315}}]}
 execute as @s[scores={phanterraAnim=18,phanterraSkull=5..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:329}}]}
-execute as @s[scores={phanterraAnim=01..02}] run tp @s ~ ~0.0725 ~
-execute as @s[scores={phanterraAnim=01..02}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~0.0725 ~
-execute as @s[scores={phanterraAnim=03..07}] run tp @s ~ ~0.055 ~
-execute as @s[scores={phanterraAnim=03..07}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~0.055 ~
-execute as @s[scores={phanterraAnim=08}] run tp @s ~ ~0.040 ~
-execute as @s[scores={phanterraAnim=08}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~0.040 ~
-execute as @s[scores={phanterraAnim=09}] run tp @s ~ ~0.025 ~
-execute as @s[scores={phanterraAnim=09}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~0.025 ~
-execute as @s[scores={phanterraAnim=10}] run tp @s ~ ~0.015 ~
-execute as @s[scores={phanterraAnim=10}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~0.015 ~
-execute as @s[scores={phanterraAnim=11..20}] run tp @s ~ ~-0.0454 ~
-execute as @s[scores={phanterraAnim=11..20}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~-0.0454 ~
-execute as @s[scores={phanterraAnim=21}] run tp @s ~ ~-0.0460 ~
-execute as @s[scores={phanterraAnim=21}] as @e[tag=tbcMarkerPhanterra] at @s run tp @s ~ ~-0.0460 ~
+function glarth:mechanic/animation/phanterra/bob
 execute as @s[scores={phanterraAnim=21..}] run scoreboard players set @s phanterraAnim 0
-execute as @s[scores={phanterraAnim=1}] run playsound minecraft:entity.phantom.flap hostile @a ~ ~ ~ 2 1
 scoreboard players set r Random 2
 function glarth:util/randomish
 execute if score n Random matches 1 run scoreboard players add @s phanterraSkull 1

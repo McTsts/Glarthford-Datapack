@@ -26,13 +26,7 @@ execute if score A tbcAttackParamX matches 25 run scoreboard players operation @
 execute if score A tbcAttackParamX matches 26 run scoreboard players operation @s tbcFood = @s tbcFood26
 execute if score A tbcAttackParamX matches 27 run scoreboard players operation @s tbcFood = @s tbcFood27
 execute if score A tbcAttackParamX matches 29 run scoreboard players operation @s tbcFood = @s tbcFood29
+execute if score A tbcAttackParamX matches 30 run scoreboard players operation @s tbcFood = @s tbcFood30
+execute if score A tbcAttackParamX matches 31 run scoreboard players operation @s tbcFood = @s tbcFood31
 scoreboard players set 64 Const 64
 scoreboard players operation @s tbcFood < 64 Const
-
-scoreboard players set tbc0 tbcStats 0
-execute if score @s tbcFood matches 10 run scoreboard players set tbc0 tbcStats 1
-execute if score @s tbcFood matches 20 run scoreboard players set tbc0 tbcStats 1
-execute if score @s tbcFood matches 30 run scoreboard players set tbc0 tbcStats 1
-execute if score @s tbcFood matches 40 run scoreboard players set tbc0 tbcStats 1
-execute if score @s tbcFood matches 50 run scoreboard players set tbc0 tbcStats 1
-execute if score @s tbcFood matches 60 run scoreboard players set tbc0 tbcStats 1

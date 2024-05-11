@@ -24,7 +24,7 @@ execute if score time Dis matches 1800.. run tag @e[tag=guard,tag=char,type=armo
 
 execute if score time Dis matches 1800.. run tag @e[tag=mourner,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 1900.. run tag @e[tag=dockmaster,tag=char,type=armor_stand] add die2
-execute if score time Dis matches 1900.. run tag @e[tag=mctsts,tag=char,type=armor_stand] add die2
+execute if score time Dis matches 1900.. run tag @e[tag=mctsts,tag=char,type=armor_stand,tag=!gary] add die2
 execute if score time Dis matches 1900.. run tag @e[tag=fisher,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2000.. run tag @e[tag=ttextt,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2000.. run tag @e[tag=worker,tag=char,type=armor_stand] add die2
@@ -39,7 +39,7 @@ execute if score time Dis matches 2100.. run tag @e[tag=lumberjack,tag=char,type
 
 execute if score time Dis matches 2200.. run tag @e[tag=merchant1,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2200.. run tag @e[tag=blacksmith,tag=char,type=armor_stand] add die2
-execute if score time Dis matches 2200.. run tag @e[tag=adri,tag=char,type=armor_stand] add die2
+execute if score time Dis matches 2200.. run tag @e[tag=adri,tag=char,type=armor_stand,tag=!gary] add die2
 execute if score time Dis matches 2200.. run tag @e[tag=uncle,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2200.. run tag @e[tag=evoker,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2200.. run tag @e[tag=bum,tag=char,type=armor_stand] add die2
@@ -53,7 +53,7 @@ execute if score time Dis matches 2300.. as @e[tag=farmer,tag=char,type=armor_st
 execute if score time Dis matches 2300.. run tag @e[tag=farmer,tag=char,type=armor_stand] add die2
 
 execute if score time Dis matches 2300.. run tag @e[tag=assassin,tag=char,type=armor_stand] add die2
-execute if score time Dis matches 2300.. run tag @e[tag=gibbs,tag=char,type=armor_stand] add die2
+execute if score time Dis matches 2300.. run tag @e[tag=gibbs,tag=char,type=armor_stand,tag=!f] add die2
 # Resurrection
 execute if score time Dis matches ..1059 as @e[tag=adventurer,tag=deadChar,type=armor_stand] run function glarth:mechanic/action/resurrect
 execute if score time Dis matches ..1359 as @e[tag=hermit,tag=deadChar,type=armor_stand] run function glarth:mechanic/action/resurrect

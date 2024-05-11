@@ -9,4 +9,4 @@ execute as @e[tag=tbcEnemy3] run function glarth:combat/entity/zombie_ghost
 
 function glarth:combat/start
 
-scoreboard players set @a MusicSet 15
+scoreboard players set @a MusicSet 61

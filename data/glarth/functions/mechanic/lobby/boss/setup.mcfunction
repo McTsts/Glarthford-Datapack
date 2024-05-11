@@ -11,5 +11,6 @@ execute if entity @a[tag=encB8,gamemode=adventure,tag=!lSpec] run scoreboard pla
 execute if entity @a[tag=encB6,gamemode=adventure,tag=!lSpec] run scoreboard players set bossRe Stats 7
 execute if entity @a[tag=encB7,gamemode=adventure,tag=!lSpec] run scoreboard players set bossRe Stats 8
 execute if entity @a[tag=encB4,gamemode=adventure,tag=!lSpec] run scoreboard players set bossRe Stats 9
+execute if entity @a[tag=encB10,gamemode=adventure,tag=!lSpec] run scoreboard players set bossRe Stats 10
 
 function glarth:mechanic/lobby/boss/change

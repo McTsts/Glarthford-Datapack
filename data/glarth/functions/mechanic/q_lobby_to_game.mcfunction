@@ -9,3 +9,4 @@ execute if score quest Temp matches 6 run scoreboard players set quest Stats 8
 execute if score quest Temp matches 7 run scoreboard players set quest Stats 6
 execute if score quest Temp matches 8 run scoreboard players set quest Stats 7
 execute if score quest Temp matches 9 run scoreboard players set quest Stats 4
+execute if score quest Temp matches 10 run scoreboard players set quest Stats 10

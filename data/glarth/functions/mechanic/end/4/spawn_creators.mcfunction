@@ -53,3 +53,12 @@ execute at @e[tag=mrk] run summon area_effect_cloud ~ ~1.28 ~ {Radius:0.0f,Durat
 summon armor_stand 28 26 -176 {Invisible:1b,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1b,tag:{Damage:2}}],Tags:["end_scene","enderpig","endChar"],Rotation:[90f,0f],CustomName:'{"translate":"EnderPig","color":"dark_purple"}',CustomNameVisible:1}
 execute at @e[tag=enderpig] run summon area_effect_cloud ~ ~1.70 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.aka","color":"dark_purple","font":"custom:tiny","with":[{"translate":"enderpig"}]}',CustomNameVisible:1,Tags:["creditsText"]}
 execute at @e[tag=enderpig] run summon area_effect_cloud ~ ~1.28 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.4","color":"dark_purple","font":"custom:small"}',CustomNameVisible:1,Tags:["creditsText"]}
+
+kill @e[tag=jerozgen]
+kill @e[tag=suso]
+summon armor_stand -83 41 -245 {Invisible:1b,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1b,tag:{CustomModelData:525}}],Tags:["end_scene","jerozgen","endChar"],Rotation:[95f,0f],CustomName:'{"text":"Jerozgen","color":"gold"}',CustomNameVisible:1}
+execute at @e[tag=jerozgen] run summon area_effect_cloud ~ ~1.70 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.aka","color":"gold","font":"custom:tiny","with":[{"translate":"jerozgen"}]}',CustomNameVisible:1,Tags:["creditsText"]}
+execute at @e[tag=jerozgen] run summon area_effect_cloud ~ ~1.28 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.11","color":"gold","font":"custom:small"}',CustomNameVisible:1,Tags:["creditsText"]}
+summon armor_stand -82 41 -242 {Invisible:1b,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1b,tag:{CustomModelData:360}}],Tags:["end_scene","suso","endChar"],Rotation:[120f,0f],CustomName:'{"text":"Suso","color":"blue"}',CustomNameVisible:1}
+execute at @e[tag=suso] run summon area_effect_cloud ~ ~1.70 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.aka","color":"blue","font":"custom:tiny","with":[{"translate":"suso"}]}',CustomNameVisible:1,Tags:["creditsText"]}
+execute at @e[tag=suso] run summon area_effect_cloud ~ ~1.28 ~ {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.scene.11","color":"blue","font":"custom:small"}',CustomNameVisible:1,Tags:["creditsText"]}

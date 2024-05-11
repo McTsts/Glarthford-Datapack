@@ -23,18 +23,3 @@ execute if score quest Stats matches 4 if score timer end matches 0..20000 run f
 # Bee Hives
 execute as @e[tag=beeHiveSlime,type=slime] unless entity @s[nbt={HurtTime:0s}] run function glarth:mechanic/drop_bee_hive
 execute as @e[tag=leadSlime,type=slime] unless entity @s[nbt={HurtTime:0s}] run function glarth:mechanic/drop_lead
-
-# Inv Update
-execute as @a[tag=inv_update] run function glarth:mechanic/inv_update2
-scoreboard players reset @a invM1
-scoreboard players reset @a invM2
-scoreboard players reset @a invM3
-scoreboard players reset @a invM4
-scoreboard players reset @a invM5
-scoreboard players reset @a invM6
-scoreboard players reset @a invM7
-scoreboard players reset @a invM8
-scoreboard players reset @a invM9
-scoreboard players reset @a invM10
-scoreboard players reset @a invM11
-

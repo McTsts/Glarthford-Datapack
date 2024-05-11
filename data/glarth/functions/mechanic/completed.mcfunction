@@ -12,6 +12,7 @@ execute if score quest Stats matches 7 run scoreboard players add 7 quest 1
 execute if score quest Stats matches 8 run scoreboard players add 8 quest 1
 execute if score quest Stats matches 9 run scoreboard players add 9 quest 1
 execute if score quest Stats matches 10 run scoreboard players add 10 quest 1
+execute if score quest Stats matches 11 run scoreboard players add 11 quest 1
 
 
 
@@ -45,5 +46,9 @@ execute if score quest Stats matches 8 run scoreboard players set @a[gamemode=ad
 
 execute if score quest Stats matches 9 run scoreboard players set @a[gamemode=adventure] winQ9 1
 execute if score quest Stats matches 9 run scoreboard players set @a[gamemode=adventure] unlockQ2 1
+
+execute if score quest Stats matches 10 run scoreboard players set @a[gamemode=adventure] winQ10 1
+
+execute if score quest Stats matches 11 run scoreboard players set @a[gamemode=adventure] winQ11 1
 
 execute as @a run function glarth:mechanic/adjust_unlock_data

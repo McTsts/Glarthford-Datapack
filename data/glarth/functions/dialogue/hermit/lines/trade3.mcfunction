@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"hermit","color":"yellow"},{"text":"] ","color":"dark_gray"},{"translate":"hermit.1b","color":"gray"}]
-playsound hermit7 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"hermit","color":"yellow"},{"text":"] ","color":"dark_gray"},{"translate":"hermit.1b","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound hermit7 voice @a[distance=..5] ~ ~ ~ 1 1 1

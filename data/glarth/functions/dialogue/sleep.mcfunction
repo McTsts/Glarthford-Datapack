@@ -1,1 +1,1 @@
-tellraw @a[distance=..5] ["",{"translate":"asleep","with":[{"selector":"@s"}],"color":"gray","italic":true}]
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"translate":"asleep","with":[{"selector":"@s"}],"color":"gray","italic":true}]

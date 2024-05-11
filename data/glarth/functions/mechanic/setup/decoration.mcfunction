@@ -62,7 +62,7 @@
 	execute unless score lowGraphics Stats matches 1 run function glarth:mechanic/animation/mouse/spawn
 	execute unless score lowGraphics Stats matches 1 run function glarth:mechanic/animation/crow/spawn10
 	execute unless score lowGraphics Stats matches 1 unless score season winter matches 1 run function glarth:mechanic/animation/duck/random
-	execute unless score lowGraphics Stats matches 1 run function glarth:mechanic/animation/butterfly/spawn15
+	execute unless score lowGraphics Stats matches 1 unless score quest Stats matches 7 run function glarth:mechanic/animation/butterfly/spawn15
 	execute unless score lowGraphics Stats matches 1 run function glarth:mechanic/animation/owl/spawn
 	execute unless score lowGraphics Stats matches 1 unless score season winter matches 1 run function glarth:mechanic/animation/frog/random
 # E Table

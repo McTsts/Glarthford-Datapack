@@ -18,8 +18,8 @@ execute if data storage glarth:main inv.all[{id:"minecraft:diamond_pickaxe",tag:
 
 execute if data storage glarth:main inv.all[{id:"minecraft:bow",tag:{Damage:384,bow:"default"}}] if score @p[tag=tbcTurn] tbcAttackStage matches 2 run scoreboard players set @p[tag=tbcTurn] tbcAttackTimer 100
 execute if data storage glarth:main inv.all[{id:"minecraft:bow",tag:{Damage:384,bow:"default"}}] run function glarth:combat/remove/damaged_broke
-execute if data storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:326}}] if score @p[tag=tbcTurn] tbcAttackStage matches 2 run scoreboard players set @p[tag=tbcTurn] tbcAttackTimer 100
-execute if data storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:326}}] run function glarth:combat/remove/damaged_broke
+execute if data storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:465}}] if score @p[tag=tbcTurn] tbcAttackStage matches 2 run scoreboard players set @p[tag=tbcTurn] tbcAttackTimer 100
+execute if data storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:465}}] run function glarth:combat/remove/damaged_broke
 
 data remove storage glarth:main inv.all[{id:"minecraft:wooden_hoe",tag:{Damage:59}}]
 data remove storage glarth:main inv.all[{id:"minecraft:stone_pickaxe",tag:{Damage:131}}]
@@ -35,7 +35,7 @@ data remove storage glarth:main inv.all[{id:"minecraft:golden_shovel",tag:{Damag
 data remove storage glarth:main inv.all[{id:"minecraft:golden_pickaxe",tag:{Damage:32}}]
 data remove storage glarth:main inv.all[{id:"minecraft:bow",tag:{Damage:384,bow:"default"}}]
 data remove storage glarth:main inv.all[{id:"minecraft:shield",tag:{Damage:336}}]
-data remove storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:326}}]
+data remove storage glarth:main inv.all[{id:"minecraft:crossbow",tag:{Damage:465}}]
 data remove storage glarth:main inv.all[{id:"minecraft:golden_axe",tag:{Damage:32}}]
 data remove storage glarth:main inv.all[{id:"minecraft:shears",tag:{Damage:238}}]
 data remove storage glarth:main inv.all[{id:"minecraft:netherite_sword",tag:{Damage:2031}}]

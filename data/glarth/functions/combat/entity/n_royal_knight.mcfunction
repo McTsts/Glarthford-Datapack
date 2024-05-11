@@ -7,7 +7,12 @@ scoreboard players set @s attack_073 1
 scoreboard players set @s attack_074 1
 scoreboard players set @s attack_075 1
 
-scoreboard players set @s tbcHealth 50
+execute if score difficulty tbcStats matches 1 run scoreboard players set @s tbcHealth 40
+execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbcHealth 50
+execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 60
+execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 70
+execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 80
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 90
 scoreboard players set @s tbcDodge 0
 scoreboard players set @s tbcArmor 10
 tag @s add death_003

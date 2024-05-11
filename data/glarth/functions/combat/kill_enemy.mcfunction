@@ -20,6 +20,7 @@ execute as @s[tag=tbcEnemyVeryTall] at @s positioned ~ ~4.9 ~ run kill @e[tag=tb
 execute as @s[tag=tbcEnemyVeryTall] at @s positioned ~ ~4.6 ~ run kill @e[tag=tbcHealthBar2,distance=..0.1,limit=1]
 execute if entity @s[tag=tbcBoss] at @s unless entity @e[tag=tbcBoss,distance=0.1..] run function glarth:combat/kill_boss
 execute if entity @s[tag=tbcMiniBoss] at @s unless entity @e[tag=tbcBoss,distance=0.1..] unless entity @e[tag=tbcMiniBoss,distance=0.1..] run function glarth:combat/kill_miniboss
+execute at @s run kill @e[type=armor_stand,tag=charQEp,limit=2,sort=nearest,distance=..2]
 execute at @s run kill @e[type=armor_stand,tag=charQE,limit=1,sort=nearest,distance=..2]
 execute at @s run kill @e[type=armor_stand,tag=charQEBee,limit=1,sort=nearest,distance=..2]
 kill @s[tag=!tbcManualDeath]

@@ -21,7 +21,6 @@ scoreboard players set r Random 12
 function glarth:util/rand_tbc
 execute if score n Random <= @s tbcEscape run scoreboard players operation @s tbcFreeze < 1 Const
 
-
 # Turn Speed Effects
 scoreboard players set @s tbcSpeedXX 0
 execute if score @s tbcEfSpeed matches 1.. run scoreboard players add @s tbcQueueX 9

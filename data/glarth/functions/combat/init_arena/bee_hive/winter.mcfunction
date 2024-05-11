@@ -22,7 +22,7 @@ summon minecraft:area_effect_cloud 444 26 -23 {Radius:0.0f,Duration:2147483647,T
 summon minecraft:area_effect_cloud 441 26 -20 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180f,0f]}
 
 # Ally
-summon minecraft:area_effect_cloud 446 26 -15 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly"]}
+summon minecraft:area_effect_cloud 446 26 -15 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerAlly","tbcMarkerAlly1"]}
 
 scoreboard players set maxEnemies tbcStats 4
 

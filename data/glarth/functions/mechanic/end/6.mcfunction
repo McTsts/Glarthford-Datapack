@@ -12,6 +12,6 @@ execute if score timer end matches 191..250 as @e[tag=endScenePov,type=armor_sta
 execute if score timer end matches 251..320 as @e[tag=endScenePov,type=armor_stand] at @s run tp @s ^ ^ ^0.06666 ~ ~
 execute if score timer end matches 61..320 run effect clear @a[gamemode=spectator] minecraft:blindness
 execute if score timer end matches 1..320 run effect clear @a[gamemode=spectator] minecraft:night_vision
-execute if score timer end matches 170 run function glarth:dialogue/uncle/lines/end_6
-execute if score timer end matches 370 run function glarth:mechanic/win
+execute if score timer end matches 175 run function glarth:dialogue/uncle/lines/end_6
+execute if score timer end matches 375 run function glarth:mechanic/win
 

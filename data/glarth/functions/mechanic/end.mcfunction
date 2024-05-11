@@ -11,7 +11,7 @@ xp set @a 0 levels
 weather clear
 forceload add -154 -842 -103 -449
 execute as @e[type=!player,tag=!area_main,tag=!end_scene,tag=!door] run function glarth:mechanic/kill
-forceload remove -154 -842 -103 -449
+schedule function glarth:mechanic/dim_end/unforceload 60s
 clear @a[gamemode=adventure]
 clear @a[gamemode=spectator]
 data remove block 84 26 -122 RecordItem.tag
@@ -52,3 +52,6 @@ schedule clear glarth:combat/loot_attempt
 #Progress
 scoreboard players set progress Dis 25
 function glarth:mechanic/progress/progress
+
+# unforceload baloon
+forceload remove 8 24

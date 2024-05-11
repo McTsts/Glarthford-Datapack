@@ -26,15 +26,15 @@ execute if score @s tbcAttackStage matches 2 if score clicked tbcStats = arrowSl
 execute if score @s tbcAttackStage matches 2 if score clicked tbcStats = arrowSlot tbcStats run scoreboard players operation arrowSlot tbcStats = n Random
 execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] run clear @s
 execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] run function glarth:combat/menu/util/fill
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 1 run replaceitem entity @s hotbar.0 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 2 run replaceitem entity @s hotbar.1 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 3 run replaceitem entity @s hotbar.2 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 4 run replaceitem entity @s hotbar.3 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 5 run replaceitem entity @s hotbar.4 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 6 run replaceitem entity @s hotbar.5 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 7 run replaceitem entity @s hotbar.6 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 8 run replaceitem entity @s hotbar.7 arrow
-execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 9 run replaceitem entity @s hotbar.8 arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 1 run item replace entity @s hotbar.0 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 2 run item replace entity @s hotbar.1 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 3 run item replace entity @s hotbar.2 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 4 run item replace entity @s hotbar.3 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 5 run item replace entity @s hotbar.4 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 6 run item replace entity @s hotbar.5 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 7 run item replace entity @s hotbar.6 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 8 run item replace entity @s hotbar.7 with arrow
+execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] if score arrowSlot tbcStats matches 9 run item replace entity @s hotbar.8 with arrow
 execute if score @s tbcAttackStage matches 2 if entity @s[tag=tbcArrowPlace] run tag @s remove tbcArrowPlace
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 75.. run scoreboard players set @s tbcMenuX -1
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 75.. run function glarth:combat/action/util/next_stage
@@ -55,5 +55,5 @@ execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 60.. run function glarth:combat/action/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 as @e[tag=tbcSelPlayerAS] at @s facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 4 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.1] run kill @e[tag=tbcArrowP]
-execute if score @s tbcAttackStage matches 4 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.1] run function glarth:combat/action/util/done
+execute if score @s tbcAttackStage matches 4 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.11] run kill @e[tag=tbcArrowP]
+execute if score @s tbcAttackStage matches 4 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.11] run function glarth:combat/action/util/done

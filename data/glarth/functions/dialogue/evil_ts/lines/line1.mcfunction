@@ -1,0 +1,2 @@
+execute at @e[tag=gibbs] run tellraw @a[distance=..20] ["",{"text":"\n[","color":"dark_gray"},{"translate":"evil_ts","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"evil_ts.1","color":"gray"}]
+execute at @e[tag=gibbs] run playsound minecraft:evil_ts1 voice @a[distance=..20] ~ ~ ~ 1 1 1

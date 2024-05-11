@@ -1,4 +1,4 @@
-execute if score lobbyTBC Stats matches 1 unless entity @a[gamemode=adventure] run tellraw @a ["\n",{"translate":"gameover","color":"red"}]
+execute if score lobbyTBC Stats matches 1.. unless entity @a[gamemode=adventure] run tellraw @a ["\n",{"translate":"gameover","color":"red"}]
 execute unless score game Stats matches 0 run schedule function glarth:combat/restart_music 20
 
 execute if score lobbyTBC Stats matches 1 as @a[gamemode=spectator] run function glarth:mechanic/action/lobby
@@ -22,6 +22,8 @@ effect give @a minecraft:resistance 3 120 true
 effect clear @a water_breathing
 effect clear @a absorption
 effect clear @s minecraft:weakness
+effect clear @s minecraft:night_vision
+
 
 data modify storage glarth:main inv set from storage glarth:main combat.inv[0]
 execute as @a[scores={playerid=1},gamemode=adventure] run function glarth:inventory/load
@@ -48,9 +50,20 @@ scoreboard objectives setdisplay sidebar.team.white TimeDim
 execute if score lobbyTBC Stats matches 1 run clear @a[gamemode=!creative]
 execute if score lobbyTBC Stats matches 1 run effect clear @a[gamemode=!creative]
 execute if score lobbyTBC Stats matches 1 run effect give @a minecraft:instant_health 1 120 true
+execute if score lobbyTBC Stats matches 1 run scoreboard players set lobbyTBC Stats 0
 
-
-scoreboard players set lobbyTBC Stats 0
+execute if score lobbyTBC Stats matches 2 unless score boss_rush Stats matches 20 run schedule clear glarth:combat/reset_delayed
+execute if score lobbyTBC Stats matches 2 unless score boss_rush Stats matches 20 run tellraw @a ["\n"]
+execute if score lobbyTBC Stats matches 2 unless score boss_rush Stats matches 20 run function glarth:combat/boss_rush/time
+execute if score lobbyTBC Stats matches 2 unless score boss_rush Stats matches 20 run schedule function glarth:combat/boss_rush/next 1t
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run clear @a[gamemode=!creative]
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run effect clear @a[gamemode=!creative]
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run effect give @a minecraft:instant_health 1 120 true
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run tellraw @a ["\n",{"translate":"victory","color":"red"}]
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run function glarth:combat/boss_rush/time
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run tellraw @a [{"translate":"stories3","color":"red"},"\n"]
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 as @a[gamemode=!creative] run function glarth:mechanic/action/lobby
+execute if score lobbyTBC Stats matches 2 if score boss_rush Stats matches 20 run scoreboard players set lobbyTBC Stats 0
 
 scoreboard players set debug tbcStats 0
 scoreboard players reset * tbcA

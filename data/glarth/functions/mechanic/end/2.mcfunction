@@ -1,5 +1,5 @@
 #scoreboard players set 2 Const 2
-execute if score timer end matches 1 run scoreboard players set @s MusicSet 101
+execute if score timer end matches 1 run scoreboard players set @a MusicSet 101
 execute if score timer end matches 1 run kill @e[tag=end_scene]
 execute if score timer end matches 1 run summon minecraft:armor_stand -1 37 -185 {DisabledSlots:4144959,Rotation:[0f,0f],Passengers:[{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:1}}],Tags:["charQ","charQ1","end_scene"],Rotation:[0f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ2","end_scene"],Rotation:[0f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ3","end_scene"],Rotation:[0f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ4","end_scene"],Rotation:[0f,0f],Pose:{RightArm:[0.0f,0.0f,0.0f]}}],Tags:["charQB","end_scene"],CustomNameVisible:1}
 execute if score timer end matches 1 run tag @r[scores={playerid=1..3},gamemode=adventure] add endTemp

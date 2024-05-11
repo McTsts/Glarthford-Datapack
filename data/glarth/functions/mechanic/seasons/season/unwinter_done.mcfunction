@@ -68,3 +68,25 @@ setblock 46 25 -256 minecraft:spruce_trapdoor[facing=south,half=top,open=false,p
 setblock 47 25 -256 minecraft:spruce_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=false]
 setblock 48 25 -258 minecraft:spruce_trapdoor[facing=north,half=top,open=false,powered=false,waterlogged=false]
 setblock 47 25 -256 minecraft:spruce_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=true]
+
+
+# lake twigs
+setblock -8 27 -149 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -5 27 -152 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -13 27 -147 minecraft:crimson_button[face=floor,facing=east,powered=true]
+
+# swamp twigs 
+setblock -21 26 -151 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -28 26 -146 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -26 26 -152 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -35 26 -151 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -37 26 -153 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -36 26 -147 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -44 26 -146 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -47 26 -151 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -48 26 -149 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -48 26 -143 minecraft:crimson_button[face=floor,facing=east,powered=true]
+setblock -31 26 -153 minecraft:crimson_button[face=floor,facing=east,powered=true]
+
+# lilypads
+function glarth:mechanic/seasons/season/extra/lilypad_bob

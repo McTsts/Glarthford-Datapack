@@ -1,11 +1,11 @@
-execute if score @s tbcAttackStage matches 0 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:345}
+execute if score @s tbcAttackStage matches 0 run item replace entity @s armor.head with diamond_hoe{CustomModelData:345}
 execute if score @s tbcAttackStage matches 0 run playsound minecraft:entity.chicken.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
 execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run function glarth:combat/action_enemy/util/next_stage
 
-execute if score @s tbcAttackStage matches 2 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:344}
+execute if score @s tbcAttackStage matches 2 run item replace entity @s armor.head with diamond_hoe{CustomModelData:344}
 execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAttackTimer 1
@@ -39,12 +39,12 @@ execute if score @s tbcAttackStage matches 10 run scoreboard players add @s tbcA
 execute if score @s tbcAttackStage matches 10 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 execute if score @s tbcAttackStage matches 4..10 run function glarth:combat/action_enemy/helper/arrow_egg
 
-execute if score @s tbcAttackStage matches 11 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:345}
+execute if score @s tbcAttackStage matches 11 run item replace entity @s armor.head with diamond_hoe{CustomModelData:345}
 execute if score @s tbcAttackStage matches 11 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 12 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
 execute if score @s tbcAttackStage matches 12 if entity @e[tag=tbcSelMarker,distance=..0.2] run function glarth:combat/action_enemy/util/next_stage
 
-execute if score @s tbcAttackStage matches 13 run replaceitem entity @s armor.head diamond_hoe{CustomModelData:344}
+execute if score @s tbcAttackStage matches 13 run item replace entity @s armor.head with diamond_hoe{CustomModelData:344}
 execute if score @s tbcAttackStage matches 13 run playsound minecraft:entity.chicken.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s tbcAttackStage matches 13 run function glarth:combat/action_enemy/util/done

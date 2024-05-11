@@ -37,3 +37,6 @@ setblock -34 32 -169 minecraft:hay_block
 
 # Empty Mines
 function glarth:mechanic/setup/extra/empty_mines
+
+# gary #6
+clone 63 21 -232 60 17 -240 22 19 -217

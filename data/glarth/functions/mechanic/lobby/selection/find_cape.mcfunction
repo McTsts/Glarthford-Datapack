@@ -15,6 +15,7 @@ execute if entity @s[tag=cp6] if score @s charC1 matches 0 run scoreboard player
 execute if entity @s[tag=cp7] if score @s charC1 matches 0 run scoreboard players set @s charC1 7
 execute if entity @s[tag=cp8] if score @s charC1 matches 0 run scoreboard players set @s charC1 8
 execute if entity @s[tag=cp9] if score @s charC1 matches 0 run scoreboard players set @s charC1 9
+execute if entity @s[tag=cp10] if score @s charC1 matches 0 run scoreboard players set @s charC1 13
 execute if entity @s[tag=cpX] if score @s charC1 matches 0 run scoreboard players set @s charC1 10
 execute if entity @s[tag=cpA] if score @s charC1 matches 0 run scoreboard players set @s charC1 11
 execute if entity @s[tag=cpB] if score @s charC1 matches 0 run scoreboard players set @s charC1 12

@@ -4,10 +4,12 @@ function glarth:combat/attack_init
 
 # Enable Phanterra, Disable this (phanterra invocation)
 scoreboard players set @s attack_106 0
-scoreboard players set @s attack_107 32
-scoreboard players set @s attack_108 32
-scoreboard players set @s attack_109 32
-scoreboard players set @s attack_110 24
+scoreboard players set @s attack_107 1016
+scoreboard players set @s attack_108 1016
+scoreboard players set @s attack_109 1008
+scoreboard players set @s attack_218 1016
+scoreboard players set @s attack_219 1008
+scoreboard players set @s attack_110 12
 
 # Summoning
 scoreboard players set @s attack_65 12

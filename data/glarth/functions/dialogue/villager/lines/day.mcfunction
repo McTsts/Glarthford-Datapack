@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"villager","color":"#F4AB72"},{"text":"] ","color":"dark_gray"},{"translate":"villager.d","color":"gray"}]
-playsound villager1 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"villager","color":"#F4AB72"},{"text":"] ","color":"dark_gray"},{"translate":"villager.d","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound villager1 voice @a[distance=..5] ~ ~ ~ 1 1 1

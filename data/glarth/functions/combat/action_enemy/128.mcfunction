@@ -14,8 +14,8 @@ execute if score @s tbcAttackStage matches 2 run tag @e[tag=tbcArrowPN,type=armo
 execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_enemy/util/next_stage
 
 # Swipe
-execute if score @s tbcAttackStage matches 4 unless entity @s[tag=tbcPiglin] as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:4}
-execute if score @s tbcAttackStage matches 4 if entity @s[tag=tbcPiglin] as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:508}
+execute if score @s tbcAttackStage matches 4 unless entity @s[tag=tbcPiglin] as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:4}
+execute if score @s tbcAttackStage matches 4 if entity @s[tag=tbcPiglin] as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:508}
 execute if score @s tbcAttackStage matches 4 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init
 execute if score @s tbcAttackStage matches 4 run function glarth:combat/action_enemy/util/next_stage
 

@@ -9,10 +9,10 @@ clone -83 19 -245 -83 18 -245 -82 42 -246
 ##
 ## Swamp Torches
 ##
-setblock -36 27 -136 torch
-setblock -47 28 -135 torch
-setblock -42 27 -154 torch
-setblock -54 27 -144 torch
+setblock -36 27 -136 minecraft:magenta_candle[candles=4,lit=true,waterlogged=false]
+setblock -47 28 -135 minecraft:magenta_candle[candles=4,lit=true,waterlogged=false]
+setblock -42 27 -154 minecraft:magenta_candle[candles=4,lit=true,waterlogged=false]
+setblock -54 27 -144 minecraft:magenta_candle[candles=4,lit=true,waterlogged=false]
 
 ## Farm Block
 setblock 8 26 -262 oak_log
@@ -37,7 +37,6 @@ setblock -82 50 -237 lantern[hanging=false]
 setblock -86 51 -235 lantern[hanging=false]
 setblock -85 44 -242 lantern[hanging=false]
 
-setblock -81 42 -244 air
 setblock -88 42 -247 air
 setblock -82 42 -236 air
 setblock -92 42 -237 air

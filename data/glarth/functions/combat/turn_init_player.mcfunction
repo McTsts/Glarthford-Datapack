@@ -10,7 +10,7 @@ execute as @s[scores={playerid=3}] run tag @e[tag=tbcPlayerAS3] add tbcSelPlayer
 execute as @s[scores={playerid=1}] run tag @e[tag=tbcMarkerPos1] add tbcSelMarker
 execute as @s[scores={playerid=2}] run tag @e[tag=tbcMarkerPos2] add tbcSelMarker
 execute as @s[scores={playerid=3}] run tag @e[tag=tbcMarkerPos3] add tbcSelMarker
-playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 1 2
+playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 2 2
 execute as @s[scores={playerid=1}] run data modify storage glarth:main combat.turn set from storage glarth:main combat.inv[0]
 execute as @s[scores={playerid=2}] run data modify storage glarth:main combat.turn set from storage glarth:main combat.inv[1]
 execute as @s[scores={playerid=3}] run data modify storage glarth:main combat.turn set from storage glarth:main combat.inv[2]

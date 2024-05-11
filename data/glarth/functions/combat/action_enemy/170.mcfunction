@@ -106,6 +106,7 @@ execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 02 as @a[tag=tbcAttackable] run function glarth:combat/action/blocking_init
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 50 as @a[tag=tbcAttackable] run function glarth:combat/action/blocking_start
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 60 as @a[tag=tbcAttackable] run function glarth:combat/action/blocking_end
+execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 60 run scoreboard players set damageType tbcStats 1
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 60 run scoreboard players set damage tbcStats 50
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 60 as @a[tag=tbcAttackable] run function glarth:combat/action_enemy/util/damage
 execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches 02 as @e[tag=endArena] at @s run tp @s ~ ~ ~ ~ 01

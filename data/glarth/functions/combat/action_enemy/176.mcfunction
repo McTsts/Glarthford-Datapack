@@ -5,106 +5,106 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1 run replaceitem entity @s armor.head diamond_axe{CustomModelData:100}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 2 run replaceitem entity @s armor.head diamond_axe{CustomModelData:99}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 3 run replaceitem entity @s armor.head diamond_axe{CustomModelData:98}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 4 run replaceitem entity @s armor.head diamond_axe{CustomModelData:97}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 5 run replaceitem entity @s armor.head diamond_axe{CustomModelData:96}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 6 run replaceitem entity @s armor.head diamond_axe{CustomModelData:95}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 7 run replaceitem entity @s armor.head diamond_axe{CustomModelData:94}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 8 run replaceitem entity @s armor.head diamond_axe{CustomModelData:93}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 9 run replaceitem entity @s armor.head diamond_axe{CustomModelData:92}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 10 run replaceitem entity @s armor.head diamond_axe{CustomModelData:91}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 11 run replaceitem entity @s armor.head diamond_axe{CustomModelData:90}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 12 run replaceitem entity @s armor.head diamond_axe{CustomModelData:89}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 13 run replaceitem entity @s armor.head diamond_axe{CustomModelData:88}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 14 run replaceitem entity @s armor.head diamond_axe{CustomModelData:87}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 15 run replaceitem entity @s armor.head diamond_axe{CustomModelData:86}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 16 run replaceitem entity @s armor.head diamond_axe{CustomModelData:85}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 17 run replaceitem entity @s armor.head diamond_axe{CustomModelData:84}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 18 run replaceitem entity @s armor.head diamond_axe{CustomModelData:83}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 19 run replaceitem entity @s armor.head diamond_axe{CustomModelData:82}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 20 run replaceitem entity @s armor.head diamond_axe{CustomModelData:81}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 21 run replaceitem entity @s armor.head diamond_axe{CustomModelData:80}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 22 run replaceitem entity @s armor.head diamond_axe{CustomModelData:79}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 23 run replaceitem entity @s armor.head diamond_axe{CustomModelData:78}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 24 run replaceitem entity @s armor.head diamond_axe{CustomModelData:77}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 25 run replaceitem entity @s armor.head diamond_axe{CustomModelData:76}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 26 run replaceitem entity @s armor.head diamond_axe{CustomModelData:75}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 27 run replaceitem entity @s armor.head diamond_axe{CustomModelData:74}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 28 run replaceitem entity @s armor.head diamond_axe{CustomModelData:73}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 29 run replaceitem entity @s armor.head diamond_axe{CustomModelData:72}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 30 run replaceitem entity @s armor.head diamond_axe{CustomModelData:71}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 31 run replaceitem entity @s armor.head diamond_axe{CustomModelData:70}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 32 run replaceitem entity @s armor.head diamond_axe{CustomModelData:69}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 33 run replaceitem entity @s armor.head diamond_axe{CustomModelData:68}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 34 run replaceitem entity @s armor.head diamond_axe{CustomModelData:67}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 35 run replaceitem entity @s armor.head diamond_axe{CustomModelData:66}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 36 run replaceitem entity @s armor.head diamond_axe{CustomModelData:65}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 37 run replaceitem entity @s armor.head diamond_axe{CustomModelData:64}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 38 run replaceitem entity @s armor.head diamond_axe{CustomModelData:63}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 39 run replaceitem entity @s armor.head diamond_axe{CustomModelData:62}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 40 run replaceitem entity @s armor.head diamond_axe{CustomModelData:61}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41 run replaceitem entity @s armor.head diamond_axe{CustomModelData:60}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 42 run replaceitem entity @s armor.head diamond_axe{CustomModelData:59}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 43 run replaceitem entity @s armor.head diamond_axe{CustomModelData:58}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 44 run replaceitem entity @s armor.head diamond_axe{CustomModelData:57}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 45 run replaceitem entity @s armor.head diamond_axe{CustomModelData:56}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 46 run replaceitem entity @s armor.head diamond_axe{CustomModelData:55}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 47 run replaceitem entity @s armor.head diamond_axe{CustomModelData:54}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 48 run replaceitem entity @s armor.head diamond_axe{CustomModelData:53}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 49 run replaceitem entity @s armor.head diamond_axe{CustomModelData:52}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 50 run replaceitem entity @s armor.head diamond_axe{CustomModelData:51}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 51 run replaceitem entity @s armor.head diamond_axe{CustomModelData:50}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 52 run replaceitem entity @s armor.head diamond_axe{CustomModelData:49}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 53 run replaceitem entity @s armor.head diamond_axe{CustomModelData:48}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 54 run replaceitem entity @s armor.head diamond_axe{CustomModelData:47}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 55 run replaceitem entity @s armor.head diamond_axe{CustomModelData:46}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 56 run replaceitem entity @s armor.head diamond_axe{CustomModelData:45}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 57 run replaceitem entity @s armor.head diamond_axe{CustomModelData:44}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 58 run replaceitem entity @s armor.head diamond_axe{CustomModelData:43}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 59 run replaceitem entity @s armor.head diamond_axe{CustomModelData:42}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 60 run replaceitem entity @s armor.head diamond_axe{CustomModelData:41}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 61 run replaceitem entity @s armor.head diamond_axe{CustomModelData:40}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 62 run replaceitem entity @s armor.head diamond_axe{CustomModelData:39}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 63 run replaceitem entity @s armor.head diamond_axe{CustomModelData:38}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 64 run replaceitem entity @s armor.head diamond_axe{CustomModelData:37}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 65 run replaceitem entity @s armor.head diamond_axe{CustomModelData:36}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 66 run replaceitem entity @s armor.head diamond_axe{CustomModelData:35}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 67 run replaceitem entity @s armor.head diamond_axe{CustomModelData:34}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 68 run replaceitem entity @s armor.head diamond_axe{CustomModelData:33}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 69 run replaceitem entity @s armor.head diamond_axe{CustomModelData:32}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 70 run replaceitem entity @s armor.head diamond_axe{CustomModelData:31}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 71 run replaceitem entity @s armor.head diamond_axe{CustomModelData:30}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 72 run replaceitem entity @s armor.head diamond_axe{CustomModelData:29}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 73 run replaceitem entity @s armor.head diamond_axe{CustomModelData:28}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 74 run replaceitem entity @s armor.head diamond_axe{CustomModelData:27}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 75 run replaceitem entity @s armor.head diamond_axe{CustomModelData:26}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 76 run replaceitem entity @s armor.head diamond_axe{CustomModelData:25}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 77 run replaceitem entity @s armor.head diamond_axe{CustomModelData:24}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 78 run replaceitem entity @s armor.head diamond_axe{CustomModelData:23}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 79 run replaceitem entity @s armor.head diamond_axe{CustomModelData:22}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 80 run replaceitem entity @s armor.head diamond_axe{CustomModelData:21}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 81 run replaceitem entity @s armor.head diamond_axe{CustomModelData:20}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 82 run replaceitem entity @s armor.head diamond_axe{CustomModelData:19}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 83 run replaceitem entity @s armor.head diamond_axe{CustomModelData:18}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 84 run replaceitem entity @s armor.head diamond_axe{CustomModelData:17}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 85 run replaceitem entity @s armor.head diamond_axe{CustomModelData:16}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 86 run replaceitem entity @s armor.head diamond_axe{CustomModelData:15}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 87 run replaceitem entity @s armor.head diamond_axe{CustomModelData:14}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 88 run replaceitem entity @s armor.head diamond_axe{CustomModelData:13}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 89 run replaceitem entity @s armor.head diamond_axe{CustomModelData:12}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 90 run replaceitem entity @s armor.head diamond_axe{CustomModelData:11}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 91 run replaceitem entity @s armor.head diamond_axe{CustomModelData:10}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 92 run replaceitem entity @s armor.head diamond_axe{CustomModelData:9}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 93 run replaceitem entity @s armor.head diamond_axe{CustomModelData:8}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 94 run replaceitem entity @s armor.head diamond_axe{CustomModelData:7}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 95 run replaceitem entity @s armor.head diamond_axe{CustomModelData:6}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 96 run replaceitem entity @s armor.head diamond_axe{CustomModelData:5}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 97 run replaceitem entity @s armor.head diamond_axe{CustomModelData:4}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 98 run replaceitem entity @s armor.head diamond_axe{CustomModelData:3}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 99 run replaceitem entity @s armor.head diamond_axe{CustomModelData:2}
-execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 100 run replaceitem entity @s armor.head diamond_axe{CustomModelData:1}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 1 run item replace entity @s armor.head with diamond_axe{CustomModelData:100}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 2 run item replace entity @s armor.head with diamond_axe{CustomModelData:99}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 3 run item replace entity @s armor.head with diamond_axe{CustomModelData:98}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 4 run item replace entity @s armor.head with diamond_axe{CustomModelData:97}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 5 run item replace entity @s armor.head with diamond_axe{CustomModelData:96}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 6 run item replace entity @s armor.head with diamond_axe{CustomModelData:95}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 7 run item replace entity @s armor.head with diamond_axe{CustomModelData:94}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 8 run item replace entity @s armor.head with diamond_axe{CustomModelData:93}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 9 run item replace entity @s armor.head with diamond_axe{CustomModelData:92}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with diamond_axe{CustomModelData:91}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with diamond_axe{CustomModelData:90}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with diamond_axe{CustomModelData:89}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with diamond_axe{CustomModelData:88}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with diamond_axe{CustomModelData:87}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with diamond_axe{CustomModelData:86}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with diamond_axe{CustomModelData:85}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with diamond_axe{CustomModelData:84}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with diamond_axe{CustomModelData:83}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with diamond_axe{CustomModelData:82}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with diamond_axe{CustomModelData:81}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with diamond_axe{CustomModelData:80}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with diamond_axe{CustomModelData:79}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with diamond_axe{CustomModelData:78}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with diamond_axe{CustomModelData:77}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with diamond_axe{CustomModelData:76}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with diamond_axe{CustomModelData:75}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with diamond_axe{CustomModelData:74}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with diamond_axe{CustomModelData:73}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with diamond_axe{CustomModelData:72}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with diamond_axe{CustomModelData:71}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with diamond_axe{CustomModelData:70}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 32 run item replace entity @s armor.head with diamond_axe{CustomModelData:69}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 33 run item replace entity @s armor.head with diamond_axe{CustomModelData:68}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 34 run item replace entity @s armor.head with diamond_axe{CustomModelData:67}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 35 run item replace entity @s armor.head with diamond_axe{CustomModelData:66}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 36 run item replace entity @s armor.head with diamond_axe{CustomModelData:65}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 37 run item replace entity @s armor.head with diamond_axe{CustomModelData:64}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 38 run item replace entity @s armor.head with diamond_axe{CustomModelData:63}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 39 run item replace entity @s armor.head with diamond_axe{CustomModelData:62}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 40 run item replace entity @s armor.head with diamond_axe{CustomModelData:61}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 41 run item replace entity @s armor.head with diamond_axe{CustomModelData:60}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 42 run item replace entity @s armor.head with diamond_axe{CustomModelData:59}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 43 run item replace entity @s armor.head with diamond_axe{CustomModelData:58}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 44 run item replace entity @s armor.head with diamond_axe{CustomModelData:57}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 45 run item replace entity @s armor.head with diamond_axe{CustomModelData:56}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 46 run item replace entity @s armor.head with diamond_axe{CustomModelData:55}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 47 run item replace entity @s armor.head with diamond_axe{CustomModelData:54}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 48 run item replace entity @s armor.head with diamond_axe{CustomModelData:53}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 49 run item replace entity @s armor.head with diamond_axe{CustomModelData:52}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 50 run item replace entity @s armor.head with diamond_axe{CustomModelData:51}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 51 run item replace entity @s armor.head with diamond_axe{CustomModelData:50}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 52 run item replace entity @s armor.head with diamond_axe{CustomModelData:49}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 53 run item replace entity @s armor.head with diamond_axe{CustomModelData:48}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 54 run item replace entity @s armor.head with diamond_axe{CustomModelData:47}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 55 run item replace entity @s armor.head with diamond_axe{CustomModelData:46}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 56 run item replace entity @s armor.head with diamond_axe{CustomModelData:45}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 57 run item replace entity @s armor.head with diamond_axe{CustomModelData:44}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 58 run item replace entity @s armor.head with diamond_axe{CustomModelData:43}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 59 run item replace entity @s armor.head with diamond_axe{CustomModelData:42}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 60 run item replace entity @s armor.head with diamond_axe{CustomModelData:41}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 61 run item replace entity @s armor.head with diamond_axe{CustomModelData:40}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 62 run item replace entity @s armor.head with diamond_axe{CustomModelData:39}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 63 run item replace entity @s armor.head with diamond_axe{CustomModelData:38}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 64 run item replace entity @s armor.head with diamond_axe{CustomModelData:37}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 65 run item replace entity @s armor.head with diamond_axe{CustomModelData:36}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 66 run item replace entity @s armor.head with diamond_axe{CustomModelData:35}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 67 run item replace entity @s armor.head with diamond_axe{CustomModelData:34}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 68 run item replace entity @s armor.head with diamond_axe{CustomModelData:33}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 69 run item replace entity @s armor.head with diamond_axe{CustomModelData:32}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 70 run item replace entity @s armor.head with diamond_axe{CustomModelData:31}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 71 run item replace entity @s armor.head with diamond_axe{CustomModelData:30}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 72 run item replace entity @s armor.head with diamond_axe{CustomModelData:29}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 73 run item replace entity @s armor.head with diamond_axe{CustomModelData:28}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 74 run item replace entity @s armor.head with diamond_axe{CustomModelData:27}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 75 run item replace entity @s armor.head with diamond_axe{CustomModelData:26}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 76 run item replace entity @s armor.head with diamond_axe{CustomModelData:25}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 77 run item replace entity @s armor.head with diamond_axe{CustomModelData:24}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 78 run item replace entity @s armor.head with diamond_axe{CustomModelData:23}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 79 run item replace entity @s armor.head with diamond_axe{CustomModelData:22}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 80 run item replace entity @s armor.head with diamond_axe{CustomModelData:21}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 81 run item replace entity @s armor.head with diamond_axe{CustomModelData:20}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 82 run item replace entity @s armor.head with diamond_axe{CustomModelData:19}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 83 run item replace entity @s armor.head with diamond_axe{CustomModelData:18}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 84 run item replace entity @s armor.head with diamond_axe{CustomModelData:17}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 85 run item replace entity @s armor.head with diamond_axe{CustomModelData:16}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 86 run item replace entity @s armor.head with diamond_axe{CustomModelData:15}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 87 run item replace entity @s armor.head with diamond_axe{CustomModelData:14}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 88 run item replace entity @s armor.head with diamond_axe{CustomModelData:13}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 89 run item replace entity @s armor.head with diamond_axe{CustomModelData:12}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 90 run item replace entity @s armor.head with diamond_axe{CustomModelData:11}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 91 run item replace entity @s armor.head with diamond_axe{CustomModelData:10}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 92 run item replace entity @s armor.head with diamond_axe{CustomModelData:9}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 93 run item replace entity @s armor.head with diamond_axe{CustomModelData:8}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 94 run item replace entity @s armor.head with diamond_axe{CustomModelData:7}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 95 run item replace entity @s armor.head with diamond_axe{CustomModelData:6}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 96 run item replace entity @s armor.head with diamond_axe{CustomModelData:5}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 97 run item replace entity @s armor.head with diamond_axe{CustomModelData:4}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 98 run item replace entity @s armor.head with diamond_axe{CustomModelData:3}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 99 run item replace entity @s armor.head with diamond_axe{CustomModelData:2}
+execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 100 run item replace entity @s armor.head with diamond_axe{CustomModelData:1}
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 100 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1
@@ -220,106 +220,106 @@ execute if score @s tbcAttackStage matches 18 if score @s tbcAttackTimer matches
 execute if score @s tbcAttackStage matches 18 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 19 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 1 run replaceitem entity @s armor.head diamond_axe{CustomModelData:1}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 2 run replaceitem entity @s armor.head diamond_axe{CustomModelData:2}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 3 run replaceitem entity @s armor.head diamond_axe{CustomModelData:3}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 4 run replaceitem entity @s armor.head diamond_axe{CustomModelData:4}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 5 run replaceitem entity @s armor.head diamond_axe{CustomModelData:5}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 6 run replaceitem entity @s armor.head diamond_axe{CustomModelData:6}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 7 run replaceitem entity @s armor.head diamond_axe{CustomModelData:7}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 8 run replaceitem entity @s armor.head diamond_axe{CustomModelData:8}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 9 run replaceitem entity @s armor.head diamond_axe{CustomModelData:9}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 10 run replaceitem entity @s armor.head diamond_axe{CustomModelData:10}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 11 run replaceitem entity @s armor.head diamond_axe{CustomModelData:11}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 12 run replaceitem entity @s armor.head diamond_axe{CustomModelData:12}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 13 run replaceitem entity @s armor.head diamond_axe{CustomModelData:13}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 14 run replaceitem entity @s armor.head diamond_axe{CustomModelData:14}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 15 run replaceitem entity @s armor.head diamond_axe{CustomModelData:15}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 16 run replaceitem entity @s armor.head diamond_axe{CustomModelData:16}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 17 run replaceitem entity @s armor.head diamond_axe{CustomModelData:17}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 18 run replaceitem entity @s armor.head diamond_axe{CustomModelData:18}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 19 run replaceitem entity @s armor.head diamond_axe{CustomModelData:19}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 20 run replaceitem entity @s armor.head diamond_axe{CustomModelData:20}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 21 run replaceitem entity @s armor.head diamond_axe{CustomModelData:21}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 22 run replaceitem entity @s armor.head diamond_axe{CustomModelData:22}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 23 run replaceitem entity @s armor.head diamond_axe{CustomModelData:23}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 24 run replaceitem entity @s armor.head diamond_axe{CustomModelData:24}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 25 run replaceitem entity @s armor.head diamond_axe{CustomModelData:25}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 26 run replaceitem entity @s armor.head diamond_axe{CustomModelData:26}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 27 run replaceitem entity @s armor.head diamond_axe{CustomModelData:27}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 28 run replaceitem entity @s armor.head diamond_axe{CustomModelData:28}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 29 run replaceitem entity @s armor.head diamond_axe{CustomModelData:29}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 30 run replaceitem entity @s armor.head diamond_axe{CustomModelData:30}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 31 run replaceitem entity @s armor.head diamond_axe{CustomModelData:31}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 32 run replaceitem entity @s armor.head diamond_axe{CustomModelData:32}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 33 run replaceitem entity @s armor.head diamond_axe{CustomModelData:33}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 34 run replaceitem entity @s armor.head diamond_axe{CustomModelData:34}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 35 run replaceitem entity @s armor.head diamond_axe{CustomModelData:35}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 36 run replaceitem entity @s armor.head diamond_axe{CustomModelData:36}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 37 run replaceitem entity @s armor.head diamond_axe{CustomModelData:37}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 38 run replaceitem entity @s armor.head diamond_axe{CustomModelData:38}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 39 run replaceitem entity @s armor.head diamond_axe{CustomModelData:39}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 40 run replaceitem entity @s armor.head diamond_axe{CustomModelData:40}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 41 run replaceitem entity @s armor.head diamond_axe{CustomModelData:41}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 42 run replaceitem entity @s armor.head diamond_axe{CustomModelData:42}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 43 run replaceitem entity @s armor.head diamond_axe{CustomModelData:43}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 44 run replaceitem entity @s armor.head diamond_axe{CustomModelData:44}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 45 run replaceitem entity @s armor.head diamond_axe{CustomModelData:45}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 46 run replaceitem entity @s armor.head diamond_axe{CustomModelData:46}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 47 run replaceitem entity @s armor.head diamond_axe{CustomModelData:47}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 48 run replaceitem entity @s armor.head diamond_axe{CustomModelData:48}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 49 run replaceitem entity @s armor.head diamond_axe{CustomModelData:49}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 50 run replaceitem entity @s armor.head diamond_axe{CustomModelData:50}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 51 run replaceitem entity @s armor.head diamond_axe{CustomModelData:51}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 52 run replaceitem entity @s armor.head diamond_axe{CustomModelData:52}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 53 run replaceitem entity @s armor.head diamond_axe{CustomModelData:53}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 54 run replaceitem entity @s armor.head diamond_axe{CustomModelData:54}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 55 run replaceitem entity @s armor.head diamond_axe{CustomModelData:55}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 56 run replaceitem entity @s armor.head diamond_axe{CustomModelData:56}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 57 run replaceitem entity @s armor.head diamond_axe{CustomModelData:57}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 58 run replaceitem entity @s armor.head diamond_axe{CustomModelData:58}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 59 run replaceitem entity @s armor.head diamond_axe{CustomModelData:59}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 60 run replaceitem entity @s armor.head diamond_axe{CustomModelData:60}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 61 run replaceitem entity @s armor.head diamond_axe{CustomModelData:61}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 62 run replaceitem entity @s armor.head diamond_axe{CustomModelData:62}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 63 run replaceitem entity @s armor.head diamond_axe{CustomModelData:63}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 64 run replaceitem entity @s armor.head diamond_axe{CustomModelData:64}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 65 run replaceitem entity @s armor.head diamond_axe{CustomModelData:65}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 66 run replaceitem entity @s armor.head diamond_axe{CustomModelData:66}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 67 run replaceitem entity @s armor.head diamond_axe{CustomModelData:67}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 68 run replaceitem entity @s armor.head diamond_axe{CustomModelData:68}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 69 run replaceitem entity @s armor.head diamond_axe{CustomModelData:69}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 70 run replaceitem entity @s armor.head diamond_axe{CustomModelData:70}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 71 run replaceitem entity @s armor.head diamond_axe{CustomModelData:71}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 72 run replaceitem entity @s armor.head diamond_axe{CustomModelData:72}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 73 run replaceitem entity @s armor.head diamond_axe{CustomModelData:73}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 74 run replaceitem entity @s armor.head diamond_axe{CustomModelData:74}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 75 run replaceitem entity @s armor.head diamond_axe{CustomModelData:75}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 76 run replaceitem entity @s armor.head diamond_axe{CustomModelData:76}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 77 run replaceitem entity @s armor.head diamond_axe{CustomModelData:77}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 78 run replaceitem entity @s armor.head diamond_axe{CustomModelData:78}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 79 run replaceitem entity @s armor.head diamond_axe{CustomModelData:79}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 80 run replaceitem entity @s armor.head diamond_axe{CustomModelData:80}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 81 run replaceitem entity @s armor.head diamond_axe{CustomModelData:81}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 82 run replaceitem entity @s armor.head diamond_axe{CustomModelData:82}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 83 run replaceitem entity @s armor.head diamond_axe{CustomModelData:83}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 84 run replaceitem entity @s armor.head diamond_axe{CustomModelData:84}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 85 run replaceitem entity @s armor.head diamond_axe{CustomModelData:85}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 86 run replaceitem entity @s armor.head diamond_axe{CustomModelData:86}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 87 run replaceitem entity @s armor.head diamond_axe{CustomModelData:87}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 88 run replaceitem entity @s armor.head diamond_axe{CustomModelData:88}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 89 run replaceitem entity @s armor.head diamond_axe{CustomModelData:89}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 90 run replaceitem entity @s armor.head diamond_axe{CustomModelData:90}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 91 run replaceitem entity @s armor.head diamond_axe{CustomModelData:91}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 92 run replaceitem entity @s armor.head diamond_axe{CustomModelData:92}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 93 run replaceitem entity @s armor.head diamond_axe{CustomModelData:93}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 94 run replaceitem entity @s armor.head diamond_axe{CustomModelData:94}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 95 run replaceitem entity @s armor.head diamond_axe{CustomModelData:95}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 96 run replaceitem entity @s armor.head diamond_axe{CustomModelData:96}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 97 run replaceitem entity @s armor.head diamond_axe{CustomModelData:97}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 98 run replaceitem entity @s armor.head diamond_axe{CustomModelData:98}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 99 run replaceitem entity @s armor.head diamond_axe{CustomModelData:99}
-execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 100 run replaceitem entity @s armor.head diamond_axe{CustomModelData:100}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 1 run item replace entity @s armor.head with diamond_axe{CustomModelData:1}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 2 run item replace entity @s armor.head with diamond_axe{CustomModelData:2}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 3 run item replace entity @s armor.head with diamond_axe{CustomModelData:3}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 4 run item replace entity @s armor.head with diamond_axe{CustomModelData:4}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 5 run item replace entity @s armor.head with diamond_axe{CustomModelData:5}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 6 run item replace entity @s armor.head with diamond_axe{CustomModelData:6}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 7 run item replace entity @s armor.head with diamond_axe{CustomModelData:7}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 8 run item replace entity @s armor.head with diamond_axe{CustomModelData:8}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 9 run item replace entity @s armor.head with diamond_axe{CustomModelData:9}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with diamond_axe{CustomModelData:10}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with diamond_axe{CustomModelData:11}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with diamond_axe{CustomModelData:12}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with diamond_axe{CustomModelData:13}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with diamond_axe{CustomModelData:14}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with diamond_axe{CustomModelData:15}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with diamond_axe{CustomModelData:16}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with diamond_axe{CustomModelData:17}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with diamond_axe{CustomModelData:18}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with diamond_axe{CustomModelData:19}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with diamond_axe{CustomModelData:20}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with diamond_axe{CustomModelData:21}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with diamond_axe{CustomModelData:22}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with diamond_axe{CustomModelData:23}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with diamond_axe{CustomModelData:24}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with diamond_axe{CustomModelData:25}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with diamond_axe{CustomModelData:26}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with diamond_axe{CustomModelData:27}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with diamond_axe{CustomModelData:28}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with diamond_axe{CustomModelData:29}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with diamond_axe{CustomModelData:30}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with diamond_axe{CustomModelData:31}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 32 run item replace entity @s armor.head with diamond_axe{CustomModelData:32}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 33 run item replace entity @s armor.head with diamond_axe{CustomModelData:33}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 34 run item replace entity @s armor.head with diamond_axe{CustomModelData:34}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 35 run item replace entity @s armor.head with diamond_axe{CustomModelData:35}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 36 run item replace entity @s armor.head with diamond_axe{CustomModelData:36}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 37 run item replace entity @s armor.head with diamond_axe{CustomModelData:37}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 38 run item replace entity @s armor.head with diamond_axe{CustomModelData:38}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 39 run item replace entity @s armor.head with diamond_axe{CustomModelData:39}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 40 run item replace entity @s armor.head with diamond_axe{CustomModelData:40}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 41 run item replace entity @s armor.head with diamond_axe{CustomModelData:41}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 42 run item replace entity @s armor.head with diamond_axe{CustomModelData:42}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 43 run item replace entity @s armor.head with diamond_axe{CustomModelData:43}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 44 run item replace entity @s armor.head with diamond_axe{CustomModelData:44}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 45 run item replace entity @s armor.head with diamond_axe{CustomModelData:45}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 46 run item replace entity @s armor.head with diamond_axe{CustomModelData:46}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 47 run item replace entity @s armor.head with diamond_axe{CustomModelData:47}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 48 run item replace entity @s armor.head with diamond_axe{CustomModelData:48}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 49 run item replace entity @s armor.head with diamond_axe{CustomModelData:49}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 50 run item replace entity @s armor.head with diamond_axe{CustomModelData:50}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 51 run item replace entity @s armor.head with diamond_axe{CustomModelData:51}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 52 run item replace entity @s armor.head with diamond_axe{CustomModelData:52}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 53 run item replace entity @s armor.head with diamond_axe{CustomModelData:53}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 54 run item replace entity @s armor.head with diamond_axe{CustomModelData:54}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 55 run item replace entity @s armor.head with diamond_axe{CustomModelData:55}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 56 run item replace entity @s armor.head with diamond_axe{CustomModelData:56}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 57 run item replace entity @s armor.head with diamond_axe{CustomModelData:57}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 58 run item replace entity @s armor.head with diamond_axe{CustomModelData:58}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 59 run item replace entity @s armor.head with diamond_axe{CustomModelData:59}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 60 run item replace entity @s armor.head with diamond_axe{CustomModelData:60}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 61 run item replace entity @s armor.head with diamond_axe{CustomModelData:61}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 62 run item replace entity @s armor.head with diamond_axe{CustomModelData:62}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 63 run item replace entity @s armor.head with diamond_axe{CustomModelData:63}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 64 run item replace entity @s armor.head with diamond_axe{CustomModelData:64}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 65 run item replace entity @s armor.head with diamond_axe{CustomModelData:65}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 66 run item replace entity @s armor.head with diamond_axe{CustomModelData:66}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 67 run item replace entity @s armor.head with diamond_axe{CustomModelData:67}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 68 run item replace entity @s armor.head with diamond_axe{CustomModelData:68}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 69 run item replace entity @s armor.head with diamond_axe{CustomModelData:69}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 70 run item replace entity @s armor.head with diamond_axe{CustomModelData:70}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 71 run item replace entity @s armor.head with diamond_axe{CustomModelData:71}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 72 run item replace entity @s armor.head with diamond_axe{CustomModelData:72}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 73 run item replace entity @s armor.head with diamond_axe{CustomModelData:73}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 74 run item replace entity @s armor.head with diamond_axe{CustomModelData:74}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 75 run item replace entity @s armor.head with diamond_axe{CustomModelData:75}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 76 run item replace entity @s armor.head with diamond_axe{CustomModelData:76}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 77 run item replace entity @s armor.head with diamond_axe{CustomModelData:77}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 78 run item replace entity @s armor.head with diamond_axe{CustomModelData:78}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 79 run item replace entity @s armor.head with diamond_axe{CustomModelData:79}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 80 run item replace entity @s armor.head with diamond_axe{CustomModelData:80}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 81 run item replace entity @s armor.head with diamond_axe{CustomModelData:81}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 82 run item replace entity @s armor.head with diamond_axe{CustomModelData:82}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 83 run item replace entity @s armor.head with diamond_axe{CustomModelData:83}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 84 run item replace entity @s armor.head with diamond_axe{CustomModelData:84}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 85 run item replace entity @s armor.head with diamond_axe{CustomModelData:85}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 86 run item replace entity @s armor.head with diamond_axe{CustomModelData:86}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 87 run item replace entity @s armor.head with diamond_axe{CustomModelData:87}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 88 run item replace entity @s armor.head with diamond_axe{CustomModelData:88}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 89 run item replace entity @s armor.head with diamond_axe{CustomModelData:89}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 90 run item replace entity @s armor.head with diamond_axe{CustomModelData:90}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 91 run item replace entity @s armor.head with diamond_axe{CustomModelData:91}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 92 run item replace entity @s armor.head with diamond_axe{CustomModelData:92}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 93 run item replace entity @s armor.head with diamond_axe{CustomModelData:93}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 94 run item replace entity @s armor.head with diamond_axe{CustomModelData:94}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 95 run item replace entity @s armor.head with diamond_axe{CustomModelData:95}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 96 run item replace entity @s armor.head with diamond_axe{CustomModelData:96}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 97 run item replace entity @s armor.head with diamond_axe{CustomModelData:97}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 98 run item replace entity @s armor.head with diamond_axe{CustomModelData:98}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 99 run item replace entity @s armor.head with diamond_axe{CustomModelData:99}
+execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 100 run item replace entity @s armor.head with diamond_axe{CustomModelData:100}
 execute if score @s tbcAttackStage matches 19 if score @s tbcAttackTimer matches 100 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 20 run scoreboard players add @s tbcAttackTimer 1

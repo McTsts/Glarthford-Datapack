@@ -10,19 +10,19 @@
         }
       ]
     },
-	{
+    {
       "rolls": 1,
       "entries": [
         {
           "type": "item",
           "name": "minecraft:arrow",
           "weight": 1,
-		  "functions": [
-			{
-			  "function": "set_count",
-			  "count": 10
-			}
-		  ]
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 10
+            }
+          ]
         }
       ]
     }

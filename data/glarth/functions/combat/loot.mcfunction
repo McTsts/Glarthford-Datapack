@@ -1,6 +1,10 @@
 # Loot Handelling
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/zombie",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie] at @s run function glarth:combat/loot_table
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie_cowboy] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/zombie",LootTableSeed:0} destroy
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie_cowboy] at @s run function glarth:combat/loot_table
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie_cowboy] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/zombie",LootTableSeed:0} destroy
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_zombie_cowboy] at @s run function glarth:combat/loot_table
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_szombie] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/szombie",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_szombie] at @s run function glarth:combat/loot_table
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_drowned] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/drowned",LootTableSeed:0} destroy
@@ -50,6 +54,7 @@ execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_summoner] run setblock
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_summoner] at @s run function glarth:combat/loot_table
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_piglin] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/piglin",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_piglin] at @s run function glarth:combat/loot_table
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_librarian] at @s run function glarth:mechanic/give/reignford
 execute as @e[type=area_effect_cloud,tag=tbcLoot] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/all",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot] at @s run function glarth:combat/loot_table
 kill @e[tag=die4]

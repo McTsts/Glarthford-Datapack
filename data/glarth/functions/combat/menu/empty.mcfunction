@@ -1,3 +1,5 @@
+scoreboard players operation clickCount tbcStats = @s tbcCarrot
+
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:0}] run scoreboard players set clicked tbcStats 1
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:1}] run scoreboard players set clicked tbcStats 2
 execute as @s[scores={tbcCarrot=1..},nbt={SelectedItemSlot:2}] run scoreboard players set clicked tbcStats 3

@@ -10,6 +10,8 @@ tag @a remove encB6
 tag @a remove encB7
 tag @a remove encB8
 tag @a remove encB9
+tag @a remove encB10
+tag @a remove encB11
 tag @a remove lostOnce
 tag @a remove wonOnce
 tag @a remove wonTwice
@@ -17,6 +19,8 @@ tag @a remove wonThrice
 tag @a remove playedOnce
 tag @a remove failedBlockOnce
 tag @a remove throwableTutorial
+tag @s remove seenGaryHideout
+tag @s remove doneGarySapphire
 scoreboard players reset * quest
 
 scoreboard players reset @a winQ0
@@ -29,6 +33,8 @@ scoreboard players reset @a winQ6
 scoreboard players reset @a winQ7
 scoreboard players reset @a winQ8
 scoreboard players reset @a winQ9
+scoreboard players reset @a winQ10
+scoreboard players reset @a winQ11
 
 scoreboard players reset @a unlockQ0
 scoreboard players reset @a unlockQ1
@@ -40,6 +46,8 @@ scoreboard players reset @a unlockQ6
 scoreboard players reset @a unlockQ7
 scoreboard players reset @a unlockQ8
 scoreboard players reset @a unlockQ9
+scoreboard players reset @a unlockQ10
+scoreboard players reset @a unlockQ11
 
 scoreboard players set 0 quest 0
 scoreboard players set 1 quest 0
@@ -51,6 +59,8 @@ scoreboard players set 6 quest 0
 scoreboard players set 7 quest 0
 scoreboard players set 8 quest 0
 scoreboard players set 9 quest 0
+scoreboard players set 10 quest 0
+scoreboard players set 11 quest 0
 
 scoreboard players set running winter 0
 
@@ -60,7 +70,7 @@ function glarth:mechanic/lobby/music_sel/reset
 function glarth:mechanic/lobby/music_sel/lock
 
 
-replaceitem entity @e[type=armor_stand,tag=lobbyScreen] armor.head diamond_hoe{Damage:213}
+item replace entity @e[type=armor_stand,tag=lobbyScreen] armor.head with diamond_hoe{Damage:213}
 scoreboard players set page pcRec 0
 
 scoreboard players set combat Stats 0

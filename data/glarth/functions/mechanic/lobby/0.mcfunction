@@ -9,5 +9,5 @@ scoreboard players operation x questU = 0 questU
 execute if score x questU matches 0 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.locked","color":"red","font":"custom:small","with":[{"translate":"lobby.quest.locked.1"}]}'}
 execute if score x questU matches 1 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.unlocked","color":"green","font":"custom:small"}'}
 
-execute if score x questU matches 0 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'[{"translate":"lobby.quest.g","color":"gold","bold":true,"underlined":true,"with":["I"]}," / ",{"translate":"lobby.quest.tutorial"}]'}
+execute if score x questU matches 0 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'[{"translate":"lobby.quest.tutorial","color":"gold","bold":true,"underlined":true}]'}
 execute if score x questU matches 1 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'{"translate":"lobby.quest.0","color":"gold","bold":true,"underlined":true}'}

@@ -8,6 +8,7 @@ scoreboard players set @s attack_059 1
 scoreboard players set @s attack_061 1
 execute if score difficulty tbcStats matches 1..4 run scoreboard players set @s tbcHealth 30
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 40
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 50
 scoreboard players add @s tbcDodge 5
 scoreboard players set @s tbcArmor 10
 scoreboard players set @s tbcSpeed 6

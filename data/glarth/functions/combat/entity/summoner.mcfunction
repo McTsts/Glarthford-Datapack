@@ -14,6 +14,9 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s tbc
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s tbcHealth 350
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s tbcHealth 450
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s tbcHealth 550
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbcHealth 700
+
+tag @s add death_036
 #Spawn
 tag @s add tbcSummoner
 function glarth:combat/spawn

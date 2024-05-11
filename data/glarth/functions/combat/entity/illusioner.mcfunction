@@ -8,6 +8,7 @@ data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"transla
 scoreboard players set @s attack_019 1
 scoreboard players set @s attack_098 6
 scoreboard players set @s attack_099 3
+scoreboard players operation @s tbcHealth *= 2 Const
 
 #Spawn
 tag @s add tbcIllusioner

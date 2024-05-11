@@ -40,6 +40,7 @@ execute if score realms Stats matches 1 run clone -56 18 -186 -56 18 -186 -53 31
 execute if score realms Stats matches 1 if block -48 31 -196 chest run clone -49 18 -193 -49 18 -193 -48 31 -196
 execute if score realms Stats matches 1 unless block -48 31 -196 chest run clone -49 18 -193 -49 18 -193 -49 31 -195
 execute if score realms Stats matches 1 run clone -50 25 -183 -50 25 -183 -48 27 -184
+execute if score realms Stats matches 1 run clone -57 18 -202 -57 18 -202 -59 27 -203
 
 
 # Censor Sewers Blood
@@ -56,7 +57,7 @@ execute if score realms Stats matches 1 run setblock 137 26 -162 minecraft:air
 execute if score realms Stats matches 1 run setblock 137 26 -157 minecraft:air
 
 # Censor Butcher Model
-execute if score realms Stats matches 1 run replaceitem entity @e[tag=butcher] armor.head diamond_hoe{CustomModelData:506}
+execute if score realms Stats matches 1 run item replace entity @e[tag=butcher] armor.head with diamond_hoe{CustomModelData:506}
 
 # Ts Skull 
 execute if score realms Stats matches 0 run setblock 77 23 -253 minecraft:skeleton_skull[rotation=15]{}

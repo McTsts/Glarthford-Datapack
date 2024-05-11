@@ -15,6 +15,7 @@ execute if score difficulty tbcStats matches 2 run scoreboard players set @s att
 execute if score difficulty tbcStats matches 3 run scoreboard players set @s attack_006 4
 execute if score difficulty tbcStats matches 4 run scoreboard players set @s attack_006 5
 execute if score difficulty tbcStats matches 5 run scoreboard players set @s attack_006 6
+execute if score difficulty tbcStats matches 6 run scoreboard players set @s attack_006 7
 scoreboard players set @s attack_011 1
 scoreboard players set @s tbcHealth 10
 scoreboard players set @s tbcStrength 60

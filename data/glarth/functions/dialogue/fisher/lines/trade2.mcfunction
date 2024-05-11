@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"fisher","color":"#00A975"},{"text":"] ","color":"dark_gray"},{"translate":"fisher.1.2","color":"gray"}]
-playsound fisher4 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"fisher","color":"#00A975"},{"text":"] ","color":"dark_gray"},{"translate":"fisher.1.2","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound fisher4 voice @a[distance=..5] ~ ~ ~ 1 1 1

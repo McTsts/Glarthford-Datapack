@@ -1,0 +1,1 @@
+schedule function glarth:dialogue/summoner/lines/lose 1t

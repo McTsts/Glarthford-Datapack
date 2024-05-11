@@ -9,9 +9,9 @@ execute if score timer credits matches 80.. run function glarth:mechanic/credits
 
 execute if score timer credits matches 5.. unless entity @a[gamemode=spectator] run scoreboard players set timer credits 10000
 
-execute if score timer credits matches 2600.. run tp @a[gamemode=spectator] 167.5 24.0 -116.0 90 0
-execute if score timer credits matches 2600.. run gamemode adventure @a[gamemode=spectator]
-execute if score timer credits matches 2600.. run scoreboard players set timer credits -1
+execute if score timer credits matches 2700.. run tp @a[gamemode=spectator] 167.5 24.0 -116.0 90 0
+execute if score timer credits matches 2700.. run gamemode adventure @a[gamemode=spectator]
+execute if score timer credits matches 2700.. run scoreboard players set timer credits -1
 
 execute as @a[gamemode=spectator] at @s unless entity @e[tag=creditsPov,distance=..0.01] run tp @s 167.5 24.0 -116.0 90 0
 execute as @a[gamemode=spectator] at @s unless entity @e[tag=creditsPov,distance=..0.01] run gamemode adventure @s

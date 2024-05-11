@@ -3,12 +3,16 @@
         "icon": {
             "item": "minecraft:black_carpet"
         },
-        "title": {  "text": "" },
-        "description": { "text": "" },
+        "title": {
+            "text": ""
+        },
+        "description": {
+            "text": ""
+        },
         "background": "minecraft:textures/map/map/background.png",
-		"announce_to_chat": false,
-		"show_toast": false,
-		"frame": "goal"
+        "announce_to_chat": false,
+        "show_toast": false,
+        "frame": "goal"
     },
     "criteria": {
         "start": {

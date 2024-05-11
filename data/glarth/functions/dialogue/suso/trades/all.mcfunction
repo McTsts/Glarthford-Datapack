@@ -1,0 +1,13 @@
+# cod
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iFish=..0,iFishCooked=..0}] ["",{"translate":"trade2","with":[{"translate":"suso.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 196"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iFish=1..,iFishCooked=..0}] ["",{"translate":"trade2","with":[{"translate":"suso.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 196"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iFish=..0,iFishCooked=1..}] ["",{"translate":"trade2","with":[{"translate":"suso.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 197"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iFish=1..,iFishCooked=1..}] ["",{"translate":"trade2","with":[{"translate":"suso.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 197"}}]
+execute if entity @s[tag=a,tag=!b] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"suso.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 197"}}]
+execute if entity @s[tag=!b,tag=!c] run tellraw @a[distance=..5,scores={iSalmonCooked=1..}] ["",{"translate":"trade2","with":[{"translate":"suso.a4"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 199"}}]
+# salmon
+execute if entity @s[tag=a,tag=b,tag=!c] run tellraw @a[distance=..5,scores={iSalmon=..0,iSalmonCooked=..0}] ["",{"translate":"trade2","with":[{"translate":"suso.a3"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 198"}}]
+execute if entity @s[tag=a,tag=b,tag=!c] run tellraw @a[distance=..5,scores={iSalmon=1..,iSalmonCooked=..0}] ["",{"translate":"trade2","with":[{"translate":"suso.a3"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 198"}}]
+execute if entity @s[tag=a,tag=b,tag=!c] run tellraw @a[distance=..5,scores={iSalmon=..0,iSalmonCooked=1..}] ["",{"translate":"trade2","with":[{"translate":"suso.a4"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 199"}}]
+execute if entity @s[tag=a,tag=b,tag=!c] run tellraw @a[distance=..5,scores={iSalmon=1..,iSalmonCooked=1..}] ["",{"translate":"trade2","with":[{"translate":"suso.a4"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 199"}}]
+execute if entity @s[tag=a,tag=b,tag=c,tag=!d] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"suso.a4"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 199"}}]

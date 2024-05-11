@@ -3,6 +3,7 @@ function glarth:dialogue/explorer/lines/trade7
 clear @s minecraft:torch 1
 tag @e[tag=explorer,type=armor_stand] add c
 
+clone 67 7 -235 63 1 -241 76 27 -240
 fill 76 27 -240 80 29 -233 air replace #minecraft:leaves
 fill 76 33 -234 79 30 -237 air replace #minecraft:leaves
 fill 76 33 -234 79 30 -237 air replace barrier

@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"blacksmith","color":"#282828"},{"text":"] ","color":"dark_gray"},{"translate":"blacksmith.4.1","color":"gray"}]
-playsound blacksmith10 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"blacksmith","color":"#282828"},{"text":"] ","color":"dark_gray"},{"translate":"blacksmith.4.1","color":"gray"}]
+execute unless score @s trigger = @s triggerPrev run playsound blacksmith10 voice @a[distance=..5] ~ ~ ~ 1 1 1

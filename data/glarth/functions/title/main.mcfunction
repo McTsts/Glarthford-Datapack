@@ -8,6 +8,7 @@ execute as @a[scores={fadeinQ6=1..}] if score time Dis matches 350.. run functio
 execute as @a[scores={fadeinQ7=1..}] if score time Dis matches 350.. run function glarth:title/fadein/q7
 execute as @a[scores={fadeinQ8=1..}] if score time Dis matches 350.. run function glarth:title/fadein/q8
 execute as @a[scores={fadeinQ9=1..}] if score time Dis matches 350.. run function glarth:title/fadein/q9
+execute as @a[scores={fadeinQ10=1..}] if score time Dis matches 350.. run function glarth:title/fadein/q10
 
 execute as @a[scores={suffixB0=1..}] run function glarth:title/suffix/b0
 execute as @a[scores={suffixB1=1..}] run function glarth:title/suffix/b1
@@ -19,3 +20,4 @@ execute as @a[scores={suffixB6=1..}] run function glarth:title/suffix/b6
 execute as @a[scores={suffixB7=1..}] run function glarth:title/suffix/b7
 execute as @a[scores={suffixB8=1..}] run function glarth:title/suffix/b8
 execute as @a[scores={suffixB9=1..}] run function glarth:title/suffix/b9
+execute as @a[scores={suffixB10=1..}] run function glarth:title/suffix/b10

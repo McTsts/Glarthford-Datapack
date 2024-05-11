@@ -1,1 +1,1 @@
-scoreboard players set Max lobMusic 59
+scoreboard players set Max lobMusic 61

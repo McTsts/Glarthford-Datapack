@@ -6,6 +6,9 @@ execute if score time Dis matches 0400.. if entity @e[type=area_effect_cloud,tag
 # Butcher wakes up
 execute if score time Dis matches 0500.. if entity @e[type=area_effect_cloud,tag=events,tag=!evButcherWakes] run function glarth:events/event/wakes/butcher
 execute if score time Dis matches ..0459 if entity @e[type=area_effect_cloud,tag=events,tag=evButcherWakes] run function glarth:events/event/wakes/butcher_undo
+# Foxes wake up
+execute if score time Dis matches 0600.. if entity @e[type=area_effect_cloud,tag=events,tag=!evFoxesWake] run function glarth:events/event/wakes/foxes
+execute if score time Dis matches ..0559 if entity @e[type=area_effect_cloud,tag=events,tag=evFoxesWake] run function glarth:events/event/wakes/foxes_undo
 # Brewery Worker wakes up
 execute if score time Dis matches 0600.. if entity @e[type=area_effect_cloud,tag=events,tag=!evWorkerWakes] unless score quest Stats matches 9 run function glarth:events/event/wakes/worker
 execute if score time Dis matches ..0559 if entity @e[type=area_effect_cloud,tag=events,tag=evWorkerWakes] unless score quest Stats matches 9 run function glarth:events/event/wakes/worker_undo

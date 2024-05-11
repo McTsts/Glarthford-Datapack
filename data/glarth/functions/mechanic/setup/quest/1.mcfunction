@@ -14,6 +14,7 @@ summon minecraft:armor_stand 0 26 -198 {ArmorItems:[{},{},{},{id:"diamond_hoe",C
 
 kill @e[tag=dockmaster]
 kill @e[tag=archaeologist]
+kill @e[tag=suso]
 
 # Remove Golden Pickaxe
 setblock -38 28 -269 air
@@ -26,3 +27,10 @@ fill -9 26 -199 -7 28 -199 minecraft:barrier
 
 # Newspaper Tip
 tag @a remove tip27
+
+# gary #1
+clone 38 21 -232 35 17 -240 22 19 -217
+setblock 25 20 -211 minecraft:jungle_button[face=wall,facing=north,powered=true]
+setblock 38 18 -233 minecraft:iron_trapdoor[facing=west,half=top,open=true,powered=true,waterlogged=false]
+summon slime 25 20 -210 {NoAI:1b,PersistenceRequired:1,NoGravity:1b,Silent:1b,Size:1,ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b},{Id:11,Duration:999999,ShowParticles:0b,Amplifier:120}],Tags:["beeHiveSlime"],Team:"noc"}
+summon armor_stand 68 60 -159 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs","asLoaderOverwrite"],Rotation:[135f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}

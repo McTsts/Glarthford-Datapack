@@ -1,0 +1,2 @@
+execute at @e[tag=suso] run tellraw @a[distance=..15] ["",{"text":"[","color":"dark_gray"},{"translate":"suso","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"suso.gary.4","color":"gray"}]
+execute at @e[tag=suso] run playsound suso11 voice @a[distance=..15] ~ ~ ~ 1 1 1

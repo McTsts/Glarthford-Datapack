@@ -6,7 +6,7 @@ execute if entity @s[tag=asUnloaded] run function glarth:mechanic/as_load
 # Kill
 execute if score realms Stats matches 0 run scoreboard players set r Random 8
 execute if score realms Stats matches 1 run scoreboard players set r Random 4
-replaceitem entity @s weapon.mainhand minecraft:black_carpet
+item replace entity @s weapon.mainhand with minecraft:black_carpet
 data modify entity @s HandItems[0].tag.CustomNameOld set from entity @s CustomName
 data modify entity @s HandItems[0].tag.ArmorItemsOld set from entity @s ArmorItems
 function glarth:util/random
@@ -28,4 +28,4 @@ tag @s add deadChar
 tag @s remove char
 tag @s remove die2
 execute if score quest Stats matches 4 run particle minecraft:portal ~ ~ ~ 0.5 0.5 0.5 0.5 100
-execute as @e[type=shulker,distance=..5] run data merge entity @s {DeathTime:19s,Health:0.0f}
+execute as @e[type=shulker,distance=..5] run data merge entity @s {DeathTime:19s,Health:0.0f,Pos:[0.0,0.0,0.0]}

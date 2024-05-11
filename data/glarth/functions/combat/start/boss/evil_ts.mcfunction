@@ -1,0 +1,16 @@
+# Peaceful
+execute if score difficulty Stats matches 0 run function glarth:mechanic/do_win
+execute if score difficulty Stats matches 0 run kill @s
+execute if score difficulty Stats matches 0 run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,NoGravity:1,Silent:1b,Invulnerable:1,Tags:["char","die","cnoc"]}
+# PVE
+execute if score combat Stats matches 1 if score difficulty Stats matches 1..3 run function glarth:combat/init_pve/boss/roberto
+# TBC
+execute if score combat Stats matches 0 if score difficulty Stats matches 1..3 run function glarth:combat/prepare
+execute if score combat Stats matches 0 if score difficulty Stats matches 1..3 run scoreboard players set arena tbcStats 111
+execute if score combat Stats matches 0 if score difficulty Stats matches 1 run schedule function glarth:combat/init_tbc/boss/evil_ts 20
+execute if score combat Stats matches 0 if score difficulty Stats matches 2 run schedule function glarth:combat/init_tbc/boss/evil_ts 20
+execute if score combat Stats matches 0 if score difficulty Stats matches 3 run schedule function glarth:combat/init_tbc/boss/evil_ts 20
+# Other
+scoreboard players set @a suffixB10 1
+
+

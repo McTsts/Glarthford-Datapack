@@ -7,6 +7,7 @@ execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..1.2]
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] as @e[tag=tbcVia,limit=1] unless score @s inBlock matches 0 run function glarth:combat/action/blocking_end
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] run scoreboard players operation damage tbcStats = @e[tag=tbcTurn] tbcStrength
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] run scoreboard players remove damage tbcStats 10
+execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] run scoreboard players operation damage tbcStats < 30 Const
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] as @e[tag=tbcVia,limit=1] run function glarth:combat/action_enemy/util/damage
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] run tag @s add tbcWhipHit
 execute as @e[tag=tbcViaAS,sort=nearest,limit=1,type=armor_stand,distance=..0.3] run tag @s remove tbcViaAS

@@ -1,2 +1,2 @@
-tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"lumberjack","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"lumberjack.1.2","color":"gray","bold":true}]
-playsound lumberjack5 voice @a[distance=..5] ~ ~ ~ 1 1 1
+execute unless score @s trigger = @s triggerPrev run tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"lumberjack","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"lumberjack.1.2","color":"gray","bold":true}]
+execute unless score @s trigger = @s triggerPrev run playsound lumberjack5 voice @a[distance=..5] ~ ~ ~ 1 1 1

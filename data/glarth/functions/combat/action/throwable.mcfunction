@@ -109,7 +109,7 @@ execute if score @s tbcAttackStage matches 6 as @e[tag=tbcThrowable] at @s facin
 execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score damage tbcStats matches 0.. run scoreboard players set dodge tbcStats 10
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score damage tbcStats matches 0.. as @e[scores={tbcSel=1}] run function glarth:combat/action_enemy/dodge
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score damage tbcStats matches 0.. if entity @e[tag=tbcEnderDodge,scores={tbcSel=1}] run scoreboard players set dodged tbcStats 3
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score damage tbcStats matches 0.. if entity @e[tag=tbcEnderDodge,scores={tbcSel=1}] unless score @e[scores={tbcSel=1},limit=1] tbcStun matches 1.. unless score @e[scores={tbcSel=1},limit=1] tbcFreeze matches 0.. run scoreboard players set dodged tbcStats 3
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score attackEffect tbcStats matches 1 run scoreboard players set freeze tbcStats 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score attackEffect tbcStats matches 2 run scoreboard players set blindness tbcStats 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 if score attackEffect tbcStats matches 3 run scoreboard players set bee tbcStats 3
@@ -122,5 +122,5 @@ execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 30.. run function glarth:combat/action/util/next_stage
 
 execute if score @s tbcAttackStage matches 7 as @e[tag=tbcSelPlayerAS] at @s facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 7 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.1] run kill @e[tag=tbcArrowP]
-execute if score @s tbcAttackStage matches 7 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.1] run function glarth:combat/action/util/done
+execute if score @s tbcAttackStage matches 7 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.11] run kill @e[tag=tbcArrowP]
+execute if score @s tbcAttackStage matches 7 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcSelMarker,distance=..0.11] run function glarth:combat/action/util/done

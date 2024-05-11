@@ -9,6 +9,8 @@ scoreboard players set 6 quest 0
 scoreboard players set 7 quest 0
 scoreboard players set 8 quest 0
 scoreboard players set 9 quest 0
+scoreboard players set 10 quest 0
+scoreboard players set 11 quest 0
 
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ0=1}] run scoreboard players set 0 quest 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ1=1}] run scoreboard players set 1 quest 1
@@ -20,6 +22,8 @@ execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ6=1}] run scorebo
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ7=1}] run scoreboard players set 7 quest 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ8=1}] run scoreboard players set 8 quest 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ9=1}] run scoreboard players set 9 quest 1
+execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ10=1}] run scoreboard players set 10 quest 1
+execute if entity @a[gamemode=adventure,tag=!lSpec,scores={winQ11=1}] run scoreboard players set 11 quest 1
 
 # Unlocked
 scoreboard players set 0 questU 0
@@ -32,6 +36,8 @@ scoreboard players set 6 questU 0
 scoreboard players set 7 questU 0
 scoreboard players set 8 questU 0
 scoreboard players set 9 questU 0
+scoreboard players set 10 questU 0
+scoreboard players set 11 questU 0
 
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ0=1}] run scoreboard players set 0 questU 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ1=1}] run scoreboard players set 1 questU 1
@@ -43,3 +49,5 @@ execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ6=1}] run scor
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ7=1}] run scoreboard players set 7 questU 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ8=1}] run scoreboard players set 8 questU 1
 execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ9=1}] run scoreboard players set 9 questU 1
+execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ10=1}] run scoreboard players set 10 questU 1
+execute if entity @a[gamemode=adventure,tag=!lSpec,scores={unlockQ11=1}] run scoreboard players set 11 questU 1

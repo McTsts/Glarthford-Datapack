@@ -1,0 +1,1 @@
+execute if score tbcVa tbcStats matches 0 if entity @e[tag=tbcEvilTs,tag=!1a] run function glarth:dialogue/evil_ts/lines/tbc1a

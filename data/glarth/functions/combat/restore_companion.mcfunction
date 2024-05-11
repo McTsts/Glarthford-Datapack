@@ -6,6 +6,7 @@ execute if data storage glarth:main temp2[{id:"horse"}] run summon horse 7 28 -1
 execute if data storage glarth:main temp2[{id:"strider"}] run summon strider 7 28 -196 {Tags:["tbcRestoreComp"]}
 execute if data storage glarth:main temp2[{id:"pig"}] run summon pig 7 28 -196 {Tags:["tbcRestoreComp"]}
 execute if data storage glarth:main temp2[{id:"polar_bear"}] run summon polar_bear 7 28 -196 {Tags:["tbcRestoreComp"]}
+execute if data storage glarth:main temp2[{id:"cat"}] run summon cat 7 28 -196 {Tags:["tbcRestoreComp"]}
 
 data modify entity @e[tag=tbcRestoreComp,limit=1] Owner set from storage glarth:main temp2[0].Owner
 data modify entity @e[tag=tbcRestoreComp,limit=1] Brain set from storage glarth:main temp2[0].Brain
@@ -19,6 +20,7 @@ data modify entity @e[tag=tbcRestoreComp,limit=1] Tame set from storage glarth:m
 data modify entity @e[tag=tbcRestoreComp,limit=1] Health set from storage glarth:main temp2[0].Health
 data modify entity @e[tag=tbcRestoreComp,limit=1] SaddleItem set from storage glarth:main temp2[0].SaddleItem
 data modify entity @e[tag=tbcRestoreComp,limit=1] Saddle set from storage glarth:main temp2[0].Saddle
+data modify entity @e[tag=tbcRestoreComp,limit=1] CatType set from storage glarth:main temp2[0].CatType
 data modify entity @e[tag=tbcRestoreComp,limit=1] PersistenceRequired set from storage glarth:main temp2[0].PersistenceRequired
 execute if data storage glarth:main temp2[0].tbcCompID store result score @e[tag=tbcRestoreComp,limit=1] tbcCompID run data get storage glarth:main temp2[0].tbcCompID
 scoreboard players operation @e[tag=tbcRestoreComp,limit=1] netherID = id edgeI

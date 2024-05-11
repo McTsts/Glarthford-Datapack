@@ -1,4 +1,4 @@
-replaceitem entity @e[tag=charQ4] armor.head air
+item replace entity @e[tag=charQ4] armor.head with air
 scoreboard players add @s tbcAttackStage 1
 scoreboard players set @s tbcAttackTimer 0
 scoreboard players set @s tbcAttackTimerX 0
