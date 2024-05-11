@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:water_bucket"
+        },
+        "title": "Whispering Water",
+        "description": "The biggest body of water in this region!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/2",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

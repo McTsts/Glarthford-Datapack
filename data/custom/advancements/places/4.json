@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:waterlily"
+        },
+        "title": "Wasteful Wetlands",
+        "description": "Swamps nearby the city, most citizens avoid it!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/3",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

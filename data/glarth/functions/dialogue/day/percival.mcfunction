@@ -1,0 +1,9 @@
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"percival","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"percival.1","color":"gray"}]
+execute @s[tag=!a] ~ ~ ~ playsound percival1 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=a] ~ ~ ~ execute @s[tag=!b] ~ ~ ~ tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"percival","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"percival.2","color":"gray"}]
+execute @s[tag=a] ~ ~ ~ execute @s[tag=!b] ~ ~ ~ playsound percival2 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=b] ~ ~ ~ tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"percival","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"percival.3","color":"gray","with":[{"translate":"percival.3s","italic":"true","color":"gray"}]}]
+execute @s[tag=b] ~ ~ ~ playsound percival3 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"percival.a2","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 80"}},{"text":"] ","color":"green"}]
+execute @s[tag=a] ~ ~ ~ execute @s[tag=!b] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"percival.a3","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 81"}},{"text":"] ","color":"green"}]
+execute @s[tag=b] ~ ~ ~ execute @s[tag=!c] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"percival.a4","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 82"}},{"text":"] ","color":"green"}]

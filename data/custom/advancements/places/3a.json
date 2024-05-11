@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tallgrass",
+			"data": 1
+        },
+        "title": "Glistering Meadows",
+        "description": "A sunny area that attracts flora and fauna!",
+		"hidden": true,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/3",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"mourner","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"mourner.d","color":"gray"}]
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"mourner.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 35"}},{"text":"] ","color":"green"}]
+playsound mourner1 voice @a[r=5] ~ ~ ~ 100 1

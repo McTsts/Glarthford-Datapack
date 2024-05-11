@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "title": "The Pollution",
+        "description": "Start the fifth task!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:quests/4",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

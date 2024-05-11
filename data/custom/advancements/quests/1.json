@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint"
+        },
+        "title": "The Kidnapping",
+        "description": "Start the first task!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:quests",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

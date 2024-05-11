@@ -1,0 +1,3 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"thief","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"thief.n","color":"gray"}]
+playsound thief3 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"thief.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 56"}},{"text":"] ","color":"green"}]

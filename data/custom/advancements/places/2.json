@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wheat"
+        },
+        "title": "Apple Blossom Farm",
+        "description": "The main source for food in Glarthford!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/5",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

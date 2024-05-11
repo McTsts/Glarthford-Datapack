@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "title": "The Ender Disease",
+        "description": "Start the fourth task!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:quests/3",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

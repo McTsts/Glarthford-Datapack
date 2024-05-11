@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "title": "Wife saved!",
+        "description": "You defeated Roberto Rizzo!",
+		"hidden": true,
+		"frame": "challenge",
+		"announce_to_chat": true
+    },
+    "parent": "custom:places/5a",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

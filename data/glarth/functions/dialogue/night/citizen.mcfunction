@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"citizen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"citizen.n","color":"gray"}]
+playsound citizen2 voice @a[r=5] ~ ~ ~ 100 1

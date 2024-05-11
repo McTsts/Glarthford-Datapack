@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "title": "Nefarious Nether",
+        "description": "A hellish underground domain!",
+		"hidden": true,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/8c",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

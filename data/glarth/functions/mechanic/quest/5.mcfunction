@@ -1,0 +1,1 @@
+execute @e[tag=slime_boss] ~ ~ ~ function bentechy:slime/main

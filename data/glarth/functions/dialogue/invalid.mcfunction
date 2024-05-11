@@ -1,0 +1,1 @@
+tellraw @a[r=5] ["",{"translate":"invalid","color":"red","with":[{"selector":"@s"}]}]

@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"helene","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"helene.n","color":"gray"}]
+playsound helene2 voice @a[r=5] ~ ~ ~ 100 1

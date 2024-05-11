@@ -1,0 +1,4 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"cave_man","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"cave_man.d","color":"gray"}]
+playsound caveman1 voice @a[r=5] ~ ~ ~ 100 1
+tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"cave_man.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 24"}},{"text":"] ","color":"green"}]
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"cave_man.a2","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 29"}},{"text":"] ","color":"green"}]

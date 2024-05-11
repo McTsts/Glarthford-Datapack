@@ -1,0 +1,1 @@
+The structure of this 1.12 data has been slightly adjusted for easier comparison with the post 1.12 format. Additionally the name of the mctsts namespace has been changed to glarth, however this has not been adjusted in the actual functions.

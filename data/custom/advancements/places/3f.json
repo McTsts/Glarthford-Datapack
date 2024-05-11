@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:slime"
+        },
+        "title": "Ancient Volcano",
+        "description": "This volcano used to be active many centuries ago!",
+		"hidden": true,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/3e",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

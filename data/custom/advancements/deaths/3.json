@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "title": "Master of Death",
+        "description": "Die a total of 10 times",
+		"hidden": true,
+		"frame": "challenge",
+		"announce_to_chat": true
+    },
+    "parent": "custom:deaths/2",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

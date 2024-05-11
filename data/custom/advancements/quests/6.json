@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:red_flower"
+        },
+        "title": "Thorn's Bane",
+        "description": "Start the secret sixth task!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:quests/5",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

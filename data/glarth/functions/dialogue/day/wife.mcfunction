@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"wife","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"wife.d","color":"gray"}]
+playsound wife1 voice @a[r=5] ~ ~ ~ 100 1

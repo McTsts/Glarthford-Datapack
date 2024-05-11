@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "title": "Slime Defeated",
+        "description": "You defeated the slime!",
+		"hidden": true,
+		"frame": "challenge",
+		"announce_to_chat": true
+    },
+    "parent": "custom:places/3f",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

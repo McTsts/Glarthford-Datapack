@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:vine"
+        },
+        "title": "Seaside Ruin",
+        "description": "A Guard Tower that has fallen into ruin!",
+		"hidden": true,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/3d",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

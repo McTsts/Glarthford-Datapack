@@ -1,0 +1,1 @@
+execute @e[tag=grimsbane_boss] ~ ~ ~ function mctsts:boss/grimsbane/main

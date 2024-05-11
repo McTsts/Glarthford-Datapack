@@ -1,0 +1,3 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"vampire","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"vampire.d","color":"gray"}]
+playsound vampire1 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"vampire.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 79"}},{"text":"] ","color":"green"}]

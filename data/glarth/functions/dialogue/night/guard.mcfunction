@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"guard","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"guard.n","color":"gray"}]
+playsound guard2 voice @a[r=5] ~ ~ ~ 100 1

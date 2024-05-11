@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "title": "The Great Fire",
+        "description": "Start the third task!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:quests/2",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

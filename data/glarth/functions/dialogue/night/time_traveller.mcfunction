@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"time_traveller","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"time_traveller.n","color":"gray"}]
+playsound time2 voice @a[r=5] ~ ~ ~ 100 1

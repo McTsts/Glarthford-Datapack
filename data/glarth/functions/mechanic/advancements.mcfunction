@@ -1,0 +1,31 @@
+advancement grant @a[x=7,y=27,z=-196,r=10,m=2] only custom:places/1
+advancement grant @a[x=4,y=26,z=-247,r=10,m=2] only custom:places/2
+advancement grant @a[x=5,y=27,z=-304,r=15,m=2] only custom:places/2a
+advancement grant @a[x=3,y=23,z=-142,r=15,m=2] only custom:places/3
+advancement grant @a[x=49,y=27,z=-171,r=5,m=2] only custom:places/3a
+advancement grant @a[x=44,y=28,z=-154,r=5,m=2] only custom:places/3b
+advancement grant @a[x=52,y=38,z=-127,r=5,m=2] only custom:places/3c
+advancement grant @a[x=24,y=29,z=-123,r=10,m=2] only custom:places/3d
+advancement grant @a[x=-19,y=26,z=-121,r=10,m=2] only custom:places/3e
+advancement grant @a[x=-5,y=19,z=-105,r=5,m=2] only custom:places/3f
+advancement grant @a[x=80,y=23,z=-157,r=5,m=2] only custom:places/3g
+advancement grant @a[x=-47,y=26,z=-140,r=15,m=2] only custom:places/4
+advancement grant @a[x=83,y=32,z=-187,r=7,m=2] only custom:places/5
+advancement grant @a[x=99,y=24,z=-166,r=5,m=2] only custom:places/5a
+advancement grant @a[x=82,y=32,z=-172,r=7,m=2] only custom:places/5b
+advancement grant @a[x=68,y=26,z=-256,r=20,m=2] only custom:places/6
+advancement grant @a[x=-42,y=33,z=-251,r=10,m=2] only custom:places/7
+advancement grant @a[x=-88,y=41,z=-242,r=7,m=2] only custom:places/7a
+advancement grant @a[x=-53,y=31,z=-193,r=10,m=2] only custom:places/8
+advancement grant @a[x=-35,y=26,z=-177,r=7,m=2] only custom:places/8a
+advancement grant @a[x=-52,y=28,z=-214,r=7,m=2] only custom:places/8b
+advancement grant @a[x=-80,y=27,z=-209,r=7,m=2] only custom:places/8c
+advancement grant @a[x=-111,y=22,z=-204,r=10,m=2] only custom:places/8d
+
+advancement grant @a[score_adLose_min=1,m=2] only custom:deaths/1
+advancement grant @a[score_adLose_min=3,m=2] only custom:deaths/2
+advancement grant @a[score_adLose_min=5,m=2] only custom:deaths/3
+
+advancement grant @a[score_adVictory_min=1,m=2] only custom:victory/1
+advancement grant @a[score_adVictory_min=3,m=2] only custom:victory/2
+advancement grant @a[score_adVictory_min=5,m=2] only custom:victory/3

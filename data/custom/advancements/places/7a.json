@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cobblestone"
+        },
+        "title": "Mighty Hollows",
+        "description": "A huge cave leading to the Observatory!",
+		"hidden": true,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/7",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

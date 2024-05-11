@@ -1,0 +1,3 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"diver","color":"aqua"},{"text":"] ","color":"dark_gray"},{"translate":"diver.d","color":"gray"}]
+playsound diver1 voice @a[r=5] ~ ~ ~ 100 1
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"diver.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 28"}},{"text":"] ","color":"green"}]

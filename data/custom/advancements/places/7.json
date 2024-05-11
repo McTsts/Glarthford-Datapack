@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:deadbush"
+        },
+        "title": "Junkyard",
+        "description": "A place where the citizen of Glarthford get of their junk!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/6",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+execute @e[tag=skeleton_boss] ~ ~ ~ function bentechy:sk/skmain
+execute @a[x=-8,y=25,z=-202,r=3] ~ ~ ~ detect -8 26 -201 minecraft:jungle_door open=true scoreboard players tag @e[tag=roberto_fake] add run_off

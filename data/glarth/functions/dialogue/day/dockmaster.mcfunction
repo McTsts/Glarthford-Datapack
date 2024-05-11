@@ -1,0 +1,2 @@
+tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"dockmaster","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"dockmaster.d","color":"gray"}]
+execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"dockmaster.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 84"}},{"text":"] ","color":"green"}]

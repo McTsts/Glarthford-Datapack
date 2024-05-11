@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "title": "Lonely Mountains",
+        "description": "Glarthford is surrounded by this large range of mountains!",
+		"hidden": false,
+		"announce_to_chat": false
+    },
+    "parent": "custom:places/1",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
