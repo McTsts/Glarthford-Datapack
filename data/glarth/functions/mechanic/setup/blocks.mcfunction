@@ -8,6 +8,11 @@
 		setblock 53 38 -129 minecraft:lily_pad
 		setblock 52 38 -127 minecraft:lily_pad
 		setblock 52 38 -125 minecraft:lily_pad
+    # repair barrier berries that may or may not break (1.19)
+        clone -3 20 -232 -4 18 -234 -5 28 -233
+        clone -4 19 -205 -4 18 -205 -4 27 -205
+    # repair richard carpets (1.19)
+        fill 29 23 -218 27 23 -217 minecraft:brown_carpet
 	# close fence gates in walls (1.17)
 		fill 35 33 -222 33 33 -170 minecraft:spruce_fence_gate[facing=west,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate
 		fill 33 33 -168 -19 33 -170 minecraft:spruce_fence_gate[facing=north,in_wall=false,open=false,powered=false] replace minecraft:spruce_fence_gate

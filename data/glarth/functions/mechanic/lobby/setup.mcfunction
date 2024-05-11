@@ -31,7 +31,7 @@ clear @a[gamemode=spectator]
 clear @a[gamemode=adventure]
 
 # Chairs
-effect give @e[type=pig,tag=chair] minecraft:invisibility 999999 120 true
+effect give @e[type=pig,tag=chair] minecraft:invisibility infinite 120 true
 execute positioned 159 23.61 -112 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[-90f,0f]}
 execute positioned 158 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[-90f,0f]}
 execute positioned 167 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[90f,0f]}

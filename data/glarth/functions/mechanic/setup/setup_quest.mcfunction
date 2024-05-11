@@ -17,6 +17,7 @@ function glarth:mechanic/sapling/spawn
 function glarth:mechanic/sapling/spawn
 function glarth:mechanic/sapling/spawn
 scoreboard players set @a MusicSet 12
+scoreboard players set @a MusicQueue -1
 scoreboard players set tbcUnlocked Stats 3
 
 # Last

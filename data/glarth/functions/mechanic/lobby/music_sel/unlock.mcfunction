@@ -48,6 +48,7 @@ tag @s[scores={MusicSet=47}] add music_47
 tag @s[scores={MusicSet=48}] add music_48
 tag @s[scores={MusicSet=49}] add music_49
 tag @s[scores={MusicSet=50}] add music_50
+tag @s[scores={MusicSet=51}] add music_50
 tag @s[scores={MusicSet=52}] add music_52
 tag @s[scores={MusicSet=53}] add music_53
 tag @s[scores={MusicSet=54}] add music_54
@@ -59,3 +60,6 @@ tag @s[scores={MusicSet=59}] add music_59
 tag @s[scores={MusicSet=60}] add music_60
 tag @s[scores={MusicSet=61}] add music_61
 tag @s[scores={MusicSet=62}] add music_62
+tag @s[scores={MusicSet=63}] add music_63
+tag @s[scores={MusicSet=64}] add music_64
+tag @s[scores={MusicSet=65}] add music_64

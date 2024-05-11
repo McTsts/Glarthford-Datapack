@@ -2,8 +2,8 @@
 scoreboard players remove tick Dis 1
 
 #Baker
-execute if score quest Stats matches 1 run scoreboard players remove @e[tag=baker,scores={action=-10000..}] action 1
-execute if score quest Stats matches 1 as @e[tag=baker,scores={action=-10000..}] run function glarth:mechanic/action/bread
+execute if score quest Stats matches 1..2 run scoreboard players remove @e[tag=baker,scores={action=-10000..}] action 1
+execute if score quest Stats matches 1..2 as @e[tag=baker,scores={action=-10000..}] run function glarth:mechanic/action/bread
 
 #Graveyard Guard
 scoreboard players remove @e[tag=graveyard,scores={action=-10000..}] action 1

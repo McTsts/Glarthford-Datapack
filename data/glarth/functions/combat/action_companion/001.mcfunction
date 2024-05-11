@@ -20,10 +20,10 @@ execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_companion/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcMarkerMiddle,distance=..0.1,type=area_effect_cloud] run function glarth:combat/action_companion/util/next_stage
+execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcMarkerMiddle,distance=..0.2,type=area_effect_cloud] run function glarth:combat/action_companion/util/next_stage
 
 execute if score @s tbcAttackStage matches 5 facing entity @e[tag=tbcSelcMarker,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 5 if entity @e[tag=tbcSelcMarker,distance=..0.1,type=area_effect_cloud] run function glarth:combat/action_companion/util/next_stage
+execute if score @s tbcAttackStage matches 5 if entity @e[tag=tbcSelcMarker,distance=..0.2,type=area_effect_cloud] run function glarth:combat/action_companion/util/next_stage
 
 execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 2 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~

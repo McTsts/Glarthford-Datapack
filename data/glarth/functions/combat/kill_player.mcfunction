@@ -12,7 +12,8 @@ gamemode spectator @s
 scoreboard players set @s tbcBlindness 0
 tag @s remove tbcAttackable
 
-execute unless score lobbyTBC Stats matches 1 run kill @s
-execute if score lobbyTBC Stats matches 1 run tag @s add tbcLobbyKilled
+execute unless score lobbyTBC Stats matches 1.. run kill @s
+execute if score lobbyTBC Stats matches 1.. run tag @s add tbcLobbyKilled
 
-execute if score lobbyTBC Stats matches 1 unless entity @a[scores={playerid=1..},gamemode=adventure] run function glarth:combat/end
+execute if score lobbyTBC Stats matches 1.. unless entity @a[scores={playerid=1..},gamemode=adventure,tag=!tbcLobbyKilled] run scoreboard players set lobbyTBC Stats 1
+execute if score lobbyTBC Stats matches 1.. unless entity @a[scores={playerid=1..},gamemode=adventure,tag=!tbcLobbyKilled] run function glarth:combat/end

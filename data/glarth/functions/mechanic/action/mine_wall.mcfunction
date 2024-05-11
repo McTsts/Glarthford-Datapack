@@ -18,3 +18,5 @@ execute if entity @s[scores={action=600..699}] run function glarth:mechanic/acti
 execute if entity @s[scores={action=700..799}] run function glarth:mechanic/action/mine_wall/8
 execute if entity @s[scores={action=800..899}] run function glarth:mechanic/action/mine_wall/9
 execute if entity @s[scores={action=900..999}] run function glarth:mechanic/action/mine_wall/10
+
+execute positioned 64 27 -194 run kill @e[type=minecraft:silverfish,distance=..10]

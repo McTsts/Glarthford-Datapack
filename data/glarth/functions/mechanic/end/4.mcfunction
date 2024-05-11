@@ -1,4 +1,5 @@
 execute if score timer end matches 1 run gamemode spectator @a[gamemode=adventure]
+execute if score timer end matches 1 if score day Dis matches ..0 run scoreboard players remove time Dis 2400
 
 execute if score timer end matches 20 run summon area_effect_cloud -47 83 -734 {Rotation:[180f,20f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 execute if score timer end matches 20 run kill @e[tag=ender_priest]
@@ -26,6 +27,7 @@ execute if score timer end matches 270 run tp @a[gamemode=spectator] 128.5 88.5 
 execute if score timer end matches 1 run tp @a[gamemode=spectator] -47 83 -734 180 20
 execute if score timer end matches 299 run effect clear @a blindness
 execute if score timer end matches 550 run effect give @a blindness 1 0 true 
+execute if score timer end matches 550 if score day Dis matches ..0 run scoreboard players add time Dis 2400
 execute unless score time Dis matches ..859 if score timer end matches 550 run scoreboard players set timer end 554
 execute if score time Dis matches ..859 if score timer end matches 450 run scoreboard players set timer end 554
 

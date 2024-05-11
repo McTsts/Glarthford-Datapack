@@ -62,3 +62,5 @@ execute if entity @s[tag=music_59] if score music lobMusic matches 58 run scoreb
 execute if entity @s[tag=music_60] if score music lobMusic matches 59 run scoreboard players set unlocked lobMusic 1
 execute if entity @s[tag=music_61] if score music lobMusic matches 60 run scoreboard players set unlocked lobMusic 1
 execute if entity @s[tag=music_62] if score music lobMusic matches 61 run scoreboard players set unlocked lobMusic 1
+execute if entity @s[tag=music_63] if score music lobMusic matches 62 run scoreboard players set unlocked lobMusic 1
+execute if entity @s[tag=music_64] if score music lobMusic matches 63 run scoreboard players set unlocked lobMusic 1

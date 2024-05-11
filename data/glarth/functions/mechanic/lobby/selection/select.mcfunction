@@ -76,11 +76,11 @@ scoreboard players operation @s charHeadReal = @s charHeadRealP4
 scoreboard players operation @s charSpouse = @s charHeadSpouseP4
 
 
-execute unless entity @s[tag=capeChecked] run effect give @a minecraft:slowness 500 120 true
-execute unless entity @s[tag=capeChecked] run effect give @a minecraft:blindness 500 120 true
-execute unless entity @s[tag=capeChecked] run title @a times 10 100 10
-execute unless entity @s[tag=capeChecked] run title @a title {"translate":"loading","italic":true}
-execute unless entity @s[tag=capeChecked] run title @a subtitle {"translate":"loading.st","italic":true}
+#execute unless entity @s[tag=capeChecked] run effect give @a minecraft:slowness 500 120 true
+#execute unless entity @s[tag=capeChecked] run effect give @a minecraft:blindness 500 120 true
+#execute unless entity @s[tag=capeChecked] run title @a times 10 100 10
+#execute unless entity @s[tag=capeChecked] run title @a title {"translate":"loading","italic":true}
+#execute unless entity @s[tag=capeChecked] run title @a subtitle {"translate":"loading.st","italic":true}
 execute unless entity @s[tag=capeChecked] run scoreboard players reset * cape_check.res
 execute unless entity @s[tag=capeChecked] run function application_cape:call
 tag @s add capeChecked

@@ -8,7 +8,7 @@ execute as @e[tag=tbcAlly1] run function glarth:combat/entity/archaeologist
 
 function glarth:combat/start
 
-scoreboard players set @a MusicSet 2
+scoreboard players set @a MusicSet 53
 execute as @a at @s run playsound boss2 hostile @s ~ ~ ~ 0.8 1
 
 tag @a add encB2

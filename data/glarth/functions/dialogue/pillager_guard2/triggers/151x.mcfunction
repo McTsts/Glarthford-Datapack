@@ -1,4 +1,5 @@
 #151 Pillager Guard (Inner) | Dialogue
+stopsound @a[distance=..5] voice
 execute if entity @s[scores={iCrossbow=..0,iVindicatorSkull=..0,iBanner=..0}] run function glarth:dialogue/pillager_guard2/lines/trade1x
 
 execute if entity @s[scores={iCrossbow=1..,iVindicatorSkull=..0,iBanner=..0}] run function glarth:dialogue/pillager_guard2/lines/trade1x2

@@ -1,7 +1,7 @@
 # 0 - Blindness
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 25 at @s run playsound minecraft:entity.illusioner.prepare_blindness hostile @a ~ ~ ~ 2 0.7
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 25 run effect give @a[tag=tbcTarget] blindness 999999 0 true
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 25 run effect give @a[tag=tbcTarget] blindness infinite 0 true
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 25 run scoreboard players add @a[tag=tbcTarget] tbcBlindness 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 25 run data merge entity @e[tag=phanterra,limit=1] {Glowing:1b,Team:"dark_blue"}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 50 run function glarth:combat/action_enemy/util/next_stage

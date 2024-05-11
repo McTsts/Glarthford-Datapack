@@ -28,6 +28,10 @@
 	gamerule drowningDamage true
 	gamerule fallDamage true
 	tag @a[tag=!permaTip25] remove tip25
+    # Dimension Sidebar ID (previously via 0fix, 1.19)
+	scoreboard players reset * ID
+    scoreboard players set $id ID 0
+    execute as @a[gamemode=adventure] store result score @s ID run scoreboard players add $id ID 1
 	# Blindness Transition
 	effect give @a[gamemode=adventure] blindness 9 0 true
 	effect give @a[gamemode=adventure] invisibility 9 0 true

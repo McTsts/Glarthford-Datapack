@@ -22,11 +22,3 @@ execute if score TBC Stats matches 1 if entity @e[tag=tbcPiglinNormal,tag=!tbcUn
 execute if score TBC Stats matches 1 if entity @e[tag=tbcPiglinWarrior,tag=!tbcUnselectable] run playsound time_to_fight4 record @s ~ ~ ~ 1 1 1
 execute if score TBC Stats matches 1 if entity @e[tag=tbcPiglinShaman,tag=!tbcUnselectable] run playsound time_to_fight5 record @s ~ ~ ~ 1 1 1
 execute if score TBC Stats matches 1 if score piglins Temp matches 3.. run playsound time_to_fight6 record @s ~ ~ ~ 1 1 1
-
-## ender priest fight
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight1 record @s ~ ~ ~ 1 1 1
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight2 record @s ~ ~ ~ 1 1 1
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight3 record @s ~ ~ ~ 1 1 1
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight4 record @s ~ ~ ~ 1 1 1
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight5 record @s ~ ~ ~ 1 1 1
-execute if score TBC Stats matches 1 if entity @e[tag=tbcEnderPriest] run playsound time_to_fight6 record @s ~ ~ ~ 1 1 1

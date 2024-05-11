@@ -1,6 +1,6 @@
 tp @s 174 24 -112 -90 0
-effect give @s resistance 999999 120 true
-effect give @s saturation 999999 120 true
+effect give @s resistance infinite 120 true
+effect give @s saturation infinite 120 true
 gamemode adventure @s
 clear @s
 function glarth:mechanic/lobby/setup

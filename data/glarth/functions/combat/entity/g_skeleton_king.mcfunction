@@ -2,7 +2,7 @@ function glarth:combat/entity/extends/enemy
 function glarth:combat/entity/implements/type/darkness
 #Overwrite
 data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.grimsbane.skeleton_king","color":"gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:21}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.grimsbane.skeleton_king\",\"color\":\"gray\"}"}
-scoreboard players set @s attack_008 1
+scoreboard players set @s attack_243 1
 scoreboard players set @s attack_011 1
 scoreboard players set @s attack_059 1
 scoreboard players set @s attack_061 1

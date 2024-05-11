@@ -8,7 +8,7 @@ item replace entity @s armor.head with minecraft:totem_of_undying
 # Break Free
 give @a[scores={playerid=1..}] minecraft:shears
 give @a[scores={playerid=1..}] minecraft:torch 2
-give @a[scores={playerid=1..}] minecraft:chorus_fruit 3
+give @a[scores={playerid=1..}] minecraft:gray_dye 3
 
 # melee
 give @a[scores={playerid=1..}] minecraft:golden_sword

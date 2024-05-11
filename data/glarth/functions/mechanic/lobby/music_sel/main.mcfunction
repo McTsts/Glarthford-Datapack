@@ -383,9 +383,22 @@ execute if score music lobMusic matches 60 run function glarth:mechanic/lobby/mu
 execute if score music lobMusic matches 60 run function glarth:mechanic/lobby/music_sel/creator/lenaraine
 execute if score music lobMusic matches 60 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.61","bold":true}]'}
 
-# Birthright
+# Rumbling Beneath
 execute if score music lobMusic matches 61 run scoreboard players set @s MusicSet 62
 execute if score music lobMusic matches 61 run function glarth:mechanic/lobby/music_sel/tempo/fast
 execute if score music lobMusic matches 61 run function glarth:mechanic/lobby/music_sel/creator/enshano
 execute if score music lobMusic matches 61 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.62","bold":true}]'}
+
+# Shades and Magic
+execute if score music lobMusic matches 62 run scoreboard players set @s MusicSet 63
+execute if score music lobMusic matches 62 run function glarth:mechanic/lobby/music_sel/tempo/fast
+execute if score music lobMusic matches 62 run function glarth:mechanic/lobby/music_sel/creator/enshano
+execute if score music lobMusic matches 62 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.63","bold":true}]'}
+
+# Time to Fight
+execute if score music lobMusic matches 63 if score @s MusicLast matches 64 run scoreboard players set @s MusicSet 65
+execute if score music lobMusic matches 63 unless score @s MusicLast matches 64 run scoreboard players set @s MusicSet 64
+execute if score music lobMusic matches 63 run function glarth:mechanic/lobby/music_sel/tempo/fast
+execute if score music lobMusic matches 63 run function glarth:mechanic/lobby/music_sel/creator/albertfernandez
+execute if score music lobMusic matches 63 run data merge block 175 24 -110 {Text2:'["",{"translate":"sound.music_short.65","bold":true}]'}
 

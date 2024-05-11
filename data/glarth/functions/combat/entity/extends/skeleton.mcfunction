@@ -17,3 +17,4 @@ scoreboard players set @s attack_009 1
 scoreboard players set @s attack_010 1
 scoreboard players set @s attack_011 1
 scoreboard players set @s attack_013 1
+scoreboard players set @s attack_024 1

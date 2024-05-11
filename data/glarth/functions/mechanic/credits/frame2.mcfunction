@@ -91,7 +91,7 @@ summon area_effect_cloud 7 10.7 -200 {Radius:0.0f,Duration:2147483647,CustomName
 summon area_effect_cloud 7 10.4 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"BenTechy","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
 summon area_effect_cloud 7 10.1 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"corpe_","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
 summon area_effect_cloud 7 09.8 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Andrew","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
-summon area_effect_cloud 7 09.5 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Enshano","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
+summon area_effect_cloud 7 09.5 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Eniah","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
 summon area_effect_cloud 7 09.2 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Meta70","color":"gold"}',CustomNameVisible:1,Tags:["creditsText6"]}
 
 summon area_effect_cloud 7 08.2 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.category.12","color":"gold","font":"custom:big"}',CustomNameVisible:1,Tags:["creditsText6"]}
@@ -178,8 +178,9 @@ summon area_effect_cloud 7 -0.1 -200 {Radius:0.0f,Duration:2147483647,CustomName
 summon area_effect_cloud 7 -0.4 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Veriti","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
 summon area_effect_cloud 7 -0.7 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Vomatt","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
 summon area_effect_cloud 7 -1.0 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Zpicy","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
-summon area_effect_cloud 7 -1.3 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Enshano","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
+summon area_effect_cloud 7 -1.3 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Eniah","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
 summon area_effect_cloud 7 -1.6 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"PearUhDox","color":"gold"}',CustomNameVisible:1,Tags:["creditsText3"]}
+summon area_effect_cloud 7 -1.9 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Jerozgen","color":"#E2874A"}',CustomNameVisible:1,Tags:["creditsText3"]}
 
 execute as @e[tag=creditsText3] at @s run tp @s ~ ~15.7 ~
 execute as @e[tag=creditsText3] at @s run tp @s ~ ~-30 ~
@@ -203,13 +204,13 @@ summon area_effect_cloud 7 17.9 -200 {Radius:0.0f,Duration:2147483647,CustomName
 summon area_effect_cloud 7 17.6 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"CorbinADtor (ru_ru)","color":"gold"}',CustomNameVisible:1,Tags:["creditsText5"]}
 summon area_effect_cloud 7 17.3 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Suso (es_es)","color":"blue"}',CustomNameVisible:1,Tags:["creditsText5"]}
 summon area_effect_cloud 7 17.0 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Ds43m (de_de)","color":"yellow"}',CustomNameVisible:1,Tags:["creditsText5"]}
+summon area_effect_cloud 7 16.7 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"Sancho_tEm (ru_ru)","color":"gold"}',CustomNameVisible:1,Tags:["creditsText5"]}
 
 execute as @e[tag=creditsText5] at @s run tp @s ~ ~-6.3 ~
 execute as @e[tag=creditsText5] at @s run tp @s ~ ~-30 ~
 execute as @e[tag=creditsText5] at @s run tp @s ~ ~-1.3 ~
 execute as @e[tag=creditsText5] at @s run tp @s ~ ~-0.6 ~
 execute as @e[tag=creditsText5] at @s run tp @s ~ ~-0.3 ~
-execute as @e[tag=creditsText5] at @s run tp @s ~ ~0.3 ~
 
 summon area_effect_cloud 7 16.0 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.category.17","color":"gold","font":"custom:big"}',CustomNameVisible:1,Tags:["creditsText7"]}
 summon area_effect_cloud 7 15.7 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"text":"c_t_l","color":"gold"}',CustomNameVisible:1,Tags:["creditsText7"]}
@@ -220,7 +221,7 @@ execute as @e[tag=creditsText7] at @s run tp @s ~ ~-30 ~
 execute as @e[tag=creditsText7] at @s run tp @s ~ ~-1.3 ~
 execute as @e[tag=creditsText7] at @s run tp @s ~ ~-0.6 ~
 execute as @e[tag=creditsText7] at @s run tp @s ~ ~-0.3 ~
-execute as @e[tag=creditsText7] at @s run tp @s ~ ~0.3 ~
+execute as @e[tag=creditsText7] at @s run tp @s ~ ~-0.3 ~
 
 
 summon area_effect_cloud 7 20 -200 {Radius:0.0f,Duration:2147483647,CustomName:'{"translate":"credits.category.15","color":"gold","font":"custom:big"}',CustomNameVisible:1,Tags:["creditsText4"]}
@@ -247,7 +248,7 @@ execute as @e[tag=creditsText4] at @s run tp @s ~ ~-1.3 ~
 execute as @e[tag=creditsText4] at @s run tp @s ~ ~-1.6 ~
 execute as @e[tag=creditsText4] at @s run tp @s ~ ~-0.6 ~
 execute as @e[tag=creditsText4] at @s run tp @s ~ ~-0.3 ~
-execute as @e[tag=creditsText4] at @s run tp @s ~ ~0.3 ~
+execute as @e[tag=creditsText4] at @s run tp @s ~ ~-0.3 ~
 
 
 

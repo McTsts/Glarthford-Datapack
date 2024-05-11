@@ -21,8 +21,8 @@ fill 10 26 -253 23 26 -243 air replace carrots
 fill 10 26 -253 23 26 -243 air replace beetroots
 forceload remove -194 -194 -191 -188
 effect clear @a 
-effect give @a saturation 999999 120 true
-effect give @a resistance 999999 120 true
+effect give @a saturation infinite 120 true
+effect give @a resistance infinite 120 true
 function glarth:combat/end
 
 execute as @a unless data entity @s {SleepTimer:0s} run tag @s add sleepP 
@@ -55,3 +55,10 @@ function glarth:mechanic/progress/progress
 
 # unforceload baloon
 forceload remove 8 24
+
+
+# lobby map 
+
+advancement revoke @a everything
+advancement grant @a only glarth:empty/root
+advancement grant @a only glarth:empty/end

@@ -14,6 +14,7 @@ effect clear @a[tag=inTBC] minecraft:saturation
 effect clear @a[tag=inTBC] minecraft:blindness
 effect clear @a[tag=inTBC] minecraft:nausea
 effect clear @a[tag=inTBC] minecraft:poison
+effect clear @a[tag=inTBC] minecraft:hunger
 effect clear @a[tag=inTBC] minecraft:dolphins_grace
 effect clear @a[tag=inTBC] minecraft:water_breathing
 scoreboard objectives setdisplay sidebar

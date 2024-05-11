@@ -10,7 +10,7 @@ execute as @s[scores={playerid=3}] run data modify storage glarth:main combat.tu
 scoreboard players operation ef Temp = @s tbcEfJump
 execute store result storage ntca:io in int 1 run scoreboard players operation ef Temp += @s tbcEfJ2
 function ntca:call
-execute if data storage glarth:main combat.turne[{Id:8b}] run data modify storage ntca:io out append value ["+"]
+execute if data storage glarth:main combat.turne[{Id:8}] run data modify storage ntca:io out append value ["+"]
 execute if score ef Temp matches 1.. run tellraw @a[distance=..0.5] ["",{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.effects","italic":true,"color":"gray","with":[{"translate":"tbc.attack.msg.name.speed_boost2"},{"nbt":"out","storage":"ntca:io","interpret":true,"color":"green"}]}]
 execute if score ef Temp matches 1.. run scoreboard players add effectsDone Temp 1
 
@@ -18,14 +18,14 @@ execute if score ef Temp matches 1.. run scoreboard players add effectsDone Temp
 scoreboard players operation ef Temp = @s tbcEfSpeed
 execute store result storage ntca:io in int 1 run scoreboard players operation ef Temp += @s tbcEfS2
 function ntca:call
-execute if data storage glarth:main combat.turne[{Id:1b}] run data modify storage ntca:io out append value ["+"]
+execute if data storage glarth:main combat.turne[{Id:1}] run data modify storage ntca:io out append value ["+"]
 execute if score ef Temp matches 1.. run tellraw @a[distance=..0.5] ["",{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.effects","italic":true,"color":"gray","with":[[{"translate":"tbc.attack.msg.name.speed_boost2"}, " II"],{"nbt":"out","storage":"ntca:io","interpret":true,"color":"green"}]}]
 execute if score ef Temp matches 1.. run scoreboard players add effectsDone Temp 1
 
 # Fire Resistance
 execute store result storage ntca:io in int 1 run scoreboard players get @s tbcFireResis
 function ntca:call
-execute if data storage glarth:main combat.turne[{Id:12b}] run data modify storage ntca:io out append value ["+"]
+execute if data storage glarth:main combat.turne[{Id:12}] run data modify storage ntca:io out append value ["+"]
 execute if score @s tbcFireResis matches 1.. run tellraw @a[distance=..0.5] ["",{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.effects","italic":true,"color":"gray","with":[{"translate":"tbc.attack.msg.name.fire_resistance"},{"nbt":"out","storage":"ntca:io","interpret":true,"color":"green"}]}]
 execute if score @s tbcFireResis matches 1.. run scoreboard players add effectsDone Temp 1
 

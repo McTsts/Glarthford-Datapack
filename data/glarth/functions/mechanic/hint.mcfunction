@@ -49,9 +49,9 @@ execute if entity @e[tag=bHS2] as @a[x=-14,y=28,z=-257,distance=..4,gamemode=!cr
 execute if entity @e[tag=bHS1] run tag @a[x=40,y=27,z=-164,distance=..4,gamemode=!creative,tag=!hint10] add hint10
 execute if entity @e[tag=bHS2] run tag @a[x=-14,y=28,z=-257,distance=..4,gamemode=!creative,tag=!hint10] add hint10
 
-tellraw @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] ["",{"translate":"hint.board","color":"gold","italic":true}]
-execute as @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~
-tag @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] add hint11
+execute if entity @e[tag=mayor,tag=!deadChar] run tellraw @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] ["",{"translate":"hint.board","color":"gold","italic":true}]
+execute if entity @e[tag=mayor,tag=!deadChar] as @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~
+execute if entity @e[tag=mayor,tag=!deadChar] run tag @a[x=10,y=26,z=-180,distance=..2.5,gamemode=!creative,tag=!hint11] add hint11
 
 execute unless score quest Stats matches 6 if entity @e[tag=evTsMoves,tag=!evTsFreed] run tellraw @a[x=77,y=23,z=-256,distance=..5,gamemode=!creative,tag=!hint8] ["",{"translate":"ts_escapes","color":"gold","italic":true}]
 execute unless score quest Stats matches 6 if entity @e[tag=evTsMoves,tag=!evTsFreed] run tag @a[x=77,y=23,z=-256,distance=..5,gamemode=!creative,tag=!hint8] add hint8

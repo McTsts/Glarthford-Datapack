@@ -3,6 +3,9 @@ scoreboard players set extraMulti tbcStats 10
 scoreboard players set extraWeak tbcStats 1
 execute as @e[scores={tbcSel=1},tag=!tbcBlock] if score dodged tbcStats matches 2 run scoreboard players set dodged tbcStats 0
 execute as @e[scores={tbcSel=1}] if score @s tbcArmor matches 100.. run scoreboard players set damage tbcStats 0
+
+execute if score lobbyTBC Stats matches 2 run scoreboard players set dodged tbcStats 0
+
 execute if score dodged tbcStats matches 0 if score damage tbcStats matches 1.. as @e[scores={tbcSel=1},tag=!tbcBlock] run function glarth:combat/action/util/deal_damage
 execute if score dodged tbcStats matches 0 if score damage tbcStats matches 1.. as @e[scores={tbcSel=1},tag=tbcBlock] run function glarth:combat/action/util/handle_block
 

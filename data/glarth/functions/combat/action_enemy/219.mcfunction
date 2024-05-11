@@ -1,7 +1,7 @@
 # 0 - Phanterra Fly Animation
 execute if score @s tbcAttackStage matches 0 run function glarth:mechanic/animation/phanterra/do/fly
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] at @s run playsound minecraft:entity.illusioner.prepare_blindness hostile @a ~ ~ ~ 2 0.7
-execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] run effect give @a[tag=tbcTarget] blindness 999999 0 true
+execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] run effect give @a[tag=tbcTarget] blindness infinite 0 true
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] run scoreboard players add @a[tag=tbcTarget] tbcBlindness 1
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] run data merge entity @e[tag=phanterra,limit=1] {Glowing:1b,Team:"dark_blue"}
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=phanterra,scores={phanterraState=4}] run data merge entity @e[tag=tbcTargetAS,limit=1] {Glowing:1b}

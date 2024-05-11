@@ -71,6 +71,9 @@ scoreboard players set @s[scores={MusicSet=59}] MusicTime 1400
 scoreboard players set @s[scores={MusicSet=60}] MusicTime 4230
 scoreboard players set @s[scores={MusicSet=61}] MusicTime 3120
 scoreboard players set @s[scores={MusicSet=62}] MusicTime 2540
+scoreboard players set @s[scores={MusicSet=63}] MusicTime 2460
+scoreboard players set @s[scores={MusicSet=64}] MusicTime 308
+scoreboard players set @s[scores={MusicSet=65}] MusicTime 1219
 #End
 scoreboard players set @s[scores={MusicSet=100}] MusicTime 170
 scoreboard players set @s[scores={MusicSet=101}] MusicTime 170
@@ -139,6 +142,9 @@ playsound lost_in_time_battle record @s[scores={MusicSet=59}] ~ ~ ~ 1 1.5 1
 playsound pigstep record @s[scores={MusicSet=60}] ~ ~10000 ~ 500 0.7 1
 playsound rubedo record @s[scores={MusicSet=61}] ~ ~10000 ~ 0.3 2 0.3
 playsound rumbling_beneath record @s[scores={MusicSet=62}] ~ ~ ~ 1 1 1
+playsound shades_and_magic record @s[scores={MusicSet=63}] ~ ~ ~ 1 1 1
+playsound time_to_fight_intro record @s[scores={MusicSet=64}] ~ ~ ~ 1 1 1
+execute as @s[scores={MusicSet=65}] run function glarth:mechanic/music/play_ttf2
 #End
 playsound end0 record @s[scores={MusicSet=100}] ~ ~ ~ 1 1 1
 playsound end1 record @s[scores={MusicSet=101}] ~ ~ ~ 1 1 1
@@ -147,6 +153,9 @@ playsound end4 record @s[scores={MusicSet=104}] ~ ~ ~ 1 1 1
 # Queue Handler
 scoreboard players set @s MusicQueue -1
 scoreboard players set @s[scores={MusicSet=50}] MusicQueue 51
+scoreboard players set @s[scores={MusicSet=62}] MusicQueue 63
+scoreboard players set @s[scores={MusicSet=63}] MusicQueue 62
+scoreboard players set @s[scores={MusicSet=64}] MusicQueue 65
 scoreboard players set @s[scores={MusicSet=100..}] MusicQueue 0
 
 # Setting

@@ -120,3 +120,5 @@ execute as @a run scoreboard players operation @s iEssence += @s iEFire
 execute as @a run scoreboard players operation @s iEssence += @s iEWater
 execute as @a run scoreboard players operation @s iEssence += @s iEForest
 execute as @a run scoreboard players operation @s iEssence += @s iEDarkness
+
+execute as @a run scoreboard players operation @s iBread -= @s iBreadFresh

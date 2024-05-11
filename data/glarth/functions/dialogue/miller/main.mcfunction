@@ -18,7 +18,7 @@ execute if score cycle Temp matches 0 if score quest Stats matches 9 run functio
 execute if score cycle Temp matches 1 if score quest Stats matches 9 run function glarth:dialogue/miller/lines/day_9
 
 # Trades
-execute if score quest Stats matches 1 run function glarth:dialogue/miller/trades/1
+execute if score quest Stats matches 1..2 run function glarth:dialogue/miller/trades/1_2
 
 # Extra
 execute if score quest Stats matches 7 as @p positioned -3 26 -173 if entity @s[distance=..2] as @e[tag=miller,type=armor_stand,tag=!d] at @s run function glarth:mechanic/action/scared_miller

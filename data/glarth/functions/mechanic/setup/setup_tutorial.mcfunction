@@ -1,6 +1,7 @@
 function glarth:mechanic/setup_all
 gamerule doTileDrops true
 scoreboard players set @a MusicSet 21
+scoreboard players set @a MusicQueue -1
 
 # MrK Barriers
 setblock 79 29 -209 barrier

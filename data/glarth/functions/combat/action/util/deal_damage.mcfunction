@@ -1,5 +1,6 @@
 ## Damage
 scoreboard players operation dealDamage Temp = damage tbcStats
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation dealDamage Temp *= 3 Const
 
 # Correct Effect Values
 scoreboard players operation blindness tbcStats > 0 Const
@@ -8,6 +9,13 @@ scoreboard players operation fire tbcStats > 0 Const
 scoreboard players operation freeze tbcStats > 0 Const
 scoreboard players operation bee tbcStats > 0 Const
 scoreboard players operation poison tbcStats > 0 Const
+
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation blindness tbcStats *= 3 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation stun tbcStats *= 3 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation fire tbcStats *= 3 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation freeze tbcStats *= 3 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation bee tbcStats *= 3 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation poison tbcStats *= 3 Const
 
 ## Frozen Damage
 scoreboard players set freezeDmg Temp 0

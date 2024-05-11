@@ -26,7 +26,7 @@ execute as @a[gamemode=adventure] at @s as @e[tag=pickup_name,distance=4.5..] ru
 execute as @a[gamemode=adventure] at @s as @e[tag=pickup_name,distance=..4.5] run data merge entity @s {CustomNameVisible:1}
 
 #Final Fixes
-effect give @a[x=92,y=19,z=-133,distance=..5] night_vision 999999 120 true
+effect give @a[x=92,y=19,z=-133,distance=..5] night_vision infinite 120 true
 tag @e[type=item,nbt={Item:{id:"minecraft:spruce_fence"}}] add kill 
 tag @e[type=item,nbt={Item:{id:"minecraft:beetroot_seeds"}}] add kill 
 tag @e[type=item,nbt={Item:{id:"minecraft:wheat_seeds"}}] add kill 

@@ -22,6 +22,6 @@ summon minecraft:area_effect_cloud 291 30 -85 {Radius:0.0f,Duration:2147483647,T
 summon minecraft:area_effect_cloud 281 30 -87 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180f,0f]}
 
 
-effect give @a water_breathing 999999 120 true
+effect give @a water_breathing infinite 120 true
 
 scoreboard players set maxEnemies tbcStats 4

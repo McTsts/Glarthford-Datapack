@@ -13,7 +13,7 @@ execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbc
 scoreboard players set @s attack_041 2
 scoreboard players set @s attack_031 2
 scoreboard players set @s attack_030 2
-scoreboard players set @s attack_008 2
+scoreboard players set @s attack_243 2
 scoreboard players set @s attack_016 2
 scoreboard players set @s attack_019 2
 scoreboard players set @s attack_139 1

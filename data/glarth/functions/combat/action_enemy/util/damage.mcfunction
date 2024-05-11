@@ -1,6 +1,7 @@
 execute as @e[type=!player,tag=tbcTarget,limit=1] run scoreboard players set @s tbcArmor 0
 execute as @a[tag=tbcTarget,limit=1] run function glarth:combat/armor
 scoreboard players operation damage tbcStats > 0 Const
+execute if score lobbyTBC Stats matches 2 run scoreboard players operation damage tbcStats *= 2 Const
 scoreboard players operation damageDis tbcStats = damage tbcStats
 scoreboard players operation damageDis tbcStats /= 10 Const
 

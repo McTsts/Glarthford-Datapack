@@ -209,14 +209,14 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 run setblock 514 32 7 minecraft:grass
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 run setblock 523 32 10 minecraft:grass
 # grass 2
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 positioned 513 32 16 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 positioned 515 32 10 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 122 positioned 523 32 11 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 122 positioned 524 32 16 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 124 positioned 511 32 17 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 124 positioned 514 32 8 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 positioned 522 32 10 run function glarth:mechanicseasonsplacetall_grass
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 positioned 526 32 17 run function glarth:mechanicseasonsplacetall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 positioned 513 32 16 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 120 positioned 515 32 10 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 122 positioned 523 32 11 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 122 positioned 524 32 16 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 124 positioned 511 32 17 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 124 positioned 514 32 8 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 positioned 522 32 10 run function glarth:mechanic/seasons/place/tall_grass
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 126 positioned 526 32 17 run function glarth:mechanic/seasons/place/tall_grass
 # clock
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 130 run setblock 512 32 13 minecraft:polished_andesite
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 132 run setblock 512 32 14 minecraft:polished_andesite
@@ -279,6 +279,6 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 190 at @e[tag=tbcBoss] run particle explosion ~ ~0.5 ~ 0.5 0.5 0.5 0.01 10
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 190 run item replace entity @s armor.head with diamond_hoe{CustomModelData:490}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 200 run scoreboard players set @s tbcAttack 14
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 200 run scoreboard players set @a MusicSet 50
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 200 run scoreboard players set @a MusicSet 64
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 200 run scoreboard players set @s tbcAttackTimer 0
 stopsound @a * minecraft:block.lantern.break
