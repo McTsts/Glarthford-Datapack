@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:air",
-	"minecraft:black_carpet",
+    "minecraft:black_carpet",
     "minecraft:barrier"
   ]
 }

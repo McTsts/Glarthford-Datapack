@@ -11,7 +11,7 @@
             }
         }
     },
-	"rewards": {
-		"function": "glarth:mechanic/gary"
-	}
+    "rewards": {
+        "function": "glarth:mechanic/gary"
+    }
 }
