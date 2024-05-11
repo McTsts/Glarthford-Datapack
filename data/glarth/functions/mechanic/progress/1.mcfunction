@@ -22,6 +22,7 @@ scoreboard players operation gem progress = diamond progress
 scoreboard players operation gem progress > amethyst progress
 
 execute if entity @e[tag=blacksmith,tag=c] run scoreboard players set gem progress 12
+execute if entity @a[gamemode=adventure,tag=enteredMines] run scoreboard players set gem progress 12
 
 #Pickaxe
 execute if entity @e[tag=farmer,tag=b] run scoreboard players set pick progress 1

@@ -54,6 +54,7 @@ execute as @a store result score @s iShovel run clear @s minecraft:stone_shovel 
 execute as @a store result score @s iBranch run clear @s minecraft:wooden_axe 0
 execute as @a store result score @s iCrossbow run clear @s minecraft:crossbow 0
 execute as @a store result score @s iSkull run clear @s minecraft:skeleton_skull 0
+execute as @a store result score @s iOTulip run clear @s minecraft:orange_tulip 0
 execute as @a store result score @s iRFlesh run clear @s minecraft:rotten_flesh 0
 execute as @a store result score @s iCrystal run clear @s minecraft:end_crystal 0
 execute as @a store result score @s iEPearl run clear @s minecraft:ender_pearl 0

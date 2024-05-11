@@ -67,3 +67,6 @@ execute as @e[tag=mouse] at @s unless entity @e[tag=mouseAS,distance=..3] run ki
 
 # crossbowfix
 execute as @a[gamemode=adventure] run function glarth:mechanic/crossbowfix
+
+# tulip drop
+function glarth:mechanic/tulip_drop

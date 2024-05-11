@@ -1664,6 +1664,15 @@ execute if entity @s[scores={trigger=192}] if entity @e[type=armor_stand,tag=cha
 execute if entity @s[scores={trigger=192}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
 execute if entity @s[scores={trigger=192}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iRPotion=..0}] run function glarth:dialogue/invalid_item
 execute if entity @s[scores={trigger=192}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iRPotion=1..}] run function glarth:dialogue/uncle/triggers/192
+#193 Boy | Orange Tulip to Sugar [A]
+execute if entity @s[scores={trigger=193}] run tag @e[type=armor_stand,tag=charA,tag=brother] add charT
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=a] run function glarth:dialogue/invalid_done
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iOTulip=1..}] run function glarth:dialogue/brother/triggers/193
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=..10,tag=!a] if entity @s[scores={iOTulip=..0}] run function glarth:dialogue/invalid_item
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=char,distance=10..] run function glarth:dialogue/invalid_distance
+execute if entity @s[scores={trigger=193}] unless entity @e[type=armor_stand,tag=charT] run function glarth:dialogue/invalid_trigger
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=deadChar] run function glarth:dialogue/invalid_dead
+execute if entity @s[scores={trigger=193}] if entity @e[type=armor_stand,tag=charT,tag=!deadChar,tag=!char] run function glarth:dialogue/invalid_unknown
 
 ##
 ## END

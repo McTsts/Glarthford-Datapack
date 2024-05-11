@@ -14,6 +14,7 @@ execute if entity @a[scores={iOKey=1..}] run scoreboard players set timet progre
 # Guard
 execute if entity @a[scores={iRTulip=1..}] run scoreboard players set guard progress 1
 execute if entity @a[scores={iPTulip=1..}] run scoreboard players set guard progress 1
+execute if entity @a[scores={iOTulip=1..}] run scoreboard players set guard progress 1
 execute if entity @a[scores={iSugar=1..}] run scoreboard players set guard progress 2
 execute if entity @a[scores={iApple=1..}] run scoreboard players add guard progress 1
 execute if entity @e[type=armor_stand,tag=brewer,tag=a] run scoreboard players set guard progress 4

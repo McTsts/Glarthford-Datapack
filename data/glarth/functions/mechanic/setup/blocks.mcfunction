@@ -200,3 +200,5 @@
 		fill -4 26 -136 -1 25 -138 water replace minecraft:dark_prismarine_slab
 		fill -2 27 -137 -6 29 -142 air replace dark_prismarine_slab
 		fill -2 27 -137 -6 29 -142 air replace barrier
+	# Tulip Reset
+		function glarth:mechanic/setup/tulip_fix

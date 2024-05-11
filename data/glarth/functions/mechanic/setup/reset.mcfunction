@@ -24,6 +24,7 @@
 	tag @a remove workerC
 	tag @a remove workerB
 	tag @a remove gotMilk
+	tag @a remove enteredMines
 #Pot Reset
 	scoreboard players reset * PoT
 	scoreboard players reset * PoT2

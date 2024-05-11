@@ -17,6 +17,9 @@ execute unless score lowGraphics Stats matches 1 as @a[gamemode=adventure] at @s
 execute as @a[nbt={Inventory:[{id:"minecraft:brown_dye"}]}] run give @s bow{bow:"default"}
 execute as @a[nbt={Inventory:[{id:"minecraft:brown_dye"}]}] run clear @s brown_dye
 
+execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run give @s minecraft:shears{CanDestroy:["red_tulip","orange_tulip","pink_tulip"],HideFlags:127} 1
+execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run clear @s honeycomb
+
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run give @s bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run clear @s water_bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run give @s bucket

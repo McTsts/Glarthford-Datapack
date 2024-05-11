@@ -3,3 +3,6 @@ execute as @a[x=-8,y=25,z=-202,distance=..3] if block -8 26 -201 #minecraft:door
 
 #Progress Trackers
 tag @a[x=98,y=33,z=-167,distance=..1.5] add inSewer
+
+# Progress Tracker New
+execute positioned 81 32 -186 run tag @a[distance=..7] add enteredMines

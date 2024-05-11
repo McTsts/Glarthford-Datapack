@@ -11,7 +11,7 @@ execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] run scoreboard players set
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] run function glarth:util/rand_tbc
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] unless entity @s[tag=tbcAllowBF_Blindness] run scoreboard players set n Random 1000
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] unless entity @s[tag=tbcAllowBF_Blindness] run tag @s add tbcAllowBF_Blindness
-execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] if score n Random <= @s tbcEscape run tellraw @a ["",[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true}],{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s[type=!player]","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.broke_free","with":[{"translate":"effect.minecraft.blindness"}]}]
+execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] if score n Random <= @s tbcEscape run tellraw @a ["",[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true}],{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s[type=!player]","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.broke_free","with":[{"translate":"tbc.attack.msg.name.blindness2"}]}]
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] if score n Random <= @s tbcEscape at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 1 20
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] if score n Random <= @s tbcEscape at @s run playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 1 0.7
 execute as @s[tag=tbcEnemy,scores={tbcBlindness=1..}] if score n Random <= @s tbcEscape run scoreboard players operation @s tbcBlindness < 0 Const
