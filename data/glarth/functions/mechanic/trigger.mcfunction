@@ -1,3 +1,7 @@
+#Spectator Block
+execute @a[score_trigger_min=1,m=3] ~ ~ ~ tellraw @s ["",{"text":"You are a spectator!","color":"red"}]
+scoreboard players set @a[score_trigger_min=1,m=3] trigger 0
+#Start
 execute @a[score_trigger_min=1] ~ ~ ~ stopsound @a[r=5] voice
 execute @a[score_trigger_min=1] ~ ~ ~ function mctsts:mechanic/item 
 #1 Lumberjack | Dialogue
@@ -101,7 +105,7 @@ execute @a[score_trigger_min=15,score_trigger=15,score_iDiamond=0] ~ ~ ~ execute
 execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"dark_gray"},{"translate":"archaeologist","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"archaeologist.1","color":"gray"}]
 execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] ~ ~ ~ playsound archaeologist5 voice @a[r=5] ~ ~ ~ 100 1
 execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ clear @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] stone_shovel -1 1 
-execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ give @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] bone_block 4 0 {CanPlaceOn:["command_block"]}
+execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ give @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] bone_block 4 0 {CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:["Can Place On:","Chiseled End Stone Brick"]}}
 execute @a[score_trigger_min=16,score_trigger=16,score_iShovel_min=1] ~ ~ ~ scoreboard players tag @e[tag=archaeologist] add a
 execute @a[score_trigger_min=16,score_trigger=16,score_iShovel=0] ~ ~ ~ execute @e[tag=archaeologist] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ function mctsts:dialogue/invalid
 #17 Merchant #1 | Apple to Gold
@@ -448,7 +452,7 @@ execute @e[tag=astronomer] ~ ~ ~ execute @a[score_trigger_min=66,score_trigger=6
 #67 Mayor | Get Bricks
 execute @e[tag=mayor] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=67,score_trigger=67] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"dark_gray"},{"translate":"mayor","color":"black"},{"text":"] ","color":"dark_gray"},{"translate":"mayor.1","color":"gray"}]
 execute @e[tag=mayor] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=67,score_trigger=67] ~ ~ ~ playsound mayor3 voice @a[r=5] ~ ~ ~ 100 1
-execute @e[tag=mayor] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ give @a[score_trigger_min=67,score_trigger=67] brick_block 4 0 {CanPlaceOn:["command_block"]}
+execute @e[tag=mayor] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ give @a[score_trigger_min=67,score_trigger=67] brick_block 4 0 {CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:["Can Place On:","Chiseled End Stone Brick"]}}
 execute @a[score_trigger_min=67,score_trigger=67] ~ ~ ~ scoreboard players tag @e[tag=mayor] add a
 #68 Lucas | Rotten Flesh to Speed Potion
 execute @e[tag=checkminer] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=68,score_trigger=68,score_iRFlesh_min=1] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"dark_gray"},{"translate":"checkminer","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"checkminer.1","color":"gray"}] 
@@ -498,7 +502,7 @@ execute @a[score_trigger_min=73,score_trigger=73,score_iDisc_min=1] ~ ~ ~ execut
 execute @a[score_trigger_min=73,score_trigger=73,score_iDisc_min=1] ~ ~ ~ scoreboard players tag @e[tag=ttextt] add a
 execute @a[score_trigger_min=73,score_trigger=73,score_iDisc=0] ~ ~ ~ execute @e[tag=ttextt] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ function mctsts:dialogue/invalid
 #74 BenTechy | Rabbit Foot to Diamond Boots
-execute @e[tag=bentechy] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"dark_gray"},{"translate":"bentechy","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"bentechy.1","color":"gray"}] 
+execute @e[tag=bentechy] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"dark_gray"},{"translate":"bentechy","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"bentechy.1","color":"gray"}] 
 execute @e[tag=bentechy] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ execute @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] ~ ~ ~ playsound ben3 voice @a[r=5] ~ ~ ~ 100 1
 execute @e[tag=bentechy] ~ ~ ~ execute @s[tag=!a] ~ ~ ~ clear @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] rabbit_foot 0 1
 execute @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] ~ ~ ~ execute @e[tag=bentechy] ~ ~ ~ give @a[score_trigger_min=74,score_trigger=74,score_iRFoot_min=1] diamond_boots

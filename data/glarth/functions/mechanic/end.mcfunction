@@ -24,3 +24,6 @@ effect @a clear
 effect @a 23 999999 120 true
 effect @a 11 999999 120 true
 function mctsts:mechanic/lobby/setup
+
+scoreboard players tag @a add sleepP {Sleeping:1b}
+kill @a[tag=sleepP]

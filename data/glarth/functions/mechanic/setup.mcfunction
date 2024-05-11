@@ -198,6 +198,7 @@
 		clone 24 18 -224 24 18 -224 18 19 -221
 		clone 8 18 -218 8 18 -218 15 19 -218
 		clone 75 18 -254 75 18 -254 76 21 -254
+		clone 103 23 -192 103 23 -192 103 26 -192
 	#Empty
 		setblock -3 30 -214 minecraft:furnace 3
 		clone 23 19 -207 21 18 -207 21 27 -207
@@ -623,8 +624,8 @@
 	#Ice
 	summon minecraft:armor_stand 17 26 -304 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,Rotation:[180f,0f],Pose:{Head:[-50f,0f,-50f]},DisabledSlots:2039583}
 	summon minecraft:armor_stand -9.0 28 -320.0 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,Rotation:[180f,0f],Pose:{Head:[50f,0f,-50f]},DisabledSlots:2039583}
-	summon minecraft:armor_stand -8 26 -297 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,DisabledSlots:2039583}
-	summon minecraft:armor_stand 27 28 -310 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,DisabledSlots:2039583}
+	summon minecraft:armor_stand -8 25.5 -297 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,DisabledSlots:2039583}
+	summon minecraft:armor_stand 27 27.5 -310 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:93}],NoGravity:1,Invisible:1,Invulnerable:1,DisabledSlots:2039583}
 	#Seeds
 	summon minecraft:armor_stand 3 26 -249 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:105}],NoGravity:1,Invisible:1,Invulnerable:1,Rotation:[0f,0f],DisabledSlots:2039583}
 	summon minecraft:armor_stand -4 26 -243 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,Damage:105}],NoGravity:1,Invisible:1,Invulnerable:1,Rotation:[40f,0f],DisabledSlots:2039583}

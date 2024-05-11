@@ -1,6 +1,8 @@
+entitydata @e[type=!Player,tag=!area_main] {DeathTime:19s,Health:0.0f}
 kill @e[type=!Player,tag=!area_main]
-summon minecraft:zombie 118 20 -136 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","previous"],Team:noc}
-summon minecraft:zombie 118 20 -131 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","next"],Team:noc}
+summon minecraft:villager 118 20 -136 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","previous"],Team:noc,Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
+summon minecraft:villager 118 20 -131 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","next"],Team:noc,Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
+summon minecraft:villager 108.0 20 -120 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","credits"],Team:noc,Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
 
 summon area_effect_cloud 118 20 -136 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby"],CustomName:"§7§l§oPrevious",CustomNameVisible:1}
 summon area_effect_cloud 118 20 -131 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby"],CustomName:"§7§l§oNext",CustomNameVisible:1}
@@ -33,22 +35,22 @@ summon area_effect_cloud 127 19.25 -138 {Radius:0.5f,Duration:2147483647,Particl
 summon area_effect_cloud 127 19.0 -138 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","htp","htp16"],CustomName:"§7to the selected task though!",CustomNameVisible:1}
 
 summon area_effect_cloud 127 23.0 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","om"],CustomName:"§8§kT§r §7§n§lTesters:§r §8§kS",CustomNameVisible:1}
-summon area_effect_cloud 127 22.75 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o1"],CustomName:"§7It5meSam",CustomNameVisible:1}
-summon area_effect_cloud 127 22.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o2"],CustomName:"§7Tomhelduf",CustomNameVisible:1}
-summon area_effect_cloud 127 22.25 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o3"],CustomName:"§7spacegame202",CustomNameVisible:1}
-summon area_effect_cloud 127 22.0 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o4"],CustomName:"§7Aerh   Dox",CustomNameVisible:1}
-summon area_effect_cloud 127 21.75 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o5"],CustomName:"§7infinitydrago",CustomNameVisible:1}
-summon area_effect_cloud 127 21.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o6"],CustomName:"§7Jachro  shuffler10",CustomNameVisible:1}
-summon area_effect_cloud 127 21.25 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o7"],CustomName:"§7GuineaPvP  Krozi",CustomNameVisible:1}
-summon area_effect_cloud 127 21.0 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o8"],CustomName:"§7DJCOOL2008",CustomNameVisible:1}
-summon area_effect_cloud 127 20.75 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o9"],CustomName:"§7DarkPiep  IMKevin117",CustomNameVisible:1}
-summon area_effect_cloud 127 20.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o10"],CustomName:"§7Geoloswith1993",CustomNameVisible:1}
-summon area_effect_cloud 127 20.25 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o11"],CustomName:"§7Incarceron",CustomNameVisible:1}
-summon area_effect_cloud 127 20.0 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o12"],CustomName:"§7Gnimacz  Jbip",CustomNameVisible:1}
-summon area_effect_cloud 127 19.75 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o13"],CustomName:"§7xPsyclone",CustomNameVisible:1}
-summon area_effect_cloud 127 19.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o14"],CustomName:"§7BigNinjaChicken",CustomNameVisible:1}
-summon area_effect_cloud 127 19.25 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o15"],CustomName:"§7MaybeLaterx",CustomNameVisible:1}
-summon area_effect_cloud 127 19 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o16"],CustomName:"§7UniqueImpact",CustomNameVisible:1}
+summon area_effect_cloud 127 22.7 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o1"],CustomName:"§7Jbip  Ds43m",CustomNameVisible:1}
+summon area_effect_cloud 127 22.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o2"],CustomName:"§7Kroppeb  GrayFG",CustomNameVisible:1}
+summon area_effect_cloud 127 22.3 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o3"],CustomName:"§7Tomhelduf  Dox",CustomNameVisible:1}
+summon area_effect_cloud 127 22.1 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o4"],CustomName:"§7xPsyclone  Alforofus",CustomNameVisible:1}
+summon area_effect_cloud 127 21.9 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o5"],CustomName:"§7infinitydrago  Jachro",CustomNameVisible:1}
+summon area_effect_cloud 127 21.7 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o6"],CustomName:"§7Vilder50  shuffler10",CustomNameVisible:1}
+summon area_effect_cloud 127 21.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o7"],CustomName:"§7GuineaPvP  MaybeLaterx",CustomNameVisible:1}
+summon area_effect_cloud 127 21.3 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o8"],CustomName:"§7DJCOOL2008  Wout1200",CustomNameVisible:1}
+summon area_effect_cloud 127 21.1 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o9"],CustomName:"§7DarkPiep  IMKevin117",CustomNameVisible:1}
+summon area_effect_cloud 127 20.9 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o10"],CustomName:"§7BigNinjaChicken  Krozi",CustomNameVisible:1}
+summon area_effect_cloud 127 20.7 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o11"],CustomName:"§7Incarceron  mrKisiel23",CustomNameVisible:1}
+summon area_effect_cloud 127 20.5 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o12"],CustomName:"§7Gnimacz  It5meSam",CustomNameVisible:1}
+summon area_effect_cloud 127 20.3 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o13"],CustomName:"§7Aerh  spacegame202",CustomNameVisible:1}
+summon area_effect_cloud 127 20.1 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o14"],CustomName:"§7UniqueImpact  Whnd",CustomNameVisible:1}
+summon area_effect_cloud 127 19.9 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o15"],CustomName:"§7Geoloswith1993 Skyrrel",CustomNameVisible:1}
+summon area_effect_cloud 127 19.7 -129 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","o","o16"],CustomName:"§7Chumbleweasel",CustomNameVisible:1}
 
 summon area_effect_cloud 108.0 21 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","im"],CustomName:"§7§8§kT§r §7§n§lInformation:§r §8§kS",CustomNameVisible:1}
 summon area_effect_cloud 108.0 20.75 -146 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby","i","i1"],CustomName:"§7This map has custom music, made by our",CustomNameVisible:1}
@@ -65,7 +67,7 @@ summon area_effect_cloud 108.0 18.5 -146 {Radius:0.5f,Duration:2147483647,Partic
 summon minecraft:item_frame 105 19 -149 {Facing:0,Item:{id:"stone_slab",Count:1}}
 summon minecraft:item_frame 110 19 -149 {Facing:0,Item:{id:"stone_slab",Count:1}}
 
-summon area_effect_cloud 108.0 20 -120 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby"],CustomName:"§7§lHit for Credits",CustomNameVisible:1}
-summon minecraft:zombie 108.0 20 -120 {Attributes:[{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.knockbackResistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","credits"],Team:noc}
+summon area_effect_cloud 108.0 20 -120 {Radius:0.5f,Duration:2147483647,Particle:"take",Tags:["lobby"],CustomName:"§7§lClick for Credits",CustomNameVisible:1}
+
 
 function mctsts:mechanic/lobby/creator

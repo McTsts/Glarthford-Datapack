@@ -4,6 +4,15 @@ execute @e[tag=hurt] ~ ~ ~ execute @s[tag=previous] ~ ~ ~ execute @p[r=6,m=2] ~ 
 execute @e[tag=hurt] ~ ~ ~ execute @s[tag=next] ~ ~ ~ execute @p[r=6,m=2] ~ ~ ~ execute @s[score_dmg_min=0] ~ ~ ~ function mctsts:mechanic/lobby/next
 execute @e[tag=hurt] ~ ~ ~ execute @s[tag=credits] ~ ~ ~ execute @p[r=6,m=2] ~ ~ ~ scoreboard players tag @s[score_dmg_min=0] add credits
 execute @e[tag=hurt] ~ ~ ~ execute @s[tag=credits] ~ ~ ~ execute @p[r=6,m=2] ~ ~ ~ scoreboard players set @s[score_dmg_min=0] credits 0
+execute @e[tag=hurt] ~ ~ ~ execute @p[r=6,m=2] ~ ~ ~ playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+
+execute @a[score_trade_min=1] ~ ~ ~ execute @e[type=villager,c=1] ~ ~ ~ execute @s[tag=previous] ~ ~ ~ execute @p[score_trade_min=1] ~ ~ ~ function mctsts:mechanic/lobby/previous
+execute @a[score_trade_min=1] ~ ~ ~ execute @e[type=villager,c=1] ~ ~ ~ execute @s[tag=next] ~ ~ ~ execute @p[score_trade_min=1] ~ ~ ~ function mctsts:mechanic/lobby/next
+execute @a[score_trade_min=1] ~ ~ ~ execute @e[type=villager,c=1] ~ ~ ~ execute @s[tag=credits] ~ ~ ~ execute @p[score_trade_min=1] ~ ~ ~ scoreboard players tag @s add credits
+execute @a[score_trade_min=1] ~ ~ ~ execute @e[type=villager,c=1] ~ ~ ~ execute @s[tag=credits] ~ ~ ~ execute @p[score_trade_min=1] ~ ~ ~ scoreboard players set @s credits 0
+execute @a[score_trade_min=1] ~ ~ ~ playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 2
+scoreboard players set @a[score_trade_min=1] trade 0
+
 execute @e[tag=hurt] ~ ~ ~ scoreboard players reset @a[score_dmg_min=0] dmg
 
 execute @e[tag=area_main] ~ ~ ~ scoreboard players test game Stats 0 0
@@ -46,3 +55,6 @@ execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock 93 19 -116 air 0 de
 execute @e[tag=area_main] ~ ~ ~ testforblock 96 20 -116 wooden_button powered=false 
 execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ testforblock 93 19 -114 minecraft:stone_button powered=false
 execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock 93 19 -116 log 
+
+tp @e[tag=sleepP] 90 19 -134
+scoreboard players tag @a[x=90,y=19,z=-134,r=5] remove sleepP

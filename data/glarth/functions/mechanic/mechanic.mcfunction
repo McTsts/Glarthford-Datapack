@@ -23,3 +23,16 @@ execute @e[tag=tnt] ~ ~ ~ summon creeper ~ ~-2 ~ {Fuse:0}
 kill @e[tag=tnt]
 #Final Fixes
 effect @a[x=92,y=19,z=-133,r=5] 16 999999 120 true
+scoreboard players tag @e[type=item] add kill {Item:{id:"minecraft:spruce_fence"}}
+kill @e[tag=kill]
+execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 4 4
+execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock -1 46 -334 air
+execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 0 3
+execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock -1 46 -334 stone 6
+execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 5
+execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock -1 46 -334 stone 6
+
+#Ender
+kill @e[type=ender_pearl]
+give @a[score_ethrow_min=1] ender_pearl
+scoreboard players set @a[score_ethrow_min=1] ethrow 0
