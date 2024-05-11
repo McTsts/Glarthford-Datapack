@@ -23,8 +23,8 @@ summon minecraft:armor_stand -48.00 89.5 -642.00 {NoGravity:1,Invisible:1,Marker
 
 kill @e[tag=end_crystal_guardian1]
 kill @e[tag=end_crystal_guardian2]
-summon armor_stand -23 81 -609 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1,CustomModelData:419}}],Tags:["char","end_crystal_guardian1","tbcLoc105"],Rotation:[110f,0f],CustomName:"{\"translate\":\"end_crystal_guardian1\",\"color\":\"gold\"}",CustomNameVisible:1}
-summon armor_stand -81 77 -600 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1,CustomModelData:436}}],Tags:["char","end_crystal_guardian2","tbcLoc105"],Rotation:[-70f,0f],CustomName:"{\"translate\":\"end_crystal_guardian2\",\"color\":\"dark_purple\"}",CustomNameVisible:1}
+summon armor_stand -23 81 -609 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:unbreakable":{},"minecraft:custom_model_data":419}}],Tags:["char","end_crystal_guardian1","tbcLoc105"],Rotation:[110.0f,0.0f],CustomName:'{"translate":"end_crystal_guardian1","color":"gold"}',CustomNameVisible:1}
+summon armor_stand -81 77 -600 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:unbreakable":{},"minecraft:custom_model_data":436}}],Tags:["char","end_crystal_guardian2","tbcLoc105"],Rotation:[-70.0f,0.0f],CustomName:'{"translate":"end_crystal_guardian2","color":"dark_purple"}',CustomNameVisible:1}
 
 forceload remove -84 -600
 forceload remove -20 -609

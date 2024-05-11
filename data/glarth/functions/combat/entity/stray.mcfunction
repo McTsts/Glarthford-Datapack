@@ -4,7 +4,7 @@ function glarth:combat/entity/implements/type/ice
 #Overwrite
 scoreboard players remove @s tbcHealth 20
 scoreboard players add @s tbcDodge 20
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.stray","color":"aqua"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:145}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.skeleton.stray\",\"color\":\"aqua\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.stray","color":"aqua"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":145}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.skeleton.stray","color":"aqua"}'}
 scoreboard players set @s attack_004 1
 scoreboard players set @s attack_224 1
 scoreboard players set @s attack_025 1

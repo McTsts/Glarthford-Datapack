@@ -1,5 +1,5 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 0 as @e[tag=charQA,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:393}
+execute if score @s tbcAttackStage matches 0 as @e[tag=charQA,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=393]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_ally/util/next_stage
 
 

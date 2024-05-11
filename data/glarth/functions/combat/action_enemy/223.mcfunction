@@ -1,6 +1,6 @@
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 1 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:26}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 2 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:273}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 3 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:27}
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 1 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=26]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 2 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=273]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 3 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=27]
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcStrength 30
 execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 2..3 run scoreboard players add @s tbcStrength 30
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage

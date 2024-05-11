@@ -1,5 +1,5 @@
 # 0 - Prepare Attack
-execute if score @s tbcAttackStage matches 0 run summon iron_golem 0 0 0 {NoGravity:1,Invisible:1,NoAI:1,Silent:1,CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.zombie.villager.golem\",\"color\":\"gray\"}",Tags:["tbcAttackDummy"]}
+execute if score @s tbcAttackStage matches 0 run summon iron_golem 0 0 0 {NoGravity:1,Invisible:1,NoAI:1,Silent:1,CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.zombie.villager.golem","color":"gray"}',Tags:["tbcAttackDummy"]}
 execute if score @s tbcAttackStage matches 0 as @e[tag=tbcAttackDummy] at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] facing entity @e[tag=tbcTargetAS,limit=1] feet rotated ~ 0 run tp @s ^ ^ ^-3
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage
 

@@ -2,8 +2,8 @@ execute if score @s tbcAttackStage matches 0 facing entity @e[tag=tbcMarkerMiddl
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..2] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 at @s run playsound minecraft:entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 1.5
-execute if score @s tbcAttackStage matches 1 run data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.conjured","color":"gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:364}}]}
-execute if score @s tbcAttackStage matches 1 run summon minecraft:armor_stand ^ ^-2.00 ^0.7 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:203}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"green"}
+execute if score @s tbcAttackStage matches 1 run data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.conjured","color":"gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":364}}]}
+execute if score @s tbcAttackStage matches 1 run summon minecraft:armor_stand ^ ^-2.00 ^0.7 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":203}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"green"}
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcTNT,type=armor_stand] at @s positioned ~ ~ ~ facing entity @e[tag=tbcTargetAS,limit=1,type=armor_stand] feet run tp @s ~ ~ ~ ~ ~
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/next_stage
 
@@ -13,7 +13,7 @@ execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 3 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 run data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.conjured","color":"gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:204}}]}
+execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 run data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.conjured","color":"gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":204}}]}
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 execute if score @s tbcAttackStage matches 2..3 run function glarth:combat/action_enemy/helper/block_poison
 

@@ -1,10 +1,10 @@
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 1 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:15}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 2 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:17}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 3 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:19}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 4 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:21}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 5 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:23}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 6 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:388}
-execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 7 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:140}
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 1 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=15]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 2 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=17]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 3 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=19]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 4 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=21]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 5 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=23]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 6 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=388]
+execute if score @s tbcAttackStage matches 0 if score evilAttackData Temp matches 7 as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=140]
 execute if score @s tbcAttackStage matches 0 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage
 

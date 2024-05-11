@@ -10,7 +10,7 @@ execute if score difficulty tbcStats matches 6 run scoreboard players set @s tbc
 scoreboard players remove @s tbcArmor 1000
 
 # Display
-data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
 execute at @s run tp @s ~ ~0.7 ~
 tag @s remove tbcDontUpdateLoc
 

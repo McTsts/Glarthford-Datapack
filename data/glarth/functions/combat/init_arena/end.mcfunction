@@ -16,11 +16,11 @@ summon minecraft:area_effect_cloud 251 36 -20 {Radius:0.0f,Duration:2147483647,T
 summon minecraft:area_effect_cloud 251 36 -24 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerMiddleB"]}
 
 # Enemies
-summon minecraft:area_effect_cloud 257 36 -22 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 257 36 -24 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 257 36 -20 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy3"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 255 36 -26 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 255 36 -18 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy5"],Rotation:[180f,0f]}
+summon minecraft:area_effect_cloud 257 36 -22 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 257 36 -24 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 257 36 -20 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy3"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 255 36 -26 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 255 36 -18 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy5"],Rotation:[180.0f,0.0f]}
 
 scoreboard players set maxEnemies tbcStats 5
 scoreboard players set compPos tbcStats 1

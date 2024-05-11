@@ -16,8 +16,8 @@ summon minecraft:area_effect_cloud 473 40 -109 {Radius:0.0f,Duration:2147483647,
 summon minecraft:area_effect_cloud 473 40 -113 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerMiddleB"]}
 
 # Enemies
-summon minecraft:area_effect_cloud 466 40 -111 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 470 40 -107 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180f,0f]}
+summon minecraft:area_effect_cloud 466 40 -111 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 470 40 -107 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180.0f,0.0f]}
 
 scoreboard players set maxEnemies tbcStats 2
 scoreboard players set compPos tbcStats 1

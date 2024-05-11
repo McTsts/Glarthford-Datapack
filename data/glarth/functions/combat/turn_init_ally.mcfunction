@@ -13,6 +13,6 @@ execute if entity @s[tag=tbcSkipThis] run function glarth:combat/action_ally/006
 tag @s remove tbcSkipThis
 tag @s remove tbcIgnoreThis
 
-data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:"[{\"text\":\"|| \",\"color\":\"red\",\"bold\":true},{\"translate\":\"tbc.selected\",\"bold\":true,\"color\":\"gray\"},{\"text\":\" ||\",\"color\":\"red\",\"bold\":true}]"}
+data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:'[{"text":"|| ","color":"red","bold":true},{"translate":"tbc.selected","bold":true,"color":"gray"},{"text":" ||","color":"red","bold":true}]'}
 
 execute if entity @e[tag=tbcEnemy] unless entity @e[tag=tbcEnemy,tag=!tbcUnselectable] run function glarth:combat/done

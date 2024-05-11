@@ -11,7 +11,7 @@ execute if score @s tbcAttackStage matches 1 run tag @e[tag=tbcStrSnowGolem,limi
 execute if score @s tbcAttackStage matches 1 run tag @e[tag=tbcStrSnowGolem,limit=1] add death_012
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcStrSnowGolem,limit=1] tbcMaxHealth 60
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcStrSnowGolem,limit=1] tbcHealth 60
-execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrSnowGolem,limit=1] {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.golem.snow","color":"white"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:371}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.golem.snow\",\"color\":\"white\"}"}
+execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrSnowGolem,limit=1] {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.golem.snow","color":"white"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":371}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.golem.snow","color":"white"}'}
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1

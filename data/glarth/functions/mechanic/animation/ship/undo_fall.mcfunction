@@ -9,4 +9,4 @@ scoreboard players set shipAnim Animation 0
 scoreboard players set shipStatus Animation 1
 clone -19 16 -153 -38 1 -159 -15 24 -135
 kill @e[tag=ship]
-summon armor_stand 1 28 -132 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:25,Unbreakable:1}}],Tags:["char","sailor","shipMove"],Rotation:[90f,0f],CustomName:"{\"translate\":\"sailor\",\"color\":\"blue\"}",CustomNameVisible:1,NoGravity:1}
+summon armor_stand 1 28 -132 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":25,"minecraft:unbreakable":{}}}],Tags:["char","sailor","shipMove"],Rotation:[90.0f,0.0f],CustomName:'{"translate":"sailor","color":"blue"}',CustomNameVisible:1,NoGravity:1}

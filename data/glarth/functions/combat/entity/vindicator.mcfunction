@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/illager
 function glarth:combat/entity/implements/type/earth
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.illager.vindicator","color":"gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:267}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.illager.vindicator\",\"color\":\"gray\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.illager.vindicator","color":"gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":267}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.illager.vindicator","color":"gray"}'}
 
 scoreboard players set @s attack_095 2
 scoreboard players set @s attack_096 2

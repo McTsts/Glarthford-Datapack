@@ -5,7 +5,7 @@ function glarth:combat/entity/implements/unselectable
 function glarth:combat/entity/implements/lonely
 function glarth:combat/entity/implements/destroyed
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.end_crystal","color":"light_purple"}'}},{},{},{}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.end_crystal\",\"color\":\"light_purple\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.end_crystal","color":"light_purple"}'}}},{},{},{}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.end_crystal","color":"light_purple"}'}
 scoreboard players set @s attack_172 1
 scoreboard players set @s attack_173 1
 scoreboard players set @s attack_057 1

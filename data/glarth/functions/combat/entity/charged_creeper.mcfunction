@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/creeper
 function glarth:combat/entity/implements/type/thunder
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.creeper.charged","color":"aqua"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:47}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.creeper.charged\",\"color\":\"aqua\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.creeper.charged","color":"aqua"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":47}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.creeper.charged","color":"aqua"}'}
 
 scoreboard players operation @s tbcHealth *= 2 Const
 scoreboard players add @s tbcStrength 15

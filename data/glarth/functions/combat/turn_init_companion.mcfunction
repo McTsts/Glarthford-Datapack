@@ -13,7 +13,7 @@ execute if entity @s[tag=tbcCompSkip] run function glarth:combat/done
 tag @s remove tbcCompSkip
 
 
-data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:"[{\"text\":\"|| \",\"color\":\"red\",\"bold\":true},{\"translate\":\"tbc.selected\",\"bold\":true,\"color\":\"gray\"},{\"text\":\" ||\",\"color\":\"red\",\"bold\":true}]"}
+data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:'[{"text":"|| ","color":"red","bold":true},{"translate":"tbc.selected","bold":true,"color":"gray"},{"text":" ||","color":"red","bold":true}]'}
 
 
 

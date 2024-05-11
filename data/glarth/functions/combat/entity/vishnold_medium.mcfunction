@@ -2,7 +2,7 @@
 function glarth:combat/entity/vishnold
 function glarth:combat/entity/implements/type/poison
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.boss.vishnold","color":"green"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:142}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.boss.vishnold\",\"color\":\"green\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.boss.vishnold","color":"green"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":142}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.boss.vishnold","color":"green"}'}
 tag @s remove death_001
 scoreboard players set @s attack_055 0
 tag @s add death_002

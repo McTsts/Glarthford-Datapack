@@ -1,2 +1,2 @@
-execute unless entity @e[tag=frog2,type=armor_stand] run summon minecraft:armor_stand -3 27.5 -151 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:50}}],Tags:["frog","frog2"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Rotation:[-60f,0f]}
+execute unless entity @e[tag=frog2,type=armor_stand] run summon minecraft:armor_stand -3 27.5 -151 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":50}}],Tags:["frog","frog2"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Rotation:[-60.0f,0.0f]}
 setblock -3 27 -151 minecraft:moss_carpet

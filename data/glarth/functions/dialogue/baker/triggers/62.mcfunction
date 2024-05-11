@@ -1,6 +1,6 @@
 #62 Baker | Take Bread
 function glarth:dialogue/baker/lines/trade3
-give @s bread{custom:"fresh_bread",display:{Name:"{\"italic\":false,\"translate\":\"item.bread_fresh\"}"}} 1
+give @s minecraft:bread[custom_name='{"italic":false,"translate":"item.bread_fresh"}',custom_data={custom:"fresh_bread"}] 1
 scoreboard players reset @e[tag=baker,type=armor_stand] action
 tag @e[tag=baker,type=armor_stand] remove breadX
 tag @e[tag=baker,type=armor_stand] remove bread

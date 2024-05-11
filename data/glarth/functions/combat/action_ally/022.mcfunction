@@ -1,6 +1,6 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.1 10
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 run summon cat ~ ~ ~ {CatType:3,NoAI:1,Rotation:[150f,0f],CustomName:'{"translate":"suso","color":"blue"}',CustomNameVisible:1,Tags:["tbcSusoCat","tbc"]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 run summon cat ~ ~ ~ {CatType:3,NoAI:1,Rotation:[150.0f,0.0f],CustomName:'{"translate":"suso","color":"blue"}',CustomNameVisible:1,Tags:["tbcSusoCat","tbc"]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 run tp @s 0 0 0
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 run data merge entity @s {CustomNameVisible:0,NoGravity:1}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_ally/util/next_stage

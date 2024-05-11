@@ -5,7 +5,7 @@ execute if score wind Stats matches 3 run function glarth:dialogue/miller/lines/
 tag @e[tag=miller,type=armor_stand] add a
 
 # Animation
-summon minecraft:armor_stand 19 26.1 -233.0 {Small:1b,ArmorItems:[{},{},{},{id:wheat,Count:1}],Pose:{Head:[90f,0f,0f]},Rotation:[180f,0f],NoGravity:1,Invisible:1,Marker:1,Tags:["wheat"],DisabledSlots:2039583}
+summon minecraft:armor_stand 19 26.1 -233.0 {Small:1b,ArmorItems:[{},{},{},{id:"wheat",count:1}],Pose:{Head:[90.0f,0.0f,0.0f]},Rotation:[180.0f,0.0f],NoGravity:1,Invisible:1,Marker:1,Tags:["wheat"],DisabledSlots:2039583}
 clear @s minecraft:wheat 1
 execute if score wind Stats matches 1 run scoreboard players set @e[tag=miller] action 2400
 execute if score wind Stats matches 2 run scoreboard players set @e[tag=miller] action 1200

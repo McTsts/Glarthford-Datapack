@@ -7,7 +7,7 @@ execute if score difficulty tbcStats matches 4..5 run scoreboard players add @s 
 execute if score difficulty tbcStats matches 6 run scoreboard players add @s tbcHealth 70
 scoreboard players add @s tbcStrength 5
 scoreboard players add @s tbcDodge 5
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.wither","color":"dark_gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:146}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.skeleton.wither\",\"color\":\"dark_gray\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.skeleton.wither","color":"dark_gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":146}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.skeleton.wither","color":"dark_gray"}'}
 scoreboard players set @s attack_009 0
 scoreboard players set @s attack_010 0
 scoreboard players set @s attack_011 0

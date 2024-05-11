@@ -5,7 +5,7 @@
 	summon minecraft:rabbit 32 27 -199 {RabbitType:5}
 	summon minecraft:rabbit -3 27 -206 {RabbitType:5}
 	summon minecraft:rabbit -13 27 -199 {RabbitType:5}
-	summon minecraft:rabbit -17 29 -172 {RabbitType:4,Attributes:[{Name:generic.movement_speed,Base:0.0}],DeathLootTable:"glarth:entities/lucky_rabbit"}
+	summon minecraft:rabbit -17 29 -172 {RabbitType:4,Attributes:[{Name:"generic.movement_speed",Base:0.0d}],DeathLootTable:"glarth:entities/lucky_rabbit"}
 #Mobs
 	summon minecraft:chicken -6 26 -248 {Team:"mouse"}
 	summon minecraft:chicken -6 26 -248 {Team:"mouse"}
@@ -34,19 +34,19 @@
 	summon minecraft:chicken -42 32 -256 {Team:"mouse"}
 	summon minecraft:chicken -42 32 -256 {Team:"mouse"}
 	summon minecraft:pig -48 26 -140 {Tags:["newAnimal"]}
-	summon minecraft:horse -53.61 28.13 -246.00 {Leashed:1b,Leash:{X:-52,Y:29,Z:-244},Attributes:[{Name:generic.movement_speed,Base:0.2},{Name:horse.jump_strength,Base:0.9}],Tags:["newAnimal"]}
-	summon minecraft:fox 65 27 -249 {HandItems:[{id:"rabbit_foot",Count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox1"],Rotation:[-20f,0f]}
-	summon minecraft:fox 81 27 -254 {HandItems:[{id:"emerald",Count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox2"],Rotation:[-140f,0f]}
+	summon minecraft:horse -53.61 28.13 -246.00 {Leashed:1b,Leash:{X:-52,Y:29,Z:-244},Attributes:[{Name:"generic.movement_speed",Base:0.2d},{Name:"horse.jump_strength",Base:0.9d}],Tags:["newAnimal"]}
+	summon minecraft:fox 65 27 -249 {HandItems:[{id:"rabbit_foot",count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox1"],Rotation:[-20.0f,0.0f]}
+	summon minecraft:fox 81 27 -254 {HandItems:[{id:"emerald",count:1}],Sleeping:1b,NoAI:1b,Tags:["foxSleep","fox2"],Rotation:[-140.0f,0.0f]}
 # Register Wolf/Horse
 	scoreboard players operation @e[tag=newAnimal] netherID = id edgeI
 	tag @e[tag=newAnimal] remove newAnimal
 #Fish & Squid
 	execute unless score season winter matches 1 run function glarth:mechanic/setup/aquatic
 #Armor Stands
-	summon minecraft:armor_stand 28 27 -200 {ArmorItems:[{id:"golden_boots",Count:1},{id:"leather_leggings",Count:1},{id:"leather_chestplate",Count:1},{}],Rotation:[180f,0f],Tags:["armor_as","asLoader"]}
-	summon minecraft:armor_stand 27 27 -200 {ArmorItems:[{},{},{id:"golden_chestplate",Count:1},{id:"leather_helmet",Count:1}],Rotation:[180f,0f],Tags:["armor_as","asLoader"]}
-	summon minecraft:armor_stand 28 27 -200 {ArmorItems:[{},{},{},{id:"diamond_hoe",tag:{Damage:122},Count:1}],Rotation:[180f,0f],Invisible:1,Marker:1,Tags:["asLoader"]}
-	summon minecraft:armor_stand 27 27 -200 {ArmorItems:[{},{},{},{id:"diamond_hoe",tag:{Damage:122},Count:1}],Rotation:[180f,0f],Invisible:1,Marker:1,Tags:["asLoader"]}
+	summon minecraft:armor_stand 28 27 -200 {ArmorItems:[{id:"golden_boots",count:1},{id:"leather_leggings",count:1},{id:"leather_chestplate",count:1},{}],Rotation:[180.0f,0.0f],Tags:["armor_as","asLoader"]}
+	summon minecraft:armor_stand 27 27 -200 {ArmorItems:[{},{},{id:"golden_chestplate",count:1},{id:"leather_helmet",count:1}],Rotation:[180.0f,0.0f],Tags:["armor_as","asLoader"]}
+	summon minecraft:armor_stand 28 27 -200 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":122}}],Rotation:[180.0f,0.0f],Invisible:1,Marker:1,Tags:["asLoader"]}
+	summon minecraft:armor_stand 27 27 -200 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":122}}],Rotation:[180.0f,0.0f],Invisible:1,Marker:1,Tags:["asLoader"]}
 # Bee Hive Markers
 	summon slime 40 29 -163 {NoAI:1b,PersistenceRequired:1,NoGravity:1b,Silent:1b,Size:1,ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b},{Id:11,Duration:999999,ShowParticles:0b,Amplifier:120}],Tags:["beeHiveSlime","bHS1"],Team:"noc"}
 	summon slime -14 29 -258 {NoAI:1b,PersistenceRequired:1,NoGravity:1b,Silent:1b,Size:1,ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b},{Id:11,Duration:999999,ShowParticles:0b,Amplifier:120}],Tags:["beeHiveSlime","bHS1"],Team:"noc"}

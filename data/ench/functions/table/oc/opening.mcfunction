@@ -3,11 +3,11 @@ scoreboard players add @s enchOpen 1
 execute if score @s enchOpen matches ..10 run function ench:table/oc/open_book
 execute if score @s enchOpen matches 1..19 run function ench:table/oc/open_flip
 
-execute if entity @s[scores={enchOpen=20..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"book",Count:1,tag:{CustomModelData:7}}]}
-execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage1,limit=1,sort=nearest] {ArmorItems:[{},{},{},{id:"book",Count:1,tag:{CustomModelData:8}}]}
-execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage2,limit=1,sort=nearest] {ArmorItems:[{},{},{},{id:"book",Count:1,tag:{CustomModelData:9}}]}
-execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage3,limit=1,sort=nearest] {Pose:{Head:[270.5f,260f,90f]}}
-execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage4,limit=1,sort=nearest] {Pose:{Head:[270.5f,260f,90f]}}
+execute if entity @s[scores={enchOpen=20..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"book",count:1,components:{"minecraft:custom_model_data":7}}]}
+execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage1,limit=1,sort=nearest] {ArmorItems:[{},{},{},{id:"book",count:1,components:{"minecraft:custom_model_data":8}}]}
+execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage2,limit=1,sort=nearest] {ArmorItems:[{},{},{},{id:"book",count:1,components:{"minecraft:custom_model_data":9}}]}
+execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage3,limit=1,sort=nearest] {Pose:{Head:[270.5f,260.0f,90.0f]}}
+execute if entity @s[scores={enchOpen=20..}] run data merge entity @e[tag=etPage4,limit=1,sort=nearest] {Pose:{Head:[270.5f,260.0f,90.0f]}}
 execute if entity @s[scores={enchOpen=20..}] run tag @s add etOpen
 execute if entity @s[scores={enchOpen=20..}] run tag @s remove etOpening
 

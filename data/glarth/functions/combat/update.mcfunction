@@ -6,7 +6,7 @@ execute if score start tbcStats matches 3 run function glarth:combat/next
 
 function glarth:combat/count
 
-execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run item replace entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head with diamond_hoe{CustomModelData:30}
+execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run item replace entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head with minecraft:diamond_hoe[custom_model_data=30]
 execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand,tag=!tbcHasBee] at @s run tag @s add tbcHasBee
 execute as @e[tag=tbcEnemy,scores={tbcBee=..0},type=armor_stand,tag=tbcHasBee] at @s run item replace entity @e[tag=charQEBee,limit=1,sort=nearest,type=armor_stand] armor.head with air
 execute as @e[tag=tbcEnemy,scores={tbcBee=..0},type=armor_stand,tag=tbcHasBee] at @s run tag @s remove tbcHasBee

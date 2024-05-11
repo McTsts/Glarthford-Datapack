@@ -16,11 +16,11 @@ summon minecraft:area_effect_cloud 384 28 -147 {Radius:0.0f,Duration:2147483647,
 summon minecraft:area_effect_cloud 388 28 -147 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerMiddleB"]}
 
 # Enemies
-summon minecraft:area_effect_cloud 386 28 -142 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 388 28 -143 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 384 28 -143 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy3"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 382 28 -146 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 390 28 -147 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy5"],Rotation:[180f,0f]}
-summon minecraft:area_effect_cloud 382 28 -149 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy6"],Rotation:[180f,0f]}
+summon minecraft:area_effect_cloud 386 28 -142 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy1"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 388 28 -143 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy2"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 384 28 -143 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy3"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 382 28 -146 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy4"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 390 28 -147 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy5"],Rotation:[180.0f,0.0f]}
+summon minecraft:area_effect_cloud 382 28 -149 {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcMarker","tbcMarkerEnemy","tbcMarkerEnemy6"],Rotation:[180.0f,0.0f]}
 
 scoreboard players set maxEnemies tbcStats 6

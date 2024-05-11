@@ -1,2 +1,2 @@
 execute as @e[tag=firefly6] run function glarth:mechanic/kill
-summon minecraft:armor_stand 70 27 -219 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:154}}],Tags:["firefly","firefly6"],Rotation:[-90f,0f],NoGravity:1,Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Marker:1}
+summon minecraft:armor_stand 70 27 -219 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":154}}],Tags:["firefly","firefly6"],Rotation:[-90.0f,0.0f],NoGravity:1,Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Marker:1}

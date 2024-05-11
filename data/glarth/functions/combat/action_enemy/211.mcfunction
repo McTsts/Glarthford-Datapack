@@ -15,7 +15,7 @@ execute if score @s tbcAttackStage matches 1 if score n Random matches 5 run sco
 # 1
 execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:501}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":501}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 as @e[tag=tbcTNT,limit=1,sort=random] positioned ~ ~-5 ~ run tag @e[type=armor_stand,tag=tbcTNT,limit=1,sort=furthest] add tbcTNTSel
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
@@ -29,7 +29,7 @@ execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 
 #2
 execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 5 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:501}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":501}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 as @e[tag=tbcTNT,limit=1,sort=random] positioned ~ ~-5 ~ run tag @e[type=armor_stand,tag=tbcTNT,limit=1,sort=furthest] add tbcTNTSel
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
@@ -43,7 +43,7 @@ execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 
 #3
 execute if score @s tbcAttackStage matches 9 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 5 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
-execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:501}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
+execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":501}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 as @e[tag=tbcTNT,limit=1,sort=random] positioned ~ ~-5 ~ run tag @e[type=armor_stand,tag=tbcTNT,limit=1,sort=furthest] add tbcTNTSel
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
@@ -57,7 +57,7 @@ execute if score @s tbcAttackStage matches 11 if score @s tbcAttackTimer matches
 #4
 execute if score @s tbcAttackStage matches 12 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 5 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
-execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:501}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
+execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":501}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 20 as @e[tag=tbcTNT,limit=1,sort=random] positioned ~ ~-5 ~ run tag @e[type=armor_stand,tag=tbcTNT,limit=1,sort=furthest] add tbcTNTSel
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
@@ -71,7 +71,7 @@ execute if score @s tbcAttackStage matches 14 if score @s tbcAttackTimer matches
 #5
 execute if score @s tbcAttackStage matches 15 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 15 if score @s tbcAttackTimer matches 5 as @e[tag=tbcAttackable] run function glarth:combat/action/blocking_init
-execute if score @s tbcAttackStage matches 15 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:501}}],Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
+execute if score @s tbcAttackStage matches 15 if score @s tbcAttackTimer matches 10 run summon minecraft:armor_stand ~ ~1 ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":501}}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbcTNTwither","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"black"}
 execute if score @s tbcAttackStage matches 15 if score @s tbcAttackTimer matches 20 as @e[tag=tbcTNT,limit=1,sort=random] positioned ~ ~-5 ~ run tag @e[type=armor_stand,tag=tbcTNT,limit=1,sort=furthest] add tbcTNTSel
 execute if score @s tbcAttackStage matches 15 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 

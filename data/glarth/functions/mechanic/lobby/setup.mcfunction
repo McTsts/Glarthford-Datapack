@@ -1,17 +1,17 @@
 execute as @e[type=!player,tag=!area_main,tag=!end_scene,tag=!board_entity,tag=!chair] unless entity @s[tag=charQ,tag=lobby] unless entity @s[tag=charQB,tag=lobby] run function glarth:mechanic/kill
-summon minecraft:villager 186 25 -115 {Attributes:[{Name:generic.movement_speed,Base:0},{Name:generic.attack_damage,Base:0},{Name:generic.knockback_resistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","previous"],Team:noc,Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
-summon minecraft:villager 186 25 -109 {Attributes:[{Name:generic.movement_speed,Base:0},{Name:generic.attack_damage,Base:0},{Name:generic.knockback_resistance,Base:1000},{Name:generic.armor,Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","next"],Team:noc,Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
+summon minecraft:villager 186 25 -115 {Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.attack_damage",Base:0},{Name:"generic.knockback_resistance",Base:1000},{Name:"generic.armor",Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","previous"],Team:"noc",Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
+summon minecraft:villager 186 25 -109 {Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.attack_damage",Base:0},{Name:"generic.knockback_resistance",Base:1000},{Name:"generic.armor",Base:1000}],ActiveEffects:[{Id:11,Amplifier:120,Duration:999999,ShowParticles:0b},{Id:14,Amplifier:120,Duration:999999,ShowParticles:0b}],NoAI:1,NoGravity:1,Silent:1b,Tags:["lobby","lobby_hit","next"],Team:"noc",Career:2,Inventory:[],Willing:0b,Offers:{Recipes:[]},Profession:0,CareerLevel:1,Riches:0,PersistenceRequired:1b}
 
-summon area_effect_cloud 163.0 24.3 -94.0 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:"{\"translate\":\"lobby.options.combat\",\"color\":\"white\"}",CustomNameVisible:1}
-summon area_effect_cloud 163.0 24.3 -121.7 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:"{\"translate\":\"lobby.selection.title\",\"color\":\"white\"}",CustomNameVisible:1}
-summon minecraft:armor_stand 163.00 24.00 -94.50 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:282}}],Rotation:[0f,0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
-summon minecraft:armor_stand 168.50 25.00 -107.00 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:282}}],Rotation:[-90f,0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
-summon minecraft:armor_stand 168.50 25.00 -116.00 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:282}}],Rotation:[-90f,0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
+summon area_effect_cloud 163.0 24.3 -94.0 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:'{"translate":"lobby.options.combat","color":"white"}',CustomNameVisible:1}
+summon area_effect_cloud 163.0 24.3 -121.7 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:'{"translate":"lobby.selection.title","color":"white"}',CustomNameVisible:1}
+summon minecraft:armor_stand 163.00 24.00 -94.50 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":282}}],Rotation:[0.0f,0.0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
+summon minecraft:armor_stand 168.50 25.00 -107.00 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":282}}],Rotation:[-90.0f,0.0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
+summon minecraft:armor_stand 168.50 25.00 -116.00 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":282}}],Rotation:[-90.0f,0.0f],Tags:["lobby"],Invisible:1,NoGravity:1,Invulnerable:1,Marker:1}
 
-summon area_effect_cloud 186 25 -115 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:"{\"translate\":\"lobby.previous\",\"italic\":true,\"bold\":true,\"color\":\"gray\"}",CustomNameVisible:1}
-summon area_effect_cloud 186 25 -109 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:"{\"translate\":\"lobby.next\",\"italic\":true,\"bold\":true,\"color\":\"gray\"}",CustomNameVisible:1}
-summon area_effect_cloud 192 24.6 -112 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:"{\"translate\":\"lobby.start\",\"bold\":true,\"color\":\"gray\"}",CustomNameVisible:1}
-summon area_effect_cloud 187 24.3 -112 {Radius:0.0f,Duration:2147483647,Tags:["lobby","quest_name"],CustomName:"{\"translate\":\"lobby.quest.x\",\"underlined\":true,\"bold\":true,\"color\":\"gold\"}",CustomNameVisible:1}
+summon area_effect_cloud 186 25 -115 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:'{"translate":"lobby.previous","italic":true,"bold":true,"color":"gray"}',CustomNameVisible:1}
+summon area_effect_cloud 186 25 -109 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:'{"translate":"lobby.next","italic":true,"bold":true,"color":"gray"}',CustomNameVisible:1}
+summon area_effect_cloud 192 24.6 -112 {Radius:0.0f,Duration:2147483647,Tags:["lobby"],CustomName:'{"translate":"lobby.start","bold":true,"color":"gray"}',CustomNameVisible:1}
+summon area_effect_cloud 187 24.3 -112 {Radius:0.0f,Duration:2147483647,Tags:["lobby","quest_name"],CustomName:'{"translate":"lobby.quest.x","underlined":true,"bold":true,"color":"gold"}',CustomNameVisible:1}
 summon area_effect_cloud 187 24 -112 {Radius:0.0f,Duration:2147483647,Tags:["lobby","quest_locked"],CustomName:'{"translate":"lobby.quest.locked","color":"red","font":"custom:small","with":[{"text":"?"}]}',CustomNameVisible:1}
 
 function glarth:mechanic/lobby/pc/setup
@@ -32,9 +32,9 @@ clear @a[gamemode=adventure]
 
 # Chairs
 effect give @e[type=pig,tag=chair] minecraft:invisibility infinite 120 true
-execute positioned 159 23.61 -112 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[-90f,0f]}
-execute positioned 158 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[-90f,0f]}
-execute positioned 167 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90f,0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"],Rotation:[90f,0f]}
+execute positioned 159 23.61 -112 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90.0f,0.0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"]}
+execute positioned 158 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[-90.0f,0.0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"]}
+execute positioned 167 23.61 -101 unless entity @e[type=pig,tag=chair,distance=..1] run summon pig ~ ~ ~ {NoAI:1,Silent:1b,Invulnerable:1,Team:"noc",Saddle:1,Rotation:[90.0f,0.0f],ActiveEffects:[{Id:14,Duration:999999,ShowParticles:0b}],Tags:["chair"]}
 
 execute as @a run function glarth:team/join/player
 schedule function glarth:mechanic/lobby/dev_team 100t

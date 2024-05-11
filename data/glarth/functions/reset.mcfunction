@@ -70,7 +70,7 @@ function glarth:mechanic/lobby/music_sel/reset
 function glarth:mechanic/lobby/music_sel/lock
 
 
-item replace entity @e[type=armor_stand,tag=lobbyScreen] armor.head with diamond_hoe{Damage:213}
+item replace entity @e[type=armor_stand,tag=lobbyScreen] armor.head with minecraft:diamond_hoe[damage=213]
 scoreboard players set page pcRec 0
 
 scoreboard players set combat Stats 0
@@ -81,8 +81,8 @@ function glarth:sign/combat/change
 function glarth:sign/graphics/change
 data merge block 160 24 -100 {Text1:'{"translate":"lobby.options.clock","italic":true,"clickEvent":{"action":"run_command","value":"function glarth:sign/graphics/clock"}}',Text2:'[{"text":"• ","bold":true,"color":"green"},{"translate":"lobby.options.enabled","color":"green","bold":true},{"text":" •","bold":true,"color":"green"}]',Text3:'[{"translate":"lobby.options.disabled","color":"black"}]'}
 data merge block 160 24 -102 {Text1:'{"translate":"lobby.options.graphics","italic":true,"clickEvent":{"action":"run_command","value":"function glarth:sign/graphics/quality"}}',Text2:'[{"text":"• ","bold":true,"color":"green"},{"translate":"lobby.options.graphics.default","color":"green","bold":true},{"text":" •","bold":true,"color":"green"}]',Text3:'[{"translate":"lobby.options.graphics.low","color":"black"}]'}
-data merge block 164 24 -95 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function glarth:sign/combat/type\"}}",Text2:"{\"translate\":\"lobby.options.combat.type.pve\",\"color\":\"black\"}",Text3:"[{\"text\":\"• \",\"bold\":true,\"color\":\"blue\"},{\"translate\":\"lobby.options.combat.type.tbc\",\"bold\":true,\"color\":\"blue\"},{\"text\":\" •\",\"bold\":true,\"color\":\"blue\"}]"}
-data merge block 161 24 -95 {Text1:"{\"translate\":\"lobby.options.combat.difficulty.0\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function glarth:sign/combat/difficulty\"}}",Text2:"{\"translate\":\"lobby.options.combat.difficulty.1\",\"color\":\"black\"}",Text3:"[{\"text\":\"• \",\"color\":\"yellow\",\"bold\":true},{\"translate\":\"lobby.options.combat.difficulty.2\",\"color\":\"yellow\",\"bold\":true},{\"text\":\" •\",\"color\":\"yellow\",\"bold\":true}]",Text4:"{\"translate\":\"lobby.options.combat.difficulty.3\",\"color\":\"black\"}"}
+data merge block 164 24 -95 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function glarth:sign/combat/type"}}',Text2:'{"translate":"lobby.options.combat.type.pve","color":"black"}',Text3:'[{"text":"• ","bold":true,"color":"blue"},{"translate":"lobby.options.combat.type.tbc","bold":true,"color":"blue"},{"text":" •","bold":true,"color":"blue"}]'}
+data merge block 161 24 -95 {Text1:'{"translate":"lobby.options.combat.difficulty.0","color":"black","clickEvent":{"action":"run_command","value":"function glarth:sign/combat/difficulty"}}',Text2:'{"translate":"lobby.options.combat.difficulty.1","color":"black"}',Text3:'[{"text":"• ","color":"yellow","bold":true},{"translate":"lobby.options.combat.difficulty.2","color":"yellow","bold":true},{"text":" •","color":"yellow","bold":true}]',Text4:'{"translate":"lobby.options.combat.difficulty.3","color":"black"}'}
 
 scoreboard players set quest Stats 0
 scoreboard players set bossRe Stats -1

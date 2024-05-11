@@ -7,7 +7,7 @@
 ##
 
 # Update Spawner
-execute if block ~ ~ ~ repeating_command_block[facing=up] run data merge block ~ ~1 ~ {t:s}
+execute if block ~ ~ ~ repeating_command_block[facing=up] run data merge block ~ ~1 ~ {t:"s"}
 execute if block ~ ~ ~ repeating_command_block[facing=up] run effect give @a[distance=..100] night_vision 100 0 true
 execute if block ~ ~ ~ repeating_command_block[facing=up] run bossbar set minecraft:1 players @a[distance=..100]
 execute if block ~ ~ ~ repeating_command_block[facing=south] run effect clear @a[distance=..100] night_vision
@@ -30,7 +30,7 @@ execute if block ~ ~ ~ command_block run bossbar set minecraft:1 players
 execute unless block ~ ~ ~ command_block unless block ~ ~ ~ chain_command_block align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~ 100000 0.7
 execute unless block ~ ~ ~ command_block unless block ~ ~ ~ chain_command_block align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,RequiredPlayerRange:0s,SpawnData:{id:"minecraft:lightning_bolt"},Delay:100s,SpawnPotentials:[{Entity:{id:"minecraft:lightning_bolt"},Weight:1}]}
 execute unless block ~ ~ ~ command_block unless block ~ ~ ~ chain_command_block align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~-1 ~ air if block ~ ~ ~ spawner if block ~ ~1 ~ air run setblock ~ ~-1 ~ minecraft:repeating_command_block[facing=up]{Command:"function glarth:util/lightning",auto:1b}
-execute unless block ~ ~ ~ command_block unless block ~ ~ ~ chain_command_block align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~-1 ~ repeating_command_block if block ~ ~ ~ spawner if block ~ ~1 ~ air run summon falling_block ~ ~0.5 ~ {Motion:[0.0,0.2,0.0],BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:"function glarth:util/lightning",auto:1b},Time:1}
+execute unless block ~ ~ ~ command_block unless block ~ ~ ~ chain_command_block align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~-1 ~ repeating_command_block if block ~ ~ ~ spawner if block ~ ~1 ~ air run summon falling_block ~ ~0.5 ~ {Motion:[0.0d,0.2d,0.0d],BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:"function glarth:util/lightning",auto:1b},Time:1}
 
 # Reset Part 2
 fill ~ ~-2 ~ ~ ~ ~ air replace chain_command_block

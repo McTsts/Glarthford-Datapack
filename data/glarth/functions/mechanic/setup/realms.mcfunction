@@ -57,7 +57,7 @@ execute if score realms Stats matches 1 run setblock 137 26 -162 minecraft:air
 execute if score realms Stats matches 1 run setblock 137 26 -157 minecraft:air
 
 # Censor Butcher Model
-execute if score realms Stats matches 1 run item replace entity @e[tag=butcher] armor.head with diamond_hoe{CustomModelData:506}
+execute if score realms Stats matches 1 run item replace entity @e[tag=butcher] armor.head with minecraft:diamond_hoe[custom_model_data=506]
 
 # Ts Skull 
 execute if score realms Stats matches 0 run setblock 77 23 -253 minecraft:skeleton_skull[rotation=15]{}

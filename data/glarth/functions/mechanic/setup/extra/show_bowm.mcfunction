@@ -5,4 +5,4 @@ setblock 21 29 -192 minecraft:white_wool
 setblock 23 29 -192 white_wool
 setblock 21 29 -193 white_wool
 setblock 23 28 -192 minecraft:dark_oak_fence
-summon armor_stand 21.0 26 -191.0 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:40,Unbreakable:1}}],Tags:["char","bowm","tbcLoc041","char_look"],Rotation:[180f,0f],CustomName:'{"translate":"bowm","color":"green"}',CustomNameVisible:1}
+summon armor_stand 21.0 26 -191.0 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":40,"minecraft:unbreakable":{}}}],Tags:["char","bowm","tbcLoc041","char_look"],Rotation:[180.0f,0.0f],CustomName:'{"translate":"bowm","color":"green"}',CustomNameVisible:1}

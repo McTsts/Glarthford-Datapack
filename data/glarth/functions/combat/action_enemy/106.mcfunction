@@ -28,25 +28,25 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run playsound minecraft:entity.generic.explode hostile @a 419 53 -56 1 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run particle minecraft:explosion 419 53 -56 1 1 1 0 10
 # Flying Blocks
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run summon minecraft:falling_block 419 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0,0.8,0.0]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run summon minecraft:falling_block 419 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0d,0.8d,0.0d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run setblock 419 53 -56 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run summon minecraft:falling_block 419 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0,0.8,0.0]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run summon minecraft:falling_block 419 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0d,0.8d,0.0d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 70 run setblock 419 53 -56 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run summon minecraft:falling_block 420 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1,0.7,0.0]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run summon minecraft:falling_block 420 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1d,0.7d,0.0d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run setblock 420 53 -56 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run summon minecraft:falling_block 418 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1,0.7,0.0]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run summon minecraft:falling_block 418 53 -56 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1d,0.7d,0.0d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run setblock 418 53 -56 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run summon minecraft:falling_block 419 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0,0.7,0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run summon minecraft:falling_block 419 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0d,0.7d,0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 72 run setblock 419 53 -57 air 
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run summon minecraft:falling_block 419 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0,0.7,-0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run summon minecraft:falling_block 419 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.0d,0.7d,-0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 71 run setblock 419 53 -55 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run summon minecraft:falling_block 420 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1,0.7,-0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run summon minecraft:falling_block 420 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1d,0.7d,-0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run setblock 420 53 -55 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run summon minecraft:falling_block 418 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1,0.7,0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run summon minecraft:falling_block 418 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1d,0.7d,0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 73 run setblock 418 53 -57 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run summon minecraft:falling_block 418 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1,0.7,-0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run summon minecraft:falling_block 418 53 -55 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[0.1d,0.7d,-0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run setblock 418 53 -55 air
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run summon minecraft:falling_block 420 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1,0.7,0.1]}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run summon minecraft:falling_block 420 53 -57 {Tags:["tbcKillBlock"],BlockState:{Name:"blackstone"},Time:0,Motion:[-0.1d,0.7d,0.1d]}
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 74 run setblock 420 53 -57 air
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 85 run kill @e[tag=tbcKillBlock]
 # Falling Blocks

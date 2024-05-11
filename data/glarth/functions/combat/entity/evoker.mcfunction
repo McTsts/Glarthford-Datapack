@@ -3,7 +3,7 @@ function glarth:combat/entity/extends/enemy
 function glarth:combat/entity/implements/mini_boss
 function glarth:combat/entity/implements/type/earth
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.evoker.evoker","color":"gold"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:39}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.evoker.evoker\",\"color\":\"gold\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.evoker.evoker","color":"gold"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":39}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.evoker.evoker","color":"gold"}'}
 
 scoreboard players set @s attack_016 1
 scoreboard players set @s attack_017 1

@@ -1,4 +1,4 @@
-execute if score @s tbcAttackStage matches 0 run data merge entity @e[tag=tbcSelector,limit=1] {CustomName:"\"\""}
+execute if score @s tbcAttackStage matches 0 run data merge entity @e[tag=tbcSelector,limit=1] {CustomName:'""'}
 execute if score @s tbcAttackStage matches 0 as @e[tag=tbcSelPlayerAS] at @s facing entity @e[tag=tbcMarkerMiddle] feet rotated ~ 0 run tp @s ^ ^ ^0.35 ~ ~
 execute if score @s tbcAttackStage matches 0 at @e[tag=tbcSelPlayerAS] if entity @e[tag=tbcMarkerMiddle,distance=..0.3] run function glarth:combat/action/util/next_stage
 

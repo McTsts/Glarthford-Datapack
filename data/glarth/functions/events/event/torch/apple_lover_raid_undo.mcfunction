@@ -1,4 +1,4 @@
-item replace entity @e[tag=apple] armor.head with diamond_hoe{Damage:13}
+item replace entity @e[tag=apple] armor.head with minecraft:diamond_hoe[damage=13]
 data modify entity @e[tag=apple,limit=1] ArmorItems[0] set from entity @e[tag=apple,limit=1] ArmorItems[3]
 tag @e[tag=apple] remove charTorch
 setblock 11 27 -204 minecraft:air

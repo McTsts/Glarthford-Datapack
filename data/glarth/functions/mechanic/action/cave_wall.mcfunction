@@ -9,9 +9,9 @@ tp @s[scores={action=31..42}] ~0.1 ~ ~-0.04 ~4 ~
 tp @s[scores={action=43..50}] ~0.1 ~ ~ ~0.25 ~
 execute as @s[scores={action=55..55}] run fill 68 28 -156 68 29 -155 air destroy
 execute as @s[scores={action=55..55}] run fill 68 28 -157 68 26 -156 air destroy
-execute as @s[scores={action=65..65}] run summon armor_stand ~ ~1.4 ~ {Tags:["char_msg"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:"{\"text\":\"???\",\"color\":\"gray\"}",NoGravity:1,Team:gray}
+execute as @s[scores={action=65..65}] run summon armor_stand ~ ~1.4 ~ {Tags:["char_msg"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:'{"text":"???","color":"gray"}',NoGravity:1,Team:"gray"}
 tp @s[scores={action=85..105}] ~0.1 ~ ~ ~ ~
-execute as @s[scores={action=105..105}] run item replace entity @e[tag=archaeologist] armor.head with diamond_hoe{Damage:14}
-execute as @s[scores={action=105..105}] run give @p[gamemode=adventure] diamond_pickaxe{CanDestroy:["lapis_block"],HideFlags:55} 1
+execute as @s[scores={action=105..105}] run item replace entity @e[tag=archaeologist] armor.head with minecraft:diamond_hoe[damage=14]
+execute as @s[scores={action=105..105}] run give @p[gamemode=adventure] minecraft:diamond_pickaxe[can_break={blocks:"lapis_block"},hide_additional_tooltip={}] 1
 tag @s[scores={action=105..105}] remove cave_wall
 scoreboard players set @s[scores={action=105..105}] action 0

@@ -1,5 +1,5 @@
  # Update Archaeologist
-item replace entity @e[tag=archaeologist] armor.head with diamond_hoe{Damage:14}
+item replace entity @e[tag=archaeologist] armor.head with minecraft:diamond_hoe[damage=14]
 # End Setup
 summon area_effect_cloud 7 30 -196 {Radius:0.0f,Duration:2147483647,Tags:["endSetup"],CustomName:'"End Setup"',CustomNameVisible:0}
 function glarth:mechanic/setup/extra/show_end
@@ -18,15 +18,15 @@ fill 5 27 -271 5 26 -271 air replace minecraft:barrier
 # gary
 scoreboard players set garyMode Stats 0
 execute if score forceGary Stats matches 1 run tag @a[gamemode=adventure] add doneGarySapphire
-execute unless entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 30 27 -137 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs"],Rotation:[-45f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}
+execute unless entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 30 27 -137 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":348,"minecraft:unbreakable":{}}}],Tags:["char","gibbs"],Rotation:[-45.0f,0.0f],CustomName:'{"translate":"gibbs","color":"gray"}',CustomNameVisible:1}
 execute unless entity @a[gamemode=adventure,tag=doneGarySapphire] run function glarth:mechanic/setup/extra/empty_mines
 
-execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 171 26 -156 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:348,Unbreakable:1}}],Tags:["char","gibbs","f"],Rotation:[120f,0f],CustomName:"{\"translate\":\"gibbs\",\"color\":\"gray\"}",CustomNameVisible:1}
+execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 171 26 -156 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":348,"minecraft:unbreakable":{}}}],Tags:["char","gibbs","f"],Rotation:[120.0f,0.0f],CustomName:'{"translate":"gibbs","color":"gray"}',CustomNameVisible:1}
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run tag @e[tag=mctsts] add gary
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run tag @e[tag=adri] add gary
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run tag @e[tag=suso] add gary
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run tag @e[tag=blacksmith] add gary
-execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 181.0 21.00 -159.0 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:70,Unbreakable:1}}],Tags:["char","roberto"],Rotation:[70f,0f],CustomName:"{\"translate\":\"roberto2\",\"color\":\"#282828\"}",CustomNameVisible:1}
+execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run summon armor_stand 181.0 21.00 -159.0 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":70,"minecraft:unbreakable":{}}}],Tags:["char","roberto"],Rotation:[70.0f,0.0f],CustomName:'{"translate":"roberto2","color":"#282828"}',CustomNameVisible:1}
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run function glarth:mechanic/setup/extra/observatory
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run function glarth:mechanic/setup/extra/jerozgen
 execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run function glarth:mechanic/setup/extra/gary_mines
@@ -35,21 +35,21 @@ execute if entity @a[gamemode=adventure,tag=doneGarySapphire] run scoreboard pla
 execute if score forceGary Stats matches 1 run scoreboard players set garyMode Stats 2
 
  # Snowflakes
-summon minecraft:armor_stand 3 26 -280 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 6 26 -276 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 7 26 -283 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 5 28 -324 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
- summon minecraft:armor_stand -4 28 -321 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 3 26 -280 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 6 26 -276 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 7 26 -283 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 5 28 -324 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
+ summon minecraft:armor_stand -4 28 -321 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":165}}],Marker:1,Invisible:1,NoGravity:1,Tags:["asLoader"]}
  # Extra Characters
- summon armor_stand -35 33 -168 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:34,Unbreakable:1}}],Tags:["char","assassin"],Rotation:[180f,0f],CustomName:"{\"translate\":\"assassin\",\"color\":\"#282828\"}",CustomNameVisible:1}
-summon armor_stand -11.0 26 -202 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:73,Unbreakable:1}}],Tags:["char","uncle"],Rotation:[180f,0f],CustomName:"{\"translate\":\"uncle\",\"color\":\"gray\"}",CustomNameVisible:1}
-summon armor_stand 2 26 -284 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:31,Unbreakable:1}}],Tags:["char","enderman","cnoc"],Rotation:[-50f,0f],CustomName:"{\"translate\":\"enderman\",\"color\":\"dark_purple\"}",CustomNameVisible:1}
- summon armor_stand -16 31 -277 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:145,Unbreakable:1}}],Tags:["char","stray","char_look","tbcLoc053"],Rotation:[-160f,0f],CustomName:"{\"translate\":\"stray\",\"color\":\"aqua\"}",CustomNameVisible:1}
- summon armor_stand 15 28 -321 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:145,Unbreakable:1}}],Tags:["char","stray","char_look","tbcLoc053"],Rotation:[90f,0f],CustomName:"{\"translate\":\"stray\",\"color\":\"aqua\"}",CustomNameVisible:1}
- summon armor_stand 0 26 -173 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:240,Unbreakable:1}}],Tags:["char","akid"],Rotation:[-90f,0f],CustomName:"{\"translate\":\"akid\",\"color\":\"red\"}",CustomNameVisible:1}
- summon armor_stand 23.5 26.25 -290.5 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:183,Unbreakable:1}}],Tags:["char","char_look","snowman"],Rotation:[90f,0f],CustomName:"{\"translate\":\"snowman\",\"color\":\"white\"}",CustomNameVisible:1}
-summon armor_stand -34 26 -170 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:74,Unbreakable:1}}],Tags:["char","vampire"],Rotation:[80f,0f],CustomName:"{\"translate\":\"vampire\",\"color\":\"dark_red\"}",CustomNameVisible:1}
-summon armor_stand -37 28 -259 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:228,Unbreakable:1}}],Tags:["char","trader"],Rotation:[140f,0f],CustomName:"{\"translate\":\"trader\",\"color\":\"blue\"}",CustomNameVisible:1}
+ summon armor_stand -35 33 -168 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":34,"minecraft:unbreakable":{}}}],Tags:["char","assassin"],Rotation:[180.0f,0.0f],CustomName:'{"translate":"assassin","color":"#282828"}',CustomNameVisible:1}
+summon armor_stand -11.0 26 -202 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":73,"minecraft:unbreakable":{}}}],Tags:["char","uncle"],Rotation:[180.0f,0.0f],CustomName:'{"translate":"uncle","color":"gray"}',CustomNameVisible:1}
+summon armor_stand 2 26 -284 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":31,"minecraft:unbreakable":{}}}],Tags:["char","enderman","cnoc"],Rotation:[-50.0f,0.0f],CustomName:'{"translate":"enderman","color":"dark_purple"}',CustomNameVisible:1}
+ summon armor_stand -16 31 -277 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":145,"minecraft:unbreakable":{}}}],Tags:["char","stray","char_look","tbcLoc053"],Rotation:[-160.0f,0.0f],CustomName:'{"translate":"stray","color":"aqua"}',CustomNameVisible:1}
+ summon armor_stand 15 28 -321 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":145,"minecraft:unbreakable":{}}}],Tags:["char","stray","char_look","tbcLoc053"],Rotation:[90.0f,0.0f],CustomName:'{"translate":"stray","color":"aqua"}',CustomNameVisible:1}
+ summon armor_stand 0 26 -173 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":240,"minecraft:unbreakable":{}}}],Tags:["char","akid"],Rotation:[-90.0f,0.0f],CustomName:'{"translate":"akid","color":"red"}',CustomNameVisible:1}
+ summon armor_stand 23.5 26.25 -290.5 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":183,"minecraft:unbreakable":{}}}],Tags:["char","char_look","snowman"],Rotation:[90.0f,0.0f],CustomName:'{"translate":"snowman","color":"white"}',CustomNameVisible:1}
+summon armor_stand -34 26 -170 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":74,"minecraft:unbreakable":{}}}],Tags:["char","vampire"],Rotation:[80.0f,0.0f],CustomName:'{"translate":"vampire","color":"dark_red"}',CustomNameVisible:1}
+summon armor_stand -37 28 -259 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":228,"minecraft:unbreakable":{}}}],Tags:["char","trader"],Rotation:[140.0f,0.0f],CustomName:'{"translate":"trader","color":"blue"}',CustomNameVisible:1}
 function glarth:mechanic/setup/extra/monk
 
 setblock -34 33 -169 campfire
@@ -58,15 +58,15 @@ setblock -34 32 -169 minecraft:hay_block
 fill 3 27 -335 1 26 -337 air destroy
 
 # Snow Foxes
-summon fox -2 27 -317 {Type:"snow",HandItems:[{id:"golden_apple",Count:1}]}
-summon fox 13 28 -318 {Type:"snow",HandItems:[{id:"snowball",Count:1}]}
-summon fox -13 27 -299 {Type:"snow",HandItems:[{id:"gold_ingot",Count:1}]}
+summon fox -2 27 -317 {Type:"snow",HandItems:[{id:"golden_apple",count:1}]}
+summon fox 13 28 -318 {Type:"snow",HandItems:[{id:"snowball",count:1}]}
+summon fox -13 27 -299 {Type:"snow",HandItems:[{id:"gold_ingot",count:1}]}
 
 # End Stone
-summon minecraft:armor_stand 4 27 -328 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:181}}],Fire:1000s}
-summon minecraft:armor_stand 4 27 -329 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:181}}],Fire:1000s}
-summon minecraft:armor_stand 2 27 -330 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:181}}],Fire:1000s}
-summon minecraft:armor_stand 2 27 -331 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:181}}],Fire:1000s}
+summon minecraft:armor_stand 4 27 -328 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":181}}],Fire:1000s}
+summon minecraft:armor_stand 4 27 -329 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":181}}],Fire:1000s}
+summon minecraft:armor_stand 2 27 -330 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":181}}],Fire:1000s}
+summon minecraft:armor_stand 2 27 -331 {Marker:1,Invisible:1,Tags:["endStone","fire","asLoader"],Invulnerable:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":181}}],Fire:1000s}
 		
 		
 # initialite posters

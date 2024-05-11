@@ -11,7 +11,7 @@ execute if score @s tbcAttackStage matches 1 run tag @e[tag=tbcStrIronGolem,limi
 execute if score @s tbcAttackStage matches 1 run tag @e[tag=tbcStrIronGolem,limit=1] add death_016
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcStrIronGolem,limit=1] tbcMaxHealth 90
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcStrIronGolem,limit=1] tbcHealth 90
-execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrIronGolem,limit=1] {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.golem.iron","color":"white"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:376}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.golem.iron\",\"color\":\"white\"}"}
+execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrIronGolem,limit=1] {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.golem.iron","color":"white"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":376}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.golem.iron","color":"white"}'}
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1

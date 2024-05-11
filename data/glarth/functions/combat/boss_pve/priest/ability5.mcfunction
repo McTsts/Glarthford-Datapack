@@ -1,2 +1,2 @@
-execute as @e[tag=ender_boss] at @s run summon area_effect_cloud ~ ~ ~ {Particle:dragon_breath,ReapplicationDelay:20,Radius:3f,RadiusPerTick:-0.1f,RadiusOnUse:-0.3f,Duration:100,DurationOnUse:-10f,Effects:[{Id:20,Amplifier:0,Duration:140,ShowParticles:0b}]}
+execute as @e[tag=ender_boss] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"dragon_breath",ReapplicationDelay:20,Radius:3.0f,RadiusPerTick:-0.1f,RadiusOnUse:-0.3f,Duration:100,DurationOnUse:-10.0f,Effects:[{Id:20,Amplifier:0,Duration:140,ShowParticles:0b}]}
 execute as @e[tag=ender_boss] at @s run function glarth:dialogue/ender_priest/lines/attack5

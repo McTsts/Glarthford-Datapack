@@ -17,7 +17,7 @@ execute if score ghastBallSpeed tbcStats matches 12 as @e[tag=tbcArrowP,tag=!tbc
 execute if score ghastBallSpeed tbcStats matches 13 as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s run tp @s ^ ^ ^0.80 ~ ~
 execute if score ghastBallSpeed tbcStats matches 14 as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s run tp @s ^ ^ ^0.85 ~ ~
 execute if score ghastBallSpeed tbcStats matches 15.. as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s run tp @s ^ ^ ^0.90 ~ ~
-execute as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s if entity @e[tag=tbcTargetAS,distance=..4.0,type=armor_stand] as @e[tag=tbcTarget,limit=1] unless score @s blocking matches 1 unless score @s blocked matches 1 run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with diamond_hoe{CustomModelData:264}
+execute as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s if entity @e[tag=tbcTargetAS,distance=..4.0,type=armor_stand] as @e[tag=tbcTarget,limit=1] unless score @s blocking matches 1 unless score @s blocked matches 1 run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with minecraft:diamond_hoe[custom_model_data=264]
 execute as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s if entity @e[tag=tbcTargetAS,distance=..4.0,type=armor_stand] as @e[tag=tbcTarget,limit=1] unless score @s blocking matches 1 unless score @s blocked matches 1 run function glarth:combat/action/blocking_start
 execute as @e[tag=tbcArrowP,tag=!tbcFGRev,type=armor_stand] at @s positioned ^ ^ ^-0.8 if entity @e[tag=tbcTargetAS,distance=..0.4,type=armor_stand] run tag @s add func
 
@@ -66,7 +66,7 @@ execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s run scoreboard pla
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s run scoreboard players operation r Random > 1 Const
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s run function glarth:util/rand_tbc
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score ghastBallMax tbcStats matches ..0 run scoreboard players set n Random 1
-execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score n Random matches 2.. run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with diamond_hoe{CustomModelData:362}
+execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score n Random matches 2.. run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with minecraft:diamond_hoe[custom_model_data=362]
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score n Random matches 2.. run scoreboard players remove ghastBallBlock tbcStats 1
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score n Random matches 2.. run scoreboard players add ghastBallSpeed tbcStats 1
 execute as @e[tag=tbcArrowP,tag=func2,type=armor_stand] at @s if score n Random matches 2.. as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init

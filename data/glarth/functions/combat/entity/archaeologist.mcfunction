@@ -1,6 +1,6 @@
 function glarth:combat/entity/extends/ally
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.ally.archaeologist","color":"gray"}',NoColor:'{"translate":"tbc.ally.archaeologist"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:14}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.ally.archaeologist\",\"color\":\"gray\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.ally.archaeologist","color":"gray"}',NoColor:'{"translate":"tbc.ally.archaeologist"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":14}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.ally.archaeologist","color":"gray"}'}
 scoreboard players set @s attack_006 1
 scoreboard players set @s attack_010 3
 scoreboard players set @s attack_011 2

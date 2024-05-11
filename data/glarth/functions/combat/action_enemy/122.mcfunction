@@ -8,14 +8,14 @@ execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 1 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,-45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow1"],Rotation:[-180f,0f]}
-execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 16 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,-45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow2"],Rotation:[-180f,0f]}
-execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 31 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,-45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow3"],Rotation:[-180f,0f]}
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 1 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,-45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow1"],Rotation:[-180.0f,0.0f]}
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 16 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,-45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow2"],Rotation:[-180.0f,0.0f]}
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 31 run summon minecraft:armor_stand ^-0.65 ^0.2 ^ {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,-45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrow3"],Rotation:[-180.0f,0.0f]}
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 1..90 as @e[tag=tbcArrowP] at @s run tp @s ~ ~0.3 ~
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 91 as @e[tag=tbcArrow1] at @e[tag=tbcTargetAS] positioned ~ ~18.0 ~ run tp @s ^0.35 ^ ^-0.15
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 91 as @e[tag=tbcArrow2] at @e[tag=tbcTargetAS] positioned ~ ~22.5 ~ run tp @s ^0.35 ^ ^-0.15
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 91 as @e[tag=tbcArrow3] at @e[tag=tbcTargetAS] positioned ~ ~27.0 ~ run tp @s ^0.35 ^ ^-0.15
-execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 91 as @e[tag=tbcArrowP] run data merge entity @s {Pose:{Head:[90f,135f,-90f]}}
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 91 as @e[tag=tbcArrowP] run data merge entity @s {Pose:{Head:[90.0f,135.0f,-90.0f]}}
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 92 run function glarth:combat/action_enemy/util/next_stage 
 
 execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAttackTimer 1

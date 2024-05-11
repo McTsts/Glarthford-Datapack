@@ -5,7 +5,7 @@ function glarth:combat/entity/implements/very_tall
 function glarth:combat/entity/implements/hide_selection
 function glarth:combat/entity/implements/type/fire
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.ghast","color":"white"}'}},{},{},{}],CustomNameVisible:0,CustomName:"{\"translate\":\"tbc.enemy.ghast\",\"color\":\"white\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.ghast","color":"white"}'}}},{},{},{}],CustomNameVisible:0,CustomName:'{"translate":"tbc.enemy.ghast","color":"white"}'}
 scoreboard players set @s attack_116 1001
 scoreboard players set @s attack_117 1
 scoreboard players set @s attack_118 1

@@ -42,9 +42,9 @@ execute at @e[tag=charQB,tag=lobby] run function glarth:mechanic/make_char
 execute at @e[tag=selNameAll,tag=lobby] run function glarth:mechanic/lobby/selection/make_name
 
 # Update Spouse
-execute if score @p[scores={lobbySelection=1}] charSpouse matches 1 run data merge entity @e[tag=charQS,type=armor_stand,limit=1] {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:159}}]}
+execute if score @p[scores={lobbySelection=1}] charSpouse matches 1 run data merge entity @e[tag=charQS,type=armor_stand,limit=1] {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":159}}]}
 execute if score @p[scores={lobbySelection=1}] charSpouse matches 1 run data merge entity @e[tag=charQSname,type=armor_stand,limit=1] {CustomName:'{"translate":"wife","color":"light_purple","font":"custom:small"}'}
-execute if score @p[scores={lobbySelection=1}] charSpouse matches 2 run data merge entity @e[tag=charQS,type=armor_stand,limit=1] {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:158}}]}
+execute if score @p[scores={lobbySelection=1}] charSpouse matches 2 run data merge entity @e[tag=charQS,type=armor_stand,limit=1] {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":158}}]}
 execute if score @p[scores={lobbySelection=1}] charSpouse matches 2 run data merge entity @e[tag=charQSname,type=armor_stand,limit=1] {CustomName:'{"translate":"husband","color":"aqua","font":"custom:small"}'}
 
 # gender

@@ -2,8 +2,8 @@
 execute as @e[tag=tbcEnemy,tag=!tbcBoss,tag=!tbcStrIronGolem,tag=!tbcIronGolem] run function glarth:combat/kill_enemy
 
 # Size
-execute if score @s tbcTOU matches 2 run item replace entity @s armor.head with diamond_hoe{CustomModelData:384}
-execute if score @s tbcTOU matches 1 run item replace entity @s armor.head with diamond_hoe{CustomModelData:287}
+execute if score @s tbcTOU matches 2 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=384]
+execute if score @s tbcTOU matches 1 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=287]
 
 # New Default Attack Weights
 function glarth:combat/remove_all

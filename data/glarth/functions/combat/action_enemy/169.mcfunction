@@ -15,7 +15,7 @@ execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 42 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1.33 0.8
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 45 at @e[tag=tbcTargetAS] facing entity @e[tag=tbcMarkerMiddle,limit=1] feet rotated ~ 0 positioned ^ ^5 ^10 rotated ~180 0 facing entity @e[tag=tbcTargetAS] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 45 as @e[tag=tbcTargetAS] at @s facing entity @e[tag=tbcTurn] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
-execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 45 run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
+execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 45 run data merge entity @s {Pose:{Head:[70.0f,0.0f,0.0f]}}
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 45 as @e[tag=tbcTargetAS,type=armor_stand] at @s facing entity @e[tag=tbcMarkerMiddle,limit=1] feet rotated ~ 0 positioned ^ ^ ^0.5 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["tbcTempMarker","tbc"]}
 execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 46 run function glarth:combat/action_enemy/util/next_stage
 
@@ -29,7 +29,7 @@ execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 16 if score @e[tag=tbcTarget,limit=1] blocked matches 0 run particle minecraft:block stone ^ ^1 ^1 0 0 0 0 100
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 16 run scoreboard players operation damage tbcStats = @s tbcStrength
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 16 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
-execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 20 run data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 20 run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 20 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 positioned ^ ^ ^0.75 run tp @s ~ ~ ~
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 21..35 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.1
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 35 run function glarth:combat/action_enemy/util/next_stage
@@ -46,103 +46,103 @@ execute if score @s tbcAttackStage matches 5 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAttackTimer 1
 # left front
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run data merge entity @s {NoGravity:1}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -82.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -82.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -84.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -83.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.6 -82.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -84.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -83.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -82.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 387.6 35.4 -82.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
 # left middle
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -82.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -82.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90f,0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -82.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -82.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -81.1 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.9 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.7 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.5 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.6 -80.3 {Tags:["tbc","tbcSpike","tbcAdjLocA1"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -82.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -81.0 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.8 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.6 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.4 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 388.6 35.4 -80.2 {Tags:["tbc","tbcSpike","tbcAdjLocA2"],Rotation:[90.0f,0.0f]}
 # right front
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -82.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -82.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -84.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -83.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.6 -82.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -84.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -83.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -82.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 377.4 35.4 -82.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
 # right middle
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -82.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -82.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90f,0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -82.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -82.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -81.1 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.9 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.7 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.5 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.6 -80.3 {Tags:["tbc","tbcSpike","tbcAdjLocA3"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -82.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -81.0 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.8 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.6 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.4 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 run summon minecraft:armor_stand 376.4 35.4 -80.2 {Tags:["tbc","tbcSpike","tbcAdjLocA4"],Rotation:[-90.0f,0.0f]}
 # other stuff
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01 as @e[type=armor_stand,tag=tbcSpike] run data merge entity @s {NoGravity:1,Invisible:1}
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 run tag @e[type=armor_stand,tag=tbcSpike,sort=random,limit=2,tag=!tbcSpikeS] add tbcSpikeS
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 as @e[type=armor_stand,tag=tbcSpikeS,tag=!tbcSpikeS2] at @s run particle minecraft:end_rod ~ ~1.5 ~ 0.1 0.1 0.1 0 2
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 as @e[type=armor_stand,tag=tbcSpikeS,tag=!tbcSpikeS2] at @s run playsound minecraft:entity.item.pickup block @a ~ ~1.5 ~ 0.5 2
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 as @e[type=armor_stand,tag=tbcSpikeS,tag=!tbcSpikeS2] run data merge entity @s {ArmorItems:[{},{},{},{id:"end_rod",Count:1}]}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 as @e[type=armor_stand,tag=tbcSpikeS,tag=!tbcSpikeS2] run data merge entity @s {ArmorItems:[{},{},{},{id:"end_rod",count:1}]}
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 01..44 as @e[type=armor_stand,tag=tbcSpikeS] run tag @s add tbcSpikeS2
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 42 as @e[tag=tbcMarkerMiddle] at @s run playsound minecraft:block.beacon.power_select hostile @a ~ ~ ~ 1 0.5
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 42 as @e[tag=tbcMarkerMiddle] at @s run particle minecraft:portal ~ ~ ~ 3 1 3 0.5 200

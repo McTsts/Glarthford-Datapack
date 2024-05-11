@@ -14,16 +14,16 @@ execute unless score lowGraphics Stats matches 1 run scoreboard players set @a c
 execute unless score lowGraphics Stats matches 1 as @a[gamemode=adventure] at @s positioned ~ ~1.8 ~ run function glarth:mechanic/chest
 
 # Bow
-execute as @a[nbt={Inventory:[{id:"minecraft:brown_dye"}]}] run give @s bow{bow:"default"}
+execute as @a[nbt={Inventory:[{id:"minecraft:brown_dye"}]}] run give @s minecraft:bow[custom_data={bow:"default"}]
 execute as @a[nbt={Inventory:[{id:"minecraft:brown_dye"}]}] run clear @s brown_dye
 
-execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run give @s minecraft:shears{CanDestroy:["red_tulip","orange_tulip","pink_tulip"],HideFlags:127} 1
+execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run give @s minecraft:shears[can_break={predicates:[{blocks:["red_tulip","orange_tulip","pink_tulip"]}],show_in_tooltip:0b},hide_additional_tooltip={}] 1
 execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run clear @s honeycomb
 
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run give @s bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run clear @s water_bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run give @s bucket
-execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run give @s[tag=!gotMilk] minecraft:gold_nugget{CustomModelData: 40, display: {Name: '{"translate":"tbc.attack.potion.milk","italic":false}'}, custom: "milk_bottle"}
+execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run give @s[tag=!gotMilk] minecraft:gold_nugget[custom_model_data=40,custom_name='{"translate":"tbc.attack.potion.milk","italic":false}',custom_data={custom:"milk_bottle"}]
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run tag @s add gotMilk
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run clear @s milk_bucket
 

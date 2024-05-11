@@ -8,7 +8,7 @@ setblock -44 52 -120 minecraft:barrier
 
 function glarth:mechanic/seasons/create_borders
 scoreboard players set stage winter 0
-summon minecraft:area_effect_cloud 59 0 -111 {Radius:0.0f,Duration:2147483647,Tags:["winter","winterStart"],Rotation:[180f,0f]}
+summon minecraft:area_effect_cloud 59 0 -111 {Radius:0.0f,Duration:2147483647,Tags:["winter","winterStart"],Rotation:[180.0f,0.0f]}
 
 
 execute as @e[type=area_effect_cloud,tag=winterCorner] store result score @s winterX run data get entity @s Pos[0]
@@ -42,7 +42,7 @@ execute store result entity @e[type=area_effect_cloud,tag=X-Z+,tag=winter,limit=
 execute store result entity @e[type=area_effect_cloud,tag=X-Z-,tag=winter,limit=1] Pos[0] double 1 run scoreboard players get min winterX
 execute store result entity @e[type=area_effect_cloud,tag=X-Z-,tag=winter,limit=1] Pos[2] double 1 run scoreboard players get min winterZ
 
-execute at @e[type=area_effect_cloud,tag=winter,tag=X+Z+,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["winter","winterMain"],Rotation:[180f,0f],UUID:[I;0,0,0,53454]}
+execute at @e[type=area_effect_cloud,tag=winter,tag=X+Z+,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["winter","winterMain"],Rotation:[180.0f,0.0f],UUID:[I;0,0,0,53454]}
 
 scoreboard players set total= load_bar.main 64167
 tag @a add show_loading_bar

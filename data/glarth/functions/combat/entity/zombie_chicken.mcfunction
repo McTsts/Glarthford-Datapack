@@ -7,7 +7,7 @@ function glarth:combat/entity/implements/type/air
 #Overwrite
 scoreboard players set @s attack_111 1
 scoreboard players set @s attack_112 1
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.zombie.chicken","color":"dark_green"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:344}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.zombie.chicken\",\"color\":\"dark_green\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.zombie.chicken","color":"dark_green"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":344}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.zombie.chicken","color":"dark_green"}'}
 
 
 #Spawn

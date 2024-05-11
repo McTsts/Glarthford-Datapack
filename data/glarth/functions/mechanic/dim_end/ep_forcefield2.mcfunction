@@ -1,6 +1,6 @@
 kill @e[tag=endFF]
 setblock -48 90 -645 minecraft:air
-data merge entity @e[tag=ender_priest,limit=1] {ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:394}}]}
+data merge entity @e[tag=ender_priest,limit=1] {ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":394}}]}
 schedule function glarth:dialogue/ender_priest/lines/lose3 100t
 
 scoreboard players set endStage Stats 1

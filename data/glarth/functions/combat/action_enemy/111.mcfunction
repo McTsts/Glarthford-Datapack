@@ -1,4 +1,4 @@
-execute if score @s tbcAttackStage matches 0 run item replace entity @s armor.head with diamond_hoe{CustomModelData:345}
+execute if score @s tbcAttackStage matches 0 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=345]
 execute if score @s tbcAttackStage matches 0 run playsound minecraft:entity.chicken.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage
 
@@ -22,5 +22,5 @@ execute if score @s tbcAttackStage matches 4 facing entity @e[tag=tbcMarkerMiddl
 execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 5 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.3 ~ ~
-execute if score @s tbcAttackStage matches 5 if entity @e[tag=tbcSelMarker,distance=..0.3] run item replace entity @s armor.head with diamond_hoe{CustomModelData:344}
+execute if score @s tbcAttackStage matches 5 if entity @e[tag=tbcSelMarker,distance=..0.3] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=344]
 execute if score @s tbcAttackStage matches 5 if entity @e[tag=tbcSelMarker,distance=..0.3] run function glarth:combat/action_enemy/util/done

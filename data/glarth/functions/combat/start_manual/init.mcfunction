@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["tbcLobby"],CustomName:"\"Main\"",CustomNameVisible:0}
+summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["tbcLobby"],CustomName:'"Main"',CustomNameVisible:0}
 function glarth:mechanic/setup/adjust_difficulty
 execute if score difficulty Stats matches 1 run function glarth:mechanic/lobby/boss/eq_easy
 execute if score difficulty Stats matches 2 run function glarth:mechanic/lobby/boss/eq_medium

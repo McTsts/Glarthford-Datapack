@@ -1,6 +1,6 @@
 tp @s[scores={action=0}] -66.5 27.0 -210.5 -90 0
-item replace entity @e[tag=graveyard,scores={action=0}] armor.head with diamond_hoe{Damage:16}
-item replace entity @e[tag=graveyard,scores={action=1}] armor.head with diamond_hoe{Damage:121}
+item replace entity @e[tag=graveyard,scores={action=0}] armor.head with minecraft:diamond_hoe[damage=16]
+item replace entity @e[tag=graveyard,scores={action=1}] armor.head with minecraft:diamond_hoe[damage=121]
 execute if entity @s[scores={action=1..100}] run function glarth:mechanic/action/walk_away/1
 execute if entity @s[scores={action=101..200}] run function glarth:mechanic/action/walk_away/2
 execute if entity @s[scores={action=201..300}] run function glarth:mechanic/action/walk_away/3

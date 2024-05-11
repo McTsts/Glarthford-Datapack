@@ -1,7 +1,7 @@
 tag @a remove holdsEye 
 tag @a[nbt={SelectedItem:{id:"minecraft:ender_eye"}}] add holdsEye 
 tag @a[nbt={SelectedItem:{id:"minecraft:ender_eye",tag:{CanPlaceOn:["end_portal_frame"]}}}] remove holdsEye 
-item replace entity @a[tag=holdsEye] weapon with minecraft:ender_eye{CanPlaceOn:["end_portal_frame"]} 1
+item replace entity @a[tag=holdsEye] weapon with minecraft:ender_eye[can_place_on={blocks:"end_portal_frame"}] 1
 
 execute if score endStarted Stats matches 1 run weather rain
 

@@ -3,7 +3,7 @@ function glarth:combat/entity/extends/zombie
 function glarth:combat/entity/implements/type/air
 function glarth:combat/entity/implements/perma_glow
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.zombie.ghost","color":"white"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:164}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.zombie.ghost\",\"color\":\"white\"}",Team:"aqua"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.zombie.ghost","color":"white"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":164}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.zombie.ghost","color":"white"}',Team:"aqua"}
 execute if score difficulty tbcStats matches 1..3 run scoreboard players operation @s tbcHealth /= 2 Const
 scoreboard players operation @s tbcDodge *= 7 Const
 scoreboard players set @s attack_010 1

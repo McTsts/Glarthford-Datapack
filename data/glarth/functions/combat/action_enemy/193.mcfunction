@@ -169,7 +169,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 # end
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 090 at @e[tag=tbcBoss] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.5 0.5 0.5 0.01 100
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 090 at @e[tag=tbcBoss] run particle explosion ~ ~0.5 ~ 0.5 0.5 0.5 0.01 10
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 090 run item replace entity @s armor.head with diamond_hoe{CustomModelData:469}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 090 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=469]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run scoreboard players set @s tbcAttack 110
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run scoreboard players set @a MusicSet 57
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 100 run scoreboard players set @s tbcAttackTimer 0

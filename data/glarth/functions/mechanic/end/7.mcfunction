@@ -5,7 +5,7 @@ execute if score timer end matches 1 run function glarth:mechanic/setup/quest/7
 execute if score timer end matches 1 run kill @e[tag=cedric]
 execute if score timer end matches 1 run scoreboard players set @a MusicSet 101
 execute if score timer end matches 1 run kill @e[tag=end_scene]
-execute if score timer end matches 1 run summon minecraft:armor_stand 101 27 -239 {DisabledSlots:4144959,Rotation:[-120f,0f],Passengers:[{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:1}}],Tags:["charQ","charQ1","end_scene"],Rotation:[-120f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ2","end_scene"],Rotation:[-120f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ3","end_scene"],Rotation:[-120f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ4","end_scene"],Rotation:[-120f,0f],Pose:{RightArm:[0.0f,0.0f,0.0f]}}],Tags:["charQB","end_scene"],CustomNameVisible:1}
+execute if score timer end matches 1 run summon minecraft:armor_stand 101 27 -239 {DisabledSlots:4144959,Rotation:[-120.0f,0.0f],Passengers:[{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:1}}],Tags:["charQ","charQ1","end_scene"],Rotation:[-120.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ2","end_scene"],Rotation:[-120.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ3","end_scene"],Rotation:[-120.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ4","end_scene"],Rotation:[-120.0f,0.0f],Pose:{RightArm:[0.0f,0.0f,0.0f]}}],Tags:["charQB","end_scene"],CustomNameVisible:1}
 execute if score timer end matches 1 run tag @r[scores={playerid=1..3},gamemode=adventure] add endTemp
 execute if score timer end matches 1 unless entity @a[tag=endTemp] run tag @r[gamemode=adventure] add endTemp
 execute if score timer end matches 1 as @a[tag=endTemp] run loot replace entity @e[type=armor_stand,tag=charQ4,tag=end_scene] armor.head loot glarth:custom/skull
@@ -19,7 +19,7 @@ execute if score timer end matches 1 run tag @a remove endTemp
 execute if score timer end matches 1 run gamemode spectator @a[gamemode=adventure]
 execute if score timer end matches 10 run effect clear @a blindness
 
-execute if score timer end matches 1 run summon area_effect_cloud 87 38 -230 {Rotation:[-100f,40f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 1 run summon area_effect_cloud 87 38 -230 {Rotation:[-100.0f,40.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 execute if score timer end matches 1..150 as @a[gamemode=spectator] run spectate @e[type=area_effect_cloud,tag=cutscenePov,x=87,y=38,z=-230,distance=..1,limit=1] @s
 
 execute if score timer end matches 1 run tag @e[tag=hzombie] add zombie_all

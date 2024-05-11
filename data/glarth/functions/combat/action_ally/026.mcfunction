@@ -3,7 +3,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 
 
 execute if score @s tbcAttackStage matches 1 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,distance=..0.3,type=area_effect_cloud] run summon wolf ~1.5 ~ ~ {NoAI:1,Rotation:[180f,0f],Tags:["tbcAdriDog","tbc"]}
+execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,distance=..0.3,type=area_effect_cloud] run summon wolf ~1.5 ~ ~ {NoAI:1,Rotation:[180.0f,0.0f],Tags:["tbcAdriDog","tbc"]}
 execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,distance=..0.3,type=area_effect_cloud] run function glarth:combat/action_ally/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 as @e[tag=tbcAdriDog] at @s facing entity @e[scores={tbcSel=1},type=armor_stand] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~

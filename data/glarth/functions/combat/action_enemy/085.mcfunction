@@ -1,5 +1,5 @@
 execute if score @s tbcAttackStage matches 0 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 0 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.necromancer.groundskeeper","color":"#8C5800"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:248}}]}
+execute if score @s tbcAttackStage matches 0 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.necromancer.groundskeeper","color":"#8C5800"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":248}}]}
 execute if score @s tbcAttackStage matches 0 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 facing entity @e[tag=tbcTargetAS,type=armor_stand] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
@@ -18,5 +18,5 @@ execute if score @s tbcAttackStage matches 3 facing entity @e[tag=tbcMarkerMiddl
 execute if score @s tbcAttackStage matches 3 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.2] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcSelMarker,distance=..0.2] run data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.necromancer.groundskeeper","color":"#8C5800"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:245}}]}
+execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcSelMarker,distance=..0.2] run data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.necromancer.groundskeeper","color":"#8C5800"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":245}}]}
 execute if score @s tbcAttackStage matches 4 if entity @e[tag=tbcSelMarker,distance=..0.2] run function glarth:combat/action_enemy/util/done

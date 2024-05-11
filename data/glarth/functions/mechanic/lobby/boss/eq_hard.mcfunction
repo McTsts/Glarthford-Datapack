@@ -6,12 +6,12 @@ item replace entity @a[scores={playerid=1..}] armor.feet with minecraft:leather_
 
 # Melee
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:iron_sword
-give @a[scores={playerid=1..}] minecraft:stone_sword{Damage:115}
+give @a[scores={playerid=1..}] minecraft:stone_sword[damage=115]
 give @a[scores={playerid=1..}] minecraft:wooden_sword
 give @a[scores={playerid=1..}] minecraft:wooden_sword
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:bow{bow:"default"}
+give @a[scores={playerid=1..}] minecraft:bow[custom_data={bow:"default"}]
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 8
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 20
 
@@ -29,7 +29,7 @@ execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] mag
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] apple 2
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion{custom:"fire_resistance"}
+give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}]
 
 # Pouch
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:pumpkin_pie 2

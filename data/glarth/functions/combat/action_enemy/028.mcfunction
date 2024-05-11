@@ -1,4 +1,4 @@
-execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2}] at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:42}
+execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2}] at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=42]
 execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2}] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 as @s[tag=!tbcReady] run function glarth:combat/action_enemy/util/ready

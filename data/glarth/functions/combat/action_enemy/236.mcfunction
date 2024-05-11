@@ -2,37 +2,37 @@
 execute if score @s tbcAttackStage matches 0..1 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 1 run tag @s add tbcNoAnim
 execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 1 run function glarth:mechanic/char/blink/end
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 01 run item replace entity @s armor.head with netherite_axe{CustomModelData:1}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 02 run item replace entity @s armor.head with netherite_axe{CustomModelData:2}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 03 run item replace entity @s armor.head with netherite_axe{CustomModelData:3}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 04 run item replace entity @s armor.head with netherite_axe{CustomModelData:4}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 05 run item replace entity @s armor.head with netherite_axe{CustomModelData:5}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 06 run item replace entity @s armor.head with netherite_axe{CustomModelData:6}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 07 run item replace entity @s armor.head with netherite_axe{CustomModelData:7}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 08 run item replace entity @s armor.head with netherite_axe{CustomModelData:8}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 09 run item replace entity @s armor.head with netherite_axe{CustomModelData:9}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with netherite_axe{CustomModelData:10}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with netherite_axe{CustomModelData:11}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with netherite_axe{CustomModelData:12}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with netherite_axe{CustomModelData:13}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with netherite_axe{CustomModelData:14}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with netherite_axe{CustomModelData:15}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with netherite_axe{CustomModelData:16}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with netherite_axe{CustomModelData:17}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with netherite_axe{CustomModelData:18}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with netherite_axe{CustomModelData:19}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with netherite_axe{CustomModelData:20}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with netherite_axe{CustomModelData:21}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with netherite_axe{CustomModelData:22}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with netherite_axe{CustomModelData:23}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with netherite_axe{CustomModelData:24}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with netherite_axe{CustomModelData:25}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with netherite_axe{CustomModelData:26}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with netherite_axe{CustomModelData:27}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with netherite_axe{CustomModelData:28}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with netherite_axe{CustomModelData:29}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with netherite_axe{CustomModelData:30}
-execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with netherite_axe{CustomModelData:31}
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 01 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=1]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 02 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=2]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 03 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=3]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 04 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=4]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 05 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=5]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 06 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=6]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 07 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=7]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 08 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=8]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 09 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=9]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=10]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=11]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=12]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=13]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=14]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=15]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=16]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=17]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=18]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=19]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=20]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=21]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=22]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=23]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=24]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=25]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=26]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=27]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=28]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=29]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=30]
+execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=31]
 execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 31 run scoreboard players operation @s tbcStrength *= 2 Const
 execute if score @s tbcAttackStage matches 0..1 if score @s tbcAttackTimer matches 31 run scoreboard players add @s tbcStrength 10
 execute if score @s tbcAttackStage matches 1 if score @s tbcAttackTimer matches 32.. run function glarth:combat/action_enemy/util/next_stage
@@ -46,8 +46,8 @@ execute if score @s tbcAttackStage matches 2 as @e[scores={tbcID=2}] at @s if en
 
 #3
 execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0,0.35,0.0],NoGravity:0}
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @e[scores={tbcID=2},limit=1] {Motion:[0.0,0.65,0.0],NoGravity:0}
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.35d,0.0d],NoGravity:0}
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @e[scores={tbcID=2},limit=1] {Motion:[0.0d,0.65d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcShockwave"],Particle:"minecraft:block minecraft:air",Effects:[]}
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 26 run scoreboard players set @s tbcAttackTimerX 0
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 18..26 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.15 ~ ~
@@ -86,38 +86,38 @@ execute if score @s tbcAttackStage matches 7..8 as @e[scores={tbcID=2}] at @s fa
 execute if score @s tbcAttackStage matches 7..8 as @e[scores={tbcID=2}] at @s if entity @e[scores={tbcIDM=2},distance=..0.2] run function glarth:combat/action_enemy/util/ready
 
 execute if score @s tbcAttackStage matches 7..8 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 01 run item replace entity @s armor.head with netherite_axe{CustomModelData:31}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 02 run item replace entity @s armor.head with netherite_axe{CustomModelData:30}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 03 run item replace entity @s armor.head with netherite_axe{CustomModelData:29}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 04 run item replace entity @s armor.head with netherite_axe{CustomModelData:28}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 05 run item replace entity @s armor.head with netherite_axe{CustomModelData:27}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 06 run item replace entity @s armor.head with netherite_axe{CustomModelData:26}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 07 run item replace entity @s armor.head with netherite_axe{CustomModelData:25}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 08 run item replace entity @s armor.head with netherite_axe{CustomModelData:24}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 09 run item replace entity @s armor.head with netherite_axe{CustomModelData:23}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with netherite_axe{CustomModelData:22}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with netherite_axe{CustomModelData:21}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with netherite_axe{CustomModelData:20}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with netherite_axe{CustomModelData:19}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with netherite_axe{CustomModelData:18}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with netherite_axe{CustomModelData:17}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with netherite_axe{CustomModelData:16}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with netherite_axe{CustomModelData:15}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with netherite_axe{CustomModelData:14}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with netherite_axe{CustomModelData:13}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with netherite_axe{CustomModelData:12}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with netherite_axe{CustomModelData:11}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with netherite_axe{CustomModelData:10}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with netherite_axe{CustomModelData:9}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with netherite_axe{CustomModelData:8}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with netherite_axe{CustomModelData:7}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with netherite_axe{CustomModelData:6}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with netherite_axe{CustomModelData:5}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with netherite_axe{CustomModelData:4}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with netherite_axe{CustomModelData:3}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with netherite_axe{CustomModelData:2}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with netherite_axe{CustomModelData:1}
-execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 32 run item replace entity @s armor.head with diamond_hoe{CustomModelData:524}
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 01 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=31]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 02 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=30]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 03 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=29]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 04 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=28]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 05 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=27]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 06 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=26]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 07 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=25]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 08 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=24]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 09 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=23]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=22]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 11 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=21]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 12 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=20]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 13 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=19]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 14 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=18]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 15 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=17]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 16 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=16]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 17 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=15]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 18 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=14]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 19 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=13]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 20 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=12]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 21 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=11]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 22 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=10]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 23 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=9]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 24 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=8]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 25 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=7]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 26 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=6]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 27 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=5]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 28 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=4]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 29 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=3]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 30 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=2]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 31 run item replace entity @s armor.head with minecraft:netherite_axe[custom_model_data=1]
+execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 32 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=524]
 execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 35 run tag @s remove tbcNoAnim
 execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 35 run scoreboard players remove @s tbcStrength 10
 execute if score @s tbcAttackStage matches 7..8 if score @s tbcAttackTimer matches 35 run scoreboard players operation @s tbcStrength /= 2 Const

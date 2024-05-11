@@ -6,7 +6,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 50 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 run tag @e[tag=tbcIronGolem,limit=1] remove death_029
-execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrWither,limit=1] {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.golem.wither","color":"dark_gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:497}}],CustomNameVisible:0,CustomName:"{\"translate\":\"tbc.enemy.golem.wither\",\"color\":\"dark_gray\"}"}
+execute if score @s tbcAttackStage matches 1 run data merge entity @e[tag=tbcStrWither,limit=1] {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.golem.wither","color":"dark_gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":497}}],CustomNameVisible:0,CustomName:'{"translate":"tbc.enemy.golem.wither","color":"dark_gray"}'}
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1

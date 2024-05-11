@@ -1,6 +1,6 @@
 execute if score timer end matches 1 run scoreboard players set @s MusicSet 101
 execute if score timer end matches 1 run kill @e[tag=end_scene]
-execute if score timer end matches 1 run summon minecraft:armor_stand 11 26 -206 {DisabledSlots:4144959,Rotation:[130f,0f],Passengers:[{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:1}}],Tags:["charQ","charQ1","end_scene"],Rotation:[130f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ2","end_scene"],Rotation:[130f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ3","end_scene"],Rotation:[130f,0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ4","end_scene"],Rotation:[130f,0f],Pose:{RightArm:[0.0f,0.0f,0.0f]}}],Tags:["charQB","end_scene"],CustomNameVisible:1}
+execute if score timer end matches 1 run summon minecraft:armor_stand 11 26 -206 {DisabledSlots:4144959,Rotation:[130.0f,0.0f],Passengers:[{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:1}}],Tags:["charQ","charQ1","end_scene"],Rotation:[130.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ2","end_scene"],Rotation:[130.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ3","end_scene"],Rotation:[130.0f,0.0f]},{DisabledSlots:4144959,Invisible:1,NoGravity:1,Silent:1b,Marker:1,id:"armor_stand",Tags:["charQ","charQ4","end_scene"],Rotation:[130.0f,0.0f],Pose:{RightArm:[0.0f,0.0f,0.0f]}}],Tags:["charQB","end_scene"],CustomNameVisible:1}
 execute if score timer end matches 1 run tag @r[scores={playerid=1..3},gamemode=adventure] add endTemp
 execute if score timer end matches 1 unless entity @a[tag=endTemp] run tag @r[gamemode=adventure] add endTemp
 execute if score timer end matches 1 as @a[tag=endTemp] run loot replace entity @e[type=armor_stand,tag=charQ4,tag=end_scene] armor.head loot glarth:custom/skull
@@ -16,18 +16,18 @@ execute if score timer end matches 1 run gamemode spectator @a[gamemode=adventur
 execute if score timer end matches 1..280 run function glarth:mechanic/char/main
 execute if score timer end matches 1..280 run effect clear @a[gamemode=spectator] minecraft:night_vision
 execute if score timer end matches 1..5 run tp @a[gamemode=spectator,x=4,y=30,z=-206,distance=1..] 4 30 -206 -130 90
-execute if score timer end matches 6 run summon area_effect_cloud 4 30 -206 {Rotation:[-130f,15f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 6 run summon area_effect_cloud 4 30 -206 {Rotation:[-130.0f,15.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 execute if score timer end matches 6..280 as @a[gamemode=spectator] run spectate @e[type=area_effect_cloud,tag=cutscenePov,x=4,y=30,z=-206,distance=..1,limit=1] @s
-execute if score timer end matches 1 run summon armor_stand 7 26 -215 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:9,Unbreakable:1}}],Tags:["end_scene","baker3"],Rotation:[-70f,0f],CustomName:"{\"translate\":\"baker\",\"color\":\"#FF8488\"}",CustomNameVisible:1}
-execute if score timer end matches 1 run summon armor_stand 7 26 -210 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:117,Unbreakable:1}}],Tags:["end_scene","bucketm2"],Rotation:[-135f,0f],CustomName:"{\"translate\":\"bucketm\",\"color\":\"red\"}",CustomNameVisible:1}
-execute if score timer end matches 1 run summon armor_stand 8 24.7 -209 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:116,Unbreakable:1}}],Tags:["end_scene","bucket"],Rotation:[-50f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 9 24.7 -207 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[-70f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 13 24.7 -208 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[-110f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 9 24.7 -218 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[10f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 10 24.7 -220 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[70f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 5 24.7 -211 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[170f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 5 24.7 -209 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[0f,0f],NoGravity:1}
-execute if score timer end matches 1 run summon armor_stand 14 24.7 -206 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:118,Unbreakable:1}}],Tags:["end_scene"],Rotation:[90f,0f],NoGravity:1,Tags:[]}
+execute if score timer end matches 1 run summon armor_stand 7 26 -215 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":9,"minecraft:unbreakable":{}}}],Tags:["end_scene","baker3"],Rotation:[-70.0f,0.0f],CustomName:'{"translate":"baker","color":"#FF8488"}',CustomNameVisible:1}
+execute if score timer end matches 1 run summon armor_stand 7 26 -210 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":117,"minecraft:unbreakable":{}}}],Tags:["end_scene","bucketm2"],Rotation:[-135.0f,0.0f],CustomName:'{"translate":"bucketm","color":"red"}',CustomNameVisible:1}
+execute if score timer end matches 1 run summon armor_stand 8 24.7 -209 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":116,"minecraft:unbreakable":{}}}],Tags:["end_scene","bucket"],Rotation:[-50.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 9 24.7 -207 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[-70.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 13 24.7 -208 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[-110.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 9 24.7 -218 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[10.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 10 24.7 -220 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[70.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 5 24.7 -211 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[170.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 5 24.7 -209 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:["end_scene"],Rotation:[0.0f,0.0f],NoGravity:1}
+execute if score timer end matches 1 run summon armor_stand 14 24.7 -206 {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":118,"minecraft:unbreakable":{}}}],Tags:[],Rotation:[90.0f,0.0f],NoGravity:1}
 execute if score timer end matches 1 run fill 9 27 -210 15 33 -215 air replace fire
 execute if score timer end matches 1 run fill 16 27 -209 18 28 -207 air replace fire
 execute if score timer end matches 1 run fill 10 26 -217 12 28 -219 air replace fire
@@ -43,19 +43,19 @@ execute if score timer end matches 65..70 as @e[tag=bucketm2] at @s run tp @s ~ 
 execute if score timer end matches 71..80 as @e[tag=bucketm2] at @s run tp @s ~ ~ ~ ~-2 ~
 execute if score timer end matches 81..85 as @e[tag=bucketm2] at @s run tp @s ~ ~ ~ ~-0.8 ~
 
-execute if score timer end matches 77 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-1f,0f,0f]}}
-execute if score timer end matches 78 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-2f,0f,1f]}}
-execute if score timer end matches 79 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-3f,0f,3f]}}
-execute if score timer end matches 80 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-5f,0f,6f]}}
-execute if score timer end matches 81 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-6f,0f,10f]}}
-execute if score timer end matches 82 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-8f,0f,15f]}}
-execute if score timer end matches 83 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-9f,0f,22f]}}
-execute if score timer end matches 84 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-10f,0f,30f]}}
-execute if score timer end matches 85 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-11f,0f,40f]}}
-execute if score timer end matches 86 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-12f,0f,50f]}}
-execute if score timer end matches 87 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-13f,0f,60f]}}
-execute if score timer end matches 88 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-14f,0f,66f]}}
-execute if score timer end matches 89 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-15f,0f,65f]}}
+execute if score timer end matches 77 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-1.0f,0.0f,0.0f]}}
+execute if score timer end matches 78 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-2.0f,0.0f,1.0f]}}
+execute if score timer end matches 79 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-3.0f,0.0f,3.0f]}}
+execute if score timer end matches 80 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-5.0f,0.0f,6.0f]}}
+execute if score timer end matches 81 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-6.0f,0.0f,10.0f]}}
+execute if score timer end matches 82 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-8.0f,0.0f,15.0f]}}
+execute if score timer end matches 83 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-9.0f,0.0f,22.0f]}}
+execute if score timer end matches 84 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-10.0f,0.0f,30.0f]}}
+execute if score timer end matches 85 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-11.0f,0.0f,40.0f]}}
+execute if score timer end matches 86 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-12.0f,0.0f,50.0f]}}
+execute if score timer end matches 87 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-13.0f,0.0f,60.0f]}}
+execute if score timer end matches 88 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-14.0f,0.0f,66.0f]}}
+execute if score timer end matches 89 run data merge entity @e[tag=bucket,limit=1] {Pose:{Head:[-15.0f,0.0f,65.0f]}}
 
 execute if score timer end matches 87 as @e[tag=bucket] at @s run particle block water ^0.5 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
 execute if score timer end matches 88 as @e[tag=bucket] at @s run particle block water ^0.7 ^1.5 ^-0.25 0.1 0.1 0.1 0 10
@@ -72,7 +72,7 @@ execute if score timer end matches 92 as @a at @s run playsound minecraft:block.
 
 execute if score timer end matches 100..120 as @e[tag=baker3] at @s run tp @s ~ ~ ~ ~2 ~
 
-execute if score timer end matches 125 as @e[tag=baker3] at @s run summon area_effect_cloud ~ ~2.2 ~ {Radius:0.0f,Duration:2147483647,Tags:["char_msg","end_scene"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:"{\"text\":\"! ! !\",\"color\":\"gray\"}",NoGravity:1,Team:gray}
+execute if score timer end matches 125 as @e[tag=baker3] at @s run summon area_effect_cloud ~ ~2.2 ~ {Radius:0.0f,Duration:2147483647,Tags:["char_msg","end_scene"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:'{"text":"! ! !","color":"gray"}',NoGravity:1,Team:"gray"}
 
 execute if score timer end matches 180 run function glarth:dialogue/bucketm/lines/end_3
 

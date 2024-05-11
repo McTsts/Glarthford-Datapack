@@ -15,11 +15,11 @@ execute if score time Dis matches 1500.. run tag @e[tag=marhjo,tag=char,type=arm
 execute if score time Dis matches 1700.. run tag @e[tag=thief,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 1700.. run tag @e[tag=brewer,tag=char,type=armor_stand] add die2
 
-execute if score time Dis matches 1800.. as @e[tag=baker,tag=char,type=armor_stand] run data merge block 14 26 -217 {Lock:"",CustomName:''}
-execute if score time Dis matches 1800.. as @e[tag=baker,tag=char,type=armor_stand] run data merge block 17 30 -215 {Lock:"",CustomName:''}
+execute if score time Dis matches 1800.. as @e[tag=baker,tag=char,type=armor_stand] run data merge block 14 26 -217 {Lock:"",CustomName:""}
+execute if score time Dis matches 1800.. as @e[tag=baker,tag=char,type=armor_stand] run data merge block 17 30 -215 {Lock:"",CustomName:""}
 execute if score time Dis matches 1800.. run tag @e[tag=baker,tag=char,type=armor_stand] add die2
 
-execute if score time Dis matches 1800.. as @e[tag=guard,tag=char,type=armor_stand] run data merge block 21 26 -186 {Lock:"",CustomName:''}
+execute if score time Dis matches 1800.. as @e[tag=guard,tag=char,type=armor_stand] run data merge block 21 26 -186 {Lock:"",CustomName:""}
 execute if score time Dis matches 1800.. run tag @e[tag=guard,tag=char,type=armor_stand] add die2
 
 execute if score time Dis matches 1800.. run tag @e[tag=mourner,tag=char,type=armor_stand] add die2
@@ -34,7 +34,7 @@ execute if score time Dis matches 2100.. run tag @e[tag=cave_man,tag=char,type=a
 execute if score time Dis matches 2100.. run tag @e[tag=witch,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2100.. run tag @e[tag=graveyard,tag=char,type=armor_stand] add die2
 
-execute if score time Dis matches 2100.. as @e[tag=lumberjack,tag=char,type=armor_stand] run data merge block 77 28 -257 {Lock:"",CustomName:''}
+execute if score time Dis matches 2100.. as @e[tag=lumberjack,tag=char,type=armor_stand] run data merge block 77 28 -257 {Lock:"",CustomName:""}
 execute if score time Dis matches 2100.. run tag @e[tag=lumberjack,tag=char,type=armor_stand] add die2
 
 execute if score time Dis matches 2200.. run tag @e[tag=merchant1,tag=char,type=armor_stand] add die2
@@ -46,7 +46,7 @@ execute if score time Dis matches 2200.. run tag @e[tag=bum,tag=char,type=armor_
 execute if score time Dis matches 2300.. run tag @e[tag=digger,tag=char,type=armor_stand] add die2
 execute if score time Dis matches 2300.. run tag @e[tag=merchant2,tag=char,type=armor_stand] add die2
 
-execute if score time Dis matches 2300.. as @e[tag=butcher,tag=char,type=armor_stand] run data merge block -2 30 -214 {Lock:"",CustomName:''}
+execute if score time Dis matches 2300.. as @e[tag=butcher,tag=char,type=armor_stand] run data merge block -2 30 -214 {Lock:"",CustomName:""}
 execute if score time Dis matches 2300.. run tag @e[tag=butcher,tag=char,type=armor_stand] add die2
 
 execute if score time Dis matches 2300.. as @e[tag=farmer,tag=char,type=armor_stand] run setblock 6 25 -267 minecraft:redstone_torch

@@ -33,7 +33,7 @@ scoreboard players add y utilItem 5
 scoreboard players add z utilItem 5
 kill @e[tag=bpItem]
 function glarth:util/item
-data merge entity @e[tag=newUtilItem,limit=1] {Item:{id:"blaze_powder",Count:1},Glowing:1,Thrower:[I;0,0,0,0]}
+data merge entity @e[tag=newUtilItem,limit=1] {Item:{id:"blaze_powder",count:1},Glowing:1,Thrower:[I;0,0,0,0]}
 tag @e[tag=newUtilItem,limit=1] add bpItem
 schedule clear glarth:mechanic/animation/lava_dragon/hit_delayed
 schedule clear glarth:mechanic/animation/lava_dragon/hit_delayed2

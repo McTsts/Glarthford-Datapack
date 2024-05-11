@@ -1,4 +1,4 @@
-execute if score rotation winter matches 3 run summon minecraft:area_effect_cloud ~ 0 ~ {Radius:0.0f,Duration:2147483647,Tags:["winter","winterBorder"],Rotation:[180f,0f]}
+execute if score rotation winter matches 3 run summon minecraft:area_effect_cloud ~ 0 ~ {Radius:0.0f,Duration:2147483647,Tags:["winter","winterBorder"],Rotation:[180.0f,0.0f]}
 scoreboard players add rotation winter 1
 scoreboard players operation rotation winter %= 4 Const
 tp @s ~ ~ ~ ~-90 ~

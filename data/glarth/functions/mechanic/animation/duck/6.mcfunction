@@ -1,7 +1,7 @@
 execute as @s[tag=duck6,scores={Animation=0..50}] at @s run tp @s ^ ^-0.015 ^0.04 ~ ~
 execute as @s[tag=duck6,scores={Animation=51..100}] at @s run tp @s ^ ^-0.022 ^0.045 ~ ~
 execute as @s[tag=duck6,scores={Animation=101..203}] at @s run tp @s ^ ^-0.026 ^0.05 ~ ~
-execute as @s[tag=duck6,scores={Animation=203}] at @s run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:166}}]}
+execute as @s[tag=duck6,scores={Animation=203}] at @s run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":166}}]}
 execute as @s[tag=duck6,scores={Animation=203..240}] at @s run tp @s ^ ^ ^0.03 ~-2 ~
 execute as @s[tag=duck6,scores={Animation=241..380}] at @s run tp @s ^ ^ ^0.03 ~ ~
 execute as @s[tag=duck6,scores={Animation=381..420}] at @s run tp @s ^ ^ ^0.03 ~2 ~

@@ -22,7 +22,7 @@
 	execute as @p[scores={tbcSeed=1..},gamemode=adventure] unless score @s tbcSeed matches 3374 run scoreboard players operation tbc Random = @s tbcSeed
 	scoreboard players reset * tbcSeed
 	time set 20000
-	summon area_effect_cloud 7 1000 -196 {Radius:0.0f,Duration:2147483647,Tags:["events"],CustomName:"\"Events\"",CustomNameVisible:0}
+	summon area_effect_cloud 7 1000 -196 {Radius:0.0f,Duration:2147483647,Tags:["events"],CustomName:'"Events"',CustomNameVisible:0}
 	gamerule showDeathMessages true
 	gamerule fireDamage true
 	gamerule drowningDamage true

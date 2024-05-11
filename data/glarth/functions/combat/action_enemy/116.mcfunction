@@ -1,6 +1,6 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 5 facing entity @e[tag=tbcTargetAS,type=armor_stand] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with diamond_hoe{CustomModelData:361}
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run item replace entity @e[tag=tbcGhastDisModel,limit=1] armor.head with minecraft:diamond_hoe[custom_model_data=361]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_init

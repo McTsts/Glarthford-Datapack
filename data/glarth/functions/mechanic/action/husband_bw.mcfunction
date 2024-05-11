@@ -7,7 +7,7 @@ execute as @e[tag=husband2,scores={wife=147..246}] at @s run tp @s ~ ~ ~0.1 ~ ~
 execute as @e[tag=husband2,scores={wife=247..292}] at @s run tp @s ~ ~ ~ ~-4 ~
 scoreboard players set @e[tag=husband2,scores={wife=..1}] wife 294
 
-data merge entity @e[tag=husband2,scores={wife2=1},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:157,Unbreakable:1}}]}
-data merge entity @e[tag=husband2,scores={wife2=6},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:160,Unbreakable:1}}]}
-data merge entity @e[tag=husband2,scores={wife2=11},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:161,Unbreakable:1}}]}
+data merge entity @e[tag=husband2,scores={wife2=1},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":157,"minecraft:unbreakable":{}}}]}
+data merge entity @e[tag=husband2,scores={wife2=6},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":160,"minecraft:unbreakable":{}}}]}
+data merge entity @e[tag=husband2,scores={wife2=11},limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":161,"minecraft:unbreakable":{}}}]}
 scoreboard players set @e[tag=husband2,scores={wife2=..1}] wife2 17

@@ -5,15 +5,15 @@ item replace entity @a[scores={playerid=1..}] armor.legs with minecraft:leather_
 item replace entity @a[scores={playerid=1..}] armor.feet with minecraft:iron_boots
 
 # Melee
-execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:iron_sword{Damage:240}
+execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:iron_sword[damage=240]
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:iron_sword
-execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:diamond_sword{Damage:1550}
+execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:diamond_sword[damage=1550]
 give @a[scores={playerid=1..}] minecraft:stone_sword
 give @a[scores={playerid=1..}] minecraft:wooden_sword
 give @a[scores={playerid=1..}] minecraft:stone_pickaxe
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:bow{bow:"default"}
+give @a[scores={playerid=1..}] minecraft:bow[custom_data={bow:"default"}]
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 15
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 35
 
@@ -44,14 +44,14 @@ give @a[scores={playerid=1..}] magma_cream 5
 give @a[scores={playerid=1..}] minecraft:snowball 1
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:leaping"}
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:healing"}
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:healing"}
-execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:healing"}
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:strong_healing"}
-give @a[scores={playerid=1..}] minecraft:potion{custom:"fire_resistance"}
-give @a[scores={playerid=1..}] minecraft:gold_nugget{CustomModelData:40,custom:"milk_bottle"}
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:water"}
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:leaping"}]
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
+execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:strong_healing"}]
+give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}]
+give @a[scores={playerid=1..}] minecraft:gold_nugget[custom_model_data=40,custom_data={custom:"milk_bottle"}]
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:water"}]
 
 # Pouch
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:pumpkin_pie 2

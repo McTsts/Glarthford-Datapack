@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/enemy
 function glarth:combat/entity/implements/type/fire
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.blaze","color":"#FF7200"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:205}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.blaze\",\"color\":\"#FF7200\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.blaze","color":"#FF7200"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":205}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.blaze","color":"#FF7200"}'}
 
 scoreboard players set @s attack_014 1
 scoreboard players set @s attack_041 1

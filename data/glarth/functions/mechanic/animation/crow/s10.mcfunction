@@ -1,2 +1,2 @@
 kill @e[tag=crow10]
-summon minecraft:armor_stand -25.25 31.00 -179.78 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:158}}],Tags:["crow","crow10"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[160f,0f],Marker:1}
+summon minecraft:armor_stand -25.25 31.00 -179.78 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":158}}],Tags:["crow","crow10"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[160.0f,0.0f],Marker:1}

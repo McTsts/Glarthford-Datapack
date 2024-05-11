@@ -13,7 +13,7 @@ scoreboard players set @s tbcPoison 0
 scoreboard players set @s tbcBee 0
 
 # Display
-data merge entity @s {Pose:{Head:[-70f,0f,0f]}}
+data merge entity @s {Pose:{Head:[-70.0f,0.0f,0.0f]}}
 execute at @s run tp @s ~ ~-0.7 ~
 
 # Tech

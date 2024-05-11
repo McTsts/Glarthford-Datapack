@@ -25,5 +25,5 @@ execute as @s[scores={action=91..91}] at @s run playsound minecraft:entity.gener
 execute as @s[scores={action=91..91}] at @s run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 0.5 2
 execute as @s[scores={action=91..91}] at @s run playsound minecraft:entity.wither.ambient block @a ~ ~ ~ 0.5 2
 execute as @s[scores={action=91..91}] at @s run playsound minecraft:entity.wither.death block @a ~ ~ ~ 0.5 0
-execute as @s[scores={action=100..100}] at @s run summon armor_stand ~ ~1.4 ~ {Tags:["char_msg"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:"{\"text\":\"! ! !\",\"color\":\"gray\"}",NoGravity:1,Team:gray}
-data merge entity @s[scores={action=110..160}] {Motion:[0.2,-0.1,0.0]}
+execute as @s[scores={action=100..100}] at @s run summon armor_stand ~ ~1.4 ~ {Tags:["char_msg"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:'{"text":"! ! !","color":"gray"}',NoGravity:1,Team:"gray"}
+data merge entity @s[scores={action=110..160}] {Motion:[0.2d,-0.1d,0.0d]}

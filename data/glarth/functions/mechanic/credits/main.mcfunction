@@ -1,6 +1,6 @@
 
 execute if score timer credits matches 0.. run scoreboard players add timer credits 1
-execute if score timer credits matches 1 run summon area_effect_cloud 7 36 -204 {Rotation:[0f,5f],Radius:0.0f,Duration:2147483647,Tags:["creditsPov"]}
+execute if score timer credits matches 1 run summon area_effect_cloud 7 36 -204 {Rotation:[0.0f,5.0f],Radius:0.0f,Duration:2147483647,Tags:["creditsPov"]}
 execute if score timer credits matches 1 run function glarth:mechanic/credits/frame2
 execute if score timer credits matches 1 as @a[gamemode=spectator] store result score @s Success run spectate @e[type=area_effect_cloud,tag=creditsPov,limit=1] @s
 execute if score timer credits matches 1.. run title @a[gamemode=spectator] actionbar {"translate":"lobby.credits.info","color":"white","with":[{"keybind":"key.sneak"}]}

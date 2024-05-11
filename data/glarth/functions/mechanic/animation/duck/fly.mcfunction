@@ -1,2 +1,2 @@
-data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:151}}]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":151}}]}
 tag @s add duckFlying

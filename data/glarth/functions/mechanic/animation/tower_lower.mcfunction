@@ -1,8 +1,8 @@
 scoreboard players add @s Animation 2
 
 execute as @e[tag=tower_lower,scores={Animation=2}] run particle dust 0 0 0 100 -6 39 -185 1.5 4 1.5 0.5 1000
-execute as @e[tag=tower_lower,scores={Animation=4}] unless entity @e[tag=tower_upper] run summon minecraft:armor_stand -5.5 40.55 -182.5 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:142}}],NoGravity:1,Marker:1,Rotation:[180f,0f],Tags:["tower_upperS"]}
-execute as @e[tag=tower_lower,scores={Animation=4}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:143}}]}
+execute as @e[tag=tower_lower,scores={Animation=4}] unless entity @e[tag=tower_upper] run summon minecraft:armor_stand -5.5 40.55 -182.5 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":142}}],NoGravity:1,Marker:1,Rotation:[180.0f,0.0f],Tags:["tower_upperS"]}
+execute as @e[tag=tower_lower,scores={Animation=4}] run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":143}}]}
 execute as @e[tag=tower_lower,scores={Animation=16}] run clone 25 3 -179 19 1 -183 -9 34 -187
 execute as @e[tag=tower_lower,scores={Animation=16}] run fill -9 37 -188 -3 50 -182 air
 execute as @e[tag=tower_lower,scores={Animation=16}] run scoreboard players set @s Animation 1000
@@ -91,87 +91,87 @@ tp @s[tag=tower_lower,scores={Animation=1077}] -5.5 32.4499021086877 -188.448740
 tp @s[tag=tower_lower,scores={Animation=1078}] -5.5 32.4158233816355 -188.456295201468
 tp @s[tag=tower_lower,scores={Animation=1079}] -5.5 32.3816179907531 -188.463254366895
 tp @s[tag=tower_lower,scores={Animation=1080}] -5.5 32.3472963553339 -188.469615506024
-data merge entity @s[tag=tower_lower,scores={Animation=1000}] {Pose:{Head:[0f,0f,-0f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1001}] {Pose:{Head:[0.5f,0f,-1.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1002}] {Pose:{Head:[1f,0f,-2.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1003}] {Pose:{Head:[1.5f,0f,-3.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1004}] {Pose:{Head:[2f,0f,-4.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1005}] {Pose:{Head:[2.5f,0f,-5.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1006}] {Pose:{Head:[3f,0f,-6.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1007}] {Pose:{Head:[3.5f,0f,-7.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1008}] {Pose:{Head:[4f,0f,-9f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1009}] {Pose:{Head:[4.5f,0f,-10.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1010}] {Pose:{Head:[5f,0f,-11.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1011}] {Pose:{Head:[5.5f,0f,-12.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1012}] {Pose:{Head:[6f,0f,-13.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1013}] {Pose:{Head:[6.5f,0f,-14.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1014}] {Pose:{Head:[7f,0f,-15.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1015}] {Pose:{Head:[7.5f,0f,-16.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1016}] {Pose:{Head:[8f,0f,-18f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1017}] {Pose:{Head:[8.5f,0f,-19.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1018}] {Pose:{Head:[9f,0f,-20.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1019}] {Pose:{Head:[9.5f,0f,-21.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1020}] {Pose:{Head:[10f,0f,-22.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1021}] {Pose:{Head:[10.5f,0f,-23.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1022}] {Pose:{Head:[11f,0f,-24.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1023}] {Pose:{Head:[11.5f,0f,-25.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1024}] {Pose:{Head:[12f,0f,-27f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1025}] {Pose:{Head:[12.5f,0f,-28.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1026}] {Pose:{Head:[13f,0f,-29.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1027}] {Pose:{Head:[13.5f,0f,-30.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1028}] {Pose:{Head:[14f,0f,-31.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1029}] {Pose:{Head:[14.5f,0f,-32.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1030}] {Pose:{Head:[15f,0f,-33.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1031}] {Pose:{Head:[15.5f,0f,-34.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1032}] {Pose:{Head:[16f,0f,-36f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1033}] {Pose:{Head:[16.5f,0f,-37.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1034}] {Pose:{Head:[17f,0f,-38.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1035}] {Pose:{Head:[17.5f,0f,-39.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1036}] {Pose:{Head:[18f,0f,-40.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1037}] {Pose:{Head:[18.5f,0f,-41.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1038}] {Pose:{Head:[19f,0f,-42.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1039}] {Pose:{Head:[19.5f,0f,-43.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1040}] {Pose:{Head:[20f,0f,-45f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1041}] {Pose:{Head:[20.5f,0f,-46.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1042}] {Pose:{Head:[21f,0f,-47.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1043}] {Pose:{Head:[21.5f,0f,-48.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1044}] {Pose:{Head:[22f,0f,-49.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1045}] {Pose:{Head:[22.5f,0f,-50.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1046}] {Pose:{Head:[23f,0f,-51.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1047}] {Pose:{Head:[23.5f,0f,-52.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1048}] {Pose:{Head:[24f,0f,-54f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1049}] {Pose:{Head:[24.5f,0f,-55.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1050}] {Pose:{Head:[25f,0f,-56.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1051}] {Pose:{Head:[25.5f,0f,-57.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1052}] {Pose:{Head:[26f,0f,-58.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1053}] {Pose:{Head:[26.5f,0f,-59.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1054}] {Pose:{Head:[27f,0f,-60.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1055}] {Pose:{Head:[27.5f,0f,-61.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1056}] {Pose:{Head:[28f,0f,-63f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1057}] {Pose:{Head:[28.5f,0f,-64.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1058}] {Pose:{Head:[29f,0f,-65.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1059}] {Pose:{Head:[29.5f,0f,-66.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1060}] {Pose:{Head:[30f,0f,-67.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1061}] {Pose:{Head:[30.5f,0f,-68.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1062}] {Pose:{Head:[31f,0f,-69.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1063}] {Pose:{Head:[31.5f,0f,-70.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1064}] {Pose:{Head:[32f,0f,-72f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1065}] {Pose:{Head:[32.5f,0f,-73.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1066}] {Pose:{Head:[33f,0f,-74.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1067}] {Pose:{Head:[33.5f,0f,-75.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1068}] {Pose:{Head:[34f,0f,-76.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1069}] {Pose:{Head:[34.5f,0f,-77.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1070}] {Pose:{Head:[35f,0f,-78.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1071}] {Pose:{Head:[35.5f,0f,-79.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1072}] {Pose:{Head:[36f,0f,-81f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1073}] {Pose:{Head:[36.5f,0f,-82.125f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1074}] {Pose:{Head:[37f,0f,-83.25f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1075}] {Pose:{Head:[37.5f,0f,-84.375f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1076}] {Pose:{Head:[38f,0f,-85.5f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1077}] {Pose:{Head:[38.5f,0f,-86.625f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1078}] {Pose:{Head:[39f,0f,-87.75f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1079}] {Pose:{Head:[39.5f,0f,-88.875f]}}
-data merge entity @s[tag=tower_lower,scores={Animation=1080}] {Pose:{Head:[40f,0f,-90f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1000}] {Pose:{Head:[0.0f,0.0f,-0.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1001}] {Pose:{Head:[0.5f,0.0f,-1.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1002}] {Pose:{Head:[1.0f,0.0f,-2.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1003}] {Pose:{Head:[1.5f,0.0f,-3.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1004}] {Pose:{Head:[2.0f,0.0f,-4.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1005}] {Pose:{Head:[2.5f,0.0f,-5.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1006}] {Pose:{Head:[3.0f,0.0f,-6.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1007}] {Pose:{Head:[3.5f,0.0f,-7.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1008}] {Pose:{Head:[4.0f,0.0f,-9.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1009}] {Pose:{Head:[4.5f,0.0f,-10.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1010}] {Pose:{Head:[5.0f,0.0f,-11.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1011}] {Pose:{Head:[5.5f,0.0f,-12.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1012}] {Pose:{Head:[6.0f,0.0f,-13.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1013}] {Pose:{Head:[6.5f,0.0f,-14.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1014}] {Pose:{Head:[7.0f,0.0f,-15.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1015}] {Pose:{Head:[7.5f,0.0f,-16.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1016}] {Pose:{Head:[8.0f,0.0f,-18.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1017}] {Pose:{Head:[8.5f,0.0f,-19.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1018}] {Pose:{Head:[9.0f,0.0f,-20.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1019}] {Pose:{Head:[9.5f,0.0f,-21.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1020}] {Pose:{Head:[10.0f,0.0f,-22.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1021}] {Pose:{Head:[10.5f,0.0f,-23.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1022}] {Pose:{Head:[11.0f,0.0f,-24.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1023}] {Pose:{Head:[11.5f,0.0f,-25.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1024}] {Pose:{Head:[12.0f,0.0f,-27.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1025}] {Pose:{Head:[12.5f,0.0f,-28.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1026}] {Pose:{Head:[13.0f,0.0f,-29.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1027}] {Pose:{Head:[13.5f,0.0f,-30.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1028}] {Pose:{Head:[14.0f,0.0f,-31.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1029}] {Pose:{Head:[14.5f,0.0f,-32.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1030}] {Pose:{Head:[15.0f,0.0f,-33.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1031}] {Pose:{Head:[15.5f,0.0f,-34.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1032}] {Pose:{Head:[16.0f,0.0f,-36.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1033}] {Pose:{Head:[16.5f,0.0f,-37.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1034}] {Pose:{Head:[17.0f,0.0f,-38.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1035}] {Pose:{Head:[17.5f,0.0f,-39.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1036}] {Pose:{Head:[18.0f,0.0f,-40.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1037}] {Pose:{Head:[18.5f,0.0f,-41.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1038}] {Pose:{Head:[19.0f,0.0f,-42.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1039}] {Pose:{Head:[19.5f,0.0f,-43.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1040}] {Pose:{Head:[20.0f,0.0f,-45.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1041}] {Pose:{Head:[20.5f,0.0f,-46.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1042}] {Pose:{Head:[21.0f,0.0f,-47.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1043}] {Pose:{Head:[21.5f,0.0f,-48.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1044}] {Pose:{Head:[22.0f,0.0f,-49.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1045}] {Pose:{Head:[22.5f,0.0f,-50.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1046}] {Pose:{Head:[23.0f,0.0f,-51.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1047}] {Pose:{Head:[23.5f,0.0f,-52.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1048}] {Pose:{Head:[24.0f,0.0f,-54.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1049}] {Pose:{Head:[24.5f,0.0f,-55.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1050}] {Pose:{Head:[25.0f,0.0f,-56.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1051}] {Pose:{Head:[25.5f,0.0f,-57.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1052}] {Pose:{Head:[26.0f,0.0f,-58.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1053}] {Pose:{Head:[26.5f,0.0f,-59.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1054}] {Pose:{Head:[27.0f,0.0f,-60.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1055}] {Pose:{Head:[27.5f,0.0f,-61.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1056}] {Pose:{Head:[28.0f,0.0f,-63.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1057}] {Pose:{Head:[28.5f,0.0f,-64.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1058}] {Pose:{Head:[29.0f,0.0f,-65.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1059}] {Pose:{Head:[29.5f,0.0f,-66.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1060}] {Pose:{Head:[30.0f,0.0f,-67.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1061}] {Pose:{Head:[30.5f,0.0f,-68.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1062}] {Pose:{Head:[31.0f,0.0f,-69.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1063}] {Pose:{Head:[31.5f,0.0f,-70.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1064}] {Pose:{Head:[32.0f,0.0f,-72.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1065}] {Pose:{Head:[32.5f,0.0f,-73.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1066}] {Pose:{Head:[33.0f,0.0f,-74.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1067}] {Pose:{Head:[33.5f,0.0f,-75.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1068}] {Pose:{Head:[34.0f,0.0f,-76.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1069}] {Pose:{Head:[34.5f,0.0f,-77.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1070}] {Pose:{Head:[35.0f,0.0f,-78.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1071}] {Pose:{Head:[35.5f,0.0f,-79.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1072}] {Pose:{Head:[36.0f,0.0f,-81.0f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1073}] {Pose:{Head:[36.5f,0.0f,-82.125f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1074}] {Pose:{Head:[37.0f,0.0f,-83.25f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1075}] {Pose:{Head:[37.5f,0.0f,-84.375f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1076}] {Pose:{Head:[38.0f,0.0f,-85.5f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1077}] {Pose:{Head:[38.5f,0.0f,-86.625f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1078}] {Pose:{Head:[39.0f,0.0f,-87.75f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1079}] {Pose:{Head:[39.5f,0.0f,-88.875f]}}
+data merge entity @s[tag=tower_lower,scores={Animation=1080}] {Pose:{Head:[40.0f,0.0f,-90.0f]}}
 
 tp @e[tag=tower_lower,scores={Animation=1081}] -5.5 32.3472963553339 -188.469615506024 180 0
 tp @e[tag=tower_lower,scores={Animation=1082}] -5.42448979591837 32.2268881920686 -188.545125710106 179.795918367347 0
@@ -251,6 +251,6 @@ execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run fill 0 29 -195 
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run fill -1 29 -194 -1 27 -192 minecraft:barrier
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run fill -2 29 -193 -2 27 -192 minecraft:barrier
 execute as @e[tag=tower_lower,scores={Animation=1126}] at @s run fill -3 29 -192 -3 27 -192 minecraft:barrier
-execute as @e[tag=tower_lower,scores={Animation=1124}] at @s run summon minecraft:falling_block 2.9 26.00 -195.2 {Motion:[0.3,0.4,-0.3],Tags:["falling_block_kill","fbk2"],Time:1,BlockState:{Name:"andesite"}}
-execute as @e[tag=tower_lower,scores={Animation=1124}] at @s run summon minecraft:falling_block 2.9 26.00 -195.2 {Motion:[0.2,0.4,-0.3],Tags:["falling_block_kill","fbk2"],Time:1,BlockState:{Name:"andesite"}}
+execute as @e[tag=tower_lower,scores={Animation=1124}] at @s run summon minecraft:falling_block 2.9 26.00 -195.2 {Motion:[0.3d,0.4d,-0.3d],Tags:["falling_block_kill","fbk2"],Time:1,BlockState:{Name:"andesite"}}
+execute as @e[tag=tower_lower,scores={Animation=1124}] at @s run summon minecraft:falling_block 2.9 26.00 -195.2 {Motion:[0.2d,0.4d,-0.3d],Tags:["falling_block_kill","fbk2"],Time:1,BlockState:{Name:"andesite"}}
 execute as @e[tag=tower_lower,scores={Animation=1140}] at @e[tag=tower_upper] run particle minecraft:cloud -12 27 -178 1 0 1 0.2 100

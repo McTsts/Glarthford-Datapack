@@ -5,7 +5,7 @@ scoreboard players add time_min timer_t 180
 scoreboard players add @s timer_t 0
 scoreboard players add @s timer_p 0
 
-data merge entity @s {Pose:{Head:[0.0f,0.00001f,0.0f]}}
+data merge entity @s {Pose:{Head:[0.0f,1e-05f,0.0f]}}
 execute as @s[tag=doorPositive,tag=doorRight] store result entity @s Pose.Head[1] float 1 run scoreboard players get @s timer_t
 execute as @s[tag=doorPositive,tag=doorLeft] store result entity @s Pose.Head[1] float -1 run scoreboard players get @s timer_t
 execute as @s[tag=doorNegative,tag=doorRight] store result entity @s Pose.Head[1] float 1 run scoreboard players get time_min timer_t

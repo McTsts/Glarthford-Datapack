@@ -3,7 +3,7 @@ execute if score @s tbcAttackStage matches 0 at @e[tag=tbcMarkerMiddle,type=area
 execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 1 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run data merge entity @s {Motion:[0.0,0.3,0.0],NoGravity:0}
+execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 1 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..0.3] run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 2 run scoreboard players add @s tbcAttackTimer 1
@@ -12,7 +12,7 @@ execute if score @s tbcAttackStage matches 2 if score @s tbcAttackTimer matches 
 
 # 1
 execute if score @s tbcAttackStage matches 3 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0,0.3,0.0],NoGravity:0}
+execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:turtle_egg[eggs=2]
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
 execute if score @s tbcAttackStage matches 3 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10
@@ -26,7 +26,7 @@ execute if score @s tbcAttackStage matches 4 run function glarth:combat/action_e
 
 # 2
 execute if score @s tbcAttackStage matches 6 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0,0.3,0.0],NoGravity:0}
+execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:turtle_egg[eggs=1]
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
 execute if score @s tbcAttackStage matches 6 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10
@@ -40,7 +40,7 @@ execute if score @s tbcAttackStage matches 7 run function glarth:combat/action_e
 
 # 3
 execute if score @s tbcAttackStage matches 9 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0,0.3,0.0],NoGravity:0}
+execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 5 run data merge entity @s {Motion:[0.0d,0.3d,0.0d],NoGravity:0}
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run setblock ~ ~ ~ minecraft:air
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run playsound minecraft:entity.turtle.egg_break hostile @a ~ ~ ~ 1 1
 execute if score @s tbcAttackStage matches 9 if score @s tbcAttackTimer matches 20 at @e[tag=tbcMarkerMiddle,type=area_effect_cloud] run particle block turtle_egg ~ ~ ~ 0.3 0.3 0.3 0.1 10

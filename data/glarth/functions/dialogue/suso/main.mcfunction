@@ -1,6 +1,6 @@
 # force dog 
 execute as @a run function glarth:mechanic/dog_skull
-execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",tag:{isDogSkull:1}}]},gamemode=adventure] at @s run function glarth:mechanic/char/skull_dog
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_data":{isDogSkull:1}}}]},gamemode=adventure] at @s run function glarth:mechanic/char/skull_dog
 
 # Cycle
 function glarth:dialogue/suso/cycle

@@ -1,5 +1,5 @@
 #Scores
-execute unless entity @e[tag=area_main,type=area_effect_cloud] run summon minecraft:area_effect_cloud 7 999 -196 {Radius:0.0f,Duration:2147483647,Tags:["area_main"],CustomName:"\"Main\"",CustomNameVisible:0}
+execute unless entity @e[tag=area_main,type=area_effect_cloud] run summon minecraft:area_effect_cloud 7 999 -196 {Radius:0.0f,Duration:2147483647,Tags:["area_main"],CustomName:'"Main"',CustomNameVisible:0}
 
 #Functions
 execute store result score aecs Stats if entity @e[tag=area_main]

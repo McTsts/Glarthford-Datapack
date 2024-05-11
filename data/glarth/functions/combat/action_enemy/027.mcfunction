@@ -1,7 +1,7 @@
 execute if score @s tbcAttackStage matches 0 as @s[tag=!tbcReady] facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
 execute if score @s tbcAttackStage matches 0 as @s[tag=!tbcReady] if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..2] run function glarth:combat/action_enemy/util/ready
 
-execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2},tag=!tbcReady] at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with diamond_hoe{CustomModelData:42}
+execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2},tag=!tbcReady] at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=42]
 execute if score @s tbcAttackStage matches 0 as @e[scores={tbcID=2},tag=!tbcReady] run function glarth:combat/action_enemy/util/ready
 
 execute if score @s tbcAttackStage matches 1 as @s[tag=!tbcReady] facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~

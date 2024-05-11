@@ -28,7 +28,7 @@ stopsound @a * time
 
 scoreboard players reset * tbcSeed
 
-summon minecraft:armor_stand ~ ~ ~ {Invisible:1,Marker:1,NoGravity:1,Tags:["tbc","tbcSelector"],CustomNameVisible:1,CustomName:"[{\"text\":\"|| \",\"color\":\"red\",\"bold\":true},{\"translate\":\"tbc.selected\",\"bold\":true,\"color\":\"gray\"},{\"text\":\" ||\",\"color\":\"red\",\"bold\":true}]"}
+summon minecraft:armor_stand ~ ~ ~ {Invisible:1,Marker:1,NoGravity:1,Tags:["tbc","tbcSelector"],CustomNameVisible:1,CustomName:'[{"text":"|| ","color":"red","bold":true},{"translate":"tbc.selected","bold":true,"color":"gray"},{"text":" ||","color":"red","bold":true}]'}
 
 execute as @a[tag=inTBC] store result score @s tbcHealth run data get entity @s Health 1.04
 execute as @a[tag=inTBC] store result score @s tbcStamina run data get entity @s foodLevel 1.04
@@ -83,23 +83,23 @@ execute as @a store result score @s tbcThrowable4 run clear @s egg 0
 execute as @a store result score @s tbcThrowable5 run clear @s snowball 0
 execute as @a store result score @s tbcThrowable6 run clear @s ink_sac 0
 execute as @a store result score @s tbcThrowable7 run clear @s scute 0
-execute as @a store result score @s tbcThrowable8 run clear @s gold_nugget{custom:"bee_hive"} 0
-execute as @a store result score @s tbcThrowable9 run clear @s diamond_hoe{custom:"tophat"} 0
+execute as @a store result score @s tbcThrowable8 run clear @s gold_nugget[custom_data={custom:"bee_hive"}] 0
+execute as @a store result score @s tbcThrowable9 run clear @s diamond_hoe[custom_data={custom:"tophat"}] 0
 execute as @a store result score @s tbcThrowable10 run clear @s magma_cream 0
-execute as @a store result score @s tbcThrowable11 run clear @s diamond_hoe{custom:"witchhat"} 0
+execute as @a store result score @s tbcThrowable11 run clear @s diamond_hoe[custom_data={custom:"witchhat"}] 0
 execute as @a store result score @s tbcThrowable12 run clear @s spider_eye 0
 execute as @a store result score @s tbcThrowable13 run clear @s slime_ball 0
 execute as @a store result score @s tbcThrowable16 run clear @s glow_ink_sac 0
 
-execute as @a store result score @s tbcPotion1 run clear @s potion{custom:"leaping"} 0
-execute as @a store result score @s tbcPotion2 run clear @s potion{custom:"swiftness"} 0
-execute as @a store result score @s tbcPotion3 run clear @s potion{custom:"fire_resistance"} 0
-execute as @a store result score @s tbcPotion4 run clear @s potion{custom:"energizing_potion"} 0
-execute as @a store result score @s tbcPotion5 run clear @s potion{Potion:"minecraft:healing"} 0
-execute as @a store result score @s tbcPotion6 run clear @s potion{Potion:"minecraft:strong_healing"} 0
-execute as @a store result score @s tbcPotion7 run clear @s potion{Potion:"minecraft:water"} 0
-execute as @a store result score @s tbcPotion8 run clear @s gold_nugget{CustomModelData:40} 0
-execute as @a store result score @s tbcPotion9 run clear @s potion{custom:"wind_potion"} 0
+execute as @a store result score @s tbcPotion1 run clear @s potion[custom_data={custom:"leaping"}] 0
+execute as @a store result score @s tbcPotion2 run clear @s potion[custom_data={custom:"swiftness"}] 0
+execute as @a store result score @s tbcPotion3 run clear @s potion[custom_data={custom:"fire_resistance"}] 0
+execute as @a store result score @s tbcPotion4 run clear @s potion[custom_data={custom:"energizing_potion"}] 0
+execute as @a store result score @s tbcPotion5 run clear @s potion[potion_contents={potion:"minecraft:healing"}] 0
+execute as @a store result score @s tbcPotion6 run clear @s potion[potion_contents={potion:"minecraft:strong_healing"}] 0
+execute as @a store result score @s tbcPotion7 run clear @s potion[potion_contents={potion:"minecraft:water"}] 0
+execute as @a store result score @s tbcPotion8 run clear @s gold_nugget[custom_model_data=40] 0
+execute as @a store result score @s tbcPotion9 run clear @s potion[custom_data={custom:"wind_potion"}] 0
 
 execute as @a store result score @s tbcAmFire run clear @s golden_horse_armor 0
 execute as @a store result score @s tbcAmPoison run clear @s iron_horse_armor 0

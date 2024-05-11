@@ -3,7 +3,7 @@ execute as @e[tag=tbcTarget,limit=1] run function glarth:combat/action/blocking_
 tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.use","with":[{"translate":"tbc.attack.enemy.185","bold":true}]}]
 function glarth:combat/attack_init
 
-item replace entity @s armor.head with diamond_hoe{CustomModelData:394}
+item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=394]
 execute at @e[tag=tbcBoss] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.5 0.5 0.5 0.01 100
 execute at @e[tag=tbcBoss] run particle explosion ~ ~0.5 ~ 0.5 0.5 0.5 0.01 10
 

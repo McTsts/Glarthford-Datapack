@@ -22,7 +22,7 @@ execute if score attackArrows tbcStats matches 3 run function glarth:util/rand_s
 execute if score attackArrows tbcStats matches 2..3 run scoreboard players set @e[limit=1,tag=rand_sel_result_1] tbcSel 1
 
 # Summon Arrow
-execute if score enemiesBow tbcStats matches 1.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^0.3 {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
+execute if score enemiesBow tbcStats matches 1.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^0.3 {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
 execute if score enemiesBow tbcStats matches 1.. as @e[tag=tbcArrowPN] at @s run tp @s ~ ~ ~ facing entity @e[scores={tbcSel=1},limit=1]
 execute if score enemiesBow tbcStats matches 1.. run tag @e[tag=tbcArrowPN] remove tbcArrowPN
 
@@ -31,7 +31,7 @@ scoreboard players set @e[tag=tbcEnemy] tbcSel 0
 scoreboard players set @e[limit=1,tag=rand_sel_result_2] tbcSel 1
 
 # Summon Arrow #2
-execute if score attackArrows tbcStats matches 2.. if score enemiesBow tbcStats matches 2.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^0.0 {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
+execute if score attackArrows tbcStats matches 2.. if score enemiesBow tbcStats matches 2.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^0.0 {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
 execute if score attackArrows tbcStats matches 2.. if score enemiesBow tbcStats matches 2.. as @e[tag=tbcArrowPN] at @s run tp @s ~ ~ ~ facing entity @e[scores={tbcSel=1},limit=1]
 execute if score attackArrows tbcStats matches 2.. if score enemiesBow tbcStats matches 2.. run tag @e[tag=tbcArrowPN] remove tbcArrowPN
 
@@ -40,6 +40,6 @@ scoreboard players set @e[tag=tbcEnemy] tbcSel 0
 scoreboard players set @e[limit=1,tag=rand_sel_result_3] tbcSel 1
 
 # Summon Arrow #3
-execute if score attackArrows tbcStats matches 3.. if score enemiesBow tbcStats matches 3.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^-0.3 {ArmorItems:[{},{},{},{id:"arrow",Count:1}],Small:1,Pose:{Head:[90f,45f,-90f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
+execute if score attackArrows tbcStats matches 3.. if score enemiesBow tbcStats matches 3.. at @e[tag=tbcSelPlayerAS] run summon minecraft:armor_stand ^0.3 ^0.5 ^-0.3 {ArmorItems:[{},{},{},{id:"arrow",count:1}],Small:1,Pose:{Head:[90.0f,45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"]}
 execute if score attackArrows tbcStats matches 3.. if score enemiesBow tbcStats matches 3.. as @e[tag=tbcArrowPN] at @s run tp @s ~ ~ ~ facing entity @e[scores={tbcSel=1},limit=1]
 execute if score attackArrows tbcStats matches 3.. if score enemiesBow tbcStats matches 3.. run tag @e[tag=tbcArrowPN] remove tbcArrowPN

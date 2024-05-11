@@ -22,7 +22,7 @@ execute as @s[scores={playerid=3}] run data modify storage glarth:main combat.tu
 execute if score @s tbcStamina matches 17.. run function glarth:combat/effect/saturation
 execute if score @s tbcStamina matches ..1 run function glarth:combat/effect/starvation
 
-data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:"[{\"text\":\"|| \",\"color\":\"red\",\"bold\":true},{\"translate\":\"tbc.selected\",\"bold\":true,\"color\":\"gray\"},{\"text\":\" ||\",\"color\":\"red\",\"bold\":true}]"}
+data merge entity @e[tag=tbcSelector,limit=1] {CustomNameVisible:1,CustomName:'[{"text":"|| ","color":"red","bold":true},{"translate":"tbc.selected","bold":true,"color":"gray"},{"text":" ||","color":"red","bold":true}]'}
 
 scoreboard players set @s tbcSpeedX 0
 function glarth:combat/peffect/handle

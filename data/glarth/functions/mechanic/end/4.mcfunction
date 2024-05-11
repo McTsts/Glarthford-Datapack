@@ -1,14 +1,14 @@
 execute if score timer end matches 1 run gamemode spectator @a[gamemode=adventure]
 execute if score timer end matches 1 if score day Dis matches ..0 run scoreboard players remove time Dis 2400
 
-execute if score timer end matches 20 run summon area_effect_cloud -47 83 -734 {Rotation:[180f,20f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 20 run summon area_effect_cloud -47 83 -734 {Rotation:[180.0f,20.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 execute if score timer end matches 20 run kill @e[tag=ender_priest]
-execute if score timer end matches 20 run summon armor_stand -47 81 -741 {ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:394,Unbreakable:1}}],Tags:["end_scene","ender_priest"],Rotation:[0f,0f],CustomName:"{\"translate\":\"ender_priest\",\"color\":\"dark_purple\"}",CustomNameVisible:1}
+execute if score timer end matches 20 run summon armor_stand -47 81 -741 {ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":394,"minecraft:unbreakable":{}}}],Tags:["end_scene","ender_priest"],Rotation:[0.0f,0.0f],CustomName:'{"translate":"ender_priest","color":"dark_purple"}',CustomNameVisible:1}
 execute if score timer end matches 300 run kill @e[tag=cutscenePov]
-execute if score timer end matches 300 unless score time Dis matches ..859 run summon area_effect_cloud 128.5 88.5 -103.0 {Rotation:[-144f,18f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
-execute if score timer end matches 300 if score time Dis matches ..859 run summon area_effect_cloud 82.5 91.0 -95.0 {Rotation:[135f,20f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 300 unless score time Dis matches ..859 run summon area_effect_cloud 128.5 88.5 -103.0 {Rotation:[-144.0f,18.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 300 if score time Dis matches ..859 run summon area_effect_cloud 82.5 91.0 -95.0 {Rotation:[135.0f,20.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 execute if score timer end matches 400 unless score time Dis matches ..859 run kill @e[tag=cutscenePov]
-execute if score timer end matches 400 unless score time Dis matches ..859 run summon area_effect_cloud 82.5 91.0 -95.0 {Rotation:[135f,20f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
+execute if score timer end matches 400 unless score time Dis matches ..859 run summon area_effect_cloud 82.5 91.0 -95.0 {Rotation:[135.0f,20.0f],Radius:0.0f,Duration:2147483647,Tags:["cutscenePov"]}
 
 execute if score timer end matches 1 run function glarth:mechanic/end/4/spawn_creators
 execute if score timer end matches 1..550 run function glarth:mechanic/end/4/graveyard

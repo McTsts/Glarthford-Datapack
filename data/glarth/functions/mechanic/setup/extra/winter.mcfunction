@@ -5,10 +5,10 @@ tag @a add hint1
 
 
 # Christmas 
-summon minecraft:armor_stand 15.0 30.4 -196.4 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:282}}],Rotation:[180f,0f],Marker:1,Invisible:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 7.6 30.6 -187.0 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:283}}],Rotation:[90f,0f],Marker:1,Invisible:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 6.6 30.6 -193.0 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:284}}],Rotation:[90f,0f],Marker:1,Invisible:1,Tags:["asLoader"]}
-summon minecraft:armor_stand 10.0 31.4 -194.4 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:283}}],Rotation:[180f,0f],Marker:1,Invisible:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 15.0 30.4 -196.4 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":282}}],Rotation:[180.0f,0.0f],Marker:1,Invisible:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 7.6 30.6 -187.0 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":283}}],Rotation:[90.0f,0.0f],Marker:1,Invisible:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 6.6 30.6 -193.0 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":284}}],Rotation:[90.0f,0.0f],Marker:1,Invisible:1,Tags:["asLoader"]}
+summon minecraft:armor_stand 10.0 31.4 -194.4 {NoGravity:1,ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":283}}],Rotation:[180.0f,0.0f],Marker:1,Invisible:1,Tags:["asLoader"]}
 
 setblock 14 32 -197 light[level=15]
 setblock 7 32 -188 light[level=15]
@@ -17,10 +17,10 @@ setblock 9 32 -195 light[level=15]
 
  
  # stray
-summon armor_stand -60 27 -174 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Damage:145,Unbreakable:1}}],Tags:["char","stray","char_look","tbcLoc002"],Rotation:[-110f,0f],CustomName:"{\"translate\":\"stray\",\"color\":\"aqua\"}",CustomNameVisible:1}
+summon armor_stand -60 27 -174 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":145,"minecraft:unbreakable":{}}}],Tags:["char","stray","char_look","tbcLoc002"],Rotation:[-110.0f,0.0f],CustomName:'{"translate":"stray","color":"aqua"}',CustomNameVisible:1}
 
 # snowman
-summon armor_stand -42 27 -234 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:183,Unbreakable:1}}],Tags:["char","char_look","snowman"],Rotation:[-33f,0f],CustomName:'{"translate":"snowman","color":"white"}',CustomNameVisible:1}
+summon armor_stand -42 27 -234 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":183,"minecraft:unbreakable":{}}}],Tags:["char","char_look","snowman"],Rotation:[-33.0f,0.0f],CustomName:'{"translate":"snowman","color":"white"}',CustomNameVisible:1}
  
   
 # Freeze Field
@@ -76,4 +76,4 @@ setblock 15 26 -245 grass
 
  # Drowned
 kill @e[tag=drowned]
-summon armor_stand 1 24 -141 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:276,Unbreakable:1}}],Tags:["char","drowned"],Rotation:[-20f,0f],CustomName:'{"translate":"drowned_frozen","color":"aqua"}',CustomNameVisible:1}
+summon armor_stand 1 24 -141 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":276,"minecraft:unbreakable":{}}}],Tags:["char","drowned"],Rotation:[-20.0f,0.0f],CustomName:'{"translate":"drowned_frozen","color":"aqua"}',CustomNameVisible:1}

@@ -1,7 +1,7 @@
 function glarth:combat/entity/extends/enemy
 function glarth:combat/entity/implements/type/poison
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.grimsbane.vishnold","color":"green"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:37}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.grimsbane.vishnold\",\"color\":\"green\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.grimsbane.vishnold","color":"green"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":37}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.grimsbane.vishnold","color":"green"}'}
 scoreboard players set @s attack_049 1
 scoreboard players set @s attack_050 1
 scoreboard players set @s attack_051 1

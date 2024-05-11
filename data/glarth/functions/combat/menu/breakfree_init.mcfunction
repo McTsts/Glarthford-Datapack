@@ -75,4 +75,4 @@ function glarth:combat/menu/breakfree_item_pre
 function glarth:combat/menu/breakfree_item
 
 ## Back
-item replace entity @s hotbar.8 with minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
+item replace entity @s hotbar.8 with minecraft:diamond_hoe[custom_name='{"translate":"tbc.attack.return","italic":false,"bold":true,"color":"red"}',damage=242,unbreakable={show_in_tooltip:0b},hide_additional_tooltip={}]

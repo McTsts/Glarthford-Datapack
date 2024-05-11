@@ -1,4 +1,4 @@
 kill @e[tag=crow4]
-summon minecraft:armor_stand -50.40 40.00 -136.33 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-100f,0f],Marker:1}
-summon minecraft:armor_stand -53.32 41.00 -134.68 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-70f,0f],Marker:1}
-summon minecraft:armor_stand -50.15 39.50 -133.09 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-70f,0f],Marker:1}
+summon minecraft:armor_stand -50.40 40.00 -136.33 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-100.0f,0.0f],Marker:1}
+summon minecraft:armor_stand -53.32 41.00 -134.68 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-70.0f,0.0f],Marker:1}
+summon minecraft:armor_stand -50.15 39.50 -133.09 {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":158}}],Tags:["crow","crow4"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,NoGravity:1,Rotation:[-70.0f,0.0f],Marker:1}

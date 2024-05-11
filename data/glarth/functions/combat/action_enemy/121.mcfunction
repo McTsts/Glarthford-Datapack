@@ -5,10 +5,10 @@ execute if score @s tbcAttackStage matches 1 run scoreboard players set r Random
 execute if score @s tbcAttackStage matches 1 run function glarth:util/rand_tbc
 execute if score @s tbcAttackStage matches 1 at @s run playsound minecraft:entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 1.5
 execute if score @s tbcAttackStage matches 1 run kill @e[tag=tbcTNT]
-execute if score @s tbcAttackStage matches 1 if score n Random matches 1..8 run summon minecraft:armor_stand ^ ^-2.00 ^2.7 {Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
-execute if score @s tbcAttackStage matches 1 if score n Random matches 3..8 run summon minecraft:armor_stand ^ ^-1.38 ^2.7 {Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
-execute if score @s tbcAttackStage matches 1 if score n Random matches 6..8 run summon minecraft:armor_stand ^ ^-0.76 ^2.7 {Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
-execute if score @s tbcAttackStage matches 1 if score n Random matches 8..8 run summon minecraft:armor_stand ^ ^-0.14 ^2.7 {Pose:{Head:[0f,90f,0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
+execute if score @s tbcAttackStage matches 1 if score n Random matches 1..8 run summon minecraft:armor_stand ^ ^-2.00 ^2.7 {Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
+execute if score @s tbcAttackStage matches 1 if score n Random matches 3..8 run summon minecraft:armor_stand ^ ^-1.38 ^2.7 {Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
+execute if score @s tbcAttackStage matches 1 if score n Random matches 6..8 run summon minecraft:armor_stand ^ ^-0.76 ^2.7 {Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
+execute if score @s tbcAttackStage matches 1 if score n Random matches 8..8 run summon minecraft:armor_stand ^ ^-0.14 ^2.7 {Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcTNT","tbc"],Marker:1,Glowing:1,NoGravity:1,Invulnerable:1,Fire:10000s,Team:"dark_purple"}
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcTNT] run function glarth:combat/action_enemy/helper/summon_block_enderman
 execute if score @s tbcAttackStage matches 1 as @e[tag=tbcTNT,type=armor_stand] at @s positioned ~ ~1 ~ facing entity @e[tag=tbcTargetAS,limit=1,type=armor_stand] feet run tp @s ~ ~ ~ ~ ~
 execute if score @s tbcAttackStage matches 1 if score n Random matches 1..2 run scoreboard players set @s tbcAttackStage 12

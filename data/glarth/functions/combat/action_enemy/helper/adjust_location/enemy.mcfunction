@@ -4,7 +4,7 @@ execute if entity @s[tag=!tbcAdjLocRev] store result entity @s Pose.Head[2] floa
 execute if entity @s[tag=tbcAdjLocRev] store result entity @s Pose.Head[2] float -1 run scoreboard players get nextAngle tbcAdjLoc
 
 # Position
-summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcAdjLoc"],Rotation:[90f,0f]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["tbc","tbcAdjLoc"],Rotation:[90.0f,0.0f]}
 execute store result entity @e[type=area_effect_cloud,tag=tbcAdjLoc,limit=1] Pos[0] double 0.01 run scoreboard players get cX tbcAdjLoc
 execute store result entity @e[type=area_effect_cloud,tag=tbcAdjLoc,limit=1] Pos[1] double 0.01 run scoreboard players get cY tbcAdjLoc
 execute store result entity @e[type=area_effect_cloud,tag=tbcAdjLoc,limit=1] Pos[2] double 0.01 run data get entity @s Pos[2] 100 

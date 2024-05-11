@@ -13,5 +13,5 @@ execute if entity @s[tag=frogEntering] if score @s frogAnimation matches ..0 if 
 execute if entity @s[tag=frogEntering] if score @s frogAnimation matches ..0 if block ~ ~0.9 ~ #all[waterlogged=true] run function glarth:mechanic/animation/frog/fleeing_swim
 
 # Jump Animation
-execute if score @s frogAnimation matches 35 run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:48}}]}
+execute if score @s frogAnimation matches 35 run data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":48}}]}
 execute if score @s frogAnimation matches 1.. run scoreboard players remove @s frogAnimation 1

@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/boss
 function glarth:combat/entity/implements/type/magic
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.boss.necromancer","color":"dark_red"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:223}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.boss.necromancer\",\"color\":\"dark_red\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.boss.necromancer","color":"dark_red"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":223}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.boss.necromancer","color":"dark_red"}'}
 scoreboard players set @s attack_072 1
 scoreboard players set @s attack_076 1
 scoreboard players set @s attack_077 1

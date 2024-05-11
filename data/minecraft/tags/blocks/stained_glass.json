@@ -1,5 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "minecraft:white_stained_glass",
     "minecraft:blue_stained_glass",

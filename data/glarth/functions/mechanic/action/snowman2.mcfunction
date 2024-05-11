@@ -1,2 +1,2 @@
 execute at @e[tag=snowman,type=armor_stand,limit=1] run playsound minecraft:block.end_portal_frame.fill neutral @a ~ ~ ~ 1 0
-data merge entity @e[tag=snowman,type=armor_stand,limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:184,Unbreakable:1}}]}
+data merge entity @e[tag=snowman,type=armor_stand,limit=1] {ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":184,"minecraft:unbreakable":{}}}]}

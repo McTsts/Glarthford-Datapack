@@ -18,7 +18,7 @@ execute if score @s tbcAttackStage matches 2 run tag @e[tag=tbcArrowPN,type=armo
 execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 4 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1b,Trail:1b,Colors:[I;16711680],FadeColors:[I;16774556]}]}}}}
+execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16711680],fade_colors:[I;16774556],has_trail:1b,has_twinkle:1b}]}}}}
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 as @e[tag=!tbcTarget,tag=tbcAttackable] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_enemy/util/damage_aoe
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage
@@ -34,7 +34,7 @@ execute if score @s tbcAttackStage matches 6 run tag @e[tag=tbcArrowPN,type=armo
 execute if score @s tbcAttackStage matches 6 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 8 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1b,Trail:1b,Colors:[I;16711680],FadeColors:[I;16774556]}]}}}}
+execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16711680],fade_colors:[I;16774556],has_trail:1b,has_twinkle:1b}]}}}}
 execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 10 as @e[tag=!tbcTarget,tag=tbcAttackable] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_enemy/util/damage_aoe
 execute if score @s tbcAttackStage matches 8 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage
@@ -50,7 +50,7 @@ execute if score @s tbcAttackStage matches 10 run tag @e[tag=tbcArrowPN,type=arm
 execute if score @s tbcAttackStage matches 10 run function glarth:combat/action_enemy/util/next_stage
 
 execute if score @s tbcAttackStage matches 12 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1b,Trail:1b,Colors:[I;16711680],FadeColors:[I;16774556]}]}}}}
+execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 at @e[tag=tbcTargetAS,limit=1] run summon minecraft:firework_rocket ~ ~ ~ {Life:9,LifeTime:0,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16711680],fade_colors:[I;16774556],has_trail:1b,has_twinkle:1b}]}}}}
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 as @e[tag=!tbcTarget,tag=tbcAttackable] run function glarth:combat/action/blocking_end
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_enemy/util/damage_aoe
 execute if score @s tbcAttackStage matches 12 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage

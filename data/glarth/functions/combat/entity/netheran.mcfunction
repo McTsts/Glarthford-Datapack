@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/boss
 function glarth:combat/entity/implements/type/fire
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.boss.netheran","color":"red"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:29}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.boss.netheran\",\"color\":\"red\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.boss.netheran","color":"red"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":29}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.boss.netheran","color":"red"}'}
 scoreboard players set @s attack_032 2
 scoreboard players set @s attack_043 2
 scoreboard players set @s attack_044 2

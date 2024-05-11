@@ -28,5 +28,5 @@ execute if entity @e[tag=frogFleeOption,type=area_effect_cloud,distance=..1,tag=
 execute if entity @e[tag=frogFleeOption,type=area_effect_cloud,distance=..1,tag=fFO7] run data merge entity @s {Motion:[0.1d,0.25d,0.0d],NoGravity:0,Marker:0}
 execute if entity @e[tag=frogFleeOption,type=area_effect_cloud,distance=..1,tag=fFO8] run data merge entity @s {Motion:[0.05d,0.25d,0.05d],NoGravity:0,Marker:0}
 kill @e[tag=frogFleeOption,type=area_effect_cloud,distance=..1]
-data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:49}}]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":49}}]}
 scoreboard players set @s frogAnimation 40

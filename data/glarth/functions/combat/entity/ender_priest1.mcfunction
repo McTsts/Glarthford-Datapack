@@ -4,7 +4,7 @@ function glarth:combat/entity/implements/mini_boss
 function glarth:combat/entity/implements/type/ender
 function glarth:combat/entity/implements/nerf/3
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.boss.ender_priest","color":"dark_purple"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:30}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.boss.ender_priest\",\"color\":\"dark_purple\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.boss.ender_priest","color":"dark_purple"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":30}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.boss.ender_priest","color":"dark_purple"}'}
 
 # Custom Attack
 scoreboard players set @s attack_160 2

@@ -8,7 +8,7 @@ scoreboard players set @s tbcDrop 0
 # 100 Block; 101 Empty; 102 Nothing
 execute as @s[tag=tbcApplyMenu] run clear @s
 execute as @s[tag=tbcApplyMenu] run function glarth:combat/armor
-execute as @s[tag=tbcApplyMenu] if score @s tbcMenu matches 0.. run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:""}}
+execute as @s[tag=tbcApplyMenu] if score @s tbcMenu matches 0.. run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='""']
 execute as @s[tag=tbcApplyMenu] at @s run kill @e[type=item,distance=..3]
 execute as @s[scores={tbcMenu=0},tag=tbcApplyMenu] run function glarth:combat/menu/main_init
 execute as @s[scores={tbcMenu=1},tag=tbcApplyMenu] run function glarth:combat/menu/melee_init
@@ -43,4 +43,4 @@ scoreboard players set @s tbcCarrot 0
 
 
 # pumpkin fix
-item replace entity @a[scores={tbcPumpkin=1..}] armor.head with carved_pumpkin{display:{Name:'""'},Enchantments:[{id:"binding_curse",lvl:1}],CustomModelData:1,HideFlags:63}
+item replace entity @a[scores={tbcPumpkin=1..}] armor.head with minecraft:carved_pumpkin[custom_name='""',enchantments={levels:{binding_curse:1},show_in_tooltip:0b},custom_model_data=1,hide_additional_tooltip={}]

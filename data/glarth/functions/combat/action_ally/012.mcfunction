@@ -1,5 +1,5 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 0 run item replace entity @s armor.head with diamond_hoe{CustomModelData:175}
+execute if score @s tbcAttackStage matches 0 run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=175]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 10 run function glarth:combat/action_ally/util/next_stage
 
 
@@ -23,5 +23,5 @@ execute if score @s tbcAttackStage matches 3 if entity @e[tag=tbcSelMarker,dista
 
 execute if score @s tbcAttackStage matches 4 run scoreboard players add @s tbcAttackTimer 1
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 2 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
-execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with diamond_hoe{Damage:14}
+execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 10 run item replace entity @s armor.head with minecraft:diamond_hoe[damage=14]
 execute if score @s tbcAttackStage matches 4 if score @s tbcAttackTimer matches 20 run function glarth:combat/action_ally/util/done

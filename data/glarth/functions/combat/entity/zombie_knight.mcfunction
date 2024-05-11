@@ -6,7 +6,7 @@ scoreboard players set @s attack_006 0
 scoreboard players set @s attack_012 0
 scoreboard players set @s attack_131 1
 scoreboard players set @s attack_139 1
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.zombie.knight","color":"dark_green"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:139}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.zombie.knight\",\"color\":\"dark_green\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.zombie.knight","color":"dark_green"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":139}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.zombie.knight","color":"dark_green"}'}
 execute if score difficulty tbcStats matches 1..4 run scoreboard players add @s tbcArmor 15
 execute if score difficulty tbcStats matches 5 run scoreboard players add @s tbcArmor 20
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcHealth 20

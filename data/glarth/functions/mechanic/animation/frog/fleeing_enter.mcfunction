@@ -20,4 +20,4 @@ kill @e[tag=frogEnter,type=area_effect_cloud,limit=1,sort=nearest,distance=..0.9
 
 tag @s add frogEntered
 
-data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:49}}]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":49}}]}

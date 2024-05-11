@@ -1,5 +1,5 @@
 function glarth:combat/entity/extends/enemy
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.creeper.default","color":"green"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:147}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.creeper.default\",\"color\":\"green\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.creeper.default","color":"green"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:damage":147}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.creeper.default","color":"green"}'}
 
 execute if score difficulty tbcStats matches 1..3 run scoreboard players add @s tbcHealth 20
 execute if score difficulty tbcStats matches 4 run scoreboard players add @s tbcHealth 40

@@ -2,7 +2,7 @@
 function glarth:combat/entity/extends/boss
 function glarth:combat/entity/implements/type/default
 #Overwrite
-data merge entity @s {ArmorItems:[{id:"stone",Count:1,tag:{CustomName:'{"translate":"tbc.short_name.enemy.boss.raid_leader","color":"gray"}'}},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:385}}],CustomNameVisible:1,CustomName:"{\"translate\":\"tbc.enemy.boss.raid_leader\",\"color\":\"gray\"}"}
+data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'{"translate":"tbc.short_name.enemy.boss.raid_leader","color":"gray"}'}}},{},{},{id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":385}}],CustomNameVisible:1,CustomName:'{"translate":"tbc.enemy.boss.raid_leader","color":"gray"}'}
 # Standard Illager Attacks
 scoreboard players set @s attack_092 1
 scoreboard players set @s attack_093 1

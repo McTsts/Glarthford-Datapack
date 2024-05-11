@@ -1,5 +1,5 @@
 execute as @e[tag=suso] run function glarth:mechanic/action/gary_move/suso
-summon cat -17.50 26.00 -184.50 {CatType:3,NoAI:1,Sitting:0,CustomName:'{"translate":"suso","color":"blue"}',CustomNameVisible:1,Tags:["suso_cat"],Rotation:[180f,0f],Invulnerable:1}
+summon cat -17.50 26.00 -184.50 {CatType:3,NoAI:1,Sitting:0,CustomName:'{"translate":"suso","color":"blue"}',CustomNameVisible:1,Tags:["suso_cat"],Rotation:[180.0f,0.0f],Invulnerable:1}
 
 playsound minecraft:entity.cat.ambient neutral @a -17.50 26.00 -184.50 1 1.1
 playsound minecraft:entity.cat.ambient neutral @a -17.50 26.00 -184.50 1 1.0

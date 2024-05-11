@@ -17,6 +17,6 @@ execute if score @s action matches 310 at @s run particle minecraft:explosion 10
 execute if score @s action matches 310 at @s run tag @s add c
 execute if score @s action matches 310 at @s run tag @s remove open_tutorial
 execute if score @s action matches 310 at @s run tag @s remove cnoc
-execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 19 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:"{\"translate\":\"tutorial.12.a\",\"color\":\"green\"}",CustomNameVisible:1}
-execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 18.7 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:"{\"translate\":\"tutorial.12.b\",\"color\":\"green\"}",CustomNameVisible:1}
-execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 18.4 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:"{\"translate\":\"tutorial.12.c\",\"color\":\"green\"}",CustomNameVisible:1}
+execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 19 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:'{"translate":"tutorial.12.a","color":"green"}',CustomNameVisible:1}
+execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 18.7 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:'{"translate":"tutorial.12.b","color":"green"}',CustomNameVisible:1}
+execute if score @s action matches 310 at @s run summon minecraft:area_effect_cloud 125 18.4 -213 {Radius:0.0f,Duration:2147483647,Tags:["tutorialMSG12"],CustomName:'{"translate":"tutorial.12.c","color":"green"}',CustomNameVisible:1}

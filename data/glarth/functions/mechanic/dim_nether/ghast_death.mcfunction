@@ -3,7 +3,7 @@ kill @e[tag=ghastName]
 playsound minecraft:entity.ghast.death hostile @a -192 28 -195 1 1
 
 kill @e[tag=piglin2cut]
-summon armor_stand -192 29 -189 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:482,Unbreakable:1}}],Tags:["char","piglin2cut","angryPiglin","cnoc"],Rotation:[180f,0f],CustomName:"{\"translate\":\"piglin2\",\"color\":\"light_purple\"}",CustomNameVisible:1}
+summon armor_stand -192 29 -189 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",count:1},{id:"minecraft:chainmail_chestplate",count:1},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:custom_model_data":482,"minecraft:unbreakable":{}}}],Tags:["char","piglin2cut","angryPiglin","cnoc"],Rotation:[180.0f,0.0f],CustomName:'{"translate":"piglin2","color":"light_purple"}',CustomNameVisible:1}
 
 setblock -192 27 -192 minecraft:nether_bricks
 setblock -193 27 -190 minecraft:nether_bricks

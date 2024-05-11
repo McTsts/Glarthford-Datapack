@@ -1,5 +1,5 @@
 # prepare
-summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["tbcLobby"],CustomName:"\"Main\"",CustomNameVisible:0}
+summon minecraft:area_effect_cloud 0 0 0 {Radius:0.0f,Duration:2147483647,Tags:["tbcLobby"],CustomName:'"Main"',CustomNameVisible:0}
 scoreboard players add boss_rush Stats 1
 
 # spawn

@@ -16,7 +16,7 @@ give @a[scores={playerid=1..}] minecraft:diamond_sword
 give @a[scores={playerid=1..}] minecraft:stone_pickaxe
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:crossbow{bow:"crossbow"}
+give @a[scores={playerid=1..}] minecraft:crossbow[custom_data={bow:"crossbow"}]
 give @a[scores={playerid=1..}] minecraft:arrow 100
 
 # Staff
@@ -50,16 +50,16 @@ give @a[scores={playerid=1..}] minecraft:snowball 5
 give @a[scores={playerid=1..}] minecraft:spider_eye 5
 execute as @a[scores={playerid=1..}] run function glarth:mechanic/give/beehive
 execute as @a[scores={playerid=1..}] run function glarth:mechanic/give/beehive
-give @a[scores={playerid=1..}] diamond_hoe{CustomModelData:38,HideFlags:63,custom:"tophat",display:{Name:'{"translate":"item.tophat","italic":false}'}}
+give @a[scores={playerid=1..}] minecraft:diamond_hoe[custom_model_data=38,custom_name='{"translate":"item.tophat","italic":false}',hide_additional_tooltip={},custom_data={custom:"tophat"}]
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:speed"} 1
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:leaping"} 1
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:healing"} 3
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:strong_healing"} 1
-give @a[scores={playerid=1..}] minecraft:potion{custom:"fire_resistance"} 1
-give @a[scores={playerid=1..}] minecraft:gold_nugget{CustomModelData:40,custom:"milk_bottle"} 1
-give @a[scores={playerid=1..}] minecraft:potion{Potion:"minecraft:water"} 1
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:speed"}] 1
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:leaping"}] 1
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}] 3
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:strong_healing"}] 1
+give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}] 1
+give @a[scores={playerid=1..}] minecraft:gold_nugget[custom_model_data=40,custom_data={custom:"milk_bottle"}] 1
+give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:water"}] 1
 
 # Pouch
 give @a[scores={playerid=1..}] minecraft:cooked_beef 10

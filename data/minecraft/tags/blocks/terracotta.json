@@ -1,5 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "minecraft:red_terracotta",
     "minecraft:blue_terracotta",

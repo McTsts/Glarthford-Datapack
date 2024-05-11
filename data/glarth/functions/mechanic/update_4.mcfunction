@@ -7,17 +7,17 @@ execute if score gate Stats matches 1 run setblock 9 26 -248 minecraft:acacia_bu
 execute if score gate Stats matches 1 run setblock 9 27 -248 minecraft:air
 
 #Tip 3
-tag @a[tag=!tip3,nbt={Inventory:[{tag:{CustomPotionColor: 36331}}]}] add haspot 
+tag @a[tag=!tip3,nbt={Inventory:[{components:{"minecraft:potion_contents":{custom_color:36331}}}]}] add haspot 
 execute as @a[tag=haspot,tag=!tip3] run function glarth:mechanic/tip/3
 tag @a[tag=haspot] remove haspot
 
 #Tip 7
-tag @a[tag=!tip7,nbt={Inventory:[{tag:{CustomPotionEffects:[{Duration:1200,Id:26}]}}]}] add haspot2
+tag @a[tag=!tip7,nbt={Inventory:[{components:{"minecraft:custom_data":{CustomPotionEffects:[{Duration:1200,Id:26}]}}}]}] add haspot2
 execute as @a[tag=haspot2,tag=!tip7] run function glarth:mechanic/tip/7
 tag @a[tag=haspot2] remove haspot2
 
 #Tip 8
-tag @a[tag=!tip8,nbt={Inventory:[{tag:{CustomPotionColor: 10936063}}]}] add haspot3
+tag @a[tag=!tip8,nbt={Inventory:[{components:{"minecraft:potion_contents":{custom_color:10936063}}}]}] add haspot3
 execute as @a[tag=haspot3,tag=!tip8] run function glarth:mechanic/tip/8
 tag @a[tag=haspot3] remove haspot3
 
