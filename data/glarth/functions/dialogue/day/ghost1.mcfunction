@@ -1,2 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"ghost1","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"ghost1.d","color":"gray"}]
-playsound ghost21 voice @a[r=5] ~ ~ ~ 100 1

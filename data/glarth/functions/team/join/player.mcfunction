@@ -1,0 +1,12 @@
+execute if score @s ID matches 01 run team join p01
+execute if score @s ID matches 02 run team join p02
+execute if score @s ID matches 03 run team join p03
+execute if score @s ID matches 04 run team join p04
+execute if score @s ID matches 05 run team join p05
+execute if score @s ID matches 06 run team join p06
+execute if score @s ID matches 07 run team join p07
+execute if score @s ID matches 08 run team join p08
+execute if score @s ID matches 09 run team join p09
+execute if score @s ID matches 10 run team join p10
+execute if score @s ID matches 11 run team join p11
+execute if score @s ID matches 12.. run team join player

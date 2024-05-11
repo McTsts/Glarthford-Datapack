@@ -1,0 +1,4 @@
+execute unless entity @e[tag=frog6,type=armor_stand] run summon minecraft:area_effect_cloud -24 26 -130 {Radius:0.0f,Duration:2147483647,Tags:["frogEnter","frogEnter6"],Particle:"minecraft:block minecraft:air",Effects:[]}
+execute unless entity @e[tag=frog6,type=armor_stand] run summon minecraft:area_effect_cloud -24 26 -132 {Radius:0.0f,Duration:2147483647,Tags:["frogEnter","frogEnter6"],Particle:"minecraft:block minecraft:air",Effects:[]}
+execute unless entity @e[tag=frog6,type=armor_stand] run kill @e[tag=frogEnter6,sort=random,type=area_effect_cloud,limit=1]
+execute unless entity @e[tag=frog6,type=armor_stand] run summon minecraft:armor_stand -27 27 -130 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:48}}],Tags:["frog","frog6","frogFlee"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Rotation:[-90f,0f]}

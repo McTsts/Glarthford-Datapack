@@ -1,0 +1,2 @@
+#/data merge block 165 24 -101 {Text4:'{"text":"","clickEvent":{"action":"run_command","value":"/function glarth:sign/other/hexapawn"}}'}
+tellraw @s ["\n",{"text":"-=- ","color":"gray"},{"translate":"lobby.hexapawn.msg.1","color":"gray","bold":true},{"text":" -=-","color":"gray"},"\n",{"translate":"lobby.hexapawn.msg.2","color":"gray"},"\n",{"translate":"lobby.hexapawn.msg.3","color":"gray"},"\n",{"translate":"lobby.hexapawn.msg.4","color":"gray"},"\n",{"translate":"lobby.hexapawn.msg.5","color":"gray"}]

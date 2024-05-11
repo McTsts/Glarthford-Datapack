@@ -1,95 +1,64 @@
-#Game
-scoreboard players set playing Stats 0
-execute @a[m=2] ~ ~ ~ scoreboard players add playing Stats 1
-gamemode 3 @a[score_deathT_min=1,score_deathT=1]
-tp @a[score_deathT_min=1,score_deathT=1] @r[m=2]
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test playing Stats 0 0
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ tellraw @a ["",{"translate":"gameover","color":"red"}]
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ playsound lose player @a ~ ~ ~ 1000 1
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/end
-function mctsts:mechanic/time
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test time Dis 2359
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ execute @s[tag=!infmode] ~ ~ ~ tellraw @a ["",{"translate":"time","color":"red"}]
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ execute @s[tag=!infmode] ~ ~ ~ playsound lose player @a ~ ~ ~ 1000 1
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ execute @s[tag=!infmode] ~ ~ ~ function mctsts:mechanic/end
-execute @e[tag=boss] ~ ~ ~ scoreboard players tag @a[m=2] add inFight
-execute @r[tag=inFight] ~ ~ ~ execute @e[tag=area_main] ~ ~ ~ testfor @e[tag=boss]
-execute @r[tag=inFight] ~ ~ ~ execute @e[tag=area_main,score_Success=0] ~ ~ ~ function mctsts:mechanic/win_msg
-execute @r[tag=inFight] ~ ~ ~ execute @e[tag=area_main,score_Success=0] ~ ~ ~ function mctsts:mechanic/sound/win
-execute @r[tag=inFight] ~ ~ ~ execute @e[tag=area_main] ~ ~ ~ testfor @e[tag=boss]
-execute @r[tag=inFight] ~ ~ ~ execute @e[tag=area_main,score_Success=0] ~ ~ ~ function mctsts:mechanic/win_ad
+#Time
+function glarth:mechanic/time
+#End Via Time Out
+execute unless score timer boss matches 1..79 if score time Dis matches 2400.. if score day Dis matches 1.. if entity @e[tag=area_main,tag=!infmode] run tellraw @a ["",{"translate":"time","color":"red"}]
+execute unless score timer boss matches 1..79 if score time Dis matches 2400.. if score day Dis matches 1.. if entity @e[tag=area_main,tag=!infmode] run function glarth:mechanic/lose
+# Collission
+function glarth:mechanic/char/collision
 #Functions
-function bentechy:sapling/main
-#Mechanics
-effect @a[x=-41,y=27,z=-215,r=8] 19 1 1 true
+function glarth:mechanic/wind/main
+function glarth:mechanic/game_actions
+function glarth:mechanic/game_mobs
+function glarth.echest:loop/main
+function glarth.doors:tick
 #Quest
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 1 1
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/1
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 2 2
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/2
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 3 3
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/3
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 4 4
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/4
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 5 5
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/5
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test quest Stats 6 6
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/quest/6
-#Actions
-execute @e[tag=meteor] ~ ~ ~ function mctsts:mechanic/action/meteor
-execute @e[tag=graveyard_open] ~ ~ ~ function mctsts:mechanic/action/graveyard_open
-execute @e[tag=mine_wall] ~ ~ ~ function mctsts:mechanic/action/mine_wall
-execute @e[tag=cave_wall] ~ ~ ~ function mctsts:mechanic/action/cave_wall
-execute @e[tag=open_seal] ~ ~ ~ function mctsts:mechanic/action/open_seal
-execute @e[tag=blaze_coin] ~ ~ ~ function mctsts:mechanic/action/blaze_coin
-execute @e[tag=walk_away] ~ ~ ~ function mctsts:mechanic/action/walk_away
-execute @e[tag=nether_gate] ~ ~ ~ function mctsts:mechanic/action/nether_gate
-execute @e[tag=bread] ~ ~ ~ function mctsts:mechanic/action/bread
-execute @e[tag=ghost1w] ~ ~ ~ function mctsts:mechanic/action/ghost1
-execute @e[tag=ghost2w] ~ ~ ~ function mctsts:mechanic/action/ghost2
-execute @e[tag=run_off] ~ ~ ~ function mctsts:mechanic/action/run_off
-execute @e[tag=fly_off] ~ ~ ~ function mctsts:mechanic/action/fly_off
-execute @e[tag=360] ~ ~ ~ function mctsts:mechanic/action/360
-execute @e[tag=tp] ~ ~ ~ function mctsts:mechanic/action/tp
-execute @e[tag=die] ~ ~ ~ function mctsts:mechanic/action/die
-execute @e[tag=die2] ~ ~ ~ function mctsts:mechanic/action/die2
-#Trash Item Clear
-clear @a wheat_seeds
-clear @a web
-#Pickup
-execute @a ~ ~ ~ entitydata @e[rm=5,tag=pickup_name] {CustomNameVisible:0}
-execute @a ~ ~ ~ entitydata @e[r=4,tag=pickup_name] {CustomNameVisible:1}
+execute if score quest Stats matches 0 run function glarth:mechanic/quest/0
+execute if score quest Stats matches 1 run function glarth:mechanic/quest/1
+execute if score quest Stats matches 2 run function glarth:mechanic/quest/2
+execute if score quest Stats matches 3 run function glarth:mechanic/quest/3
+execute if score quest Stats matches 4 run function glarth:mechanic/quest/4
+execute if score quest Stats matches 5 run function glarth:mechanic/quest/5
+execute if score quest Stats matches 6 run function glarth:mechanic/quest/6
+execute if score quest Stats matches 7 run function glarth:mechanic/quest/7
+execute if score quest Stats matches 8 run function glarth:mechanic/quest/8
+execute if score quest Stats matches 9 run function glarth:mechanic/quest/9
 #Field
-execute @a[x=10,y=27,z=-248,dy=0] ~ ~ ~ gamerule doTileDrops true
-execute @a[x=8,y=27,z=-248,dy=0] ~ ~ ~ gamerule doTileDrops false
-#Field Gate
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test gate Stats 0 0
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ fill 9 26 -248 9 26 -248 minecraft:spruce_fence_gate facing=east,open=false
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock 9 27 -248 minecraft:barrier
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test gate Stats 1 1
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ fill 9 26 -248 9 26 -248 minecraft:spruce_fence_gate facing=east,open=true
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ setblock 9 27 -248 minecraft:air
-#Bottles
-scoreboard players tag @a add holdsBottle {SelectedItem:{id:"minecraft:glass_bottle"}}
-scoreboard players tag @a remove holdsBottle {SelectedItem:{id:"minecraft:glass_bottle",tag:{HideFlags:63}}}
-replaceitem entity @a[tag=holdsBottle] slot.weapon glass_bottle 1 0 {CanPlaceOn:["water","flowing_water"],HideFlags:63}
-scoreboard players tag @a remove holdsBottle
-#Slime Helmet
-scoreboard players tag @a remove hasSH
-scoreboard players tag @a add hasSH {Inventory:[{id:"minecraft:chainmail_helmet",tag:{display:{LocName:"item.slime_helmet"}},Slot:103b}]}
-effect @a[x=-1,y=19,z=-122,r=7,tag=!hasSH] 19 1 10 true
-effect @a[x=-1,y=19,z=-113,r=7,tag=!hasSH] 19 1 120 true
-effect @a[x=-5,y=20,z=-104,r=7,tag=!hasSH] 7 1 10 true
-effect @a[x=2,y=28,z=-101,r=15,tag=!hasSH] 19 1 10 true
+execute as @a[x=10,y=26,z=-248,distance=..0.8] run gamerule doTileDrops true
+execute as @a[x=8,y=26,z=-248,distance=..1.6] run gamerule doTileDrops false
 #POT
-scoreboard players tag @r add func
-execute @e[tag=area_main] ~ ~ ~ effect @a[tag=func] 4 0
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ scoreboard players set @a[tag=func] PoT 100
-scoreboard players tag @a remove func
-execute @a[score_PoT_min=1] ~ ~ ~ function mctsts:mechanic/pot
+scoreboard players set doingPoT Stats 0
+execute as @a[scores={PoT=1..}] at @s run function glarth:mechanic/action/pot
+execute as @a[scores={PoT2=1..}] at @s run function glarth:mechanic/action/pot2
+execute as @a[scores={PoT3=1..}] at @s run function glarth:mechanic/action/pot3
 #Functions
-execute @r[x=-67,y=27,z=-211,r=10] ~ ~ ~ function mctsts:mechanic/gate
-function mctsts:mechanic/particles
-function mctsts:mechanic/pickup
-function mctsts:mechanic/sound
-function mctsts:char/char
+execute as @r[x=-67,y=27,z=-211,distance=..10] run function glarth:mechanic/char/gate
+execute positioned 10 26 -144 run kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:lead"}}]
+function glarth:mechanic/particles
+function glarth:mechanic/pickup
+function glarth:mechanic/sound
+function glarth:mechanic/char/main
+#Fishing Rod
+tp @e[tag=frA,type=silverfish] 6 27 -144
+tp @e[tag=frB,type=silverfish] 9.9 29.0 -143.3
+execute as @a[tag=!inFR,x=12,y=27,z=-145,distance=..14] run function glarth:mechanic/char/fishing_rod
+execute as @a[tag=inFR,x=12,y=27,z=-145,distance=14.001..] run tag @e remove inFR
+#Apples
+execute if entity @a[x=-9,y=27,z=-264,distance=..20] run scoreboard players add apples Animation 1
+execute if score apples Animation matches 100 run function glarth:mechanic/animation/apples/random
+execute if score apples Animation matches 100 run scoreboard players set apples Animation -300
+execute as @e[tag=applex,type=armor_stand] at @s if entity @a[distance=..50] run function glarth:mechanic/animation/apples/main
+#Misc Animation
+execute as @e[tag=tree1] run function glarth:mechanic/animation/tree1
+execute if score Gates Animation matches 0..81 run function glarth:mechanic/animation/gates/city/move
+execute unless score ship Animation matches 0 run function glarth:mechanic/animation/ship/conversion
+# Dialogue
+function glarth:dialogue/main
+# Game E Table
+execute unless score lowGraphics Stats matches 1 as @e[type=armor_stand,tag=etMain] at @s if entity @p[distance=..15] run function ench:table/main
+# Sleep
+execute as @a[scores={sleep=1..}] at @s if block ~ ~ ~ #minecraft:beds run tag @s add hasSlept
+execute as @a[tag=hasSlept] at @s unless block ~ ~ ~ #minecraft:beds run scoreboard players set @s sleep 0
+execute as @a[tag=hasSlept] at @s unless block ~ ~ ~ #minecraft:beds run tag @s remove hasSlept
+execute if entity @a[gamemode=adventure,scores={sleep=1..},tag=hasSlept] unless entity @a[gamemode=adventure,scores={sleep=..0}] run scoreboard players set travel Dis 5
+execute if entity @a[gamemode=adventure,scores={sleep=1..},tag=hasSlept] unless entity @a[gamemode=adventure,scores={sleep=..0}] run function glarth:mechanic/travel_forwards
+execute if entity @a[gamemode=adventure,scores={sleep=1..},tag=hasSlept] unless entity @a[gamemode=adventure,scores={sleep=..0}] run function glarth:mechanic/time/forcetime

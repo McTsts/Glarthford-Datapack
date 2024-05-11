@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"astronomer","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"astronomer.2","color":"gray"}]
+playsound astronomer4 voice @a[distance=..5] ~ ~ ~ 1 1 1

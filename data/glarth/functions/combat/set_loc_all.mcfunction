@@ -1,0 +1,1 @@
+execute as @e[tag=tbcEnemy] run function glarth:combat/set_loc

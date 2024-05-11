@@ -1,3 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"assassin","color":"black"},{"text":"] ","color":"dark_gray"},{"translate":"assassin.n","color":"gray"}]
-playsound assassin2 voice @a[r=5] ~ ~ ~ 100 1
-execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"assassin.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 55"}},{"text":"] ","color":"green"}]

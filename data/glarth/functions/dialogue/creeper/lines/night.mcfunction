@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"creeper","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"creeper.n","color":"gray"}]
+execute as @a at @s run playsound creeper2 voice @s ~ ~ ~ 1 1 1

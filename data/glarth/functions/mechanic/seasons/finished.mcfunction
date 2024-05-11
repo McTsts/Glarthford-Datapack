@@ -1,0 +1,1 @@
+function glarth:mechanic/start_tale

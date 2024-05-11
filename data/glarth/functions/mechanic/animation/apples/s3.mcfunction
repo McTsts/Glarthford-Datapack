@@ -1,0 +1,2 @@
+summon minecraft:armor_stand -1.3 30.76 -263 {ArmorItems:[{},{},{},{id:"diamond_hoe",tag:{CustomModelData:261},Count:1}],NoGravity:1,Tags:["applex","applex3"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Marker:1}
+setblock -2 32 -263 air

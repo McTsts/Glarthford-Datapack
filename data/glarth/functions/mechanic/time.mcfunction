@@ -12,8 +12,11 @@ scoreboard players operation time Dis *= 100 Dis
 scoreboard players operation time Dis += minute Dis
 scoreboard players operation update Dis = tick Dis
 scoreboard players operation update Dis %= 20 Dis
-execute @e[tag=area_main] ~ ~ ~ scoreboard players test update Dis 0 0
-execute @e[tag=area_main,score_Success_min=1] ~ ~ ~ function mctsts:mechanic/update
-
+execute if score time Dis matches ..0 run scoreboard players remove day Dis 1
+execute if score time Dis matches ..0 run scoreboard players add tick Dis 28800
+execute if score update Dis matches 0 run function glarth:mechanic/update_1
+execute if score update Dis matches 5 run function glarth:mechanic/update_2
+execute if score update Dis matches 10 run function glarth:mechanic/update_3
+execute if score update Dis matches 15 run function glarth:mechanic/update_4
 
 

@@ -1,0 +1,6 @@
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=down] run setblock ~ ~ ~ minecraft:command_block[facing=down]
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=east] run setblock ~ ~ ~ minecraft:command_block[facing=east]
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=west] run setblock ~ ~ ~ minecraft:command_block[facing=west]
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=north] run setblock ~ ~ ~ minecraft:command_block[facing=north]
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=south] run setblock ~ ~ ~ minecraft:command_block[facing=south]
+execute if block ~ ~ ~ minecraft:repeating_command_block[facing=up] run setblock ~ ~ ~ minecraft:command_block[facing=up]

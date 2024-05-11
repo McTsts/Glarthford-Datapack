@@ -1,3 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"soldier","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"soldier.d","color":"gray"}]
-playsound soldier1 voice @a[r=5] ~ ~ ~ 100 1
-execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"soldier.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 26"}},{"text":"] ","color":"green"}]

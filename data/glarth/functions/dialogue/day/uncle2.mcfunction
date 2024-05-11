@@ -1,2 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"uncle","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"uncle.d2","color":"gray"}]
-playsound uncle3 voice @a[r=5] ~ ~ ~ 100 1

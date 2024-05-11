@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"zombie","color":"dark_green"},{"text":"] ","color":"dark_gray"},{"translate":"zombie.n","color":"gray"}]
+execute as @a at @s run playsound zombie2 voice @s ~ ~ ~ 1 1 1

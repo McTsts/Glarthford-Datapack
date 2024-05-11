@@ -1,0 +1,1 @@
+scoreboard players set wait Stats -100000

@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"bat","color":"black"},{"text":"] ","color":"dark_gray"},{"translate":"bat.n","color":"gray"}]
+execute as @a at @s run playsound minecraft:bat4 voice @s ~ ~ ~ 1 1 1

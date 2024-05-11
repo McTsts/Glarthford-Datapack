@@ -1,0 +1,8 @@
+execute as @e[tag=roberto] at @s run summon zombie ~ ~ ~ {CustomName:"{\"translate\":\"roberto\",\"color\":\"black\"}",CustomNameVisible:1,Tags:["roberto_boss","boss"],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:1,Operation:0,UUID:[I;0,63824,0,160426]},{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.075,Operation:0,UUID:[I;0,63824,0,160426]}],Enchantments:[{id:"depth_strider",lvl:3}]}},{id:"minecraft:leather_leggings",Count:1b},{id:"minecraft:leather_chestplate",Count:1b},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:"90ed9acc-7213-4fa6-a932-33ece46f1fc5",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc1Zjc1MmY3ZjNjMzI2NTY5YjU0Nzg0ZmE1MWU0NzllMTJkY2Q5N2RmYmVmZmZlMzhkM2RiNWY3MjE1Y2ViIn19fQ=="}]}}}}],HandItems:[{id:"minecraft:iron_sword",Count:1b,tag:{Enchantments:[{id:"knockback",lvl:2}]}},{}],ArmorDropChances:[0.0F,0.0F,0.0F,0.085F],HandDropChances:[0.0F,0.085F],Attributes:[{Name:generic.maxHealth,Base:30},{Name:generic.attackDamage,Base:5}],Health:30.0f,PersistenceRequired:1b}
+title @a title ["",{"translate":"roberto","color":"dark_red","bold":true}]
+kill @e[tag=roberto]
+clone 173 42 -158 173 40 -161 163 26 -160
+setblock 167 29 -153 minecraft:stone_bricks
+fill 169 29 -153 168 29 -153 minecraft:infested_mossy_stone_bricks
+tp @a[x=171,y=26,z=-157,distance=6..,gamemode=adventure] @r[x=171,y=26,z=-157,distance=..6,gamemode=adventure]
+execute as @a at @s run playsound boss1 voice @s ~ ~ ~ 0.8 1

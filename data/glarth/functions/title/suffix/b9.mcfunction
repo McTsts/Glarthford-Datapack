@@ -1,0 +1,26 @@
+scoreboard objectives add suffixB9 dummy
+scoreboard players add @a[scores={suffixB9=1..}] suffixB9 1
+title @a[scores={suffixB9=2}] title ["",{"text":"","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=3}] title ["",{"text":"R","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=4}] title ["",{"text":"R","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=5}] title ["",{"text":"Ra","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=6}] title ["",{"text":"Ra","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=7}] title ["",{"text":"Rai","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=8}] title ["",{"text":"Rai","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=9}] title ["",{"text":"Raid ","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=10}] title ["",{"text":"Raid ","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=11}] title ["",{"text":"Raid C","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=12}] title ["",{"text":"Raid C","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=13}] title ["",{"text":"Raid Ca","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=14}] title ["",{"text":"Raid Ca","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=15}] title ["",{"text":"Raid Cap","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=16}] title ["",{"text":"Raid Cap","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=17}] title ["",{"text":"Raid Capt","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=18}] title ["",{"text":"Raid Capt","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=19}] title ["",{"text":"Raid Capta","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=20}] title ["",{"text":"Raid Capta","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=21}] title ["",{"text":"Raid Captai","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB9=22}] title ["",{"text":"Raid Captai","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB9=23}] title ["",{"text":"Raid Captain","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+scoreboard players set @a[scores={suffixB9=24..}] suffixB9 0
+title @a[scores={suffixB9=1..}] times 0 40 0

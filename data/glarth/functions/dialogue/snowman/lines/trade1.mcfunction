@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"snowman","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"snowman.1","color":"gray"}]
+playsound snowman5 voice @a[distance=..5] ~ ~ ~ 1 1 1

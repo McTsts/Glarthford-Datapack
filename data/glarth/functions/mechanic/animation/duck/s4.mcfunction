@@ -1,0 +1,1 @@
+execute positioned -5 37.8 -132 unless entity @e[tag=duck,distance=..3] run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:151}}],NoGravity:1,Tags:["duck","duck4"],Rotation:[-140f,0f],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Marker:1}

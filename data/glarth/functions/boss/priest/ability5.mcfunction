@@ -1,3 +1,0 @@
-execute @e[tag=ender_boss] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Particle:dragonbreath,ReapplicationDelay:20,Radius:3f,RadiusPerTick:-0.1f,RadiusOnUse:-0.3f,Duration:100,DurationOnUse:-10f,Effects:[{Id:20,Amplifier:0,Duration:140,ShowParticles:0b}]}
-execute @e[tag=ender_boss] ~ ~ ~ tellraw @a[r=15] ["",{"text":"\n[","color":"dark_gray"},{"translate":"ender_priest","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"ender_priest.5","color":"gray"}]
-execute @e[tag=ender_boss] ~ ~ ~ playsound ender_priest7 voice @a[r=15] ~ ~ ~ 100 1

@@ -1,20 +1,22 @@
-scoreboard players set tick Dis 0
+scoreboard players remove tick Dis 28800
+scoreboard players set time Dis 0000
+scoreboard players add day Dis 1
+# resurrect all dead characters
+execute unless score quest Stats matches 9 as @e[tag=deadChar,tag=charUnloaded,type=armor_stand] run function glarth:mechanic/char/load
+execute unless score quest Stats matches 9 as @e[tag=deadChar,type=armor_stand] run function glarth:mechanic/action/resurrect
+
 #Butcher
-scoreboard players tag @e[tag=butcher] add sleep
-tp @e[tag=butcher] 0.7 29.5 -211.8 
-entitydata @e[tag=butcher] {Pose:{Head:[-90f,0f,0f]},NoGravity:1,Rotation:[110f,0f]}
-blockdata -2 30 -214 {Lock:""}
-#Baker
-scoreboard players tag @e[tag=baker] add sleep
-tp @e[tag=baker] 13.3 29.5 -213
-entitydata @e[tag=baker] {Pose:{Head:[-90f,0f,0f]},NoGravity:1,Rotation:[-90f,0f]}
-blockdata 14 26 -217 {Lock:""}
-blockdata 17 30 -215 {Lock:""}
+execute unless score quest Stats matches 4 if entity @e[type=area_effect_cloud,tag=events,tag=evButcherWakes] run function glarth:events/event/wakes/butcher_undo
+execute unless score quest Stats matches 3..4 run function glarth:events/event/wakes/baker_undo
 #Zombie/Skeleton
-summon armor_stand -11 26 -159 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,Damage:22,tag:{Unbreakable:1}}],Tags:["char","skeleton"],Rotation:[140f,0f],CustomName:"Skeleton",Team:dark_gray,CustomNameVisible:1}
-summon armor_stand -24 29 -229 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,Damage:68,tag:{Unbreakable:1}}],Tags:["char","zombie"],Rotation:[0f,0f],CustomName:"Zombie",Team:dark_green,CustomNameVisible:1}
-#Lumberjack/Guard
-scoreboard players tag @e[tag=lumberjack] add sleep
-blockdata 77 28 -257 {Lock:""}
-scoreboard players tag @e[tag=guard] add sleep
-blockdata 21 26 -186 {Lock:""}
+execute if entity @e[type=area_effect_cloud,tag=events,tag=evSkeletonDies] unless score quest Stats matches 6..7 run function glarth:events/event/dies/skeleton_undo
+execute if entity @e[type=area_effect_cloud,tag=events,tag=evZombieDies] unless score quest Stats matches 7 run function glarth:events/event/dies/zombie_undo
+#Simple Sleep
+execute unless score quest Stats matches 4 if entity @e[type=area_effect_cloud,tag=events,tag=evLumberjackWakes] run function glarth:events/event/wakes/lumberjack_undo
+execute unless score quest Stats matches 4 unless score quest Stats matches 7 if entity @e[type=area_effect_cloud,tag=events,tag=evGuardWakes] run function glarth:events/event/wakes/guard_undo
+execute unless score quest Stats matches 4 unless score quest Stats matches 9 if entity @e[type=area_effect_cloud,tag=events,tag=evFisherMoves] run function glarth:events/event/moves/fisher_undo
+
+#Fisher Reset
+execute unless score quest Stats matches 4 unless score quest Stats matches 9 run function glarth:events/event/moves/fisher_undo
+
+stopsound @a * minecraft:time

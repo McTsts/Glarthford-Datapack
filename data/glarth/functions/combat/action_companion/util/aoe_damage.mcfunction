@@ -1,0 +1,2 @@
+execute if score damage tbcStats matches 1.. run scoreboard players operation @s tbcHealth -= damage tbcStats
+execute if score damage tbcStats matches 1.. run scoreboard players set @s[tag=tbcNoHealth] tbcHealth 0

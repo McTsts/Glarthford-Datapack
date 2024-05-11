@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"bucketm","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"bucketm.e","color":"gray"}]
+execute as @a at @s run playsound minecraft:bucketm5 voice @s ~ ~ ~ 1 1 1

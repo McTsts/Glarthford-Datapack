@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 1
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": 0.84176809737347853939782190903267
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1,display:{Name:'{\"translate\":\"tbc.attack.staff.fire_staff\",\"italic\":false}',Lore:['\"\"','{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}','[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.low\"}]}]','[\" \",{\"translate\":\"tbc.attack.msg.name.fire\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.low\"}]}]']},HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

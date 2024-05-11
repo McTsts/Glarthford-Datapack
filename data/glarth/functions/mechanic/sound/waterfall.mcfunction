@@ -1,12 +1,7 @@
 scoreboard players set r Random 5
-function mctsts:util/random
-execute @s ~ ~ ~ scoreboard players test n Random 1 1
-execute @s[score_Success_min=1] ~ ~ ~ playsound waterfall1 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 2 2
-execute @s[score_Success_min=1] ~ ~ ~ playsound waterfall2 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 3 3
-execute @s[score_Success_min=1] ~ ~ ~ playsound waterfall3 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 4 4
-execute @s[score_Success_min=1] ~ ~ ~ playsound waterfall4 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 5 5
-execute @s[score_Success_min=1] ~ ~ ~ playsound waterfall5 master @a ~ ~ ~ 1 1
+function glarth:util/random
+execute if score n Random matches 1 run playsound waterfall1 ambient @a ~ ~ ~ 0.5 1
+execute if score n Random matches 2 run playsound waterfall2 ambient @a ~ ~ ~ 0.5 1
+execute if score n Random matches 3 run playsound waterfall3 ambient @a ~ ~ ~ 0.5 1
+execute if score n Random matches 4 run playsound waterfall4 ambient @a ~ ~ ~ 0.5 1
+execute if score n Random matches 5 run playsound waterfall5 ambient @a ~ ~ ~ 0.5 1

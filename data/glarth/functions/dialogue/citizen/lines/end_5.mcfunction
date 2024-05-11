@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"citizen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"citizen.e.5","color":"gray"}]
+execute as @a at @s run playsound citizen8 voice @s ~ ~ ~ 1 1 1

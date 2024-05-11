@@ -1,0 +1,1 @@
+execute unless score shipFall Animation matches 1 positioned -23 26 -134 unless entity @e[tag=duck,distance=..3] run summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:166}}],NoGravity:1,Tags:["duck","duck1"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Marker:1}

@@ -1,0 +1,1 @@
+execute facing entity @p[gamemode=adventure] feet run tp @s ^ ^ ^0.1 ~ ~

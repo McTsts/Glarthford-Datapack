@@ -1,0 +1,2 @@
+execute unless entity @e[tag=soldier] run summon armor_stand -23 26 -201 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1,Damage:38}}],Tags:["char","soldier"],Rotation:[90f,0f],CustomName:"{\"translate\":\"soldier\",\"color\":\"gray\"}",CustomNameVisible:1}
+tag @e[tag=events,type=area_effect_cloud] add evSoldierAppears

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"akid","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"akid.1","color":"gray"}]
+playsound akid4 voice @a[distance=..5] ~ ~ ~ 1 1 1

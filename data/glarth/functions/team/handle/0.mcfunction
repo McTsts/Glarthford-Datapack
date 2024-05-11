@@ -1,0 +1,1 @@
+function glarth:team/reset

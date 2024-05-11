@@ -1,0 +1,16 @@
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 1 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:15}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 2 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:16}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 3 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:17}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 4 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:18}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 5 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:19}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 6 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:20}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 7 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:21}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 8 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:22}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 9 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:23}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 10 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:24}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 11 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:140}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 12 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:388}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 13 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:389}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 14 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:392}
+execute as @e[tag=tbcSelPlayerAS,type=armor_stand] at @s if score attackType tbcStats matches 15 run replaceitem entity @e[tag=charQ4,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:393}
+

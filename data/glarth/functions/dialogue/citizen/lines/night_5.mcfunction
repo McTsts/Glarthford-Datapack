@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"citizen","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"citizen.n.5","color":"gray"}]
+playsound citizen9 voice @a[distance=..5] ~ ~ ~ 1 1 1

@@ -1,0 +1,97 @@
+# Base
+execute if score @s charBase matches 1 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:52}
+execute if score @s charBase matches 2 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:53}
+execute if score @s charBase matches 3 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:54}
+execute if score @s charBase matches 4 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:55}
+execute if score @s charBase matches 5 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:56}
+execute if score @s charBase matches 6 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:93}
+execute if score @s charBase matches 7 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:94}
+execute if score @s charBase matches 8 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:95}
+execute if score @s charBase matches 9 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:96}
+execute if score @s charBase matches 10 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:97}
+execute if score @s charBase matches 11 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:98}
+execute if score @s charBase matches 12 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:99}
+execute if score @s charBase matches 13 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:100}
+execute if score @s charBase matches 14 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:101}
+execute if score @s charBase matches 15 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:102}
+execute if score @s charBase matches 16 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:103}
+execute if score @s charBase matches 17 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:104}
+execute if score @s charBase matches 18 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:105}
+execute if score @s charBase matches 19 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:106}
+execute if score @s charBase matches 20 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:107}
+execute if score @s charBase matches 21 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:108}
+execute if score @s charBase matches 22 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:109}
+execute if score @s charBase matches 23 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:110}
+execute if score @s charBase matches 24 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:111}
+execute if score @s charBase matches 25 if score realms Stats matches 0 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:112}
+execute if score @s charBase matches 25 unless score realms Stats matches 0 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:518}
+execute if score @s charBase matches 26 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:113}
+execute if score @s charBase matches 27 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:114}
+execute if score @s charBase matches 28 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:115}
+execute if score @s charBase matches 29 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:116}
+execute if score @s charBase matches 30 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:117}
+execute if score @s charBase matches 31 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:438}
+execute if score @s charBase matches 32 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:439}
+execute if score @s charBase matches 33 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:440}
+execute if score @s charBase matches 34 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:441}
+execute if score @s charBase matches 35 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:442}
+execute if score @s charBase matches 36 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:443}
+execute if score @s charBase matches 37 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:444}
+execute if score @s charBase matches 38 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:445}
+execute if score @s charBase matches 39 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:446}
+execute if score @s charBase matches 40 run replaceitem entity @e[tag=charQ1,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:447}
+
+# Body
+execute if score @s charBodyReal matches 1..3 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head air
+execute if score @s charBodyReal matches 4 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:57}
+execute if score @s charBodyReal matches 5 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:58}
+execute if score @s charBodyReal matches 6 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:59}
+execute if score @s charBodyReal matches 7 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:60}
+execute if score @s charBodyReal matches 8 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:61}
+execute if score @s charBodyReal matches 9 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:62}
+execute if score @s charBodyReal matches 10 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:63}
+execute if score @s charBodyReal matches 11 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:64}
+execute if score @s charBodyReal matches 12 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:65}
+execute if score @s charBodyReal matches 13 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:66}
+execute if score @s charBodyReal matches 14 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:67}
+execute if score @s charBodyReal matches 15 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:68}
+
+execute if score @s charBodyReal matches 101 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:69}
+execute if score @s charBodyReal matches 102 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:70}
+execute if score @s charBodyReal matches 103 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:71}
+execute if score @s charBodyReal matches 104 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:72}
+execute if score @s charBodyReal matches 105 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:73}
+execute if score @s charBodyReal matches 106 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:74}
+execute if score @s charBodyReal matches 107 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:75}
+execute if score @s charBodyReal matches 108 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:76}
+execute if score @s charBodyReal matches 109 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:77}
+execute if score @s charBodyReal matches 110 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:259}
+execute if score @s charBodyReal matches 111 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:257}
+execute if score @s charBodyReal matches 112 run replaceitem entity @e[tag=charQ2,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:258}
+
+# Head
+execute if score @s charHeadReal matches 1..3 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head air
+execute if score @s charHeadReal matches 4 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:78}
+execute if score @s charHeadReal matches 5 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:79}
+execute if score @s charHeadReal matches 6 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:80}
+execute if score @s charHeadReal matches 7 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:81}
+execute if score @s charHeadReal matches 8 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:82}
+execute if score @s charHeadReal matches 9 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:83}
+execute if score @s charHeadReal matches 10 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:84}
+execute if score @s charHeadReal matches 11 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:85}
+execute if score @s charHeadReal matches 12 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:86}
+execute if score @s charHeadReal matches 13 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:87}
+execute if score @s charHeadReal matches 14 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:88}
+execute if score @s charHeadReal matches 15 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:89}
+execute if score @s charHeadReal matches 16 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:90}
+execute if score @s charHeadReal matches 17 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:91}
+execute if score @s charHeadReal matches 18 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:92}
+execute if score @s charHeadReal matches 19 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:448}
+execute if score @s charHeadReal matches 20 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:449}
+execute if score @s charHeadReal matches 21 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:450}
+execute if score @s charHeadReal matches 22 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:451}
+execute if score @s charHeadReal matches 23 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:452}
+execute if score @s charHeadReal matches 24 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:453}
+execute if score @s charHeadReal matches 25 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:454}
+execute if score @s charHeadReal matches 26 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:455}
+execute if score @s charHeadReal matches 27 run replaceitem entity @e[tag=charQ3,limit=1,sort=nearest] armor.head diamond_hoe{CustomModelData:456}

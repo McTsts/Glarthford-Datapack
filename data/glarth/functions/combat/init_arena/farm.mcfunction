@@ -1,0 +1,3 @@
+execute if score season winter matches 0 run function glarth:combat/init_arena/farm/summer
+execute if score season winter matches 1 run function glarth:combat/init_arena/farm/winter
+execute if score season winter matches 2 run function glarth:combat/init_arena/farm/autumn

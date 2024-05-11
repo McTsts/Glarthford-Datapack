@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"blacksmith","color":"#282828"},{"text":"] ","color":"dark_gray"},{"translate":"blacksmith.n.3","color":"gray"}]
+playsound blacksmith14 voice @a[distance=..5] ~ ~ ~ 1 1 1

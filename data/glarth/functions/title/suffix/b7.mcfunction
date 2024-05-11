@@ -1,0 +1,26 @@
+scoreboard objectives add suffixB7 dummy
+scoreboard players add @a[scores={suffixB7=1..}] suffixB7 1
+title @a[scores={suffixB7=2}] title ["",{"text":"","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=3}] title ["",{"text":"N","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=4}] title ["",{"text":"N","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=5}] title ["",{"text":"Ne","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=6}] title ["",{"text":"Ne","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=7}] title ["",{"text":"Nec","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=8}] title ["",{"text":"Nec","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=9}] title ["",{"text":"Necr","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=10}] title ["",{"text":"Necr","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=11}] title ["",{"text":"Necro","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=12}] title ["",{"text":"Necro","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=13}] title ["",{"text":"Necrom","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=14}] title ["",{"text":"Necrom","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=15}] title ["",{"text":"Necroma","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=16}] title ["",{"text":"Necroma","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=17}] title ["",{"text":"Necroman","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=18}] title ["",{"text":"Necroman","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=19}] title ["",{"text":"Necromanc","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=20}] title ["",{"text":"Necromanc","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=21}] title ["",{"text":"Necromance","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB7=22}] title ["",{"text":"Necromance","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB7=23}] title ["",{"text":"Necromancer","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+scoreboard players set @a[scores={suffixB7=24..}] suffixB7 0
+title @a[scores={suffixB7=1..}] times 0 40 0

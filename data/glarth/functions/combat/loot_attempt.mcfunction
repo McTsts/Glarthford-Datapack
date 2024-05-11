@@ -1,0 +1,2 @@
+execute unless entity @e[type=area_effect_cloud,tag=tbcLoot] run schedule function glarth:combat/loot_attempt 20t
+execute if entity @e[type=area_effect_cloud,tag=tbcLoot] run function glarth:combat/loot

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"priest","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"priest.d","color":"gray"}]
+playsound priest1 voice @a[distance=..5] ~ ~ ~ 1 1 1

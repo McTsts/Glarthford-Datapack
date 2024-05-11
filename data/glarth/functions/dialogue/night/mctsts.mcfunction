@@ -1,3 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"mctsts","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"mctsts.n","color":"gray"}]
-playsound thomas1 voice @a[r=5] ~ ~ ~ 100 1
-execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"mctsts.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 72"}},{"text":"] ","color":"green"}]

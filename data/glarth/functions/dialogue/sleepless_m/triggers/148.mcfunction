@@ -1,0 +1,6 @@
+#148 Sleepless Man | Rotten Flesh x10 to Poison Sword [A]
+execute if score sleepless_m Temp matches 0 run function glarth:dialogue/sleepless_m/lines/trade1
+execute if score sleepless_m Temp matches 1 run function glarth:dialogue/sleepless_m/lines/trade2
+clear @s minecraft:rotten_flesh 10
+give @s minecraft:golden_pickaxe{Damage:21,display:{Name:'{"translate":"item.poison_sword","italic":false}',Lore:['""','{"translate":"item.modifiers.mainhand","color":"gray","italic":false}','[{"text":" 4 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attackDamage"}]','[{"text":" 1.6 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attackSpeed"}]','""', '{"translate":"item.modifiers.tbc","italic":false,"color":"gray"}', '[" ",{"color":"dark_green","italic":false,"translate":"tbc.attack.msg.name.poison2","with":[{"translate":"tbc.attack.msg.name.damage.average"}]}]']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;1726406633,-1085388984,-1210847267,-916795565],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;-1430400008,1917078167,-1595683736,-1399880695],Slot:"mainhand"}],HideFlags:63} 1
+tag @e[tag=sleepless_m,type=armor_stand] add a

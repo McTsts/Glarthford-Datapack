@@ -1,0 +1,1 @@
+function glarth:mechanic/action/ts_escape

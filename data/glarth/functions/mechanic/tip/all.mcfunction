@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 1 2

@@ -1,0 +1,1 @@
+execute unless entity @e[tag=frog14,type=armor_stand] run summon minecraft:armor_stand 54 38 -131 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{CustomModelData:48}}],Tags:["frog","frog14"],Invulnerable:1b,DisabledSlots:4144959,Invisible:1,Rotation:[1f,0f]}

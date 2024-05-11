@@ -1,0 +1,1 @@
+execute if block ~ ~-1 ~ chain_command_block run function glarth:chain/start

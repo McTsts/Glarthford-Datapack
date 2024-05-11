@@ -1,0 +1,4 @@
+execute if score realms Stats matches 0 if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"fisher.a1"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 5"}}]
+execute if score realms Stats matches 0 if entity @s[tag=a,tag=!b] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"fisher.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 126"}}]
+execute if score realms Stats matches 1 if entity @s[tag=!a] run tag @s add a
+execute if score realms Stats matches 1 if entity @s[tag=!b] run tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"fisher.a2.realms","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 126"}},{"text":"] ","color":"green"}]

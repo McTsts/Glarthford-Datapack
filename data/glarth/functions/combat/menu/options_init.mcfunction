@@ -1,0 +1,12 @@
+replaceitem entity @s hotbar.0 minecraft:rabbit_foot{display:{Name:"{\"translate\":\"tbc.attack.options.flee\",\"italic\":false,\"bold\":true}",Lore:['{"translate":"tbc.lore.flee","color":"gray","italic":false}']}}
+replaceitem entity @s hotbar.1 minecraft:diamond_hoe{CustomModelData:31,HideFlags:63,display:{Name:"{\"translate\":\"tbc.attack.options.skip\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.skip","color":"gray","italic":false}']}}
+replaceitem entity @s hotbar.2 minecraft:iron_leggings{display:{Name:"{\"translate\":\"tbc.attack.options.armor\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.armor","color":"gray","italic":false}']},HideFlags:63}
+replaceitem entity @s hotbar.3 minecraft:flower_banner_pattern{display:{Name:"{\"translate\":\"tbc.attack.options.passive\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.passive","color":"gray","italic":false}']},HideFlags:63}
+replaceitem entity @s hotbar.4 minecraft:bone{display:{Name:"{\"translate\":\"tbc.attack.options.companions\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.companions","color":"gray","italic":false}']},HideFlags:63}
+replaceitem entity @s hotbar.5 minecraft:feather{display:{Name:"{\"translate\":\"tbc.attack.options.speed\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.speed.1","color":"gray","italic":false}','{"translate":"tbc.lore.speed.2","color":"gray","italic":false}','{"translate":"tbc.lore.speed.3","color":"gray","italic":false}']},HideFlags:63}
+replaceitem entity @s hotbar.6 minecraft:quartz{display:{Name:"{\"translate\":\"tbc.attack.options.elemental\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.elemental.1","color":"gray","italic":false}','{"translate":"tbc.lore.elemental.2","color":"gray","italic":false}','{"translate":"tbc.lore.elemental.3","color":"gray","italic":false}']},HideFlags:63}
+replaceitem entity @s hotbar.7 minecraft:gold_nugget{display:{Name:"{\"translate\":\"tbc.attack.options.effects\",\"italic\":false,\"bold\":true,\"color\":\"white\"}",Lore:['{"translate":"tbc.lore.effect","color":"gray","italic":false}']},HideFlags:63,CustomModelData:39}
+
+replaceitem entity @s hotbar.8 minecraft:diamond_hoe{display:{Name:"{\"translate\":\"tbc.attack.return\",\"italic\":false,\"bold\":true,\"color\":\"red\"}"},HideFlags:63,Damage:242,Unbreakable:1}
+
+execute as @s[tag=playedOnce,tag=!tip32] run function glarth:mechanic/tip/32

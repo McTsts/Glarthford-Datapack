@@ -1,0 +1,2 @@
+summon armor_stand 7 48 -276 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1,Damage:31}}],Tags:["char","endermandummy2"],Rotation:[-30f,0f],CustomName:"{\"translate\":\"ender_guard\",\"color\":\"dark_purple\"}",CustomNameVisible:1}
+tag @e[tag=events,type=area_effect_cloud] add evEnderGuardB

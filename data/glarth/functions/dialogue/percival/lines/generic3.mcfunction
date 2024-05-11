@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"percival","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"percival.3","color":"gray","with":[{"translate":"percival.3s","italic":"true","color":"gray"}]}]
+playsound percival3 voice @a[distance=..5] ~ ~ ~ 1 1 1

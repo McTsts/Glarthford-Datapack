@@ -1,0 +1,1 @@
+execute as @a[scores={tbcHealth=..0,playerid=1..},gamemode=adventure] run function glarth:combat/die_player

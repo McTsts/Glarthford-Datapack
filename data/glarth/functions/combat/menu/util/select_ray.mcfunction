@@ -1,0 +1,3 @@
+scoreboard players add selRec tbcStats 1
+execute if score selRec tbcStats matches ..100 if entity @e[tag=tbcEnemy,tag=!tbcUnselectable,distance=..1.3] run tag @e[tag=tbcEnemy,tag=!tbcUnselectable,sort=nearest,limit=1] add tbcSelGlow
+execute if score selRec tbcStats matches ..100 unless entity @e[tag=tbcEnemy,tag=!tbcUnselectable,distance=..1.3] positioned ^ ^ ^0.2 run function glarth:combat/menu/util/select_ray

@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"necromancer","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"necromancer.cut1","color":"gray"}]
+execute as @a at @s run playsound minecraft:necromancer1 voice @s ~ ~ ~ 1 1 1

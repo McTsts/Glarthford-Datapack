@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"bannerman_illusioner","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"bannerman_illusioner.n","color":"gray"}]
+execute as @a at @s run playsound minecraft:bannerman_illusioner3 voice @s ~ ~ ~ 1 1 1

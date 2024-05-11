@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"spider","color":"dark_gray"},{"text":"] ","color":"dark_gray"},{"translate":"spider.n","color":"gray"}]
+execute as @a at @s run playsound spider2 voice @s ~ ~ ~ 1 1 1

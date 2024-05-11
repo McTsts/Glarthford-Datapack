@@ -1,0 +1,1 @@
+execute as @e[tag=bpItem] run data merge entity @s {NoGravity:0}

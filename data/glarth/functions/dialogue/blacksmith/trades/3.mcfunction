@@ -1,0 +1,4 @@
+# Make Blaze Coin
+execute if entity @s[tag=!d] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"blacksmith.a4"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 47"}}]
+execute if entity @s[tag=d,tag=!e] run tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"blacksmith.a4.1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 48"}},{"text":"] ","color":"green"}]
+execute if entity @s[tag=f,tag=!g] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"blacksmith.a5"}],"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trigger set 49"}}]

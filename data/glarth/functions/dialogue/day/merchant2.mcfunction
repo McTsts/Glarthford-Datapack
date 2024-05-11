@@ -1,3 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"merchant2","color":"dark_blue"},{"text":"] ","color":"dark_gray"},{"translate":"merchant2.d","color":"gray"}]
-playsound merchantm1 voice @a[r=5] ~ ~ ~ 100 1
-tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"merchant2.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 22"}},{"text":"] ","color":"green"}]

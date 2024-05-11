@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bricks",
+    "minecraft:bone_block",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:snow_block",
+    "minecraft:hay_block",
+    "minecraft:brown_mushroom_block",
+    "minecraft:furnace",
+    "minecraft:netherrack"
+  ]
+}

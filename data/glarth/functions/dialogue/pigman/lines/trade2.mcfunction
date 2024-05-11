@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"pigman","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"pigman.2","color":"gray"}]
+playsound pigman4 voice @a[distance=..5] ~ ~ ~ 1 1 1

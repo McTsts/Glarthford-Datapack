@@ -1,0 +1,28 @@
+scoreboard objectives add suffixB4 dummy
+scoreboard players add @a[scores={suffixB4=1..}] suffixB4 1
+title @a[scores={suffixB4=2}] title ["",{"text":"","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=3}] title ["",{"text":"E","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=5}] title ["",{"text":"E","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=6}] title ["",{"text":"En","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=8}] title ["",{"text":"En","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=9}] title ["",{"text":"End","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=11}] title ["",{"text":"End","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=12}] title ["",{"text":"Ende","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=14}] title ["",{"text":"Ende","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=15}] title ["",{"text":"Ender","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=17}] title ["",{"text":"Ender","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=18}] title ["",{"text":"Ender ","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=20}] title ["",{"text":"Ender ","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=21}] title ["",{"text":"Ender P","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=23}] title ["",{"text":"Ender P","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=24}] title ["",{"text":"Ender Pr","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=26}] title ["",{"text":"Ender Pr","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=27}] title ["",{"text":"Ender Pri","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=29}] title ["",{"text":"Ender Pri","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=30}] title ["",{"text":"Ender Prie","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=32}] title ["",{"text":"Ender Prie","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=33}] title ["",{"text":"Ender Pries","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB4=35}] title ["",{"text":"Ender Pries","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB4=36}] title ["",{"text":"Ender Priest","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+scoreboard players set @a[scores={suffixB4=76..}] suffixB4 0
+title @a[scores={suffixB4=1..}] times 0 40 0

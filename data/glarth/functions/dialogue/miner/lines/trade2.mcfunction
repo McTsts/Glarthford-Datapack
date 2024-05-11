@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"miner","color":"dark_gray"},{"text":"] ","color":"dark_gray"},{"translate":"miner.1x","color":"gray"}]
+playsound miner6 voice @a[distance=..5] ~ ~ ~ 1 1 1

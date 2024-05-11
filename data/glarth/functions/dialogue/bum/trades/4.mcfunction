@@ -1,0 +1,3 @@
+# Diamond Hoe
+execute if score realms Stats matches 0 if entity @s[tag=!b] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"bum.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 8"}}]
+execute if score realms Stats matches 1 if entity @s[tag=!b] run tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"bum.a2.realms","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 8"}},{"text":"] ","color":"green"}]

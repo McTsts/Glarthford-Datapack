@@ -1,0 +1,10 @@
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2
+function glarth:mechanic/animation/bee/spawn_2

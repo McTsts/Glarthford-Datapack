@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"netheran","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"netheran.l","color":"gray"}]
+execute as @a at @s run playsound netheran3 voice @s ~ ~ ~ 1 1 1

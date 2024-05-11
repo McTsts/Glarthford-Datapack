@@ -1,0 +1,2 @@
+execute as @r[distance=4..12] run scoreboard players add @e[tag=cedric,type=armor_stand,tag=char] cedric 1
+execute if entity @a[distance=4..12] as @e[tag=cedric,type=armor_stand,tag=char] run function glarth:mechanic/quest/_7/_4/1

@@ -1,0 +1,9 @@
+execute as @s[scores={tbcAttack=1}] at @s run function glarth:combat/action_companion/001
+execute as @s[scores={tbcAttack=2}] at @s run function glarth:combat/action_companion/002
+execute as @s[scores={tbcAttack=3}] at @s run function glarth:combat/action_companion/003
+execute as @s[scores={tbcAttack=4}] at @s run function glarth:combat/action_companion/004
+execute as @s[scores={tbcAttack=5}] at @s run function glarth:combat/action_companion/005
+execute as @s[scores={tbcAttack=6}] at @s run function glarth:combat/action_companion/006
+execute as @s[scores={tbcAttack=7}] at @s run function glarth:combat/action_companion/007
+execute as @s[scores={tbcAttack=8}] at @s run function glarth:combat/action_companion/008
+execute as @s[scores={tbcAttack=9}] at @s run function glarth:combat/action_companion/009

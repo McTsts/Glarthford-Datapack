@@ -1,0 +1,6 @@
+execute if score lowGraphics Stats matches 1 run summon minecraft:armor_stand -59 32.0 -136 {ArmorItems:[{},{},{},{id:"diamond_hoe",Count:1,tag:{Damage:95}}],NoGravity:1,Invisible:1,Invulnerable:1,Pose:{Head:[70f,-210f,-90f]},DisabledSlots:2039583,Tags:["witchHat"]}
+execute at @e[tag=witchHat,type=armor_stand] run particle minecraft:witch ~ ~ ~ 1 1 1 0 100
+execute as @e[tag=witch,tag=char,type=minecraft:armor_stand] at @s facing entity @e[tag=witchHat,type=minecraft:armor_stand,limit=1] feet run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=witch,tag=char,type=minecraft:armor_stand] at @s run playsound minecraft:entity.witch.celebrate master @a ~ ~ ~ 1 1
+execute at @e[tag=witchHat,type=armor_stand] run summon armor_stand ~0.5 33.56 ~0.5 {Invulnerable:1b,Invisible:1b,DisabledSlots:2036499,ArmorItems:[{},{id:"minecraft:chainmail_leggings",Count:1b},{id:"minecraft:chainmail_chestplate",Count:1b},{id:"minecraft:diamond_hoe",Count:1b,tag:{CustomModelData:204,Unbreakable:1}}],Tags:["char","con_skeleton","char_look","tbcLoc003"],Rotation:[-70f,0f],CustomName:"{\"translate\":\"con_skeleton\",\"color\":\"gray\"}",CustomNameVisible:1,NoGravity:1}
+kill @e[tag=witchHat,type=armor_stand]

@@ -1,0 +1,3 @@
+scoreboard players add curVLogo pcData 1
+execute if score curVLogo pcData matches 0..6 as @e[type=armor_stand,tag=lobbyScreenC1,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get curVLogo pcData
+execute if score curVLogo pcData matches 7.. as @e[type=armor_stand,tag=lobbyScreenC1,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get 0 Const

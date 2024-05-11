@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"ender_merchant","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"ender_merchant.1","color":"gray","font":"custom:ender"}]
+playsound ender_merchant2 voice @a[distance=..5] ~ ~ ~ 1 1 1

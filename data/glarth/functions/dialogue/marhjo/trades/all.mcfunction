@@ -1,0 +1,4 @@
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iDShovel=0,iShovel=0}] ["",{"translate":"trade2","with":[{"translate":"marhjo.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 71"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iDShovel=0,iShovel=1..}] ["",{"translate":"trade2","with":[{"translate":"marhjo.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 71"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iDShovel=1..,iShovel=1..}] ["",{"translate":"trade2","with":[{"translate":"marhjo.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 71"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5,scores={iDShovel=1..,iShovel=0}] ["",{"translate":"trade2","with":[{"translate":"marhjo.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 162"}}]

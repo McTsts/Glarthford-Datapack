@@ -1,0 +1,2 @@
+tellraw @a ["\n",{"text":"[","color":"dark_gray"},{"translate":"bowm","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"bowm.3","color":"gray"}]
+execute as @a at @s run playsound minecraft:bowm3 voice @s ~ ~ ~ 1 1

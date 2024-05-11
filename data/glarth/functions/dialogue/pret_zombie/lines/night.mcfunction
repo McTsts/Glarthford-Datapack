@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"pret_zombie","color":"#4C00A9"},{"text":"] ","color":"dark_gray"},{"translate":"pret_zombie.n","color":"gray"}]
+playsound pret_zombie2 voice @a[distance=..5] ~ ~ ~ 1 1 1

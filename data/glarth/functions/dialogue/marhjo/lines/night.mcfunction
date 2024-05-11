@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"marhjo","color":"dark_green"},{"text":"] ","color":"dark_gray"},{"translate":"marhjo.n","color":"gray"}]
+playsound marhjo2 voice @a[distance=..5] ~ ~ ~ 1 1 1

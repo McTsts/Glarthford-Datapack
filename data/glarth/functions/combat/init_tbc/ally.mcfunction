@@ -1,0 +1,1 @@
+execute at @e[tag=tbcMarkerMiddle,limit=1,type=area_effect_cloud] run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Tags:["tbc","tbcAlly"]}

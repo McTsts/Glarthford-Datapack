@@ -1,10 +1,6 @@
 scoreboard players set r Random 4
-function mctsts:util/random
-execute @s ~ ~ ~ scoreboard players test n Random 1 1
-execute @s[score_Success_min=1] ~ ~ ~ playsound air1 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 2 2
-execute @s[score_Success_min=1] ~ ~ ~ playsound air2 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 3 3
-execute @s[score_Success_min=1] ~ ~ ~ playsound air3 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 4 4
-execute @s[score_Success_min=1] ~ ~ ~ playsound air4 master @a ~ ~ ~ 1 1
+function glarth:util/random
+execute if score n Random matches 1 run playsound air1 ambient @a ~ ~ ~ 1 1
+execute if score n Random matches 2 run playsound air2 ambient @a ~ ~ ~ 1 1
+execute if score n Random matches 3 run playsound air3 ambient @a ~ ~ ~ 1 1
+execute if score n Random matches 4 run playsound air4 ambient @a ~ ~ ~ 1 1

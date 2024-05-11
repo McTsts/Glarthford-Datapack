@@ -1,14 +1,16 @@
-clone 150 39 -140 140 34 -149 118 18 -138
-fill 120 17 -131 125 10 -136 stone 0 replace dirt
-setblock 125 15 -134 stone variant=andesite
-setblock 120 15 -133 stone variant=andesite
-setblock 123 13 -131 stone variant=andesite
-setblock 124 17 -132 stone variant=andesite
-setblock 122 15 -136 stone variant=andesite
-setblock 120 17 -134 cobblestone
-setblock 124 16 -135 cobblestone
-setblock 125 14 -133 cobblestone
-setblock 123 15 -131 cobblestone
-setblock 121 16 -132 cobblestone
-setblock 121 17 -135 cobblestone
-entitydata @e[tag=quest_name] {CustomName:"§7§l§n#2 The Stolen Fireworks"}
+execute if score 2 questU matches 1 run clone 198 30 -38 186 15 -50 186 15 -118
+execute if score 2 questU matches 0 run clone 198 55 -38 186 40 -50 186 15 -118
+execute if score 2 questU matches 0 run setblock 188 25 -116 minecraft:warped_button[face=wall,facing=west,powered=true]
+execute if score 2 questU matches 0 run setblock 189 24 -116 minecraft:warped_button[face=wall,facing=west,powered=true]
+execute if score 2 questU matches 0 run setblock 188 24 -116 minecraft:warped_button[face=wall,facing=west,powered=true]
+
+execute if score 2 quest matches 1 run clone 193 30 -72 193 30 -72 193 26 -116
+
+scoreboard players operation x quest = 2 quest
+scoreboard players operation x questU = 2 questU
+
+execute if score x questU matches 0 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.locked","color":"red","font":"custom:small","with":[{"translate":"lobby.quest.locked.2","with":["III"]}]}'}
+execute if score x questU matches 1 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.unlocked","color":"green","font":"custom:small"}'}
+
+execute if score x questU matches 0 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'{"translate":"lobby.quest.g","color":"gold","bold":true,"underlined":true,"with":["IV"]}'}
+execute if score x questU matches 1 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'{"translate":"lobby.quest.2","color":"gold","bold":true,"underlined":true}'}

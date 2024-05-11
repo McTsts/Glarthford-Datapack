@@ -1,0 +1,4 @@
+# Flint
+tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"cave_man.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 24"}},{"text":"]","color":"green"},{"text":" [","color":"green"},{"translate":"cave_man.a1b","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 88"}},{"text":"] ","color":"green"}]
+# Iron Sword
+execute if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"cave_man.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 29"}}]

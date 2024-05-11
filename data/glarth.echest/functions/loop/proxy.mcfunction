@@ -1,0 +1,1 @@
+particle minecraft:portal ~ ~0.25 ~ 0 0 0 0.5 1

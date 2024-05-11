@@ -1,0 +1,2 @@
+summon minecraft:armor_stand ~ ~ ~ {Marker:1,Invisible:1,NoGravity:1,Invulnerable:1,Silent:1b,Tags:["char_collision"],Passengers:[{id:"shulker",Invulnerable:1,Color:15,Silent:1b,NoGravity:1,NoAI:1,Tags:["char_collision"]}]}
+tag @s add hasC

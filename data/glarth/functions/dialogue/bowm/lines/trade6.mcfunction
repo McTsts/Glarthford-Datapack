@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"bowm","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"bowm.5","color":"gray"}]
+playsound minecraft:bowm4 voice @a[distance=..5] ~ ~ ~ 1 1

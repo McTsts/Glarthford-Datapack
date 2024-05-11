@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"sorcerer.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 99"}}]
+tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"sorcerer.a2"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 100"}}]

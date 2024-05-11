@@ -1,0 +1,26 @@
+scoreboard objectives add suffixB0 dummy
+scoreboard players add @a[scores={suffixB0=1..}] suffixB0 1
+title @a[scores={suffixB0=2}] title ["",{"text":"","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=3}] title ["",{"text":"B","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=5}] title ["",{"text":"B","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=6}] title ["",{"text":"Ba","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=8}] title ["",{"text":"Ba","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=9}] title ["",{"text":"Bat","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=11}] title ["",{"text":"Bat","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=12}] title ["",{"text":"Bat ","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=14}] title ["",{"text":"Bat ","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=15}] title ["",{"text":"Bat E","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=17}] title ["",{"text":"Bat E","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=18}] title ["",{"text":"Bat Em","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=20}] title ["",{"text":"Bat Em","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=21}] title ["",{"text":"Bat Emp","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=23}] title ["",{"text":"Bat Emp","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=24}] title ["",{"text":"Bat Empr","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=26}] title ["",{"text":"Bat Empr","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=27}] title ["",{"text":"Bat Empre","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=29}] title ["",{"text":"Bat Empre","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=30}] title ["",{"text":"Bat Empres","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+title @a[scores={suffixB0=32}] title ["",{"text":"Bat Empres","color":"dark_red","bold":true,"italic":false,"underlined":false},{"text":"|","color":"red","obfuscated":true}]
+title @a[scores={suffixB0=33}] title ["",{"text":"Bat Empress","color":"dark_red","bold":true,"italic":false,"underlined":false}]
+scoreboard players set @a[scores={suffixB0=73..}] suffixB0 0
+title @a[scores={suffixB0=1..}] times 0 40 0

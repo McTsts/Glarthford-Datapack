@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"bannerman_pillager","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"bannerman_pillager.n","color":"gray"}]
+execute as @a at @s run playsound bannerman_pillager2 voice @s ~ ~ ~ 1 1 1

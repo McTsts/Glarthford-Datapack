@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"farmer","color":"yellow"},{"text":"] ","color":"dark_gray"},{"translate":"farmer.1","color":"gray"}] 
+playsound farmer3 voice @a[distance=..5] ~ ~ ~ 1 1 1

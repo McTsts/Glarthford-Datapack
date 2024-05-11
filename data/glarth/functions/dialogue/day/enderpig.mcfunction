@@ -1,3 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"enderpig","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"enderpig.d","color":"gray"}]
-playsound opal1 voice @a[r=5] ~ ~ ~ 100 1
-execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"enderpig.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 70"}},{"text":"] ","color":"green"}]

@@ -1,4 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"evoker","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"evoker.d","color":"gray"}]
-playsound evoker1 voice @a[r=5] ~ ~ ~ 100 1
-execute @s[tag=!a] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"evoker.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 33"}},{"text":"] ","color":"green"}]
-execute @s[tag=a] ~ ~ ~ execute @s[tag=!b] ~ ~ ~ tellraw @a[r=5] ["",{"text":"[","color":"green"},{"translate":"evoker.a1.1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 34"}},{"text":"] ","color":"green"}]

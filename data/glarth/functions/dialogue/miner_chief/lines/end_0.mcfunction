@@ -1,0 +1,2 @@
+tellraw @a ["\n",{"text":"[","color":"dark_gray"},{"translate":"miner_chief","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"miner_chief.e","color":"gray"}]
+execute as @a at @s run playsound miner_chief8 voice @s ~ ~ ~ 1 1 1

@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+		{
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 3,
+		  "functions": [
+			{
+			  "function": "set_count",
+			  "count": 3
+			}
+		  ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 2,
+		  "functions": [
+			{
+			  "function": "set_count",
+			  "count": 4
+			}
+		  ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 1,
+		  "functions": [
+			{
+			  "function": "set_count",
+			  "count": 5
+			}
+		  ]
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:386,Unbreakable:1,display:{Name:'{\"translate\":\"tbc.attack.staff.poison_staff\",\"italic\":false}',Lore:['\"\"','{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}','[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.low\"}]}]','[\" \",{\"translate\":\"tbc.attack.msg.name.poison2\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.short\"}]}]']},HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

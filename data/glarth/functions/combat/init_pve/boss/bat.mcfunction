@@ -1,0 +1,1 @@
+function glarth:combat/boss_pve/bat/spawn

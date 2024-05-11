@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"ender_guard_s","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"ender_guard_s.g","color":"gray","font":"custom:ender"}]
+playsound minecraft:ender_guard_s_1 voice @a[distance=..5] ~ ~ ~ 1 1

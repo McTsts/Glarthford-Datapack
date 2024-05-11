@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"guard","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"guard.g","color":"gray"}]
+playsound guard4 voice @a[distance=..5] ~ ~ ~ 1 1 1

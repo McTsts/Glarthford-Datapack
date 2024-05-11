@@ -1,0 +1,6 @@
+#8 Bum | Beer to Diamond Hoe
+execute if score realms Stats matches 0 run function glarth:dialogue/bum/lines/trade2
+execute if score realms Stats matches 1 run function glarth:dialogue/bum/lines/trade2_realms
+clear @s potion{custom:"beer"} 1 
+give @s diamond_hoe{custom:"default"} 1 
+tag @e[tag=bum,type=armor_stand] add b

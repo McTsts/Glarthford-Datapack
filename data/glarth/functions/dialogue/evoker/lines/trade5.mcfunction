@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"evoker","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"evoker.4","color":"gray"}]
+playsound evoker9 voice @a[distance=..5] ~ ~ ~ 1 1 1

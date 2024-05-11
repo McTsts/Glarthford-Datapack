@@ -1,0 +1,3 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"green"},{"translate":"gunpowder_warden.a1","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 98"}},{"text":"] ","color":"green"},{"text":"[","color":"green"},{"translate":"gunpowder_warden.a1b","color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 43"}},{"text":"]","color":"green"}]
+
+execute as @a[distance=..5,tag=!tip9] run function glarth:mechanic/tip/9

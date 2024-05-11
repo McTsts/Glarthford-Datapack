@@ -1,0 +1,1 @@
+execute at @s as @e[tag=tbcEnemy,distance=0.1..] run function glarth:combat/kill_enemy

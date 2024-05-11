@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"sleepless_m","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"sleepless_m.1","color":"gray"}] 
+playsound sleepless_m3 voice @a[distance=..5] ~ ~ ~ 1 1 1

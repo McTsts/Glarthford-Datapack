@@ -1,22 +1,12 @@
 scoreboard players set r Random 10
-function mctsts:util/random
-execute @s ~ ~ ~ scoreboard players test n Random 1 1
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass1 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 2 2
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass2 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 3 3
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass3 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 4 4
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass4 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 5 5
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass5 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 6 6
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass6 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 7 7
-execute @s[score_Success_min=1] ~ ~ ~ playsound grass7 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 8 8
-execute @s[score_Success_min=1] ~ ~ ~ playsound sticks1 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 9 9
-execute @s[score_Success_min=1] ~ ~ ~ playsound sticks2 master @a ~ ~ ~ 1 1
-execute @s ~ ~ ~ scoreboard players test n Random 10 10
-execute @s[score_Success_min=1] ~ ~ ~ playsound sticks3 master @a ~ ~ ~ 1 1
+function glarth:util/random
+execute if score n Random matches 1 run playsound grass1 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 2 run playsound grass2 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 3 run playsound grass3 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 4 run playsound grass4 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 5 run playsound grass5 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 6 run playsound grass6 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 7 run playsound grass7 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 8 run playsound sticks1 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 9 run playsound sticks2 ambient @a ~ ~ ~ 0.3 1
+execute if score n Random matches 10 run playsound sticks3 ambient @a ~ ~ ~ 0.3 1

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"sailor","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"sailor.1","color":"gray"}]
+playsound sailor3 voice @a[distance=..5] ~ ~ ~ 1 1 1

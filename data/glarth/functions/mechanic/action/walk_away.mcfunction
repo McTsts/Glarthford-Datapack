@@ -1,41 +1,50 @@
-scoreboard players add @s action 1
-tp @s[score_action_min=1,score_action=20] ~0.08 ~ ~ 
-tp @s[score_action_min=21,score_action=30] ~0.08 ~ ~ ~-2 ~
-tp @s[score_action_min=31,score_action=45] ~0.06 ~ ~-0.06 ~-2 ~
-tp @s[score_action_min=46,score_action=60] ~0.06 ~ ~-0.06 ~ ~
-tp @s[score_action_min=61,score_action=75] ~0.06 ~ ~-0.06 ~-2 ~
-tp @s[score_action_min=76,score_action=80] ~0.06 ~ ~-0.06 ~-2 ~
-tp @s[score_action_min=81,score_action=110] ~ ~ ~-0.1 ~ ~
-tp @s[score_action_min=111,score_action=150] ~0.025 ~ ~-0.05 ~0.5 ~
-tp @s[score_action_min=151,score_action=175] ~ ~ ~-0.05 ~-0.5 ~
-entitydata @s[score_action_min=180,score_action=180] {Motion:[0.0,0.4,-0.3]}
-tp @s[score_action_min=190,score_action=270] ~0.005 ~ ~-0.1 ~0.01 ~
-tp @s[score_action_min=271,score_action=310] ~0.01 ~ ~-0.07 ~0.01 ~
-tp @s[score_action_min=271,score_action=315] ~0.03 ~ ~-0.06 ~0.01 ~
-tp @s[score_action_min=316,score_action=325] ~0.03 ~ ~-0.04 ~0.03 ~
-tp @s[score_action_min=326,score_action=355] ~0.06 ~ ~-0.02 ~3 ~
-tp @s[score_action_min=356,score_action=370] ~0.1 ~ ~0.02 ~0.5 ~
-tp @s[score_action_min=371,score_action=390] ~0.1 ~ ~0.03 ~1 ~
-tp @s[score_action_min=391,score_action=400] ~0.08 ~ ~0.05 ~1 ~
-tp @s[score_action_min=401,score_action=430] ~0.08 ~ ~0.08 ~ ~
-tp @s[score_action_min=440,score_action=600] ~0.08 ~ ~0.08 ~ ~
-tp @s[score_action_min=601,score_action=750] ~0.06 ~ ~0.09 ~0.1 ~
-tp @s[score_action_min=760,score_action=800] ~0.02 ~ ~0.1 ~0.2 ~
-tp @s[score_action_min=801,score_action=850] ~0.04 ~ ~0.1 ~-1 ~
-tp @s[score_action_min=851,score_action=880] ~0.1 ~ ~0.01 ~-1 ~
-execute @s[score_action_min=860,score_action=860] ~ ~ ~ fill -20 26 -198 -20 26 -194 air 0 destroy
-execute @s[score_action_min=880,score_action=880] ~ ~ ~ fill -20 27 -198 -20 27 -194 air 0 destroy
-execute @s[score_action_min=900,score_action=900] ~ ~ ~ fill -20 28 -198 -20 28 -194 air 0 destroy
-execute @s[score_action_min=920,score_action=920] ~ ~ ~ fill -20 29 -197 -20 29 -195 air 0 destroy
-tp @s[score_action_min=881,score_action=950] ~0.15 ~ ~ ~ ~
-tp @s[score_action_min=951,score_action=1035] ~0.15 ~ ~ ~0.2 ~
-tp @s[score_action_min=1036,score_action=1085] ~0.05 ~ ~0.05 ~1 ~
-tp @s[score_action_min=1086,score_action=1150] ~0.05 ~ ~0.05 ~ ~
-tp @s[score_action_min=1151,score_action=1200] ~ ~ ~0.1 ~0.8 ~
-execute @s[score_action_min=1180,score_action=1180] ~ ~ ~ setblock 7 24 -184 minecraft:redstone_torch
-tp @s[score_action_min=1201,score_action=1250] ~ ~ ~0.08 ~ ~
-execute @s[score_action_min=1230,score_action=1230] ~ ~ ~ setblock 7 24 -184 air
-tp @s[score_action_min=1251,score_action=1300] ~ ~ ~ ~-2 ~
-scoreboard players tag @s[score_action_min=1300,score_action=1300] add b
-scoreboard players tag @s[score_action_min=1300,score_action=1300] remove walk_away
-scoreboard players set @s[score_action_min=1300,score_action=1300] action 0
+tp @s[scores={action=0}] -66.5 27.0 -210.5 -90 0
+replaceitem entity @e[tag=graveyard,scores={action=0}] armor.head diamond_hoe{Damage:16}
+replaceitem entity @e[tag=graveyard,scores={action=1}] armor.head diamond_hoe{Damage:121}
+execute if entity @s[scores={action=1..100}] run function glarth:mechanic/action/walk_away/1
+execute if entity @s[scores={action=101..200}] run function glarth:mechanic/action/walk_away/2
+execute if entity @s[scores={action=201..300}] run function glarth:mechanic/action/walk_away/3
+execute if entity @s[scores={action=301..400}] run function glarth:mechanic/action/walk_away/4
+execute if entity @s[scores={action=401..500}] run function glarth:mechanic/action/walk_away/5
+execute if entity @s[scores={action=501..600}] run function glarth:mechanic/action/walk_away/6
+execute if entity @s[scores={action=601..700}] run function glarth:mechanic/action/walk_away/7
+execute if entity @s[scores={action=701..800}] run function glarth:mechanic/action/walk_away/8
+execute if entity @s[scores={action=801..900}] run function glarth:mechanic/action/walk_away/9
+execute if entity @s[scores={action=901..1000}] run function glarth:mechanic/action/walk_away/10
+execute if entity @s[scores={action=1001..1100}] run function glarth:mechanic/action/walk_away/11
+execute if entity @s[scores={action=1101..1200}] run function glarth:mechanic/action/walk_away/12
+execute if entity @s[scores={action=1201..1300}] run function glarth:mechanic/action/walk_away/13
+execute if entity @s[scores={action=1301..1400}] run function glarth:mechanic/action/walk_away/14
+execute if entity @s[scores={action=1401..1500}] run function glarth:mechanic/action/walk_away/15
+execute if entity @s[scores={action=1501..1600}] run function glarth:mechanic/action/walk_away/16
+execute if entity @s[scores={action=1601..1700}] run function glarth:mechanic/action/walk_away/17
+execute if entity @s[scores={action=1701..1800}] run function glarth:mechanic/action/walk_away/18
+execute if entity @s[scores={action=1801..1900}] run function glarth:mechanic/action/walk_away/19
+execute if entity @s[scores={action=1901..2000}] run function glarth:mechanic/action/walk_away/20
+execute if entity @s[scores={action=2001..2100}] run function glarth:mechanic/action/walk_away/21
+execute if entity @s[scores={action=2101..2200}] run function glarth:mechanic/action/walk_away/22
+execute if entity @s[scores={action=2201..2300}] run function glarth:mechanic/action/walk_away/23
+execute if entity @s[scores={action=2301..2400},tag=ggRL] run function glarth:mechanic/action/walk_away/24
+execute if entity @s[scores={action=2301..2400},tag=ggML] run function glarth:mechanic/action/walk_away/24b
+execute if entity @s[scores={action=2401..2500},tag=ggRL] run function glarth:mechanic/action/walk_away/25
+execute if entity @s[scores={action=2401..2500},tag=ggML] run function glarth:mechanic/action/walk_away/25b
+
+tag @s[scores={action=2400..2499}] remove walk_awayX
+tag @s[scores={action=2400..2499}] add walk_away
+tag @s[scores={action=2400..2499}] remove b
+tag @s[scores={action=2400..2499}] remove cnoc
+tag @s[scores={action=2500}] add cnoc
+tag @s[scores={action=2500}] add b
+tag @s[scores={action=2500}] remove walk_away
+tag @s[scores={action=2500}] add walk_awayX
+execute as @s[scores={action=2500}] at @s as @e[type=minecraft:shulker,distance=..3] run data merge entity @s {DeathTime:19s,Health:0.0f}
+
+execute if entity @e[tag=graveyard,scores={action=0}] if block -69 27 -210 air run setblock -68 27 -212 lever[face=wall,facing=east,powered=false]
+execute if entity @e[tag=graveyard,scores={action=0}] if block -69 27 -210 air run function glarth:mechanic/animation/gates/grave/close_gate
+
+
+execute as @s[scores={action=1740}] run function glarth:mechanic/animation/gates/city/open_west
+
+execute as @s[scores={action=2100},tag=ggRL] run setblock 7 24 -184 minecraft:air
+execute as @s[scores={action=2300},tag=ggRL] run setblock 7 24 -184 minecraft:redstone_torch
+execute as @s[scores={action=2500},tag=ggRL] run setblock 7 24 -184 minecraft:air

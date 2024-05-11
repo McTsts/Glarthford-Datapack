@@ -1,0 +1,3 @@
+# Tulip to Sugar
+execute if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"brother.a1a"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 112"}}]
+execute if entity @s[tag=!a] run tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"brother.a1b"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 113"}}]

@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"illusioner_s","color":"yellow"},{"text":"] ","color":"dark_gray"},{"translate":"illusioner_s.tbc2","color":"gray"}] 
+execute as @a at @s run playsound illusioner_s_6 voice @s ~ ~ ~ 1 1 1

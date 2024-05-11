@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"mourner","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"mourner.3","color":"gray"}]
+playsound mourner5 voice @a[distance=..5] ~ ~ ~ 1 1 1

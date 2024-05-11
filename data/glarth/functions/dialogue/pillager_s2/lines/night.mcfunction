@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"pillager_s2","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"pillager_s2.n","color":"gray"}]
+playsound pillager_s2_2 voice @a[distance=..5] ~ ~ ~ 1 1 1

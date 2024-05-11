@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"sorcerer","color":"dark_purple"},{"text":"] ","color":"dark_gray"},{"translate":"sorcerer.d","color":"gray"}]
+playsound minecraft:sorceress1 voice @a[distance=..5] ~ ~ ~ 1 1

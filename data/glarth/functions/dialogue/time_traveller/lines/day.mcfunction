@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"time_traveller","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"time_traveller.d","color":"gray"}]
+playsound time1 voice @a[distance=..5] ~ ~ ~ 1 1 1

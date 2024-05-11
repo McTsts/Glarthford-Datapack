@@ -1,0 +1,1 @@
+scoreboard players set weight tbcAttack 2147483647

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"pufferfish","color":"yellow"},{"text":"] ","color":"dark_gray"},{"translate":"pufferfish.g2","color":"gray","font":"custom:pufferfish"}]
+playsound pufferfish5 voice @a[distance=..5] ~ ~ ~ 1 1 1

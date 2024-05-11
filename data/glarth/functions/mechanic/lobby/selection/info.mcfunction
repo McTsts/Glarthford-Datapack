@@ -1,0 +1,1 @@
+tellraw @s ["\n",{"text":"-=- ","color":"gray"},{"translate":"lobby.selection.msg.1","color":"gray","bold":true},{"text":" -=-","color":"gray"},"\n",{"translate":"lobby.selection.msg.2","color":"gray"},"\n",{"translate":"lobby.selection.msg.3","color":"gray"},"\n",{"translate":"lobby.selection.msg.4","color":"gray"}]

@@ -1,0 +1,7 @@
+# Cycle
+function glarth:dialogue/cave_man/cycle
+# Dialogue
+execute if score cycle Temp matches 0 run function glarth:dialogue/cave_man/lines/night
+execute if score cycle Temp matches 1 run function glarth:dialogue/cave_man/lines/day
+# Trades
+function glarth:dialogue/cave_man/trades/all

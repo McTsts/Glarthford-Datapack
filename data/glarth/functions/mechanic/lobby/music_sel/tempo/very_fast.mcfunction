@@ -1,0 +1,1 @@
+scoreboard players set tempo lobMusic 4

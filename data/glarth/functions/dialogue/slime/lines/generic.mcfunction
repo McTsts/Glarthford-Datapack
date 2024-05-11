@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"slime","color":"green"},{"text":"] ","color":"dark_gray"},{"translate":"slime.g","color":"gray","font":"custom:slime"}]
+playsound vishnold5 voice @a ~ ~ ~ 1 1 1

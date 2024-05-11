@@ -1,0 +1,14 @@
+function glarth:combat/remove/set
+execute unless data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] run function glarth:combat/kill_player
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] if entity @e[tag=tbcTurn,type=!player] run tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@e[tag=tbcTurn]","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.use2","with":[[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s[type=player]","interpret":true},{"selector":"@s[type=!player]"}],{"translate":"tbc.attack.passive.totem","bold":true}]}]
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] if entity @e[tag=tbcTurn,type=player] run tellraw @a ["",[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true}],{"text":" >> ","color":"gray"},{"translate":"tbc.msg.use2","with":[[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s[type=player]","interpret":true},{"selector":"@s[type=!player]"}],{"translate":"tbc.attack.passive.totem","bold":true}]}]
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] at @s run playsound minecraft:item.totem.use player @a ~ ~ ~ 0.5 1
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=1}] at @e[tag=tbcPlayerAS1] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 0.2 50
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=2}] at @e[tag=tbcPlayerAS2] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 0.2 50
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=3}] at @e[tag=tbcPlayerAS3] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 0.2 50
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=1}] at @e[tag=tbcPlayerAS1] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 1 10
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=2}] at @e[tag=tbcPlayerAS2] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 1 10
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] as @s[scores={playerid=3}] at @e[tag=tbcPlayerAS3] run particle minecraft:totem_of_undying ~ ~ ~ 0.7 0.7 0.7 1 10
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] run scoreboard players set @s tbcHealth 6
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] run scoreboard players set @s tbcAbsorption 8
+execute if data storage glarth:main inv.all[{id:"minecraft:totem_of_undying"}] run function glarth:combat/remove/totem

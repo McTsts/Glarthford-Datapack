@@ -1,0 +1,1 @@
+tellraw @a[distance=..5] ["",{"translate":"trade2","with":[{"translate":"uncle.a1"}],"color":"green","clickEvent":{"action":"run_command","value":"/trigger trigger set 192"}}]

@@ -1,2 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"apple","color":"red"},{"text":"] ","color":"dark_gray"},{"translate":"apple.d","color":"gray"}]
-playsound apple1 voice @a[r=5] ~ ~ ~ 100 1

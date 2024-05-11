@@ -1,0 +1,1 @@
+execute unless score lowGraphics Stats matches 1 unless score quest Stats matches 9 run function glarth:mechanic/animation/ship/main

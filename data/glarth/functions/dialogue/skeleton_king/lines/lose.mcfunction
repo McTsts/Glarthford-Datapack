@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"skeleton_king","color":"dark_gray"},{"text":"] ","color":"dark_gray"},{"translate":"skeleton_king.l","color":"gray"}]
+execute as @a at @s run playsound skeleton_king3 voice @s ~ ~ ~ 1 1 1

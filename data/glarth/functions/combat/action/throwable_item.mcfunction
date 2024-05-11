@@ -1,0 +1,13 @@
+execute if score attackType tbcStats matches 1 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head apple
+execute if score attackType tbcStats matches 2 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head beetroot
+execute if score attackType tbcStats matches 3 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head flint
+execute if score attackType tbcStats matches 4 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head egg
+execute if score attackType tbcStats matches 5 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head snowball
+execute if score attackType tbcStats matches 6 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head ink_sac
+execute if score attackType tbcStats matches 7 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head scute
+execute if score attackType tbcStats matches 8 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head gold_nugget{CustomModelData:29}
+execute if score attackType tbcStats matches 9 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:38}
+execute if score attackType tbcStats matches 10 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head magma_cream
+execute if score attackType tbcStats matches 11 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head diamond_hoe{CustomModelData:203}
+execute if score attackType tbcStats matches 12 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head gold_nugget{CustomModelData:1}
+execute if score attackType tbcStats matches 13 run replaceitem entity @e[tag=tbcThrowable,sort=nearest,limit=1,type=armor_stand] armor.head slime_ball

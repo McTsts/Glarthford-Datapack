@@ -1,2 +1,0 @@
-tellraw @a[r=5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"brother","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"brother.n","color":"gray"}]
-playsound boy2 voice @a[r=5] ~ ~ ~ 100 1

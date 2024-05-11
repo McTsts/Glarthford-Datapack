@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"vampire","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"translate":"vampire.1","color":"gray"}] 
+playsound vampire6 voice @a[distance=..5] ~ ~ ~ 1 1 1

@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"sprite","color":"white"},{"text":"] ","color":"dark_gray"},{"translate":"sprite.1","color":"gray"}] 
+playsound sprite6 voice @a[distance=..5] ~ ~ ~ 1 1 1

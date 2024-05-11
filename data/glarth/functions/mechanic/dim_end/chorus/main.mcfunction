@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:arrow,nbt={inBlockState:{Name:"minecraft:chorus_flower"}}] run function glarth:mechanic/dim_end/chorus/arrow

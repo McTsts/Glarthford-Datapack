@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"gunpowder_warden","color":"dark_gray"},{"text":"] ","color":"dark_gray"},{"translate":"gunpowder_warden.d","color":"gray"}]
+playsound minecraft:gunpowder_warden1 voice @a[distance=..5] ~ ~ ~ 1 1 1

@@ -1,0 +1,6 @@
+give @s bricks{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2
+give @s hay_block{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2
+give @s snow_block{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2
+give @s brown_mushroom_block{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2
+give @s netherrack{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2
+give @s oak_leaves{CanPlaceOn:["command_block"],HideFlags:63,display:{Lore:['{"translate":"lore.block.1","color":"gray","italic":false,"bold":true}','{"translate":"lore.block.2","color":"gray","italic":false}']}} 2

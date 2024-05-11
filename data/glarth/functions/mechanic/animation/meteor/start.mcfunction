@@ -1,0 +1,1 @@
+execute unless block 50 25 -186 air run summon minecraft:area_effect_cloud 50.0 26 -185.0 {Radius:0.5f,Duration:2147483647,Particle:"block air",Tags:["meteor"]}

@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_dye",
+          "weight": 1,
+		  "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "weight": 1,
+		  "functions": [
+			{
+			  "function": "set_count",
+			  "count": 2
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "weight": 1
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": 0.84433055733504163997437540038437
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1,display:{Name:'{\"translate\":\"tbc.attack.staff.damage_staff\",\"italic\":false}',Lore:['\"\"','{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}','[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.average\"}]}]']},HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

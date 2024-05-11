@@ -1,8 +1,5 @@
-scoreboard players operation t Random = r Random
-scoreboard players operation k Random = r Random
-function mctsts:util/random/spawn
-function mctsts:util/random/kill
-scoreboard players operation n Random = @e[tag=util_random] Random
-execute @e[tag=util_random] ~ ~ ~ function mctsts:util/kill
-scoreboard players reset t Random
-scoreboard players reset k Random
+summon area_effect_cloud ~ 0 ~ {Tags:["random"]}
+execute store result score n Random run data get entity @e[tag=random,limit=1,type=area_effect_cloud] UUID[0]
+scoreboard players operation n Random %= r Random
+scoreboard players add n Random 1
+kill @e[tag=random,type=area_effect_cloud]

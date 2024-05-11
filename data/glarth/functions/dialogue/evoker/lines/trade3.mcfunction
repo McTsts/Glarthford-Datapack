@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"translate":"evoker","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"evoker.2","color":"gray"}]
+execute as @a at @s run playsound evoker2 voice @s ~ ~ ~ 1 1 1

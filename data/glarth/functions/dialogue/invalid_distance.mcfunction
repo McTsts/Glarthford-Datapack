@@ -1,0 +1,2 @@
+function glarth:dialogue/invalid
+tellraw @a[distance=..5] ["",{"translate":"invalid_distance","color":"red","with":[{"entity":"@e[type=armor_stand,tag=charT,limit=1]","nbt":"CustomName","interpret":true}]}]

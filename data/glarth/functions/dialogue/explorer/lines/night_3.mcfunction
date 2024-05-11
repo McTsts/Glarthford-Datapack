@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"explorer","color":"#8C5800"},{"text":"] ","color":"dark_gray"},{"translate":"explorer.n.3","color":"gray"}]
+playsound explorer4 voice @a[distance=..5] ~ ~ ~ 1 1 1

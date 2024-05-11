@@ -1,0 +1,1 @@
+scoreboard objectives add echest.open minecraft.custom:minecraft.trigger_trapped_chest

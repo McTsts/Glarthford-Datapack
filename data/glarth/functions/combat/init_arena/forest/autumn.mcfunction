@@ -1,0 +1,1 @@
+function glarth:combat/init_arena/forest/summer

@@ -1,0 +1,10 @@
+execute if score bar= load_bar.main matches ..9 run function load_bar:bars/0to9
+execute if score bar= load_bar.main matches 10..19 run function load_bar:bars/10to19
+execute if score bar= load_bar.main matches 20..29 run function load_bar:bars/20to29
+execute if score bar= load_bar.main matches 30..39 run function load_bar:bars/30to39
+execute if score bar= load_bar.main matches 40..49 run function load_bar:bars/40to49
+execute if score bar= load_bar.main matches 50..59 run function load_bar:bars/50to59
+execute if score bar= load_bar.main matches 60..69 run function load_bar:bars/60to69
+execute if score bar= load_bar.main matches 70..79 run function load_bar:bars/70to79
+execute if score bar= load_bar.main matches 80..89 run function load_bar:bars/80to89
+execute if score bar= load_bar.main matches 90.. run function load_bar:bars/90to100

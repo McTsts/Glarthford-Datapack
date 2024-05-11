@@ -1,0 +1,48 @@
+execute if score A tbcAttackParamX matches 1 run give @s minecraft:wooden_hoe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.wooden_hoe","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"1","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 2 run give @s minecraft:stone_pickaxe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.stone_pickaxe","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"3","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 3 run give @s minecraft:stone_shovel{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.stone_shovel","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"3.5","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 4 run give @s minecraft:wooden_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.wooden_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"4","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 5 run give @s minecraft:diamond_pickaxe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.diamond_pickaxe","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"3","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 6 run give @s minecraft:stone_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.stone_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"5","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 7 run give @s minecraft:iron_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.iron_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"6","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 8 run give @s minecraft:diamond_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.diamond_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"7","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 9 run give @s minecraft:golden_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.holy_sword","italic":false,"bold":true},[{"translate":"tbc.attack.msg.name.damage","with":[{"text":"5.5","color":"red"}]},{"text":", "},{"translate":"tbc.attack.msg.name.fire","with":[{"text":"3","color":"red"}]}]]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 10 run give @s minecraft:golden_hoe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.magic_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"2±±","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 11 run give @s minecraft:diamond_hoe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.diamond_hoe","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"1","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 12 run give @s minecraft:wooden_axe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.branch","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"7","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 13 run give @s minecraft:diamond_shovel{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.diamond_shovel","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"5.5","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 14 run give @s minecraft:gold_nugget{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.hand","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"±.5","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 15 run give @s minecraft:iron_shovel{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.iron_shovel","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"4.5","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 16 run give @s minecraft:golden_shovel{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.ice_sword","italic":false,"bold":true},[{"translate":"tbc.attack.msg.name.damage","with":[{"text":"4","color":"red"}]},{"text":", "},{"translate":"tbc.attack.msg.name.freeze","with":[{"translate":"tbc.attack.msg.name.damage.average"}]}]]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 17 run give @s minecraft:golden_pickaxe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.poison_sword","italic":false,"bold":true},[{"translate":"tbc.attack.msg.name.damage","with":[{"text":"4","color":"red"}]},{"text":", "},{"translate":"tbc.attack.msg.name.poison2","with":[{"translate":"tbc.attack.msg.name.damage.average"}]}]]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 18 run give @s minecraft:golden_axe{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.golden_pickaxe","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"3","color":"red"}]}]}'},HideFlags:63,Damage:0}
+execute if score A tbcAttackParamX matches 19 run give @s minecraft:netherite_sword{display:{Name:'{"translate":"tbc.attack.msg.name","italic":false,"with":[{"translate":"tbc.attack.melee.netherite_sword","italic":false,"bold":true},{"translate":"tbc.attack.msg.name.damage","with":[{"text":"8","color":"red"}]}]}'},HideFlags:63,Damage:0}
+
+function glarth:combat/remove/set
+data remove block 84 26 -121 Items
+data remove storage glarth:main invget.in
+execute if score A tbcAttackParamX matches 1 run data modify storage glarth:main invget.in set value {id:"minecraft:wooden_hoe"}
+execute if score A tbcAttackParamX matches 2 run data modify storage glarth:main invget.in set value {id:"minecraft:stone_pickaxe"}
+execute if score A tbcAttackParamX matches 3 run data modify storage glarth:main invget.in set value {id:"minecraft:stone_shovel"}
+execute if score A tbcAttackParamX matches 4 run data modify storage glarth:main invget.in set value {id:"minecraft:wooden_sword"}
+execute if score A tbcAttackParamX matches 5 run data modify storage glarth:main invget.in set value {id:"minecraft:diamond_pickaxe"}
+execute if score A tbcAttackParamX matches 6 run data modify storage glarth:main invget.in set value {id:"minecraft:stone_sword"}
+execute if score A tbcAttackParamX matches 7 run data modify storage glarth:main invget.in set value {id:"minecraft:iron_sword"}
+execute if score A tbcAttackParamX matches 8 run data modify storage glarth:main invget.in set value {id:"minecraft:diamond_sword"}
+execute if score A tbcAttackParamX matches 9 run data modify storage glarth:main invget.in set value {id:"minecraft:golden_sword"}
+execute if score A tbcAttackParamX matches 10 run data remove storage glarth:main invget.in
+execute if score A tbcAttackParamX matches 11 run data remove storage glarth:main invget.in
+execute if score A tbcAttackParamX matches 12 run data remove storage glarth:main invget.in
+execute if score A tbcAttackParamX matches 13 run data modify storage glarth:main invget.in set value {id:"minecraft:diamond_shovel"}
+execute if score A tbcAttackParamX matches 14 run data remove storage glarth:main invget.in
+execute if score A tbcAttackParamX matches 15 run data modify storage glarth:main invget.in set value {id:"minecraft:iron_shovel"}
+execute if score A tbcAttackParamX matches 16 run data modify storage glarth:main invget.in set value {id:"minecraft:golden_shovel"}
+execute if score A tbcAttackParamX matches 17 run data modify storage glarth:main invget.in set value {id:"minecraft:golden_pickaxe"}
+execute if score A tbcAttackParamX matches 18 run data modify storage glarth:main invget.in set value {id:"minecraft:golden_axe"}
+execute if score A tbcAttackParamX matches 19 run data modify storage glarth:main invget.in set value {id:"minecraft:netherite_sword"}
+execute if data storage glarth:main invget.in run function glarth:inventory/get
+execute if data storage glarth:main invget.in run data remove storage glarth:main invget.out.tag.CanDestroy
+execute if data storage glarth:main invget.in run data modify storage glarth:main invget.out.Slot set value 0b
+execute if data storage glarth:main invget.in run data modify block 84 26 -121 Items append from storage glarth:main invget.out
+execute if data block 84 26 -121 Items[0].tag run function glarth:combat/menu/util/put
+data remove storage glarth:main invget.in

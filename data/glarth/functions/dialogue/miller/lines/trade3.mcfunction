@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"miller","color":"blue"},{"text":"] ","color":"dark_gray"},{"translate":"miller.1c","color":"gray"}]
+playsound miller8 voice @a[distance=..5] ~ ~ ~ 1 1 1

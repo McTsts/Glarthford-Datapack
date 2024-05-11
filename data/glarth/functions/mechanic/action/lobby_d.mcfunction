@@ -1,0 +1,1 @@
+advancement grant @a only glarth:background/default

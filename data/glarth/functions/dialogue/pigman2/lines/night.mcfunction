@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"spigman","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"translate":"spigman.n","color":"gray"}]
+execute as @a at @s run playsound pigman2_2 voice @s ~ ~ ~ 1 1 1

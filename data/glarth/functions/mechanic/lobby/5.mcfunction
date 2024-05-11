@@ -1,14 +1,13 @@
-clone 150 24 -129 140 22 -138 118 18 -138
-fill 120 17 -131 125 10 -136 stone 0 replace dirt
-setblock 125 15 -134 stone variant=andesite
-setblock 120 15 -133 stone variant=andesite
-setblock 123 13 -131 stone variant=andesite
-setblock 124 17 -132 stone variant=andesite
-setblock 122 15 -136 stone variant=andesite
-setblock 120 17 -134 cobblestone
-setblock 124 16 -135 cobblestone
-setblock 125 14 -133 cobblestone
-setblock 123 15 -131 cobblestone
-setblock 121 16 -132 cobblestone
-setblock 121 17 -135 cobblestone
-entitydata @e[tag=quest_name] {CustomName:"§7§l§n#5 The Pollution"}
+execute if score 5 questU matches 1 run clone 214 30 -22 202 15 -34 186 15 -118
+execute if score 5 questU matches 0 run clone 214 55 -22 202 40 -34 186 15 -118
+
+execute if score 5 quest matches 1 run clone 192 30 -72 192 30 -72 196 22 -112
+
+scoreboard players operation x quest = 5 quest
+scoreboard players operation x questU = 5 questU
+
+execute if score x questU matches 0 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.locked","color":"red","font":"custom:small","with":[{"translate":"lobby.quest.locked.2","with":["V"]}]}'}
+execute if score x questU matches 1 as @e[tag=quest_locked] run data merge entity @s {CustomName:'{"translate":"lobby.quest.unlocked","color":"green","font":"custom:small"}'}
+
+execute if score x questU matches 0 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'{"translate":"lobby.quest.g","color":"gold","bold":true,"underlined":true,"with":["VI"]}'}
+execute if score x questU matches 1 as @e[tag=quest_name] run execute as @e[tag=quest_name] run data merge entity @s {CustomName:'{"translate":"lobby.quest.5","color":"gold","bold":true,"underlined":true}'}

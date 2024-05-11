@@ -1,0 +1,1 @@
+execute as @e[tag=tbcPlayerAS] at @s as @e[tag=charQ3,limit=1,sort=nearest] run data modify entity @s ArmorItems[3].id set value "diamond_hoe"

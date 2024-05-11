@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"lumberjack","color":"gold"},{"text":"] ","color":"dark_gray"},{"translate":"lumberjack.d","color":"gray"}]
+playsound lumberjack1 voice @a[distance=..5] ~ ~ ~ 1 1 1

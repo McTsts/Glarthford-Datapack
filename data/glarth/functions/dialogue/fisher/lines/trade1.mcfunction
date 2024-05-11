@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"[","color":"dark_gray"},{"translate":"fisher","color":"#00A975"},{"text":"] ","color":"dark_gray"},{"translate":"fisher.1.1","color":"gray"}]
+playsound fisher3 voice @a[distance=..5] ~ ~ ~ 1 1 1

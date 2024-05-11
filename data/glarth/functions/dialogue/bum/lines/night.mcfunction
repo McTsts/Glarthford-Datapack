@@ -1,0 +1,2 @@
+tellraw @a[distance=..5] ["",{"text":"\n[","color":"dark_gray"},{"translate":"bum","color":"#8C5800"},{"text":"] ","color":"dark_gray"},{"translate":"bum.n","color":"gray"}]
+playsound bum2 voice @a[distance=..5] ~ ~ ~ 1 1 1

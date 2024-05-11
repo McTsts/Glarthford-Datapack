@@ -1,0 +1,1 @@
+execute at @s as @e[tag=charQE,limit=1,sort=nearest] run replaceitem entity @s armor.head diamond_hoe{CustomModelData:363}

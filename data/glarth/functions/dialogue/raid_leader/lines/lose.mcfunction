@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"translate":"raid_leader","color":"gray"},{"text":"] ","color":"dark_gray"},{"translate":"raid_leader.l","color":"gray"}]
+execute as @a at @s run playsound minecraft:raid_leader3 voice @s ~ ~ ~ 1 1 1

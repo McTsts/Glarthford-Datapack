@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:barrier",
+    "minecraft:grass",
+    "minecraft:lantern",
+    "minecraft:large_fern",
+    "minecraft:tall_grass",
+    "minecraft:poppy",
+    "minecraft:fern",
+    "minecraft:acacia_pressure_plate",
+    "minecraft:vine",
+    "minecraft:sugar_cane",
+    "minecraft:redstone_torch",
+    "minecraft:torch",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:scaffolding",
+    "minecraft:birch_pressure_plate"
+  ]
+}

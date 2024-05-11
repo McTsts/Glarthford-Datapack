@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=phanterra,scores={phanterraState=4}] phanterraState 5

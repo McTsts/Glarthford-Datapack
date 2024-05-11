@@ -1,0 +1,9 @@
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=!char] if block -69 27 -210 iron_bars unless entity @e[tag=grave_gate] run function glarth:mechanic/animation/gates/grave/summon
+execute if block -68 27 -212 lever[powered=false] as @e[tag=graveyard,tag=!char] if block -69 27 -210 air unless entity @e[tag=grave_gate] run function glarth:mechanic/animation/gates/grave/close_gate
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=a,tag=char,scores={action=1..}] if block -69 27 -210 iron_bars unless entity @e[tag=grave_gate] run function glarth:mechanic/animation/gates/grave/summon
+execute if block -68 27 -212 lever[powered=false] as @e[tag=graveyard,tag=a,tag=char,scores={action=1..}] if block -69 27 -210 air unless entity @e[tag=grave_gate] run function glarth:mechanic/animation/gates/grave/close_gate
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=!a,tag=char] at @s run stopsound @a voice
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=!a,tag=char] at @s run function glarth:dialogue/graveyard/lines/gate
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=!a,tag=char] at @s if block -69 27 -210 air unless entity @e[tag=grave_gate] run function glarth:mechanic/animation/gates/grave/close_gate
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=!a,tag=char] run setblock -68 27 -212 lever[powered=false,facing=east,face=wall]
+execute if block -68 27 -212 lever[powered=true] as @e[tag=graveyard,tag=a,tag=char,scores={action=..0}] run setblock -68 27 -212 lever[powered=false,facing=east,face=wall]

@@ -1,29 +1,54 @@
-
-
+execute if score quest Stats matches 1.. run tag @a add playedOnce
 scoreboard players set game Stats 0
 scoreboard objectives setdisplay sidebar
-spawnpoint @a 89 19 -133
-gamemode 2 @a[m=3]
-tp @a[m=2] 89 19 -133.0
-scoreboard players tag @a remove inFight
-xp -100l @a
-scoreboard players tag @a remove inMaze
-scoreboard players tag @a remove hint1
-scoreboard players tag @a remove hint2
-scoreboard players tag @a remove hint3
-scoreboard players tag @a remove hint4
-scoreboard players tag @a remove hint5
+spawnpoint @a 174 24 -112
+execute unless score timer end matches 0 run tp @a[gamemode=!creative] 174 24 -112 -90 0
+execute if score timer end matches 0 run tp @a[gamemode=!creative] 7 19 -196
+gamemode adventure @a[gamemode=spectator]
+tag @a remove inFight
+xp set @a 0 points
+xp set @a 0 levels
 weather clear
-kill @e[type=!Player,tag=!area_main]
-clear @a[m=2]
+forceload add -154 -842 -103 -449
+execute as @e[type=!player,tag=!area_main,tag=!end_scene,tag=!door] run function glarth:mechanic/kill
+forceload remove -154 -842 -103 -449
+clear @a[gamemode=adventure]
+clear @a[gamemode=spectator]
+data remove block 84 26 -122 RecordItem.tag
 recipe take @a *
-fill 10 26 -253 23 26 -243 air 0 replace wheat
-fill 10 26 -253 23 26 -243 air 0 replace carrots
-fill 10 26 -253 23 26 -243 air 0 replace beetroots
-effect @a clear
-effect @a 23 999999 120 true
-effect @a 11 999999 120 true
-function mctsts:mechanic/lobby/setup
+fill 10 26 -253 23 26 -243 air replace wheat
+fill 10 26 -253 23 26 -243 air replace carrots
+fill 10 26 -253 23 26 -243 air replace beetroots
+forceload remove -194 -194 -191 -188
+effect clear @a 
+effect give @a saturation 999999 120 true
+effect give @a resistance 999999 120 true
+function glarth:combat/end
 
-scoreboard players tag @a add sleepP {Sleeping:1b}
+execute as @a unless data entity @s {SleepTimer:0s} run tag @s add sleepP 
 kill @a[tag=sleepP]
+
+scoreboard players reset * progress
+scoreboard players set progress Dis 0
+stopsound @a master time
+
+fill 3 27 -328 3 27 -331 air
+forceload remove -50 -645 -47 -641
+
+forceload remove -190 -231 -194 -233
+
+scoreboard players reset * trigger
+scoreboard players reset * kill
+
+gamerule showDeathMessages false
+gamerule doTileDrops false
+kill @e[type=wolf]
+
+schedule function glarth:mechanic/clear_delay 10
+
+schedule clear glarth:combat/loot_attempt
+
+
+#Progress
+scoreboard players set progress Dis 25
+function glarth:mechanic/progress/progress

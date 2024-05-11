@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=tbcEnemy,tag=!tbcBoss] tbcSpeed 6

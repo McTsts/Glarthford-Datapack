@@ -1,1 +1,1 @@
-tellraw @a[r=5] ["",{"translate":"invalid","color":"red","with":[{"selector":"@s"}]}]
+playsound error master @a[distance=..5] ~ ~ ~ 1 1.2

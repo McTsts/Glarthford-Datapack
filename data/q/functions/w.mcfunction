@@ -1,0 +1,1 @@
+function glarth:mechanic/do_win

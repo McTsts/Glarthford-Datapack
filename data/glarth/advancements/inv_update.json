@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "inv_update": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "glarth:mechanic/inv_update"
+    }
+}
