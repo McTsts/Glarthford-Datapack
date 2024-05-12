@@ -30,3 +30,6 @@ gamerule reducedDebugInfo true
 
 execute if entity @a[gamemode=creative] run gamerule reducedDebugInfo false
 execute if entity @a[gamemode=creative] run gamerule sendCommandFeedback true
+
+# load items
+function glarth:items/init

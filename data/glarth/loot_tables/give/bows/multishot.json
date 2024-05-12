@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 452,
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:multishot": 1
+                    }
+                },
+                "minecraft:custom_model_data": 1,
+                "minecraft:custom_data": {
+                    "bow": "crossbow_multi"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
