@@ -1,0 +1,1 @@
+$loot spawn ~ ~ ~ loot {"pools":[{"rolls":$(count),"entries":[{"type":"minecraft:loot_table","value":"$(table)"}]}]}

@@ -3,9 +3,9 @@ execute unless score quest Stats matches 3 unless score quest Stats matches 8 ru
 execute if score quest Stats matches 3 run function glarth:dialogue/explorer/lines/trade9
 execute if score quest Stats matches 8 run function glarth:dialogue/explorer/lines/trade9
 clear @s torch 1 
-execute unless score quest Stats matches 3 unless score quest Stats matches 8 run give @s iron_boots 1
-execute if score quest Stats matches 3 run give @s golden_boots 1
-execute if score quest Stats matches 8 run give @s golden_boots 1
+execute unless score quest Stats matches 3 unless score quest Stats matches 8 run function glarth:items/util/give {item:"trades.explorer.1"} 
+execute if score quest Stats matches 3 run function glarth:items/util/give {item:"trades.explorer.2"} 
+execute if score quest Stats matches 8 run function glarth:items/util/give {item:"trades.explorer.2"} 
 tag @e[tag=explorer,type=armor_stand] add a
 tag @e[tag=explorer,type=armor_stand] add charTorch
 item replace entity @e[tag=explorer,type=armor_stand] armor.head with minecraft:diamond_hoe[damage=111]

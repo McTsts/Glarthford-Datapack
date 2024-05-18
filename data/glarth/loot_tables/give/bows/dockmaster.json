@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.dockmaster_bow\"}",
+                "minecraft:damage": 384,
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:power": 3,
+                        "minecraft:punch": 1,
+                        "minecraft:flame": 1
+                    }
+                },
+                "minecraft:custom_data": {
+                    "bow": "dockmaster",
+                    "custom": "dockmaster_bow"
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

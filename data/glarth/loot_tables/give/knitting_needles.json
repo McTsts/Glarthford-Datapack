@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                    "{\"translate\":\"lore.needle.1\",\"italic\":false,\"color\":\"gray\"}"
+                ],
+                "minecraft:item_name": "{\"translate\":\"item.needle\"}",
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_model_data": 255,
+                "minecraft:custom_data": {
+                    "custom": "ascension_key"
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

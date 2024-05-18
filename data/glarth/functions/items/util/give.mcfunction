@@ -1,3 +1,5 @@
 $data modify storage glarth:items temp set from storage glarth:items $(item)
-$execute if data storage glarth:items temp.id run function glarth:items/util/give_id with storage glarth:items $(item)
-$execute if data storage glarth:items temp.table run function glarth:items/util/give_table with storage glarth:items $(item)
+$execute if data storage glarth:items temp.id if data storage glarth:items temp.count run function glarth:items/util/give/id_multi with storage glarth:items $(item)
+$execute if data storage glarth:items temp.id unless data storage glarth:items temp.count run function glarth:items/util/give/id with storage glarth:items $(item)
+$execute if data storage glarth:items temp.table if data storage glarth:items temp.count run function glarth:items/util/give/table_multi with storage glarth:items $(item)
+$execute if data storage glarth:items temp.table unless data storage glarth:items temp.count run function glarth:items/util/give/table with storage glarth:items $(item)

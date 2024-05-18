@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                    "{\"translate\":\"lore.gapple.1\",\"italic\":false,\"color\":\"gray\"}",
+                    "{\"translate\":\"lore.gapple.2\",\"italic\":false,\"color\":\"gray\"}"
+                ],
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

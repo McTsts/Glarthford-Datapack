@@ -1,7 +1,7 @@
 #119 Explorer | Shear to open Ascension
 function glarth:dialogue/explorer/lines/trade4
 clear @s minecraft:shears 1
-give @s minecraft:shears 1
+function glarth:items/util/give {item:"trades.explorer.3"} 
 clone 67 7 -235 63 1 -241 76 27 -240
 fill 76 33 -234 79 30 -237 air replace #minecraft:leaves
 fill 76 27 -240 80 29 -233 air replace #minecraft:leaves

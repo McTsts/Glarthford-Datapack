@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.totem\",\"color\":\"dark_green\",\"italic\":false}]"
+                ],
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
