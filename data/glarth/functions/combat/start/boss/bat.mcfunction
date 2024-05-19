@@ -4,8 +4,8 @@ execute if score difficulty Stats matches 0 run kill @s
 execute if score difficulty Stats matches 0 run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,NoGravity:1,Silent:1b,Invulnerable:1,Tags:["char","die","cnoc"]}
 # Check Weapon
 execute if score combat Stats matches 0 if score difficulty Stats matches 1.. as @a[nbt=!{Inventory:[{id:"minecraft:iron_shovel"}]},gamemode=adventure] as @s[nbt=!{Inventory:[{id:"minecraft:stone_sword"}]}] as @s[nbt=!{Inventory:[{id:"minecraft:stone_pickaxe"}]}] run tag @s add tbcTutNoWeapon
-execute if score combat Stats matches 0 if score difficulty Stats matches 1.. as @a[nbt=!{Inventory:[{id:"minecraft:iron_shovel"}]},gamemode=adventure] as @s[nbt=!{Inventory:[{id:"minecraft:stone_sword"}]}] as @s[nbt=!{Inventory:[{id:"minecraft:stone_pickaxe"}]}] run give @s stone_pickaxe
-execute if score combat Stats matches 0 if score difficulty Stats matches 1.. as @a[nbt=!{Inventory:[{id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":141}}]},gamemode=adventure] run function glarth:mechanic/staff/get_old
+execute if score combat Stats matches 0 if score difficulty Stats matches 1.. as @a[nbt=!{Inventory:[{id:"minecraft:iron_shovel"}]},gamemode=adventure] as @s[nbt=!{Inventory:[{id:"minecraft:stone_sword"}]}] as @s[nbt=!{Inventory:[{id:"minecraft:stone_pickaxe"}]}] run function glarth:items/util/give {item:"static.tutorial.1"}
+execute if score combat Stats matches 0 if score difficulty Stats matches 1.. as @a[nbt=!{Inventory:[{id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":141}}]},gamemode=adventure] run function glarth:items/util/give {item:"static.tutorial.1"} 
 # PVE
 execute if score combat Stats matches 1 if score difficulty Stats matches 1..3 run function glarth:combat/init_pve/boss/bat
 # TBC

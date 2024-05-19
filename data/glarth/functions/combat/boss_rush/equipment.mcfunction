@@ -16,7 +16,7 @@ give @a[scores={playerid=1..}] minecraft:diamond_sword
 give @a[scores={playerid=1..}] minecraft:stone_pickaxe
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:crossbow[custom_data={bow:"crossbow"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/bows/crossbow
 give @a[scores={playerid=1..}] minecraft:arrow 100
 
 # Staff
@@ -32,7 +32,7 @@ setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/illusioner",LootTable
 execute as @a[scores={playerid=1..}] run function glarth:combat/loot_table_give
 setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/spider",LootTableSeed:0} destroy
 execute as @a[scores={playerid=1..}] run function glarth:combat/loot_table_give
-execute as @a[scores={playerid=1..}] run function glarth:mechanic/staff/get_bee
+loot give @a[scores={playerid=1..}] loot glarth:give/staff/bee
 clear @a[scores={playerid=1..}] gold_ingot
 clear @a[scores={playerid=1..}] potato
 clear @a[scores={playerid=1..}] carrot
@@ -48,18 +48,20 @@ give @a[scores={playerid=1..}] ink_sac 5
 give @a[scores={playerid=1..}] magma_cream 5
 give @a[scores={playerid=1..}] minecraft:snowball 5
 give @a[scores={playerid=1..}] minecraft:spider_eye 5
-execute as @a[scores={playerid=1..}] run function glarth:mechanic/give/beehive
-execute as @a[scores={playerid=1..}] run function glarth:mechanic/give/beehive
-give @a[scores={playerid=1..}] minecraft:diamond_hoe[custom_model_data=38,custom_name='{"translate":"item.tophat","italic":false}',hide_additional_tooltip={},custom_data={custom:"tophat"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/beehive
+loot give @a[scores={playerid=1..}] loot glarth:give/beehive
+loot give @a[scores={playerid=1..}] loot glarth:give/tophat
 
 # Potion
 loot give @a[scores={playerid=1..}] loot glarth:give/potions/swiftness
 loot give @a[scores={playerid=1..}] loot glarth:give/potions/leaping
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}] 3
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:strong_healing"}] 1
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/strong_healing
 loot give @a[scores={playerid=1..}] loot glarth:give/potions/fire_resistance
-give @a[scores={playerid=1..}] minecraft:gold_nugget[custom_model_data=40,custom_data={custom:"milk_bottle"}] 1
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:water"}] 1
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/milk_bottle
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/water
 
 # Pouch
 give @a[scores={playerid=1..}] minecraft:cooked_beef 10

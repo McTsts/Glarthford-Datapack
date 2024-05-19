@@ -13,7 +13,7 @@ give @a[scores={playerid=1..}] minecraft:wooden_sword
 give @a[scores={playerid=1..}] minecraft:stone_pickaxe
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:bow[custom_data={bow:"default"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/bows/bow
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 15
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 35
 
@@ -36,7 +36,7 @@ loot give @a[scores={playerid=1..}] mine 84 27 -125 mainhand
 setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/spider",LootTableSeed:0} destroy
 execute store result block 84 27 -125 LootTableSeed long 1 run scoreboard players get tbc Random
 loot give @a[scores={playerid=1..}] mine 84 27 -125 mainhand
-execute as @a[scores={playerid=1..}] run function glarth:mechanic/staff/get_bee
+loot give @a[scores={playerid=1..}] loot glarth:give/staff/bee
 
 # Throwable
 give @a[scores={playerid=1..}] ink_sac 5
@@ -44,14 +44,14 @@ give @a[scores={playerid=1..}] magma_cream 5
 give @a[scores={playerid=1..}] minecraft:snowball 1
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:leaping"}]
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
-execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:healing"}]
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:strong_healing"}]
-give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}]
-give @a[scores={playerid=1..}] minecraft:gold_nugget[custom_model_data=40,custom_data={custom:"milk_bottle"}]
-give @a[scores={playerid=1..}] minecraft:potion[potion_contents={potion:"minecraft:water"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/leaping
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+execute if score bossRe Stats matches 9.. run loot give @a[scores={playerid=1..}] loot glarth:give/potions/healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/strong_healing
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/fire_resistance
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/milk_bottle
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/water
 
 # Pouch
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:pumpkin_pie 2
