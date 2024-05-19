@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.key\"}",
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:damage": 40,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

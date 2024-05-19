@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.slime_helmet\"}",
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:respiration": 1
+                    }
+                },
+                "minecraft:custom_data": {
+                    "custom": "slime_helmet"
+                },
+                "minecraft:custom_model_data": 1,
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                    "custom_effects": [
+                        { "duration": 60, "show_icon": true, "id": "luck" }
+                    ], 
+                    "potion":"mundane"
+                },
+                "minecraft:item_name": "{\"translate\":\"item.pot2\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

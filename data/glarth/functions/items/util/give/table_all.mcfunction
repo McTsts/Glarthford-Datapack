@@ -1,0 +1,1 @@
+$loot give @a[gamemode=adventure] loot $(table)

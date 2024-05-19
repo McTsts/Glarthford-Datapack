@@ -1,0 +1,1 @@
+$execute as @a[gamemode=adventure] run loot spawn ~ ~ ~ loot $(table)

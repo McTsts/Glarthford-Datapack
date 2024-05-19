@@ -1,7 +1,7 @@
 #35 Mourner | Totem to Chaos Staff
 function glarth:dialogue/mourner/lines/trade1
 clear @s totem_of_undying 1 
-function glarth:mechanic/staff/get_chaos
+function glarth:items/util/give {item:"trades.mourner.1"} 
 tag @e[tag=mourner,type=armor_stand] add a
 
 clear @a player_head[custom_data={isDogSkull:1}]

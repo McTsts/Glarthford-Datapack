@@ -61,7 +61,7 @@ data modify storage glarth:items trades.enderman_s2 set value {1:{table:"glarth:
 # enderpig (scribbling enderman)
 data modify storage glarth:items trades.scrib_enderman set value {1:{table:"glarth:give/books/short_stories_inverted"}}
 # ent
-data modify storage glarth:items trades.ent set value {1:{table:"glarth:give/tools/branch"}}
+data modify storage glarth:items trades.ent set value {1:{table:"glarth:give/weapons/branch"}}
 # ent king
 data modify storage glarth:items trades.ent_king set value {1:{table:"glarth:give/essences/forest"},2:{id:"minecraft:phantom_membrane"}}
 # evoker
@@ -83,12 +83,85 @@ data modify storage glarth:items trades.grandma set value {1:{table:"glarth:give
 # graveyard guard (guard)
 data modify storage glarth:items trades.graveyard set value {1:{id:"minecraft:iron_chestplate"}}
 # guard
-data modify storage glarth:items trades.guard set value {1:{table:"glarth:give/ascension_key"}}
+data modify storage glarth:items trades.guard set value {1:{table:"glarth:give/keys/ascension"}}
 # gunpowder warden
 data modify storage glarth:items trades.gunpowder_warden set value {1:{id:"minecraft:gunpowder"},2:{id:"minecraft:gunpowder",count:2}}
 
 # hermit
 data modify storage glarth:items trades.hermit set value {1:{table:"glarth:give/potions/healing"},2:{id:"minecraft:yellow_dye"},3:{table:"glarth:give/potions/healing",count:3}}
+
+# jerozgen (timofey)
+data modify storage glarth:items trades.jerozgen set value {1:{table:"glarth:give/books/short_stories"}}
+
+# lumberjack
+data modify storage glarth:items trades.lumberjack set value {1:{table:"glarth:give/tools/stone_pickaxe/lumberjack"},2:{table:"glarth:give/tools/stone_shovel/lumberjack"}}
+
+# marhjo (trapped worker)
+data modify storage glarth:items trades.trapped_worker set value {1:{id:"minecraft:repeater"}}
+# mayor
+data modify storage glarth:items trades.mayor set value {1:{table:"glarth:give/keys/mayor"}}
+# mctsts (thomas)
+data modify storage glarth:items trades.mctsts set value {1:{id:"minecraft:diamond_chestplate"}}
+# merchant #1 [red/female merchant]
+data modify storage glarth:items trades.merchant1 set value {1:{id:"minecraft:gold_ingot"},2:{id:"minecraft:diamond_sword"},3:{id:"minecraft:gold_ingot",count:5}}
+# merchant #2 [blue/male merchant]
+data modify storage glarth:items trades.merchant2 set value {1:{id:"minecraft:iron_ingot"},2:{id:"minecraft:iron_ingot",count:3}}
+# miller
+data modify storage glarth:items trades.miller set value {1:{table:"glarth:give/flour"}}
+# miner
+data modify storage glarth:items trades.miner set value {1:{table:"glarth:give/tools/stone_pickaxe/miner"}}
+# miner chief
+data modify storage glarth:items trades.miner_chief set value {1:{id:"minecraft:diamond"}}
+# mourner
+data modify storage glarth:items trades.mourner set value {1:{table:"glarth:give/staff/chaos"}}
+# mrk (bored man)
+data modify storage glarth:items trades.bored_man set value {1:{id:"minecraft:diamond_leggings"}}
+
+# percival
+data modify storage glarth:items trades.percival set value {1:{table:"glarth:give/weapons/magic_sword",all:true}}
+# piglin 2 (young piglin)
+data modify storage glarth:items trades.piglin2 set value {1:{id:"minecraft:ghast_tear"}}
+# piglin 6 (outsider piglin)
+data modify storage glarth:items trades.piglin6 set value {1:{id:"minecraft:golden_leggings"},2:{id:"minecraft:golden_boots"},3:{table:"glarth:give/golden_helmet"}}
+# pillager special #1
+data modify storage glarth:items trades.pillager_s1 set value {1:{table:"glarth:give/bows/crossbow"}}
+# priest
+data modify storage glarth:items trades.priest set value {1:{table:"glarth:give/amethyst"},2:{table:"glarth:give/weapons/holy_sword"},3:{table:"glarth:give/blocks/holy_block"},4:{id:"minecraft:glass_bottle"}}
+# pufferfish
+data modify storage glarth:items trades.pufferfish set value {1:{table:"glarth:give/essences/water"},2:{id:"minecraft:sponge"}}
+
+# rose (rose lover)
+data modify storage glarth:items trades.rose_lover set value {1:{table:"glarth:give/tools/shears"}}
+
+# sailor
+data modify storage glarth:items trades.sailor set value {1:{id:"minecraft:bucket"},2:{id:"minecraft:iron_leggings"}}
+# sleepless man
+data modify storage glarth:items trades.sleepless_man set value {1:{table:"glarth:give/weapons/poison_sword"}}
+# snowman
+data modify storage glarth:items trades.snowman set value {1:{table:"glarth:give/weapons/ice_sword"}}
+# soldier
+data modify storage glarth:items trades.soldier set value {1:{function:"glarth:items/give/shield"}}
+# sprite (winged sprite)
+data modify storage glarth:items trades.sprite set value {1:{table:"glarth:give/essences/air"}}
+# suso
+data modify storage glarth:items trades.suso set value {1:{id:"minecraft:cod"},2:{id:"minecraft:salmon"}}
+
+# thief
+data modify storage glarth:items trades.thief set value {1:{function:"glarth:items/give/breakin"}}
+# time traveller
+data modify storage glarth:items trades.time_traveller set value {1:{table:"glarth:give/potions/energizing"}}
+# trader (wandering trader)
+data modify storage glarth:items trades.trader set value {1:{table:"glarth:give/chainmail_helmet"},2:{id:"minecraft:fermented_spider_eye"},3:{id:"minecraft:diamond_sword"},4:{table:"glarth:give/golden_helmet"}}
+# ttextt (music lover)
+data modify storage glarth:items trades.music_lover set value {1:{id:"minecraft:diamond_helmet"},2:{table:"glarth:give/golden_helmet"}}
+
+# vampire
+data modify storage glarth:items trades.vampire set value {1:{table:"glarth:give/essences/darkness"},2:{table:"glarth:give/fang"}}
+
+# witch
+data modify storage glarth:items trades.witch set value {1:{table:"glarth:give/tools/diamond_pickaxe"},2:{table:"glarth:give/potions/strong_healing",count:3},3:{table:"glarth:give/chainmail_helmet_enchanted",all:true}}
+
+
 
 
 #give function:

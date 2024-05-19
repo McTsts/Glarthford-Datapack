@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~1 ~ {Item:{id:"$(id)",count:$(count)}}
+$summon minecraft:item ~ ~1 ~ {Item:{id:"$(id)",count:$(count)}}

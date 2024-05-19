@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"tbc.attack.staff.chaos_staff\"}",
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.high\"}]}]"
+                ],
+                "minecraft:damage": 244,
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": []
+                },
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

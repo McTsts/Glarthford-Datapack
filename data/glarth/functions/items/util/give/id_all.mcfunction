@@ -1,0 +1,1 @@
+$give @a[gamemode=adventure] $(id) 1

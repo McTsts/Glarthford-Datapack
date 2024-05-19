@@ -2,4 +2,4 @@
  function glarth:dialogue/pillager_s1/lines/trade1
  tag @e[tag=pillager_s1,type=armor_stand] add a
 clear @s iron_sword
-give @s minecraft:crossbow[custom_data={bow:"crossbow"}]
+function glarth:items/util/give {item:"trades.pillager_s1.1"} 

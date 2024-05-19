@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.thief\"}",
+                "minecraft:lore": [
+                    "{\"translate\":\"lore.thief.1\",\"color\":\"gray\",\"italic\":false}",
+                    "{\"translate\":\"lore.thief.2\",\"color\":\"gray\",\"italic\":false}",
+                    "{\"translate\":\"lore.thief.3\",\"color\":\"gray\",\"italic\":false}",
+                    "{\"translate\":\"lore.thief.4\",\"color\":\"gray\",\"italic\":false}",
+                    "{\"translate\":\"lore.thief.5\",\"color\":\"gray\",\"italic\":false}"
+                ],
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

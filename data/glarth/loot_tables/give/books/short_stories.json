@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"book.short.title\"}",
+                "minecraft:lore": [
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.byAuthor\",\"with\":[{\"translate\":\"book.short.author\"}]}",
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.generation.0\"}"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": { 
+                    "custom": "book",
+                    "book": "short_stories"
+                },
+                "minecraft:written_book_content": {
+                    "author": "",
+                    "title": "",
+                    "resolved": true,
+                    "pages": [
+                        "{\"extra\":[{\"bold\":true,\"underlined\":true,\"translate\":\"book.short.1.title\"},{\"text\":\"\\n\"},{\"color\":\"black\",\"translate\":\"book.short.1\"}],\"text\":\"\"}","{\"extra\":[{\"bold\":true,\"underlined\":true,\"translate\":\"book.short.2.title\"},{\"text\":\"\\n\"},{\"color\":\"black\",\"translate\":\"book.short.2\"}],\"text\":\"\"}","{\"extra\":[{\"bold\":true,\"underlined\":true,\"translate\":\"book.short.3.title\"},{\"text\":\"\\n\"},{\"color\":\"black\",\"translate\":\"book.short.3\"}],\"text\":\"\"}"
+                    ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

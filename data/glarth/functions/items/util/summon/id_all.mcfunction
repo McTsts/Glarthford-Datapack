@@ -1,0 +1,1 @@
+$execute as @a[gamemode=adventure] run summon minecraft:item ~ ~1 ~ {Item:{id:"$(id)",count:1}}

@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.holy_sword\"}",
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:knockback": 1,
+                        "minecraft:sharpness": 2,
+                        "minecraft:fire_aspect": 1,
+                        "minecraft:looting": 2
+                    }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

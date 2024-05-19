@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chiseled_quartz_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.holy_block\"}",
+                "minecraft:can_place_on": {
+                    "predicates": [
+                        { "blocks": "minecraft:command_block" }
+                    ],
+                    "show_in_tooltip": false
+                },
+                "minecraft:lore": [
+                    "{\"translate\":\"lore.block.1\",\"color\":\"gray\",\"italic\":false,\"bold\":true}",
+                    "{\"translate\":\"lore.block.2\",\"color\":\"gray\",\"italic\":false}"
+                ],
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"item.shovel_lumberjack\"}",
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    { "type": "generic.attack_damage", "name": "generic.attack_damage", "amount": 3.5, "operation": "add_value", "uuid": [1803646558, -1297137523, -1799747897, -307306496], "slot": "mainhand"},
+                    { "type": "generic.attack_speed", "name": "generic.attack_speed", "amount": 1, "operation": "add_value", "uuid": [-1421736514, -716420170, -2013890520, -1594458858], "slot": "mainhand"}
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:can_break": {
+                    "predicates": [
+                        { "blocks": "minecraft:soul_sand" }
+                    ],
+                    "show_in_tooltip": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
