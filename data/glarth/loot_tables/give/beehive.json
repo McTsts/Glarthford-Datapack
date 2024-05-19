@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"tbc.attack.throwable.bee_hive\"}",
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.tbc\",\"italic\":false,\"color\":\"gray\"}",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.damage\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.high\"}]}]",
+                    "[\" \",{\"translate\":\"tbc.attack.msg.name.bee_swarm\",\"color\":\"dark_green\",\"italic\":false,\"with\":[{\"translate\":\"tbc.attack.msg.name.damage.small\"}]}]"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_model_data": 29,
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_data": {
+                    "custom": "bee_hive"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

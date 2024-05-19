@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"book.ose.title\"}",
+                "minecraft:lore": [
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.byAuthor\",\"with\":[{\"translate\":\"book.ose.author\"}]}",
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.generation.0\"}"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": { 
+                    "custom": "book",
+                    "book": "enderpig"
+                },
+                "minecraft:written_book_content": {
+                    "author": "",
+                    "title": "",
+                    "resolved": true,
+                    "pages": [
+                        "[\"\",{\"text\":\"----\",\"color\":\"white\"},{\"translate\":\"book.ose.title\",\"color\":\"black\",\"bold\":true,\"underlined\":true},{\"text\":\"\\n\",\"color\":\"white\"},{\"translate\":\"book.ose.content.1\"}]",
+                        "{\"translate\":\"book.ose.content.2\"}",
+                        "{\"translate\":\"book.ose.content.3\"}",
+                        "{\"translate\":\"book.ose.content.4\"}",
+                        "{\"translate\":\"book.ose.content.5\"}",
+                        "{\"translate\":\"book.ose.content.6\"}",
+                        "{\"translate\":\"book.ose.content.7\"}",
+                        "{\"translate\":\"book.ose.content.8\"}",
+                        "{\"translate\":\"book.ose.content.9\"}",
+                        "{\"translate\":\"book.ose.content.10\"}",
+                        "{\"translate\":\"book.ose.content.11\"}",
+                        "{\"translate\":\"book.ose.content.12\"}"
+                    ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"tbc.attack.potion.milk\"}",
+                "minecraft:custom_model_data": 40,
+                "minecraft:custom_data": {
+                    "custom": "milk_bottle"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

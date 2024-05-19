@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:can_break": {
+                    "predicates": [
+                        { "blocks": "minecraft:green_stained_glass_pane" }
+                    ],
+                    "show_in_tooltip": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

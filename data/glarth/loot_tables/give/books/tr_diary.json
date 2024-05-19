@@ -20,7 +20,8 @@
                 ],
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:custom_data": { 
-                    "custom": "book" 
+                    "custom": "book",
+                    "book": "tr_diary"
                 },
                 "minecraft:written_book_content": {
                     "author": "Thomas Rubycrust",

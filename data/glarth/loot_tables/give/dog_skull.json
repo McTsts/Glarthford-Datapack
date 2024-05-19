@@ -11,11 +11,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.vindicator_skull\"}",
+                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.dog_skull\"}",
                 "minecraft:hide_additional_tooltip": {},
-                "minecraft:custom_model_data": 275,
+                "minecraft:custom_model_data": 471,
                 "minecraft:custom_data": { 
-                    "custom": "vindicator_skull" 
+                    "isDogSkull": 1
                 },
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],

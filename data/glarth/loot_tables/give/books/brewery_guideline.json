@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"translate\":\"book.brewery.title\"}",
+                "minecraft:lore": [
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.byAuthor\",\"with\":[{\"translate\":\"book.brewery.author\"}]}",
+                    "{\"italic\":false,\"color\":\"gray\",\"translate\":\"book.generation.0\"}"
+                ],
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": { 
+                    "custom": "book",
+                    "book": "brewery"
+                },
+                "minecraft:written_book_content": {
+                    "author": "",
+                    "title": "",
+                    "resolved": true,
+                    "pages": [
+                        "{\"extra\":[
+                            {\"bold\":true,\"underlined\":true,\"translate\":\"book.brewery.title\"},
+                            {\"color\":\"white\",\"text\":\"\\n\"},
+                            {\"translate\":\"book.brewery.content.1\"},
+                            {\"text\":\"\\n\"},
+                            {\"translate\":\"book.brewery.content.2\"},
+                            {\"text\":\"\\n\"},
+                            {\"translate\":\"book.brewery.content.3\"},
+                            {\"text\":\"\\n\"},
+                            {\"translate\":\"book.brewery.content.4\"}
+                        ],\"text\":\"\"}"
+                    ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

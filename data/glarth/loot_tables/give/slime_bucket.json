@@ -11,12 +11,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.vindicator_skull\"}",
+                "minecraft:item_name": "{\"translate\":\"item.bucket_slime\"}",
                 "minecraft:hide_additional_tooltip": {},
-                "minecraft:custom_model_data": 275,
-                "minecraft:custom_data": { 
-                    "custom": "vindicator_skull" 
-                },
+                "minecraft:damage": 41,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false

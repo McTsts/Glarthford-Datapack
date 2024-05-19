@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.minecraft.golden_helmet\"}",
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_model_data": 481,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    { "operation": "add_value", "type": "generic.armor", "amount": 2, "name": "generic.armor", "uuid": [-1, -775420, -1, -2668481] }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:lore": [
+                    "\"\"",
+                    "{\"translate\":\"item.modifiers.head\",\"color\":\"gray\",\"italic\":false}",
+                    "[{\"text\":\"+2 \",\"color\":\"blue\",\"italic\":false},{\"translate\":\"attribute.name.generic.armor\"}]"
+                ],
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
