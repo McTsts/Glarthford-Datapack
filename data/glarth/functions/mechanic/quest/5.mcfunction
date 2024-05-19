@@ -1,5 +1,4 @@
 execute as @e[tag=slime_boss,type=slime] run function glarth:combat/boss_pve/slime/main
-execute as @r[x=-4,y=19,z=-109,distance=..10] run function glarth:mechanic/bucket
 #Slime Helmet
 tag @a remove hasSH
 tag @a[nbt={Inventory:[{id:"minecraft:chainmail_helmet",Slot:103b,components:{"minecraft:custom_data":{custom:"slime_helmet"}}}]}] add hasSH 

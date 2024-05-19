@@ -11,7 +11,7 @@ give @a[scores={playerid=1..}] minecraft:wooden_sword
 give @a[scores={playerid=1..}] minecraft:wooden_sword
 
 # Ranged
-give @a[scores={playerid=1..}] minecraft:bow[custom_data={bow:"default"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/bows/bow
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 8
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:arrow 20
 
@@ -29,7 +29,7 @@ execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] mag
 execute if score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] apple 2
 
 # Potion
-give @a[scores={playerid=1..}] minecraft:potion[custom_data={custom:"fire_resistance"}]
+loot give @a[scores={playerid=1..}] loot glarth:give/potions/fire_resistance
 
 # Pouch
 execute unless score bossRe Stats matches 9.. run give @a[scores={playerid=1..}] minecraft:pumpkin_pie 2

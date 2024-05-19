@@ -25,8 +25,8 @@ execute if score difficulty Stats matches 1 if score lobbyTBC Stats matches 1 ru
 execute if score difficulty Stats matches 2 if score lobbyTBC Stats matches 1 run function glarth:mechanic/lobby/boss/eq_medium
 execute if score difficulty Stats matches 3 if score lobbyTBC Stats matches 1 run function glarth:mechanic/lobby/boss/eq_hard
 
-execute if score bossRe Stats matches 7 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run give @a golden_hoe
-execute if score bossRe Stats matches 8 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run give @a shears
+execute if score bossRe Stats matches 7 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:items/util/give {item:"static.grimsbane.1"}
+execute if score bossRe Stats matches 8 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:items/util/give {item:"static.necromancer.1"}
 
 execute if score bossRe Stats matches -1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run scoreboard players set arena tbcStats 074
 execute if score bossRe Stats matches -1 as @e[tag=tbcLobby,limit=1,sort=nearest] at @s run function glarth:combat/start/special/dummy

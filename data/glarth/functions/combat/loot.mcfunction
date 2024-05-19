@@ -54,7 +54,7 @@ execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_summoner] run setblock
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_summoner] at @s run function glarth:combat/loot_table
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_piglin] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/piglin",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_piglin] at @s run function glarth:combat/loot_table
-execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_librarian] at @s run function glarth:mechanic/give/reignford
+execute as @e[type=area_effect_cloud,tag=tbcLoot,tag=loot_librarian] at @s run function glarth:items/util/summon {item:"misc.reignford.1"}
 execute as @e[type=area_effect_cloud,tag=tbcLoot] run setblock 84 27 -125 shulker_box{LootTable:"glarth:entities/all",LootTableSeed:0} destroy
 execute as @e[type=area_effect_cloud,tag=tbcLoot] at @s run function glarth:combat/loot_table
 kill @e[tag=die4]

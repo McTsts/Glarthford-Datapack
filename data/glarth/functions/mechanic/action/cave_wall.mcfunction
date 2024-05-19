@@ -12,6 +12,6 @@ execute as @s[scores={action=55..55}] run fill 68 28 -157 68 26 -156 air destroy
 execute as @s[scores={action=65..65}] run summon armor_stand ~ ~1.4 ~ {Tags:["char_msg"],Invisible:1,Marker:1,CustomNameVisible:1,CustomName:'{"text":"???","color":"gray"}',NoGravity:1,Team:"gray"}
 tp @s[scores={action=85..105}] ~0.1 ~ ~ ~ ~
 execute as @s[scores={action=105..105}] run item replace entity @e[tag=archaeologist] armor.head with minecraft:diamond_hoe[damage=14]
-execute as @s[scores={action=105..105}] run give @p[gamemode=adventure] minecraft:diamond_pickaxe[can_break={blocks:"lapis_block"},hide_additional_tooltip={}] 1
+execute as @s[scores={action=105..105}] as @p[gamemode=adventure] run function glarth:items/util/give {item:"static.archaeologist.1"}
 tag @s[scores={action=105..105}] remove cave_wall
 scoreboard players set @s[scores={action=105..105}] action 0
