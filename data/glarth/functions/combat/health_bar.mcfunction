@@ -6,17 +6,17 @@ execute store result storage ntca:io in int 1 run scoreboard players get @s tbcH
 execute if entity @s[tag=tbcEnemy] run function ntcadec:call
 execute if entity @s[tag=tbcAlly] run function ntca:call
 execute if entity @s[tag=tbcAlly] run data modify storage ntca:io out append value [".±"]
-execute if score @s tbcBar matches 67..75 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_blue"}]'}
-execute if score @s tbcBar matches 59..66 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"blue"}]'}
-execute if score @s tbcBar matches 43..58 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_green"}]'}
-execute if score @s tbcBar matches 35..42 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"green"}]'}
-execute if score @s tbcBar matches 27..34 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"yellow"}]'}
-execute if score @s tbcBar matches 19..26 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"gold"}]'}
-execute if score @s tbcBar matches 11..18 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"red"}]'}
-execute if score @s tbcBar matches ..10 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_red"}]'}
-execute unless score @s tbcBar matches ..75 run data merge block 84 26 -123 {Text1:'[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"white"}]'}
+execute if score @s tbcBar matches 67..75 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_blue"}]']}}
+execute if score @s tbcBar matches 59..66 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"blue"}]']}}
+execute if score @s tbcBar matches 43..58 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_green"}]']}}
+execute if score @s tbcBar matches 35..42 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"green"}]']}}
+execute if score @s tbcBar matches 27..34 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"yellow"}]']}}
+execute if score @s tbcBar matches 19..26 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"gold"}]']}}
+execute if score @s tbcBar matches 11..18 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"red"}]']}}
+execute if score @s tbcBar matches ..10 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"dark_red"}]']}}
+execute unless score @s tbcBar matches ..75 run data merge block 84 26 -123 {front_text:{messages:['[{"nbt":"out","storage":"ntca:io","interpret":true,"color":"white"}]']}}
 data merge entity @e[tag=tbcHealthBar2,limit=1,sort=nearest,type=armor_stand,distance=..1] {CustomNameVisible:1,CustomName:'""'}
-data modify entity @e[tag=tbcHealthBar2,limit=1,sort=nearest,type=armor_stand,distance=..1] CustomName set from block 84 26 -123 Text1
+data modify entity @e[tag=tbcHealthBar2,limit=1,sort=nearest,type=armor_stand,distance=..1] CustomName set from block 84 26 -123 front_text.messages[0]
 execute if score @s tbcBar matches 83.. run data merge entity @e[tag=tbcHealthBar,limit=1,sort=nearest,type=armor_stand] {CustomNameVisible:1,CustomName:'{"text":"██████████+","color":"dark_gray"}'}
 execute if score @s tbcBar matches 82 run data merge entity @e[tag=tbcHealthBar,limit=1,sort=nearest,type=armor_stand] {CustomNameVisible:1,CustomName:'{"text":"██████████","color":"dark_gray"}'}
 execute if score @s tbcBar matches 81 run data merge entity @e[tag=tbcHealthBar,limit=1,sort=nearest,type=armor_stand] {CustomNameVisible:1,CustomName:'{"text":"█████████▉","color":"dark_gray"}'}

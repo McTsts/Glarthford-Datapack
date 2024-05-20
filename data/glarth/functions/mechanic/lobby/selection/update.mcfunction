@@ -48,6 +48,6 @@ execute if score @p[scores={lobbySelection=1}] charSpouse matches 2 run data mer
 execute if score @p[scores={lobbySelection=1}] charSpouse matches 2 run data merge entity @e[tag=charQSname,type=armor_stand,limit=1] {CustomName:'{"translate":"husband","color":"aqua","font":"custom:small"}'}
 
 # gender
-execute if score @p[scores={lobbySelection=1}] charType matches 1 run data merge block 165 24 -129 {Text1:'{"color":"green","translate":"lobby.selection.type.1.letter"}'}
-execute if score @p[scores={lobbySelection=1}] charType matches 2 run data merge block 165 24 -129 {Text1:'{"color":"yellow","translate":"lobby.selection.type.2.letter"}'}
-execute if score @p[scores={lobbySelection=1}] charType matches 3 run data merge block 165 24 -129 {Text1:'{"color":"gray","translate":"lobby.selection.type.3.letter"}'}
+execute if score @p[scores={lobbySelection=1}] charType matches 1 run data modify block 165 24 -129 front_text.messages[0] set value '{"color":"green","translate":"lobby.selection.type.1.letter"}'
+execute if score @p[scores={lobbySelection=1}] charType matches 2 run data modify block 165 24 -129 front_text.messages[0] set value '{"color":"yellow","translate":"lobby.selection.type.2.letter"}'
+execute if score @p[scores={lobbySelection=1}] charType matches 3 run data modify block 165 24 -129 front_text.messages[0] set value '{"color":"gray","translate":"lobby.selection.type.3.letter"}'

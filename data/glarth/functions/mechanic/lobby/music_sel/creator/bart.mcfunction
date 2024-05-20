@@ -1,1 +1,1 @@
-data merge block 175 24 -110 {Text3:'["",{"translate":"jukebox.creator","with":[{"text":"BartTheBart"}]}]'}
+data modify block 175 24 -110 front_text.messages[2] set value '["",{"translate":"jukebox.creator","with":[{"text":"BartTheBart"}]}]'

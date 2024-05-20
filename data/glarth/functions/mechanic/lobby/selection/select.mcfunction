@@ -14,8 +14,8 @@ loot replace entity @e[type=armor_stand,tag=charQ4,tag=lobby] armor.head loot gl
 execute as @e[tag=charQ4,tag=lobby,type=armor_stand] run data modify entity @s HandItems[0] merge from entity @s ArmorItems[3]
 execute as @e[tag=charQ4,tag=lobby,type=armor_stand] run data remove entity @s ArmorItems[3]
 
-data merge block 84 26 -123 {Text1:'["",{"translate":"lobby.selection.aka","with":[{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:1b}].tag.name","interpret":true,"color":"gray"},{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:0b}].tag.name","interpret":true}]}]'}
-data modify entity @e[type=armor_stand,limit=1,tag=charQBx,tag=lobby] CustomName set from block 84 26 -123 Text1
+data merge block 84 26 -123 {front_text:{messages:['["",{"translate":"lobby.selection.aka","with":[{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:1b}].tag.name","interpret":true,"color":"gray"},{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:0b}].tag.name","interpret":true}]}]']}}
+data modify entity @e[type=armor_stand,limit=1,tag=charQBx,tag=lobby] CustomName set from block 84 26 -123 front_text.messages[0]
 
 fill 164 24 -129 164 26 -129 minecraft:acacia_wall_sign[facing=south]
 fill 161 24 -129 161 26 -129 minecraft:acacia_wall_sign[facing=south]
@@ -50,24 +50,24 @@ scoreboard players operation @s charBase = @s charBaseP1
 scoreboard players operation @s charBodyReal = @s charBodyRealP1
 scoreboard players operation @s charHeadReal = @s charHeadRealP1
 execute positioned 166 25 -129 run function glarth:mechanic/lobby/selection/make_name_mini
-execute positioned 166 25 -129 run data modify block ~ ~ ~ Text2 set from block 84 26 -123 Text1
-execute positioned 166 25 -129 run data modify block ~ ~ ~ Text3 set from block 84 26 -123 Text2
+execute positioned 166 25 -129 run data modify block ~ ~ ~ front_text.messages[1] set from block 84 26 -123 front_text.messages[0]
+execute positioned 166 25 -129 run data modify block ~ ~ ~ front_text.messages[2] set from block 84 26 -123 front_text.messages[1]
 
 scoreboard players operation @s charType = @s charTypeP2
 scoreboard players operation @s charBase = @s charBaseP2
 scoreboard players operation @s charBodyReal = @s charBodyRealP2
 scoreboard players operation @s charHeadReal = @s charHeadRealP2
 execute positioned 167 25 -129 run function glarth:mechanic/lobby/selection/make_name_mini
-execute positioned 167 25 -129 run data modify block ~ ~ ~ Text2 set from block 84 26 -123 Text1
-execute positioned 167 25 -129 run data modify block ~ ~ ~ Text3 set from block 84 26 -123 Text2
+execute positioned 167 25 -129 run data modify block ~ ~ ~ front_text.messages[1] set from block 84 26 -123 front_text.messages[0]
+execute positioned 167 25 -129 run data modify block ~ ~ ~ front_text.messages[2] set from block 84 26 -123 front_text.messages[1]
 
 scoreboard players operation @s charType = @s charTypeP3
 scoreboard players operation @s charBase = @s charBaseP3
 scoreboard players operation @s charBodyReal = @s charBodyRealP3
 scoreboard players operation @s charHeadReal = @s charHeadRealP3
 execute positioned 168 25 -129 run function glarth:mechanic/lobby/selection/make_name_mini
-execute positioned 168 25 -129 run data modify block ~ ~ ~ Text2 set from block 84 26 -123 Text1
-execute positioned 168 25 -129 run data modify block ~ ~ ~ Text3 set from block 84 26 -123 Text2
+execute positioned 168 25 -129 run data modify block ~ ~ ~ front_text.messages[1] set from block 84 26 -123 front_text.messages[0]
+execute positioned 168 25 -129 run data modify block ~ ~ ~ front_text.messages[2] set from block 84 26 -123 front_text.messages[1]
 
 scoreboard players operation @s charType = @s charTypeP4
 scoreboard players operation @s charBase = @s charBaseP4
