@@ -14,11 +14,8 @@ loot replace entity @e[type=armor_stand,tag=charQ4,tag=lobby] armor.head loot gl
 execute as @e[tag=charQ4,tag=lobby,type=armor_stand] run data modify entity @s HandItems[0] merge from entity @s ArmorItems[3]
 execute as @e[tag=charQ4,tag=lobby,type=armor_stand] run data remove entity @s ArmorItems[3]
 
-<<<<<<< HEAD
-data merge block 84 26 -123 {front_text.messages[0]:'["",{"translate":"lobby.selection.aka","with":[{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:1b}].tag.name","interpret":true,"color":"gray"},{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:0b}].tag.name","interpret":true}]}]'}
-=======
+
 data merge block 84 26 -123 {front_text:{messages:['["",{"translate":"lobby.selection.aka","with":[{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:1b}].tag.name","interpret":true,"color":"gray"},{"entity":"@p[scores={lobbySelection=1}]","nbt":"EnderItems[{Slot:0b}].tag.name","interpret":true}]}]']}}
->>>>>>> 636c54e4a82308b291a80d6230353fd5fef90fd0
 data modify entity @e[type=armor_stand,limit=1,tag=charQBx,tag=lobby] CustomName set from block 84 26 -123 front_text.messages[0]
 
 fill 164 24 -129 164 26 -129 minecraft:acacia_wall_sign[facing=south]
