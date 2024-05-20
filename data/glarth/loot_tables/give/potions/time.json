@@ -17,7 +17,10 @@
                     ]
                 },
                 "minecraft:item_name": "{\"translate\":\"item.pot\"}",
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:custom_data": {
+                    "pot": 1
+                }
               }
             }
           ]
