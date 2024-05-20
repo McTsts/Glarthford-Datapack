@@ -1,4 +1,15 @@
-#M16; M15; M13; M12; M11; Mojang; Mojira; Realms; Translator
+# 1 - M16
+# 2 - M15
+# 3 - M13
+# 4 - M12
+# 5 - M11
+# 6 - Mojang
+# 7 - Mojira
+# 8 - Realms
+# 9 - Translator
+# 10 - Plain Cape
+# 11 - ToG Cape
+# 12 - Vertex Cape
 
 # Reset
 scoreboard players set @s charC1 0
