@@ -8,7 +8,7 @@
 ## /scoreboard objectives set 100 Const 100
 ##
 # Summon AEC
-execute at @s run summon minecraft:area_effect_cloud ~ ~-0.25 ~ {Particle:"minecraft:block minecraft:air",ReapplicationDelay:0,Age:-1,Radius:0.5f,RadiusPerTick:0.0f,RadiusOnUse:-0.5f,Duration:2,WaitTime:0,Effects:[{Id:1b,Amplifier:1b,Duration:1,ShowParticles:1b,ShowIcon:1b,Ambient:0b}],Tags:["utilEffectCloud"]}
+execute at @s run summon minecraft:area_effect_cloud ~ ~-0.25 ~ {Particle:"minecraft:block minecraft:air",ReapplicationDelay:0,Age:-1,Radius:0.5f,RadiusPerTick:0.0f,RadiusOnUse:-0.5f,Duration:2,WaitTime:0,potion_contents:{custom_effects:[{id:"minecraft:speed",amplifier:1b,duration:1,show_particles:1b,show_icon:1b,ambient:0b}]},Tags:["utilEffectCloud"]}
 # Show Particles | Show Icon | Ambient
 scoreboard players operation ShowParticles Effect = SP_SI_A Effect
 scoreboard players operation ShowParticles Effect /= 100 Const
@@ -25,12 +25,44 @@ execute unless score ShowParticles Effect matches 0..1 run scoreboard players se
 execute unless score ShowIcon Effect matches 0..1 run scoreboard players set ShowIcon Effect 1
 execute unless score Ambient Effect matches 0..1 run scoreboard players set Ambient Effect 0
 # Store Values
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].Id byte 1 run scoreboard players get Id Effect
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].Amplifier byte 1 run scoreboard players get Amplifier Effect
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].Duration int 1 run scoreboard players get Duration Effect
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].ShowParticles byte 1 run scoreboard players get ShowParticles Effect
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].ShowIcon byte 1 run scoreboard players get ShowIcon Effect
-execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] Effects[0].Ambient byte 1 run scoreboard players get Ambient Effect
+execute if score Id Effect matches 1 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:speed"
+execute if score Id Effect matches 2 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:slowness"
+execute if score Id Effect matches 3 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:haste"
+execute if score Id Effect matches 4 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:mining_fatigue"
+execute if score Id Effect matches 5 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:strength"
+execute if score Id Effect matches 6 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:instant_health"
+execute if score Id Effect matches 7 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:instant_damage"
+execute if score Id Effect matches 8 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:jump_boost"
+execute if score Id Effect matches 9 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:nausea"
+execute if score Id Effect matches 10 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:regeneration"
+execute if score Id Effect matches 11 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:resistance"
+execute if score Id Effect matches 12 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:fire_resistance"
+execute if score Id Effect matches 13 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:water_breathing"
+execute if score Id Effect matches 14 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:invisibility"
+execute if score Id Effect matches 15 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:blindness"
+execute if score Id Effect matches 16 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:night_vision"
+execute if score Id Effect matches 17 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:hunger"
+execute if score Id Effect matches 18 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:weakness"
+execute if score Id Effect matches 19 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:poison"
+execute if score Id Effect matches 20 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:wither"
+execute if score Id Effect matches 21 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:health_boost"
+execute if score Id Effect matches 22 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:absorption"
+execute if score Id Effect matches 23 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:saturation"
+execute if score Id Effect matches 24 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:glowing"
+execute if score Id Effect matches 25 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:levitation"
+execute if score Id Effect matches 26 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:luck"
+execute if score Id Effect matches 27 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:unluck"
+execute if score Id Effect matches 28 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:slow_falling"
+execute if score Id Effect matches 29 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:conduit_power"
+execute if score Id Effect matches 30 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:dolphins_grace"
+execute if score Id Effect matches 31 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:bad_omen"
+execute if score Id Effect matches 32 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:hero_of_the_villager"
+execute if score Id Effect matches 33 run data modify entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].id set value "minecraft:darkness"
+execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].amplifier byte 1 run scoreboard players get Amplifier Effect
+execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].duration int 1 run scoreboard players get Duration Effect
+execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].show_particles byte 1 run scoreboard players get ShowParticles Effect
+execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].show_icon byte 1 run scoreboard players get ShowIcon Effect
+execute store result entity @e[type=area_effect_cloud,tag=utilEffectCloud,limit=1] potion_contents.custom_effects[0].ambient byte 1 run scoreboard players get Ambient Effect
 # Reset
 tag @e[type=area_effect_cloud] remove utilEffectCloud
 

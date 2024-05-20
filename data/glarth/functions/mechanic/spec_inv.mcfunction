@@ -14,11 +14,11 @@ execute if data entity @s RootVehicle run scoreboard players set stamina= glarth
 execute at @s as @a[gamemode=spectator,distance=..1,tag=!DEV,scores={MusicTimeR=60..,specTime=..95}] run function glarth.spec_vals:display
 
 # Effects
-execute unless data entity @s ActiveEffects[{Id:1}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] speed
-execute if data entity @s ActiveEffects[{Id:1}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] speed 3 0 true
-execute unless data entity @s ActiveEffects[{Id:8}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] jump_boost
-execute if data entity @s ActiveEffects[{Id:8}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] jump_boost 3 0 true
-execute unless data entity @s ActiveEffects[{Id:9}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] nausea
-execute if data entity @s ActiveEffects[{Id:9}] as @a[gamemode=spectator,distance=..1,tag=!DEV] unless data entity @s ActiveEffects[{Id:9}] run effect give @s nausea 15 0 true
-execute unless data entity @s ActiveEffects[{Id:12}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] fire_resistance
-execute if data entity @s ActiveEffects[{Id:12}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] fire_resistance 3 0 true
+execute unless data entity @s active_effects[{id:"minecraft:speed"}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] speed
+execute if data entity @s active_effects[{id:"minecraft:speed"}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] speed 3 0 true
+execute unless data entity @s active_effects[{id:"minecraft:jump_boost"}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] jump_boost
+execute if data entity @s active_effects[{id:"minecraft:jump_boost"}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] jump_boost 3 0 true
+execute unless data entity @s active_effects[{id:"minecraft:nausea"}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] nausea
+execute if data entity @s active_effects[{id:"minecraft:nausea"}] as @a[gamemode=spectator,distance=..1,tag=!DEV] unless data entity @s active_effects[{id:"minecraft:nausea"}] run effect give @s nausea 15 0 true
+execute unless data entity @s active_effects[{id:"minecraft:fire_resistance"}] run effect clear @a[gamemode=spectator,distance=..1,tag=!DEV] fire_resistance
+execute if data entity @s active_effects[{id:"minecraft:fire_resistance"}] run effect give @a[gamemode=spectator,distance=..1,tag=!DEV] fire_resistance 3 0 true
