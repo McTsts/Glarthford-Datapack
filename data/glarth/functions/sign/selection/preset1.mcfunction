@@ -7,8 +7,8 @@ execute if score @s signRay matches 1..2 run scoreboard players operation @s cha
 execute if score @s signRay matches 1..2 run scoreboard players operation @s charBodyRealP1 = @s charBodyReal
 execute if score @s signRay matches 1..2 run scoreboard players operation @s charHeadRealP1 = @s charHeadReal
 execute if score @s signRay matches 1..2 run function glarth:mechanic/lobby/selection/make_name_mini
-execute if score @s signRay matches 1..2 run data modify block ~ ~ ~ Text2 set from block 84 26 -123 Text1
-execute if score @s signRay matches 1..2 run data modify block ~ ~ ~ Text3 set from block 84 26 -123 Text2
+execute if score @s signRay matches 1..2 run data modify block ~ ~ ~ front_text.messages[1] set from block 84 26 -123 front_text.messages[0]
+execute if score @s signRay matches 1..2 run data modify block ~ ~ ~ front_text.messages[2] set from block 84 26 -123 front_text.messages[1]
 execute if score @s signRay matches 3..4 run scoreboard players operation @s charType = @s charTypeP1
 execute if score @s signRay matches 3..4 run scoreboard players operation @s charBase = @s charBaseP1
 execute if score @s signRay matches 3..4 run scoreboard players operation @s charSpouse = @s charSpouseP1

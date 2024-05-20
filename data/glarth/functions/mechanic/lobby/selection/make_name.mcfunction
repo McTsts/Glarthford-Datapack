@@ -203,11 +203,11 @@ tag @s remove selNameA
 tag @s remove selNameB
 
 # Print Name
-execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.2","with":[{"selector":"@e[tag=selNameHead,limit=1]"},{"selector":"@e[tag=selNameBody,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
-execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameBody,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
-execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameHead,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
-execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {Text1:'{"translate":"lobby.selection.name.combined.0","with":[{"selector":"@e[tag=selNameBase,limit=1]"}]}'}
-data modify entity @e[type=armor_stand,tag=selNameAll,limit=1,sort=nearest] CustomName set from block 84 26 -123 Text1
+execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {front_text:{messages:['{"translate":"lobby.selection.name.combined.2","with":[{"selector":"@e[tag=selNameHead,limit=1]"},{"selector":"@e[tag=selNameBody,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}']}}
+execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] if entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {front_text:{messages:['{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameBody,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}']}}
+execute if entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {front_text:{messages:['{"translate":"lobby.selection.name.combined.1","with":[{"selector":"@e[tag=selNameHead,limit=1]"},{"selector":"@e[tag=selNameBase,limit=1]"}]}']}}
+execute unless entity @e[tag=lobby,tag=selNameHead,type=area_effect_cloud] unless entity @e[tag=lobby,tag=selNameBody,type=area_effect_cloud] run data merge block 84 26 -123 {front_text:{messages:['{"translate":"lobby.selection.name.combined.0","with":[{"selector":"@e[tag=selNameBase,limit=1]"}]}']}}
+data modify entity @e[type=armor_stand,tag=selNameAll,limit=1,sort=nearest] CustomName set from block 84 26 -123 front_text.messages[0]
 
 # Kill
 kill @e[tag=lobby,tag=selNameBody,type=area_effect_cloud]

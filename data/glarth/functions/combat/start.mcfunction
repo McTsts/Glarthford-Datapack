@@ -1,5 +1,5 @@
 function glarth:combat/name_list
-tellraw @a ["\n",{"translate":"tbc","bold":true,"color":"red"},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.start","color":"red","with":[{"block":"84 26 -123","nbt":"Text1","interpret":true,"color":"red"},{"selector":"@e[tag=tbcEnemy]","color":"red"}]}]
+tellraw @a ["\n",{"translate":"tbc","bold":true,"color":"red"},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.start","color":"red","with":[{"block":"84 26 -123","nbt":"front_text.messages[0]","interpret":true,"color":"red"},{"selector":"@e[tag=tbcEnemy]","color":"red"}]}]
 function glarth:combat/entity/player
 execute as @e[tag=tbcEnemy] run function glarth:combat/set_loc
 execute as @e[tag=tbcPlayerAS] run function glarth:combat/set_loc
