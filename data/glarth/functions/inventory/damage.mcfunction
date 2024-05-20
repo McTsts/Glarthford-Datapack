@@ -1,7 +1,7 @@
 scoreboard players set damage Inventory 0
-execute store result score damage Inventory run data get storage glarth:main temp.tag.Damage
+execute store result score damage Inventory run data get storage glarth:main temp.components.minecraft:damage
 execute store result score slot Inventory run data get storage glarth:main temp.Slot
-execute store result storage glarth:main temp.tag.Damage int 1 run scoreboard players add damage Inventory 1
+execute store result storage glarth:main temp.components.minecraft:damage int 1 run scoreboard players add damage Inventory 1
 execute if score slot Inventory matches 0 run data remove storage glarth:main inv.all[{Slot:0b}]
 execute if score slot Inventory matches 1 run data remove storage glarth:main inv.all[{Slot:1b}]
 execute if score slot Inventory matches 2 run data remove storage glarth:main inv.all[{Slot:2b}]

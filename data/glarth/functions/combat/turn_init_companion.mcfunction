@@ -8,7 +8,7 @@ execute if entity @s[tag=tbcCompanion3] run tag @e[tag=tbcMarkerCompF3] add tbcS
 
 execute if entity @e[tag=tbcEnemy] unless entity @e[tag=tbcEnemy,tag=!tbcUnselectable] run tag @s add tbcCompSkip
 execute unless entity @s[tag=tbcCompSkip] run function glarth:combat/attack_companion
-execute if entity @s[tag=tbcCompSkip] run tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.skip.c"}]
+execute if entity @s[tag=tbcCompSkip] run tellraw @a ["",{"nbt":"ArmorItems[0].components.minecraft:custom_data.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.skip.c"}]
 execute if entity @s[tag=tbcCompSkip] run function glarth:combat/done
 tag @s remove tbcCompSkip
 

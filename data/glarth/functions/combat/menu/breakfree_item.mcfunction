@@ -22,7 +22,7 @@ execute if score A tbcAttackParamX matches 7 run data modify storage glarth:main
 execute if data storage glarth:main invget.in run function glarth:inventory/get
 execute if data storage glarth:main invget.in run data modify storage glarth:main invget.out.Slot set value 0b
 execute if data storage glarth:main invget.in run data modify block 84 26 -121 Items append from storage glarth:main invget.out
-execute if data block 84 26 -121 Items[0].tag run function glarth:combat/menu/util/put
+execute if data block 84 26 -121 Items[0].components run function glarth:combat/menu/util/put
 data remove storage glarth:main invget.in
 
 scoreboard players remove @s tbcBreakfree 1

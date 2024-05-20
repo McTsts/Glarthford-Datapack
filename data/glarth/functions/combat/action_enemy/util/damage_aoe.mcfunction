@@ -1,4 +1,4 @@
-tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@e[tag=tbcTurn]","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.aoe2"}]
+tellraw @a ["",{"nbt":"ArmorItems[0].components.minecraft:custom_data.CustomName","entity":"@e[tag=tbcTurn]","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.aoe2"}]
 
 function glarth:combat/action_enemy/util/target1
 execute as @a[tag=tbcTarget,gamemode=adventure] run function glarth:combat/action_enemy/util/damage

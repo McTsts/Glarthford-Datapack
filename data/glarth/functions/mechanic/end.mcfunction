@@ -14,7 +14,7 @@ execute as @e[type=!player,tag=!area_main,tag=!end_scene,tag=!door] run function
 schedule function glarth:mechanic/dim_end/unforceload 60s
 clear @a[gamemode=adventure]
 clear @a[gamemode=spectator]
-data remove block 84 26 -122 RecordItem.tag
+#data remove block 84 26 -122 RecordItem.tag
 recipe take @a *
 fill 10 26 -253 23 26 -243 air replace wheat
 fill 10 26 -253 23 26 -243 air replace carrots

@@ -7,8 +7,8 @@ execute if entity @s[tag=asUnloaded] run function glarth:mechanic/as_load
 execute if score realms Stats matches 0 run scoreboard players set r Random 8
 execute if score realms Stats matches 1 run scoreboard players set r Random 4
 item replace entity @s weapon.mainhand with minecraft:black_carpet
-data modify entity @s HandItems[0].tag.CustomNameOld set from entity @s CustomName
-data modify entity @s HandItems[0].tag.ArmorItemsOld set from entity @s ArmorItems
+data modify entity @s HandItems[0].components.minecraft:custom_data.CustomNameOld set from entity @s CustomName
+data modify entity @s HandItems[0].components.minecraft:custom_data.ArmorItemsOld set from entity @s ArmorItems
 function glarth:util/random
 data merge entity @s {DisabledSlots:2036499}
 execute if score n Random matches 1 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:damage":83,"minecraft:unbreakable":{}}}],CustomName:'{"translate":"item.grave","color":"gray"}',CustomNameVisible:1}

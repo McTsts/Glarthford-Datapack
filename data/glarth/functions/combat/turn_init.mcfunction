@@ -1,14 +1,14 @@
 # General
 execute unless entity @s[gamemode=!adventure] run tellraw @a [""]
-execute if entity @s[type=player] unless entity @s[gamemode=!adventure] run tellraw @a[gamemode=!adventure] ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.other","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true}]}]
-execute if entity @s[type=player] unless entity @s[gamemode=!adventure] run tellraw @a[distance=0.1..,gamemode=adventure] ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.other","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s","interpret":true}]}]
+execute if entity @s[type=player] unless entity @s[gamemode=!adventure] run tellraw @a[gamemode=!adventure] ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.other","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@s","interpret":true}]}]
+execute if entity @s[type=player] unless entity @s[gamemode=!adventure] run tellraw @a[distance=0.1..,gamemode=adventure] ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.other","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@s","interpret":true}]}]
 execute if entity @s[type=!player] run tellraw @a ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.other","color":"gray","with":[{"nbt":"CustomName","entity":"@s","interpret":true}]}]
 scoreboard players set @s tbcAttack 0
 scoreboard players set @s tbcAttackTimer 0
 scoreboard players set @s tbcAttackStage 0
 
 # Player Turn Message
-execute unless entity @s[gamemode=!adventure] run tellraw @s ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.self","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@s[type=player]","interpret":true},{"selector":"@s[type=!player]"}]}]
+execute unless entity @s[gamemode=!adventure] run tellraw @s ["",{"translate":"tbc","bold":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.turn.self","color":"gray","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@s[type=player]","interpret":true},{"selector":"@s[type=!player]"}]}]
 
 # Fix Selection
 execute if entity @e[tag=tbcEnemy,scores={tbcSel=1},tag=tbcUnselectable] run function glarth:combat/fix_selection

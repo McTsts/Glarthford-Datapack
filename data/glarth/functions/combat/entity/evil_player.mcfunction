@@ -6,14 +6,14 @@ function glarth:combat/entity/implements/type/illusion
 #Overwrite
 data merge entity @s {ArmorItems:[{id:"stone",count:1,components:{"minecraft:custom_data":{CustomName:'""'}}},{},{},{}],CustomNameVisible:1,CustomName:'""'}
 
-execute if score @p[tag=evilPlayer] charType matches 1 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.a","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
-execute if score @p[tag=evilPlayer] charType matches 2 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.b","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
-execute if score @p[tag=evilPlayer] charType matches 3 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.c","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+execute if score @p[tag=evilPlayer] charType matches 1 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.a","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+execute if score @p[tag=evilPlayer] charType matches 2 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.b","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+execute if score @p[tag=evilPlayer] charType matches 3 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.enemy.evil_player.c","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
 data modify entity @s CustomName set from block 84 26 -123 front_text.messages[0]
-execute if score @p[tag=evilPlayer] charType matches 1 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.a","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
-execute if score @p[tag=evilPlayer] charType matches 2 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.b","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
-execute if score @p[tag=evilPlayer] charType matches 3 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.c","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].tag.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
-data modify entity @s ArmorItems[0].tag.CustomName set from block 84 26 -123 front_text.messages[0]
+execute if score @p[tag=evilPlayer] charType matches 1 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.a","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+execute if score @p[tag=evilPlayer] charType matches 2 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.b","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+execute if score @p[tag=evilPlayer] charType matches 3 run data merge block 84 26 -123 {front_text:{messages:['{"translate":"tbc.short_name.enemy.evil_player.c","color":"dark_purple","with":[{"nbt":"EnderItems[{Slot:0b}].components.minecraft:custom_data.name","entity":"@p[tag=evilPlayer]","interpret":true}]}']}}
+data modify entity @s ArmorItems[0].components.minecraft:custom_data.CustomName set from block 84 26 -123 front_text.messages[0]
 
 execute at @s run tag @e[tag=charQEp1,sort=nearest,limit=1,distance=..2] add charTemp
 execute at @s as @a[tag=evilPlayer,gamemode=adventure] run loot replace entity @e[type=armor_stand,tag=charTemp] armor.head loot glarth:custom/skull

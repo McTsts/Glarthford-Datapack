@@ -1,5 +1,5 @@
 # Reset
-execute as @e[tag=lobbyScreenA] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 0
+execute as @e[tag=lobbyScreenA] run data modify entity @s ArmorItems[3].components.minecraft:custom_model_data set value 0
 
 # Verify
 execute if score height pcScroll matches ..-1 run scoreboard players set height pcScroll 0
@@ -14,29 +14,29 @@ scoreboard players operation modelCMD pcScroll /= 23 Const
 scoreboard players add modelCMD pcScroll 1
 
 # Set CMD & AS
-execute if score modelAS pcScroll matches 00 as @e[type=armor_stand,tag=lobbyScreenA00,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 01 as @e[type=armor_stand,tag=lobbyScreenA01,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 02 as @e[type=armor_stand,tag=lobbyScreenA02,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 03 as @e[type=armor_stand,tag=lobbyScreenA03,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 04 as @e[type=armor_stand,tag=lobbyScreenA04,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 05 as @e[type=armor_stand,tag=lobbyScreenA05,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 06 as @e[type=armor_stand,tag=lobbyScreenA06,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 07 as @e[type=armor_stand,tag=lobbyScreenA07,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 08 as @e[type=armor_stand,tag=lobbyScreenA08,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 09 as @e[type=armor_stand,tag=lobbyScreenA09,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 10 as @e[type=armor_stand,tag=lobbyScreenA10,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 11 as @e[type=armor_stand,tag=lobbyScreenA11,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 12 as @e[type=armor_stand,tag=lobbyScreenA12,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 13 as @e[type=armor_stand,tag=lobbyScreenA13,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 14 as @e[type=armor_stand,tag=lobbyScreenA14,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 15 as @e[type=armor_stand,tag=lobbyScreenA15,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 16 as @e[type=armor_stand,tag=lobbyScreenA16,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 17 as @e[type=armor_stand,tag=lobbyScreenA17,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 18 as @e[type=armor_stand,tag=lobbyScreenA18,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 19 as @e[type=armor_stand,tag=lobbyScreenA19,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 20 as @e[type=armor_stand,tag=lobbyScreenA20,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 21 as @e[type=armor_stand,tag=lobbyScreenA21,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
-execute if score modelAS pcScroll matches 22 as @e[type=armor_stand,tag=lobbyScreenA22,limit=1] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 00 as @e[type=armor_stand,tag=lobbyScreenA00,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 01 as @e[type=armor_stand,tag=lobbyScreenA01,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 02 as @e[type=armor_stand,tag=lobbyScreenA02,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 03 as @e[type=armor_stand,tag=lobbyScreenA03,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 04 as @e[type=armor_stand,tag=lobbyScreenA04,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 05 as @e[type=armor_stand,tag=lobbyScreenA05,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 06 as @e[type=armor_stand,tag=lobbyScreenA06,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 07 as @e[type=armor_stand,tag=lobbyScreenA07,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 08 as @e[type=armor_stand,tag=lobbyScreenA08,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 09 as @e[type=armor_stand,tag=lobbyScreenA09,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 10 as @e[type=armor_stand,tag=lobbyScreenA10,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 11 as @e[type=armor_stand,tag=lobbyScreenA11,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 12 as @e[type=armor_stand,tag=lobbyScreenA12,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 13 as @e[type=armor_stand,tag=lobbyScreenA13,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 14 as @e[type=armor_stand,tag=lobbyScreenA14,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 15 as @e[type=armor_stand,tag=lobbyScreenA15,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 16 as @e[type=armor_stand,tag=lobbyScreenA16,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 17 as @e[type=armor_stand,tag=lobbyScreenA17,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 18 as @e[type=armor_stand,tag=lobbyScreenA18,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 19 as @e[type=armor_stand,tag=lobbyScreenA19,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 20 as @e[type=armor_stand,tag=lobbyScreenA20,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 21 as @e[type=armor_stand,tag=lobbyScreenA21,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
+execute if score modelAS pcScroll matches 22 as @e[type=armor_stand,tag=lobbyScreenA22,limit=1] store result entity @s ArmorItems[3].components.minecraft:custom_model_data int 1 run scoreboard players get modelCMD pcScroll
 
 # Scroll Bar
 execute if score height pcScroll matches 0 as @e[type=armor_stand,tag=lobbyScreenBar1,limit=1] at @s run tp @s ~ 25 ~

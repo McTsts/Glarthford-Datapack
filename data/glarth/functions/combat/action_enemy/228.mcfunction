@@ -15,7 +15,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 3 run scoreboard players add @s tbcHealth 80
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 3 run scoreboard players operation @s tbcHealth < 200 Const
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 3 run scoreboard players operation @s tbcHealth += absorption Temp
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 3 run tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.heal_enemy_self","with":[{"text":"8.0","color":"red"}]}]
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 3 run tellraw @a ["",{"nbt":"ArmorItems[0].components.minecraft:custom_data.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.heal_enemy_self","with":[{"text":"8.0","color":"red"}]}]
 # speed
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 if score evilAttackData Temp matches 1 run scoreboard players set @s tbcSpeed 5
 # fire resistance

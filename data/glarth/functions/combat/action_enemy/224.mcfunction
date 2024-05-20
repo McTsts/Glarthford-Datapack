@@ -5,7 +5,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 if score evilAttackData Temp matches 4 run scoreboard players set heal Temp 8
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 if score evilAttackData Temp matches 5 run scoreboard players set heal Temp 8
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 if score evilAttackData Temp matches 20 run playsound minecraft:entity.generic.eat master @a ~ ~ ~ 1 0.9
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run tellraw @a ["",{"nbt":"ArmorItems[0].tag.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.heal_enemy_self","with":[[{"score":{"name":"heal","objective":"Temp"},"color":"red"},{"text":".±"}]]}]
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run tellraw @a ["",{"nbt":"ArmorItems[0].components.minecraft:custom_data.CustomName","entity":"@s","interpret":true},{"text":" >> ","color":"gray"},{"translate":"tbc.msg.heal_enemy_self","with":[[{"score":{"name":"heal","objective":"Temp"},"color":"red"},{"text":".±"}]]}]
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run scoreboard players operation absorption Temp = @s tbcHealth
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run scoreboard players operation @s tbcHealth < 200 Const
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 20 run scoreboard players operation absorption Temp -= @s tbcHealth
