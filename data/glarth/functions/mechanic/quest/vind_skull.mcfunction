@@ -4,7 +4,7 @@ execute store success score success Temp run data get entity @s Inventory[{id:"m
 execute if score success Temp matches 1 store result score slot Temp run data get entity @s Inventory[{id:"minecraft:diamond_hoe",tag:{CustomModelData:275}}].Slot
 execute if score slot Temp matches 0..35 run give @s minecraft:command_block_minecart[custom_name='""'] 36
 execute if score slot Temp matches 0..35 run clear @s diamond_hoe[custom_model_data=275]
-execute if score slot Temp matches 0..35 run loot give @s loot glarth:give/vindiciator_skull_helmet
+execute if score slot Temp matches 0..35 run loot give @s loot glarth:give/vindicator_skull_helmet
 execute if score slot Temp matches 0..35 run clear @s minecraft:command_block_minecart
 execute if score slot Temp matches 0..35 at @s run kill @e[type=item,distance=..3,nbt={Item:{id:"minecraft:command_block_minecart"}}]
 execute if score slot Temp matches 0..35 run stopsound @s * minecraft:entity.item.pickup

@@ -23,7 +23,7 @@ execute as @a[nbt={Inventory:[{id:"minecraft:honeycomb"}]}] run clear @s honeyco
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run give @s bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:water_bucket"}]}] run clear @s water_bucket
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run give @s bucket
-execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run loot give @s[tag=!gotMilk] loot glarth:give/potions/milk_bottle
+execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] as @s[tag=!gotMilk] run function glarth:items/util/give {item:"misc.cow_milk.1"}
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run tag @s add gotMilk
 execute as @a[nbt={Inventory:[{id:"minecraft:milk_bucket"}]}] run clear @s milk_bucket
 

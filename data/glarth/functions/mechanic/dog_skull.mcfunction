@@ -1,4 +1,4 @@
-loot replace entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet",components:{"minecraft:custom_model_data":2}}]}] loot glarth:give/dog_skull_helmet
+loot replace entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet",components:{"minecraft:custom_model_data":2}}]}] armor.head loot glarth:give/dog_skull_helmet
 scoreboard players set slot Temp -1
 execute store success score success Temp run data get entity @s Inventory[{id:"minecraft:diamond_hoe",tag:{CustomModelData:471}}].Slot
 execute if score success Temp matches 1 store result score slot Temp run data get entity @s Inventory[{id:"minecraft:diamond_hoe",tag:{CustomModelData:471}}].Slot

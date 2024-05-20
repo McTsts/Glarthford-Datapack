@@ -1,4 +1,4 @@
-data modify entity @s ArmorItems[3].tag.Unbreakable set value 1
+data modify entity @s ArmorItems[3].components.minecraft:unbreakable set value {}
 data modify entity @s ArmorItems[3].id set value "diamond_sword"
 
 scoreboard players set r Random 6

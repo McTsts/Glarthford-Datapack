@@ -4,20 +4,19 @@
 ## initialize all items
 # trades
 function glarth:items/init/trades
-
 # ground items
-data modify storage glarth:items ground.diamond set value {1:{id:"minecraft:diamond"}}
-data modify storage glarth:items ground.letter set value {1:{table:"glarth:give/letter"},2:{table:"glarth:give/letter"}}
-data modify storage glarth:items ground.cave set value {1:{id:"minecraft:flint"},2:{id:"minecraft:coal"}}
-data modify storage glarth:items ground.bricks set value {1:{table:"glarth:give/tools/brick"},2:{table:"glarth:give/tools/brick"}}
-data modify storage glarth:items ground.mushrooms set value {1:{id:"minecraft:brown_mushroom"},2:{id:"minecraft:brown_mushroom"}}
-data modify storage glarth:items ground.saddle set value {1:{id:"minecraft:saddle"}}
+function glarth:items/init/ground
+
 
 # misc items
 # special combat loot - reignford book
 data modify storage glarth:items misc.reignford set value {1:{table:"glarth:give/books/reignford"}}
 # combat start free items
 data modify storage glarth:items misc.combat set value {1:{id:"minecraft:arrow",count:5,all:true},2:{id:"minecraft:egg",count:7,all:true}}
+# mayor tophat
+data modify storage glarth:items misc.mayor set value {1:{table:"glarth:give/tophat"}}
+# cow milking
+data modify storage glarth:items misc.cow_milk set value {1:{table:"glarth:give/potions/milk_bottle"}}
 
 
 ### -=- STATIC -=-
