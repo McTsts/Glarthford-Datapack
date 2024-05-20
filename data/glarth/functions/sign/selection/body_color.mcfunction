@@ -1,5 +1,5 @@
 function glarth:sign/ray_init
-execute if score @s signRay matches 1..2 run data merge block ~ ~ ~ {front_text:{messages:['{"translate":"lobby.selection.arrow_left","color":"dark_gray"}']}}
+execute if score @s signRay matches 1..2 run data merge block ~ ~ ~ {front_text:{messages:['{"translate":"lobby.selection.arrow_left","color":"dark_gray"}','""','""','""']}}
 execute if score @s signRay matches 3..4 run data merge block ~ ~ ~ {front_text:{messages:['""','""','""','{"translate":"lobby.selection.arrow_right","color":"dark_gray"}']}}
 execute if score @s signRay matches 1..2 run scoreboard players remove @s charBodyColor 1
 execute if score @s signRay matches 3..4 run scoreboard players add @s charBodyColor 1

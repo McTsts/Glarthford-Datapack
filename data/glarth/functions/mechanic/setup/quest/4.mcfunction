@@ -90,34 +90,34 @@ setblock -17 27 -194 birch_button[powered=true,face=wall,facing=north]
 setblock 3 27 -218 birch_button[powered=true,face=wall,facing=east]
 setblock 3 28 -214 birch_button[powered=true,face=wall,facing=east]
 setblock 3 27 -211 birch_button[powered=true,face=wall,facing=east]
-setblock 3 27 -208 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 5 26 -203 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 3 27 -208 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 5 26 -203 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 4 26 -201 birch_button[powered=true,face=wall,facing=east]
 setblock 21 28 -200 birch_button[powered=true,face=wall,facing=east]
 setblock 30 28 -182 birch_button[powered=true,face=wall,facing=east]
 setblock -2 27 -181 birch_button[powered=true,face=wall,facing=east]
 setblock -19 27 -198 birch_button[powered=true,face=wall,facing=south]
 setblock -10 27 -199 birch_button[powered=true,face=wall,facing=south]
-setblock -6 27 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock -6 27 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 1 26 -198 birch_button[powered=true,face=wall,facing=south]
 setblock 3 26 -200 birch_button[powered=true,face=wall,facing=south]
 setblock 10 26 -201 birch_button[powered=true,face=wall,facing=south]
-setblock 12 26 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 12 26 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 14 26 -198 birch_button[powered=true,face=wall,facing=south]
 setblock 4 27 -221 birch_button[powered=true,face=wall,facing=south]
-setblock 10 28 -221 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 10 28 -221 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 28 27 -177 birch_button[powered=true,face=wall,facing=south]
 setblock 9 27 -176 birch_button[powered=true,face=wall,facing=south]
 setblock 5 28 -176 birch_button[powered=true,face=wall,facing=south]
-setblock -7 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock -7 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock -11 27 -180 birch_button[powered=true,face=wall,facing=south]
-setblock -17 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock -17 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 9 26 -202 birch_button[powered=true,face=wall,facing=west]
 setblock 11 26 -200 birch_button[powered=true,face=wall,facing=west]
 setblock 24 28 -200 birch_button[powered=true,face=wall,facing=west]
-setblock 32 28 -193 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 32 28 -193 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 33 27 -179 birch_button[powered=true,face=wall,facing=west]
-setblock 33 28 -175 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 33 28 -175 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 18 27 -185 birch_button[powered=true,face=wall,facing=west]
 setblock 10 29 -212 birch_button[powered=true,face=wall,facing=west]
 # Brewery
@@ -126,16 +126,16 @@ setblock -40 28 -196 birch_button[powered=true,face=wall,facing=east]
 setblock -42 28 -190 birch_button[powered=true,face=wall,facing=south]
 setblock -45 28 -204 birch_button[powered=true,face=wall,facing=east]
 # Farm
-setblock 0 27 -244 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 0 28 -247 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 0 27 -244 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 0 28 -247 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock 8 27 -265 birch_button[powered=true,face=wall,facing=south]
-setblock 8 26 -247 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 8 26 -247 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 # Misc
-setblock 41 27 -190 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock -21 29 -124 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 41 27 -190 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock -21 29 -124 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 setblock -67 31 -179 birch_button[powered=true,face=wall,facing=east]
 setblock 25 28 -152 birch_button[powered=true,face=wall,facing=west]
-setblock 70 28 -254 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 70 28 -254 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 
 
 # gary no

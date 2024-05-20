@@ -36,30 +36,30 @@ setblock 10 28 -221 air
 setblock -7 28 -180 air
 setblock -17 28 -180 air
 setblock 32 28 -193 air
-setblock 3 27 -208 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 5 26 -203 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock -6 27 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 12 26 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 10 28 -221 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock -7 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock -17 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 32 28 -193 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 3 27 -208 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 5 26 -203 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock -6 27 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 12 26 -199 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 10 28 -221 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock -7 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock -17 28 -180 acacia_wall_sign[facing=south]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.South[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 32 28 -193 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 
 # Farm
 setblock 0 27 -244 air
 setblock 0 28 -247 air
 setblock 8 26 -247 air
-setblock 0 27 -244 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 0 28 -247 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 8 26 -247 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 0 27 -244 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 0 28 -247 acacia_wall_sign[facing=east]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.East[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 8 26 -247 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 
 # Misc
 setblock 41 27 -190 air
 setblock -21 29 -124 air
 setblock 70 28 -254 air
-setblock 41 27 -190 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock -21 29 -124 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
-setblock 70 28 -254 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}']}}
+setblock 41 27 -190 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock -21 29 -124 acacia_wall_sign[facing=north]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.North[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
+setblock 70 28 -254 acacia_wall_sign[facing=west]{front_text:{messages:['{"storage":"glarth:translations","nbt":"Posters.EndDisease.West[]","interpret":true,"font":"custom:poster/end_disease","separator":{"translate":"space.-1","font":"default"}}','""','""','""']}}
 
 # gary + sewers
 execute as @a at @s if block ~ 0 ~ brown_concrete if block ~ ~ ~ water unless block ~ ~1 ~ air run effect give @s minecraft:dolphins_grace 3 5 true
