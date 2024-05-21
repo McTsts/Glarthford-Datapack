@@ -19,6 +19,10 @@ data modify storage glarth:items misc.mayor set value {1:{table:"glarth:give/top
 data modify storage glarth:items misc.cow_milk set value {1:{table:"glarth:give/potions/milk_bottle"}}
 
 
+# chest test
+data modify storage glarth:items chests.test set value {slot_1:{id:"minecraft:arrow"},slot_2:{id:"minecraft:apple",count:2},slot_3:{id:"minecraft:stick",all:true},slot_4:{id:"minecraft:apple",all:true,count:3},slot_10:{table:"glarth:give/potions/milk_bottle"},slot_11:{table:"glarth:give/potions/milk_bottle",count:2},slot_12:{table:"glarth:give/potions/milk_bottle",all:true},slot_13:{table:"glarth:give/potions/milk_bottle",all:true,count:3},slot_19:{function:"glarth:items/give/shield"}}
+
+
 ### -=- STATIC -=-
 # static items [excluded from randomization]
 # richard: these items are only dropped after they have been given to richard so the same item should be given back

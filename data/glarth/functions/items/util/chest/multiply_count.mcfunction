@@ -1,0 +1,2 @@
+$scoreboard players set chestCount Temp $(count)
+$execute store result storage glarth:items temp.slot_$(slot).totalMultiplied int 1 run scoreboard players operation chestCount Temp *= chestPlayers Temp

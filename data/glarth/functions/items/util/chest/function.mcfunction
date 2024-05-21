@@ -1,0 +1,1 @@
+$function $(function)/chest {slot:$(slot)}
