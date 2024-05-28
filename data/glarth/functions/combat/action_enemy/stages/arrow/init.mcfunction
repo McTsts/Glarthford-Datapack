@@ -1,0 +1,1 @@
+function glarth:combat/action_enemy/stages/arrow/init_rand {min:1,max:1}

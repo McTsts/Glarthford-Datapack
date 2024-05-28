@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/swipe/base {speed:$(speed),block_end:$(block_end),post_block:$(post_block),next_stage:$(next_stage),particle:"swipe",function:"none",done_function:"next_stage"}

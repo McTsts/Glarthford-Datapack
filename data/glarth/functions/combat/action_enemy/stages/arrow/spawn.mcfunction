@@ -1,0 +1,1 @@
+function glarth:combat/action_enemy/stages/arrow/base {command:"function glarth:nothing"}

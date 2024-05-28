@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/arrow/base {command:"tag @e[tag=tbcArrowPN,type=armor_stand] add $(tag)"}
