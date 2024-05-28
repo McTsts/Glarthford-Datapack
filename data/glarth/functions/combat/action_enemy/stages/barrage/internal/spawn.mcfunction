@@ -1,0 +1,1 @@
+$summon minecraft:armor_stand ~ ~ ~ {ArmorItems:[{},{},{},{id:"$(item)",count:1}],Pose:{Head:[0.0f,90.0f,0.0f]},Tags:["tbcBone","tbc"],Marker:1,Glowing:1}
