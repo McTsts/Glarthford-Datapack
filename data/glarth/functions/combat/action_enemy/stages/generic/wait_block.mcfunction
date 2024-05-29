@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/generic/internal/wait_block {block:$(block),delay:$(delay),post:"next_stage"}
