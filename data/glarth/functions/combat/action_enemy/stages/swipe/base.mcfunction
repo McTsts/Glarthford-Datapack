@@ -6,4 +6,4 @@ $execute if score @s tbcAttackTimer matches $(post_block) if score @e[tag=tbcTar
 $execute if score @s tbcAttackTimer matches $(post_block) run scoreboard players operation damage tbcStats = @s tbcStrength
 $execute if score @s tbcAttackTimer matches $(post_block) run function glarth:combat/action_enemy/stages/$(function)
 $execute if score @s tbcAttackTimer matches $(post_block) as @e[tag=tbcTarget,limit=1] run function glarth:combat/action_enemy/util/damage
-$execute if score @s tbcAttackTimer matches $(next_stage) run function glarth:combat/action_enemy/util/next_stage
+$execute if score @s tbcAttackTimer matches $(next_stage) run function glarth:combat/action_enemy/util/$(done_function)

@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/generic/internal/wait_align {align:$(align),delay:$(delay),post:"ready"}

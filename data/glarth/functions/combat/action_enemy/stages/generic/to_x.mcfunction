@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/generic/internal/to_x {speed:$(speed),next_range:$(next_range),post:"next_stage"}

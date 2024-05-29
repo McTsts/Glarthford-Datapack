@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/generic/internal/to_center {speed:$(speed),next_range:$(next_range),post:"ready"}

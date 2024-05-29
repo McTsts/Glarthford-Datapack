@@ -23,4 +23,4 @@ $execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_
 $execute if score @s tbcAttackStage matches 2.. if score @s tbcAttackStage <= stageComp1 Temp run function glarth:combat/action_enemy/helper/$(helper)
 
 # return to home
-$execute if score @s tbcAttackStage = stageComp2 Temp run function glarth:combat/action_enemy/stages/generic/to_home_done {speed:$(speed),next_range:$(speed)}
+$execute if score @s tbcAttackStage = stageComp2 Temp run function glarth:combat/action_enemy/stages/generic/done/to_home {speed:$(speed),next_range:$(speed)}

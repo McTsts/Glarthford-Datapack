@@ -1,2 +1,0 @@
-$execute facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s[tag=!tbcReady] ^ ^ ^$(speed) ~ ~
-$execute if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..$(next_range)] run function glarth:combat/action_enemy/util/ready

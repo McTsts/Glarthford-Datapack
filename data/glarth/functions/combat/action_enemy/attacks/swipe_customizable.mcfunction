@@ -11,4 +11,4 @@ $execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_
 $execute if score @s tbcAttackStage matches 3 run function glarth:combat/action_enemy/stages/generic/to_center {speed:$(walk_speed),next_range:$(next_range)}
 
 # walk to home
-$execute if score @s tbcAttackStage matches 4 run function glarth:combat/action_enemy/stages/generic/to_home_done {speed:$(walk_speed),next_range:$(next_range)}
+$execute if score @s tbcAttackStage matches 4 run function glarth:combat/action_enemy/stages/generic/done/to_home {speed:$(walk_speed),next_range:$(next_range)}

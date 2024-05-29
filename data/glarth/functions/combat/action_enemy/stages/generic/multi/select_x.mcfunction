@@ -1,0 +1,1 @@
+function glarth:combat/action_enemy/stages/generic/internal/select_x {post:"ready"}

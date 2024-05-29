@@ -1,2 +1,1 @@
-$execute facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^$(speed) ~ ~
-$execute if entity @e[tag=tbcSelMarker,distance=..$(next_range)] run function glarth:combat/action_enemy/util/next_stage
+$function glarth:combat/action_enemy/stages/generic/internal/to_home {speed:$(speed),next_range:$(next_range),post:"next_stage"}
