@@ -1,3 +1,2 @@
-scoreboard players operation infection tbcStats = @s tbcStrength
-scoreboard players operation infection tbcStats /= 20 Const
+function glarth:combat/action_enemy/stages/effects/infection
 scoreboard players add infection tbcStats 1
