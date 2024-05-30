@@ -1,6 +1,5 @@
 execute if score @s tbcAttackStage matches 0 run scoreboard players add @s tbcAttackTimer 1
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 run scoreboard players set @s attack_020 0
-execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 run scoreboard players set @s attack_021 1
+execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 run function glarth:combat/action_enemy/stages/recode/bat_empress/1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 1 run playsound bat7 voice @a ~ ~ ~ 1 1 1
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 30 run tellraw @a ""
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 30 run function glarth:dialogue/miner_chief/lines/tbc4

@@ -5,12 +5,7 @@ execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 
 execute if score @s tbcAttackStage matches 0 if score @s tbcAttackTimer matches 15 run function glarth:combat/action_enemy/util/next_stage
 
 # recode bat empress / miner chief to new behaivor
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcAlly] attack_002 0
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcAlly] attack_003 1
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_022 0
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_001 1
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_002 1
-execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_023 1
+execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/stages/recode/bat_empress/3
 # switch bat empress to enemy 2
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/switch_from_to {from:1,to:2}
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcEnemy] tbcSel 0
