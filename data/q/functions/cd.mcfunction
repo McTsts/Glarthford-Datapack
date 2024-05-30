@@ -1,0 +1,5 @@
+tellraw @a [{"text":"Current Turn: "},{"selector":"@e[tag=tbcTurn]"}]
+tellraw @a [{"text":"Current Attack: "},{"score":{"name":"@e[tag=tbcTurn,limit=1]","objective":"tbcAttack"}}]
+tellraw @a [{"text":"Current Attack Stage: "},{"score":{"name":"@e[tag=tbcTurn,limit=1]","objective":"tbcAttackStage"}}]
+tellraw @a [{"text":"Current Attack Timer: "},{"score":{"name":"@e[tag=tbcTurn,limit=1]","objective":"tbcAttackTimer"}}]
+execute if entity @e[tag=tbcReady] run tellraw @a [{"text":"Current Ready Enemies: "},{"selector":"@e[tag=tbcReady]"}]
