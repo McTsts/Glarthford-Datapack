@@ -12,12 +12,8 @@ execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attac
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_002 1
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @s attack_023 1
 # switch bat empress to enemy 2
-execute if score @s tbcAttackStage matches 1 run tag @s remove tbcEnemy1
-execute if score @s tbcAttackStage matches 1 run tag @s add tbcEnemy2
-execute if score @s tbcAttackStage matches 1 at @e[tag=tbcMarkerEnemy2] positioned ~ ~1.7 ~ run tp @e[tag=tbcHealthBar,limit=1,sort=nearest,distance=..5] ~ ~ ~
-execute if score @s tbcAttackStage matches 1 at @e[tag=tbcMarkerEnemy2] positioned ~ ~1.4 ~ run tp @e[tag=tbcHealthBar2,limit=1,sort=nearest,distance=..5] ~ ~ ~
+execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/util/switch_from_to {from:1,to:2}
 execute if score @s tbcAttackStage matches 1 run scoreboard players set @e[tag=tbcEnemy] tbcSel 0
-execute if score @s tbcAttackStage matches 1 as @e[tag=tbcEnemy2,type=armor_stand] run function glarth:combat/set_loc
 # summon illusions
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/stages/summoning/summon_one {id:1,type:"bat_fake",summoned_command:"function glarth:combat/action_enemy/util/select"}
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/stages/summoning/summon_one {id:3,type:"bat_fake",summoned_command:"function glarth:nothing"}
