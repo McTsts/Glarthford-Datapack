@@ -1,0 +1,1 @@
+execute at @s as @e[tag=charQE,limit=1,sort=nearest] run item replace entity @s armor.head with minecraft:diamond_hoe[custom_model_data=42]

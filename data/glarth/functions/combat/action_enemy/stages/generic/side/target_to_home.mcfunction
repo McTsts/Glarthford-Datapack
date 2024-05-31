@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/generic/internal/target_to_home {speed:$(speed),next_range:$(next_range),post:"nothing"}

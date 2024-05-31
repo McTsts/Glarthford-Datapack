@@ -1,0 +1,2 @@
+$execute as @e[tag=tbcTargetAS,type=armor_stand] at @s facing entity @e[tag=tbcTargetMarker] feet rotated ~ 0 run tp @s ^ ^ ^$(speed) ~ ~
+$execute as @e[tag=tbcTargetAS,type=armor_stand] at @s if entity @e[tag=tbcTargetMarker,distance=..$(next_range)] as @e[scores={tbcID=1}] run function glarth:combat/action_enemy/util/$(post)
