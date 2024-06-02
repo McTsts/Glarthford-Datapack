@@ -1,0 +1,1 @@
+$function glarth:combat/action_enemy/stages/object/$(type_1)
