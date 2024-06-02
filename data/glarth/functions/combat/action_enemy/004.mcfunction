@@ -1,1 +1,1 @@
-function glarth:combat/action_enemy/attacks/swipe {walk_speed:0.5,next_range:0.5,pre_attack_speed:0.5,attack_range:2.5,attack_speed:0.2,block_end:7,post_block:8,attack_end:15}
+function glarth:combat/action_enemy/util/speed {speed:"rapid",function:"attacks/swipe",args:{}}

@@ -1,1 +1,1 @@
-function glarth:combat/action_enemy/attacks/swipe_customizable {walk_speed:0.3,next_range:0.3,pre_attack_speed:0.3,attack_range:2,attack_speed:0.1,block_end:7,post_block:8,attack_end:15,particle:"infection",function:"effects/infection_1"}
+function glarth:combat/action_enemy/util/speed {speed:"fast",function:"attacks/swipe_customizable",args:{particle:"infection",function:"effects/infection_1"}}
