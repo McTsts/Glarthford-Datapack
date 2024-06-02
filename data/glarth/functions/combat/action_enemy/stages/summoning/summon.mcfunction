@@ -10,3 +10,6 @@ execute if data storage glarth:main temp.types[4] run data modify storage glarth
 
 # call actual summon function
 $function glarth:combat/action_enemy/stages/summoning/summon_$(type)_$(num) with storage glarth:main temp
+
+# next
+function glarth:combat/action_enemy/util/next_stage

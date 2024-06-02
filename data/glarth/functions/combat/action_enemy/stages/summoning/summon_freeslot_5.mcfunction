@@ -8,4 +8,3 @@ $execute if score noEnemy Temp matches 2 run function glarth:combat/action_enemy
 $execute if score noEnemy Temp matches 3 run function glarth:combat/action_enemy/stages/summoning/summon_one {id:3,type:$(type_3),summoned_command:"$(summoned_command)"}
 $execute if score noEnemy Temp matches 4 run function glarth:combat/action_enemy/stages/summoning/summon_one {id:4,type:$(type_4),summoned_command:"$(summoned_command)"}
 $execute if score noEnemy Temp matches 5 run function glarth:combat/action_enemy/stages/summoning/summon_one {id:5,type:$(type_5),summoned_command:"$(summoned_command)"}
-function glarth:combat/action_enemy/util/next_stage
