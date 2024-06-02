@@ -4,6 +4,7 @@
 
 data modify storage glarth:main tempSpeed set value {}
 $data modify storage glarth:main tempSpeed.speed set value "$(speed)"
+execute if data storage glarth:main tempSpeed{speed:"slow"} run data modify storage glarth:main tempSpeed set value {speed:0.2,walk_speed:0.2,next_range:0.2,pre_attack_speed:0.1,attack_range:1.5,attack_speed:0.025,block_end:20,post_block:21,attack_end:30,next_stage:30,continue_speed:0.10}
 execute if data storage glarth:main tempSpeed{speed:"default"} run data modify storage glarth:main tempSpeed set value {speed:0.35,walk_speed:0.35,next_range:0.35,pre_attack_speed:0.2,attack_range:2,attack_speed:0.05,block_end:15,post_block:16,attack_end:22,next_stage:22,continue_speed:0.15}
 execute if data storage glarth:main tempSpeed{speed:"default_pre"} run data modify storage glarth:main tempSpeed set value {speed:0.2,walk_speed:0.35,next_range:2,pre_attack_speed:0.2,attack_range:2,attack_speed:0.05,block_end:15,post_block:16,attack_end:22,next_stage:22,continue_speed:0.15}
 execute if data storage glarth:main tempSpeed{speed:"default_attack"} run data modify storage glarth:main tempSpeed set value {speed:0.05,walk_speed:0.35,next_range:2,pre_attack_speed:0.2,attack_range:2,attack_speed:0.05,block_end:15,post_block:16,attack_end:22,next_stage:22,continue_speed:0.15}
