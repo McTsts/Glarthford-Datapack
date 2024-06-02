@@ -1,0 +1,1 @@
+scoreboard players operation damage tbcStats *= 2 Const
