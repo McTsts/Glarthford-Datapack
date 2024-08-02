@@ -1,0 +1,1 @@
+$summon minecraft:armor_stand $(loc) {ArmorItems:[{},{},{},{id:"minecraft:$(item)",count:1}],Small:1,Pose:{Head:[90.0f,45.0f,-90.0f]},Marker:1,NoGravity:1,Invisible:1,Tags:["tbc","tbcArrowP","tbcArrowPN"],Glowing:$(glow),Team:"$(color)",Rotation:[$(angle).0f,0.0f]}

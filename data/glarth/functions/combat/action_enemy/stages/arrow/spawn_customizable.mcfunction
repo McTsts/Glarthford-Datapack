@@ -1,1 +1,1 @@
-$function glarth:combat/action_enemy/stages/arrow/base {command:"tag @e[tag=tbcArrowPN,type=armor_stand] add $(tag)"}
+$function glarth:combat/action_enemy/stages/arrow/base {command1:"tag @e[tag=tbcArrowPN,type=armor_stand] add $(tag)",command2:"function $(cmd)",type:"$(type)",loc:"$(loc)"}
