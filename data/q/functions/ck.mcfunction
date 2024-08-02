@@ -1,0 +1,1 @@
+execute as @e[tag=tbcEnemy,tag=!tbcEnemy1] run function glarth:combat/kill_enemy

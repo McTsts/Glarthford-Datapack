@@ -1,5 +1,4 @@
-execute if score @s tbcAttackStage matches 0 facing entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 0 if entity @e[tag=tbcMarkerMiddle,type=area_effect_cloud,distance=..2] run function glarth:combat/action_enemy/util/next_stage
+execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_enemy/stages/generic/to_center {speed:0.2,next_range:2}
 
 execute if score @s tbcAttackStage matches 1 unless entity @s[tag=tbcCreeper] run scoreboard players set r Random 5
 execute if score @s tbcAttackStage matches 1 if entity @s[tag=tbcCreeper] run scoreboard players set r Random 3
@@ -83,5 +82,4 @@ execute if score @s tbcAttackStage matches 17 if score @s tbcAttackTimer matches
 # end
 execute if score @s tbcAttackStage matches 3..17 run function glarth:combat/action_enemy/helper/tnt
 
-execute if score @s tbcAttackStage matches 18 facing entity @e[tag=tbcSelMarker] feet rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s tbcAttackStage matches 18 if entity @e[tag=tbcSelMarker,distance=..0.2] run function glarth:combat/action_enemy/util/done
+execute if score @s tbcAttackStage matches 18 run function glarth:combat/action_enemy/stages/generic/done/to_home {speed:0.2,next_range:0.2}

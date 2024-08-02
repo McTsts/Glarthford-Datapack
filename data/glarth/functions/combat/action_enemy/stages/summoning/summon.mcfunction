@@ -9,6 +9,7 @@ execute if data storage glarth:main temp.types[3] run data modify storage glarth
 execute if data storage glarth:main temp.types[4] run data modify storage glarth:main temp.type_5 set from storage glarth:main temp.types[4]
 
 # call actual summon function
+#$say $(type) $(num)
 $function glarth:combat/action_enemy/stages/summoning/summon_$(type)_$(num) with storage glarth:main temp
 
 # next
