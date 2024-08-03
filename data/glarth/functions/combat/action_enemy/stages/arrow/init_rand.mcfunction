@@ -5,6 +5,6 @@ execute if score @s tbcAttackTimer matches 20 if entity @s[tag=tbcSkipBow] run t
 $execute if score @s tbcAttackTimer matches 20 run function glarth:util/rand_tbc_min_max {min:$(min),max:$(max)}
 $execute if score @s tbcAttackTimer matches 20 run scoreboard players remove n Random $(min)
 execute if score @s tbcAttackTimer matches 20 run scoreboard players add n Random 1
-execute if score @s tbcAttackTimer matches 20 run scoreboard players operation n Random += n Random
+execute if score @s tbcAttackTimer matches 20 run scoreboard players operation n Random *= 2 Cost
 execute if score @s tbcAttackTimer matches 20 run scoreboard players remove n Random 1
 execute if score @s tbcAttackTimer matches 20 run scoreboard players operation @s tbcAttackStage += n Random
