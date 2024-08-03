@@ -1,5 +1,5 @@
 # main barrage attack handler
-function glarth:combat/action_enemy/attacks/barrage_partial {speed:0.2,min:2,max:4,positions:"moon",item:"minecraft:bone",helper:"bone_fast"}
+function glarth:combat/action_enemy/attacks/barrage_partial {speed:0.2,min:2,max:4,positions:"moon",item:"minecraft:bone",helper:"bone_fast",color:"white"}
 
 # select & barrage 2-4 bones
 execute if score @s tbcAttackStage matches 3 run function glarth:combat/action_enemy/stages/barrage/select {num:4}

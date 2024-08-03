@@ -4,10 +4,10 @@ execute at @s run playsound minecraft:entity.illusioner.cast_spell hostile @a ~ 
 # get barrage count
 $function glarth:util/rand_tbc_min_max {min:$(min),max:$(max)}
 
-$execute if score n Random matches 1 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_1 {item:"$(item)"}
-$execute if score n Random matches 2 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_2 {item:"$(item)"}
-$execute if score n Random matches 3 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_3 {item:"$(item)"}
-$execute if score n Random matches 4 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_4 {item:"$(item)"}
+$execute if score n Random matches 1 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_1 {item:"$(item)",color:"$(color)"}
+$execute if score n Random matches 2 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_2 {item:"$(item)",color:"$(color)"}
+$execute if score n Random matches 3 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_3 {item:"$(item)",color:"$(color)"}
+$execute if score n Random matches 4 as @e[tag=tbcTargetAS,type=armor_stand] at @s run function glarth:combat/action_enemy/stages/barrage/internal/spawn_$(positions)_4 {item:"$(item)",color:"$(color)"}
 
 # bone prep
 execute if entity @s[tag=tbcZombieGhost] run team join aqua @e[tag=tbcBone]

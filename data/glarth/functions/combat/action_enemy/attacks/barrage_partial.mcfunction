@@ -15,7 +15,7 @@ $execute if score @s tbcAttackStage matches 0 run function glarth:combat/action_
 execute if score @s tbcAttackStage matches 1 run function glarth:combat/action_enemy/stages/generic/wait_align {align:5,delay:20}
 
 # summon bones
-$execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_enemy/stages/barrage/spawn {min:$(min),max:$(max),positions:"$(positions)",item:"$(item)"}
+$execute if score @s tbcAttackStage matches 2 run function glarth:combat/action_enemy/stages/barrage/spawn {min:$(min),max:$(max),positions:"$(positions)",item:"$(item)",color:"$(color)"}
 
 # the bone selecting is handeled in the parent function
 
