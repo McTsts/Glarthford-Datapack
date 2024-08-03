@@ -2,7 +2,7 @@
 $scoreboard players set stageCalcBlock Temp $(max_func)
 scoreboard players operation stageCalcBlock Temp *= 3 Const
 scoreboard players add stageCalcBlock Temp 2
-# calculates last arrow phase
+# calculates last block phase
 scoreboard players operation stageComp1 Temp = stageCalcBlock Temp
 scoreboard players operation stageComp2 Temp = stageCalcBlock Temp
 # calculates last actual phase

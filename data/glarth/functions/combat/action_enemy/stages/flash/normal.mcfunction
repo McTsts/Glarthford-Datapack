@@ -1,0 +1,3 @@
+data modify entity @s[tag=tbcCreeper] ArmorItems[3] set value {id:"diamond_hoe",count:1,components:{"minecraft:damage":147}}
+data modify entity @s[tag=tbcChargedCreeper] ArmorItems[3] set value {id:"diamond_hoe",count:1,components:{"minecraft:custom_model_data":47}}
+execute if entity @s[tag=!tbcChargedCreeper,tag=!tbcCreeper,tag=tbcFlashStored] run function glarth:combat/action_enemy/stages/flash/internal/load

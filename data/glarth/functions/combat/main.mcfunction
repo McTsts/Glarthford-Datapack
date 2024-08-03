@@ -86,16 +86,16 @@ execute as @e[tag=tbcEnemy,scores={tbcBee=1..},type=armor_stand] at @s run funct
 item replace entity @a[scores={tbcPumpkin=1..}] armor.head with minecraft:carved_pumpkin[custom_name='""',enchantments={levels:{binding_curse:1},show_in_tooltip:0b},custom_model_data=1,hide_additional_tooltip={}]
 
 # Health Bar
-execute as @e[tag=tbcEnemy,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall,type=armor_stand] at @s positioned ~ ~1.7 ~ if entity @e[tag=tbcHealthBar,distance=..0.1] run function glarth:combat/health_bar
-execute as @e[tag=tbcEnemy,tag=tbcEnemyTall,type=armor_stand] at @s positioned ~ ~2.9 ~ if entity @e[tag=tbcHealthBar,distance=..0.1] run function glarth:combat/health_bar
-execute as @e[tag=tbcEnemy,tag=tbcEnemyVeryTall,type=armor_stand] at @s positioned ~ ~4.9 ~ if entity @e[tag=tbcHealthBar,distance=..0.1] run function glarth:combat/health_bar
-execute as @e[tag=tbcAlly,type=armor_stand] at @s positioned ~ ~1.7 ~ if entity @e[tag=tbcHealthBar,distance=..0.1] run function glarth:combat/health_bar
-execute as @e[tag=tbcHealthBar,tag=!tbcTallHealth,tag=!tbcVeryTallHealth] at @s positioned ~ ~-1.7 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
-execute as @e[tag=tbcHealthBar,tag=tbcTallHealth] at @s positioned ~ ~-2.9 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
-execute as @e[tag=tbcHealthBar,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.9 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
-execute as @e[tag=tbcHealthBar2,tag=!tbcTallHealth,tag=!tbcVeryTallHealth] at @s positioned ~ ~-1.4 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
-execute as @e[tag=tbcHealthBar2,tag=tbcTallHealth] at @s positioned ~ ~-2.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
-execute as @e[tag=tbcHealthBar2,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.1,type=armor_stand,tag=tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcEnemy,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall,type=armor_stand] at @s positioned ~ ~1.7 ~ if entity @e[tag=tbcHealthBar,distance=..0.35] run function glarth:combat/health_bar
+execute as @e[tag=tbcEnemy,tag=tbcEnemyTall,type=armor_stand] at @s positioned ~ ~2.9 ~ if entity @e[tag=tbcHealthBar,distance=..0.35] run function glarth:combat/health_bar
+execute as @e[tag=tbcEnemy,tag=tbcEnemyVeryTall,type=armor_stand] at @s positioned ~ ~4.9 ~ if entity @e[tag=tbcHealthBar,distance=..0.35] run function glarth:combat/health_bar
+execute as @e[tag=tbcAlly,type=armor_stand] at @s positioned ~ ~1.7 ~ if entity @e[tag=tbcHealthBar,distance=..0.35] run function glarth:combat/health_bar
+execute as @e[tag=tbcHealthBar,tag=!tbcTallHealth,tag=!tbcVeryTallHealth] at @s positioned ~ ~-1.7 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcHealthBar,tag=tbcTallHealth] at @s positioned ~ ~-2.9 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=tbcEnemyTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcHealthBar,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.9 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcHealthBar2,tag=!tbcTallHealth,tag=!tbcVeryTallHealth] at @s positioned ~ ~-1.4 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=!tbcEnemyTall,tag=!tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcHealthBar2,tag=tbcTallHealth] at @s positioned ~ ~-2.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=tbcEnemyTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
+execute as @e[tag=tbcHealthBar2,tag=tbcVeryTallHealth] at @s positioned ~ ~-4.6 ~ unless entity @e[tag=tbcHBEntity,distance=..0.35,type=armor_stand,tag=tbcEnemyVeryTall] run data merge entity @s {CustomName:'""',CustomNameVisible:0}
 
 # TBC VA (1.17)
 execute if score tbcVa tbcStats matches 1.. run scoreboard players remove tbcVa tbcStats 1
