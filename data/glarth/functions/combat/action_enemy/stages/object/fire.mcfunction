@@ -1,0 +1,1 @@
+execute positioned ^ ^ ^2.5 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["tbcFireBarrier","tbc"]}
